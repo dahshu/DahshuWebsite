@@ -1,0 +1,2523 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html lang="en" class="no-js ie6 "><![endif]-->
+<!--[if IE 7 ]><html lang="en" class="no-js ie7 "> <![endif]-->
+<!--[if IE 8 ]><html lang="en" class="no-js ie8 "> <![endif]-->
+<!--[if IE 9 ]><html lang="en" class="no-js ie9 "><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js "> <!--<![endif]-->
+  <head id="Head1">
+		<link rel="stylesheet" type="text/css" href="../_assets/kit-pro.fontawesome.com/releases/latest/css/pro.min.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../_assets/sf.wildapricot.org/BuiltTheme/showcase_green.v3.0/current/3a527004/Styles/combined.css" rel="stylesheet" type="text/css" /><link href="../_assets/dahshu.wildapricot.org/resources/theme/customStyles__7a503e4d77.css" rel="stylesheet" type="text/css" /><link href="../_assets/dahshu.wildapricot.org/resources/theme/user__3f1ae45425.css" rel="stylesheet" type="text/css" /><link href="../_assets/live-sf.wildapricot.org/WebUI/built9.16.0-e938026/scripts/public/react/index-84b33b4.css" rel="stylesheet" type="text/css" /><link href="../_assets/live-sf.wildapricot.org/WebUI/built9.16.0-e938026/css/shared/ui/shared-ui-compiled.css" rel="stylesheet" type="text/css" /><script type="text/javascript" language="javascript" id="idJavaScriptEnvironment">var bonaPage_BuildVer='9.16.0-e938026';
+var bonaPage_AdminBackendUrl = '/admin/';
+var bonaPage_StatRes='../_assets/live-sf.wildapricot.org/WebUI/';
+var bonaPage_InternalPageType = { isUndefinedPage : false,isWebPage : false,isAdminPage : false,isDialogPage : false,isSystemPage : true,isErrorPage : false,isError404Page : false };
+var bonaPage_PageView = { isAnonymousView : true,isMemberView : false,isAdminView : false };
+var WidgetMode = 0;
+var bonaPage_IsUserAnonymous = true;
+var bonaPage_ThemeVer='3a527004638934911290000000638870726180380000'; var bonaPage_ThemeId = 'showcase_green.v3.0'; var bonaPage_ThemeVersion = '3.0';
+var bonaPage_id='18008'; version_id='';
+if (bonaPage_InternalPageType && (bonaPage_InternalPageType.isSystemPage || bonaPage_InternalPageType.isWebPage) && window.self !== window.top) { var success = true; try { var tmp = top.location.href; if (!tmp) { top.location = self.location; } } catch (err) { try { if (self != top) { top.location = self.location; } } catch (err) { try { if (self != top) { top = self; } success = false; } catch (err) { success = false; } } success = false; } if (!success) { window.onload = function() { document.open('text/html', 'replace'); document.write('<ht'+'ml><he'+'ad></he'+'ad><bo'+'dy><h1>Wrong document context!</h1></bo'+'dy></ht'+'ml>'); document.close(); } } }
+try { function waMetricsGlobalHandler(args) { if (WA.topWindow.waMetricsOuterGlobalHandler && typeof(WA.topWindow.waMetricsOuterGlobalHandler) === 'function') { WA.topWindow.waMetricsOuterGlobalHandler(args); }}} catch(err) {}
+ try { if (parent && parent.BonaPage) parent.BonaPage.implementBonaPage(window); } catch (err) { }
+try { document.write('<style type="text/css"> .WaHideIfJSEnabled, .HideIfJSEnabled { display: none; } </style>'); } catch(err) {}
+var bonaPage_WebPackRootPath = '../_assets/live-sf.wildapricot.org/WebUI/built9.16.0-e938026/scripts/public/react/';</script><script type="text/javascript" language="javascript" src="../_assets/live-sf.wildapricot.org/WebUI/built9.16.0-e938026/scripts/shared/bonapagetop/bonapagetop-compiled.js" id="idBonaPageTop"></script><script type="text/javascript" language="javascript" src="../_assets/live-sf.wildapricot.org/WebUI/built9.16.0-e938026/scripts/public/react/index-84b33b4.js" id="ReactPublicJs"></script><script type="text/javascript" language="javascript" src="../_assets/live-sf.wildapricot.org/WebUI/built9.16.0-e938026/scripts/shared/ui/shared-ui-compiled.js" id="idSharedJs"></script><script type="text/javascript" language="javascript" src="../_assets/live-sf.wildapricot.org/WebUI/built9.16.0-e938026/General.js" id=""></script><script type="text/javascript" language="javascript" src="../_assets/sf.wildapricot.org/BuiltTheme/showcase_green.v3.0/current/3a527004/Scripts/combined.js" id=""></script><title>DahShu - Demystifying the drop-outs in single cell RNA-seq data</title>
+<link rel="search" type="application/opensearchdescription+xml" title="dahshu.wildapricot.org" href="../opensearch.ashx/index.html" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap" /></head>
+  <body id="PAGEID_18008" class="publicContentView LayoutMain">
+<div class="mLayout layoutMain state1" id="mLayout">
+<!-- header zone -->
+		<div class="zoneHeaderOuter zoneOuter">
+			<div class="zoneHeader container_12">
+				<div class="zoneHeaderInner zoneInner s1_grid_12 s2_grid_12 s3_grid_12">
+<div id="id_Header" data-componentId="Header" class="WaPlaceHolder WaPlaceHolderHeader" style=""><div style=""><div id="id_NLvPt4W" data-componentId="NLvPt4W" class="WaLayoutContainerFirst" style="margin-right:20px;margin-bottom:25px;margin-left:20px;"><table cellspacing="0" cellpadding="0" class="WaLayoutTable" style=""><tr data-componentId="NLvPt4W_row" class="WaLayoutRow"><td id="id_IDxEBFH" data-componentId="IDxEBFH" class="WaLayoutItem" style="width:27%;"><div id="id_zI5fiqi" class="WaLayoutPlaceHolder placeHolderContainer" data-componentId="zI5fiqi" style=""><div style=""><div id="id_rLfEXga" class="WaGadgetOnly WaGadgetSocialProfile  gadgetStyleNone" style="" data-componentId="rLfEXga" ><div class="gadgetStyleBody " style=""  data-areaHeight="auto">
+<div class="socialProfileWrapper alignLeft">
+	<ul class="orientationHorizontal">
+    <li>
+				<a href="https://x.com/wildapricot" title="X" class="X" target="_blank"></a>
+			</li>
+<li>
+				<a href="https://www.linkedin.com/in/dahshu-non-profit-0524a0110/" title="LinkedIn" class="LinkedIn" target="_blank"></a>
+			</li>
+<li>
+				<a href="https://www.youtube.com/channel/UCFrQ9G0MicFZ9ZIJZvRJd1A" title="YouTube" class="YouTube" target="_blank"></a>
+			</li>
+		
+ 
+	</ul>
+</div>
+</div>
+</div></div></div></td><td style="" data-componentId="IDxEBFH_separator" class="WaLayoutSeparator"><div style="width: inherit;"></div></td><td id="id_gBSHl9X" data-componentId="gBSHl9X" class="WaLayoutItem" style="width:45%;"></td><td style="" data-componentId="gBSHl9X_separator" class="WaLayoutSeparator"><div style="width: inherit;"></div></td><td id="id_Ia9ojMH" data-componentId="Ia9ojMH" class="WaLayoutItem" style="width:27%;"><div id="id_g7Tmh78" class="WaLayoutPlaceHolder placeHolderContainer" data-componentId="g7Tmh78" style=""><div style=""><div id="id_Y3YQQ4g" class="WaGadgetOnly WaGadgetLoginForm  gadgetStyleNone" style="" data-componentId="Y3YQQ4g" ><div class="gadgetStyleBody " style=""  data-areaHeight="auto">
+<div class="loginContainerWrapper alignCenter">
+    <div class="loginContainerInnerWrapper">
+      <a id="id_Y3YQQ4g_loginLink" class="loginLink">Log in</a>
+      <div id="id_Y3YQQ4g_loginContainer" class="loginContainer orientationHorizontal">
+        <div class="loginContainerForm orientationHorizontal oAuthIstrue">
+          <div class="loginContainerShadowBox">
+            <div class="openAuthFormContainer">
+<form method="post" action="https://dahshu.wildapricot.org/Sys/Login/ExternalLogin" id="id_Y3YQQ4g_oAuthForm" class="oAuthForm"  data-disableInAdminMode="true">
+<div id="id_Y3YQQ4g_container" class="oAuthButtonsContainer">
+			  <!--  <a class="wa-authenticateLoginLink facebook" provider="Facebook">
+					<span class="authenticateLoginIcon" provider="Facebook"></span>
+					<span class="authenticateLoginText" provider="Facebook">Log in with Facebook</span>
+			  </a> --> <a class="wa-authenticateLoginLink googlePlus" provider="GooglePlus">
+					<span class="authenticateLoginIcon" provider="GooglePlus"></span>
+					<span class="authenticateLoginText" provider="GooglePlus">Log in with Google</span>
+			  </a><a class="wa-authenticateLoginLink microsoft" provider="Microsoft">
+					<span class="authenticateLoginIcon" provider="Microsoft"></span>
+					<span class="authenticateLoginText" provider="Microsoft">Log in with Microsoft</span>
+			  </a> <a class="wa-authenticateLoginLink apple" provider="Apple">
+					<span class="authenticateLoginIcon" provider="Apple"></span>
+					<span class="authenticateLoginText" provider="Apple">Log in with Apple</span>
+			  </a>
+			  <input type="hidden" name="ReturnUrl" value="" />
+			  <input type="hidden" name="Provider" class="oAuthProvider" value="Undefined" />   
+              <input type="hidden" id="id_Y3YQQ4g_browserCapabilities" name="browserCapabilities" />  
+			</div>
+</form></div>
+ 
+    <script type="text/javascript" language="javascript">
+        jq$(document).ready(function()
+		{
+            new OAuthButtons({id:'id_Y3YQQ4g', formId: 'id_Y3YQQ4g_oAuthForm'});
+		});
+    </script>
+<form method="post" action="https://dahshu.wildapricot.org/Sys/Login" id="id_Y3YQQ4g_form" class="generalLoginBox"  data-disableInAdminMode="true">
+<input type="hidden" name="ReturnUrl" id="id_Y3YQQ4g_returnUrl" value="">
+              <input type="hidden" name="CurrentUrl" id="id_Y3YQQ4g_currentUrl" value="/event-3934849">
+              <input type="hidden" name="browserData" id="id_Y3YQQ4g_browserField">
+              <div>
+                <div class="loginUserName">
+<div class="loginUserNameTextBox">
+		<input name="email" type="text" maxlength="100" placeholder="Email"  id="id_Y3YQQ4g_userName" tabindex="1" class="emailTextBoxControl"/>
+	</div>
+</div><div class="loginPassword">
+    <div class="loginPasswordTextBox">
+		<div class="password-wrapper">
+			<input 
+				name="password" 
+				type="password" 
+placeholder="Password" 
+				maxlength="50" 
+				id="id_Y3YQQ4g_password" 
+				tabindex="2" 
+				class="passwordTextBoxControl" 
+				autocomplete="off"
+			/>
+			<i class="fa fa-eye-slash toggle-password" toggle="#id_Y3YQQ4g_password"></i>
+		</div>
+    </div>
+</div>
+<script>
+  if (!window.__passwordToggleInitialized) {
+    window.__passwordToggleInitialized = true;
+
+    $(document).ready(function () {
+      $('.toggle-password').each(function () {
+        const $icon = $(this);
+        const selector = $icon.attr('toggle');
+        if (!selector) return;
+
+        const $input = selector.startsWith('#') ? $(selector) : $('#' + selector);
+        if (!$input.length) return;
+
+        $icon.on('click', function () {
+          try {
+            const inputEl = $input[0];
+            const currentType = inputEl.getAttribute('type');
+
+            if (currentType === 'password') {
+              inputEl.setAttribute('type', 'text');
+              $icon.removeClass('fa-eye-slash').addClass('fa-eye');
+            } else {
+              inputEl.setAttribute('type', 'password');
+              $icon.removeClass('fa-eye').addClass('fa-eye-slash');
+            }
+          } catch (err) {
+            console.warn('Password toggle error:', err.message);
+          }
+        });
+      });
+    });
+  }
+</script>
+ 
+    <input id="g-recaptcha-invisible_Y3YQQ4g" name="g-recaptcha-invisible" value="recaptcha" type="hidden"/> 
+    <div id="recapcha_placeholder_Y3YQQ4g" style="display:none"></div>
+    <span id="idReCaptchaValidator_Y3YQQ4g" errorMessage="Please verify that you are not a robot" style="display:none" validatorType="method" ></span>
+    <script>
+        $("#idReCaptchaValidator_Y3YQQ4g").on( "wavalidate", function(event, validationResult) {
+            if (grecaptcha.getResponse(widgetId_Y3YQQ4g).length == 0){
+                grecaptcha.execute(widgetId_Y3YQQ4g);	
+                validationResult.shouldStopValidation = true;
+                return;
+            }
+
+            validationResult.result = true;
+        });
+  
+            var widgetId_Y3YQQ4g;
+
+            var onloadCallback_Y3YQQ4g = function() {
+                // Renders the HTML element with id 'recapcha_placeholder_Y3YQQ4g' as a reCAPTCHA widget.
+                // The id of the reCAPTCHA widget is assigned to 'widgetId_Y3YQQ4g'.
+                widgetId_Y3YQQ4g = grecaptcha.render('recapcha_placeholder_Y3YQQ4g', {
+                'sitekey' : '6LfmM_UhAAAAAJSHT-BwkAlQgN0mMViOmaK7oEIV',
+                'size': 'invisible',
+                'callback': function(){
+                    document.getElementById('g-recaptcha-invisible_Y3YQQ4g').form.submit();
+                },
+                'theme' : 'light'
+            });
+        };
+    </script>
+	
+    <script src="../_assets/www.google.com/recaptcha/api__3a8c3ea9c8.js" async defer></script>
+
+ <div class="loginAction">
+	<input type="submit" onclick="if (!WA.isWidgetMode && !browserInfo.clientCookiesEnabled()) {alert('Warning: browser cookies disabled. Please enable them to use this website.'); return false;}"  name="ctl03$ctl02$loginViewControl$loginControl$Login" value="Log in" id="id_Y3YQQ4g_loginAction"  tabindex="4" class="loginButton loginButtonControl"/>	
+</div>  
+              </div>
+              <div>
+                <div class="loginActionRememberMe"><input id="id_Y3YQQ4g_rememberMe" type="checkbox" name="rememberMe" tabindex="3" class="rememberMeCheckboxControl"/><label for="id_Y3YQQ4g_rememberMe">Remember me</label></div><div class="loginPasswordForgot">
+		<a rel="nofollow" href="../Sys/ResetPasswordRequest/index.html">Forgot password</a>
+	</div>
+</div>
+            </form></div>
+        </div>
+        </div>
+    </div>
+  </div>
+  <script>
+    jq$().ready(function() {
+      var browserField = document.getElementById('id_Y3YQQ4g' + '_browserField');
+
+      if (browserField) {
+        browserField.value = browserInfo.getBrowserCapabilitiesData();
+      }
+
+      jq$('#id_Y3YQQ4g' + '_form').FormValidate();
+      jq$('.WaGadgetLoginForm form').attr('data-disableInAdminMode', 'false');
+    });
+    
+    jq$(document).ready(function() { new LoginBox({Id:'id_Y3YQQ4g'}); });  
+  </script>  
+  </div>
+</div></div></div></td></tr></table> </div><div id="id_5cqQlpb" class="WaGadget WaGadgetContent  gadgetStyleNone" style="" data-componentId="5cqQlpb" ><div class="gadgetStyleBody gadgetContentEditableArea" style="" data-editableArea="0" data-areaHeight="auto">
+<p><a href="../index.html" target="_blank"><img src="../_assets/dahshu.wildapricot.org/resources/Pictures/logo.png" alt="" title="" border="0"></a><br></p></div>
+</div><div id="id_yOhi7Wr" class="WaGadget WaGadgetMenuHorizontal  menuStyle001" style="" data-componentId="yOhi7Wr" ><div class="als-container id_yOhi7Wr" id="Hor-menu-id_yOhi7Wr">
+  <span class="als-prev-wrap"><span class="als-prev"></span></span>
+  <div class="als-viewport">
+  	<ul class="als-wrapper">
+<li class="als-item ">
+	<a href="../index.html" title="Home" class="">
+    <div class="als-item-wrap">
+        <span>Home</span>
+	</div>
+    </a>
+</li>
+	
+<li class="als-item ">
+	<a href="../DSDS2025/index.html" title="DSDSS2025" class="">
+    <div class="als-item-wrap">
+        <span>DSDSS2025</span>
+	</div>
+    </a>
+</li>
+	
+<li class="als-item ">
+	<a href="../DSDSS2026/index.html" title="DSDSS2026" class="">
+    <div class="als-item-wrap">
+        <span>DSDSS2026</span>
+	</div>
+    </a>
+</li>
+	
+<li class="als-item ">
+	<a href="../events/index.html" title="Events" class="">
+    <div class="als-item-wrap">
+        <span>Events</span>
+	</div>
+    </a>
+</li>
+	
+<li class="als-item ">
+	<a href="../join-us/index.html" title="Join Us" class="">
+    <div class="als-item-wrap">
+        <span>Join Us</span>
+	</div>
+    </a>
+</li>
+	
+<li class="als-item ">
+	<a href="../Donate/index.html" title="Support Us" class="">
+    <div class="als-item-wrap">
+        <span>Support Us</span>
+	</div>
+    </a>
+</li>
+	
+<li class="als-item ">
+	<a href="../Volunteer/index.html" title="Volunteer" class="">
+    <div class="als-item-wrap">
+        <span>Volunteer</span>
+	</div>
+    </a>
+</li>
+	
+<li class="als-item ">
+	<a href="../EastChapter/index.html" title="EastChapter" class="">
+    <div class="als-item-wrap">
+        <span>EastChapter</span>
+	</div>
+    </a>
+</li>
+	
+<li class="als-item ">
+	<a href="../VJClub/index.html" title="VJClub" class="">
+    <div class="als-item-wrap">
+        <span>VJClub</span>
+	</div>
+    </a>
+</li>
+	
+<li class="als-item ">
+	<a href="../contact-us/index.html" title="Contact Us" class="">
+    <div class="als-item-wrap">
+        <span>Contact Us</span>
+	</div>
+    </a>
+</li>
+	
+<li class="als-item ">
+	<a href="../HomeCHN/index.html" title="中文" class="">
+    <div class="als-item-wrap">
+        <span>中文</span>
+	</div>
+    </a>
+</li>
+	
+<li class="als-item ">
+	<a href="../forums/index.html" title="Forums" class="">
+    <div class="als-item-wrap">
+        <span>Forums</span>
+	</div>
+    </a>
+</li>
+	
+</ul>
+  </div>
+  <span class="als-next-wrap"><span class="als-next"></span></span>
+  	<script type="text/javascript">
+		(function(){
+			var isAlsPresent = false;
+
+			jq$(document).ready(function () {
+				if (jq$('#Hor-menu-id_yOhi7Wr .als-wrapper li').length > 0) {
+					isAlsPresent = true;
+					jq$("#Hor-menu-id_yOhi7Wr").als({
+						menu_model_id: 'id_yOhi7Wr',
+						visible_items: 'auto',
+						scrolling_items: 'auto',
+						orientation: "horizontal",
+						circular: "no",
+						autoscroll: "no",
+						easing: "swing"
+					});
+				}
+			});
+
+			jq$(window).resize(function () {
+				if (isAlsPresent) {
+					jq$("#Hor-menu-id_yOhi7Wr").als('destroy');
+					jq$("#Hor-menu-id_yOhi7Wr").als({
+						menu_model_id: 'id_yOhi7Wr',
+						visible_items: 'auto',
+						scrolling_items: 'auto',
+						orientation: "horizontal",
+						circular: "no",
+						autoscroll: "no",
+						easing: "swing"
+					});
+				}
+			});
+		})();
+	</script>
+</div>
+</div><div id="id_GsQDnbD" class="WaGadgetLast WaGadgetBreadcrumbs  gadgetStyle001" style="margin-right:20px;margin-left:20px;" data-componentId="GsQDnbD" ><div class="gadgetStyleBody " style=""  data-areaHeight="auto">
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li class="last">Demystifying the drop-outs in single cell RNA-seq data</li>
+</ul>
+</div>
+</div></div>
+</div></div>
+			</div>
+		</div>
+		<div class="zoneHeader1Outer zoneOuter">
+			<div class="zoneHeader1 container_12">
+				<div class="zoneHeader1Inner zoneInner s1_grid_12 s2_grid_12 s3_grid_12">
+					<div class="color"></div>
+</div>
+			</div>
+		</div>
+		<div class="zoneHeader2Outer zoneOuter">
+			<div class="zoneHeader12 container_12">
+				<div class="zoneHeader2Inner zoneInner s1_grid_12 s2_grid_12 s3_grid_12">
+<div id="id_Header2" data-componentId="Header2" class="WaPlaceHolder WaPlaceHolderHeader2" style=""><div style=""><div id="id_74yvHXq" class="WaGadgetOnly WaGadgetUpcomingEvents  gadgetStyle001" style="" data-componentId="74yvHXq" ><div class="gadgetStyleTitle"><h4 class="gadgetTitleH4">
+Upcoming events</h4></div>
+<div class="gadgetStyleBody " style=""  data-areaHeight="auto">
+<ul>
+<li class="last">
+	<span class="event-time-zone" style="display: none;" >America/Los_Angeles</span>
+	<div class="title"><a href="../event-6700601/index.html">Statistics in the Age of Generative AI: Reconstructing, Resolving, and Synthesizing Clinical Evidence</a></div>
+	<div class="date">
+		<span client-tz-display client-tz-item="America/Los_Angeles" client-tz-formatted=" (PDT)">Fri, June 12, 2026 08:00</span>
+	</div>
+	<div class="location">
+		<span>Zoom Meeting ID: 868 7803 0624; Password: 326968</span>
+	</div>
+</li>
+</ul>
+	
+</div>
+</div></div>
+</div></div>
+			</div>
+		</div>
+		<!-- /header zone -->
+
+<!-- content zone -->
+	<div class="zoneContentOuter zoneOuter">
+		<div class="zoneContent container_12">
+			<div class="zoneContentInner s1_grid_12 s2_grid_12 s3_grid_12 zoneInner zoneRoundedCorners">
+<div id="id_Content" data-componentId="Content" class="WaPlaceHolder WaPlaceHolderContent" style=""><div style=""><div id="id_HdIIETy" class="WaGadgetOnly WaGadgetEvents  gadgetStyleNone WaGadgetEventsStateDetails" style="" data-componentId="HdIIETy" >
+
+
+
+<form method="post" action="" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="qEusNFmoSalG6oC+zNZeYw9A7y+eZnL3fLmMPIqo+QRzi5c671UddL7oZiT947TsV9pr3FP3SdU+cx49+E6EgvnGD8m6zeLVOx+ZYrHYnuwlPn/v5S92M/ppdRiCEjlJBYJUwxxzxEOmVVJmLK2w4ziKStnLq0YF53t2z8lkR4sDWCW19IZSIYRJZArNt2pIqaAMl61OYbtUJQxi18JcU8WuQnUt2KYWSd0gc3Z7D4XZuIvHdjc/iMJxqartwbOLONMGPcHPriwPYW/dKBlh2Pcqlu+QjG7SwTVrJYvdYoBc2OhW" />
+</div>
+
+    
+    <input type="hidden" name="FunctionalBlock1$contentModeHidden" id="FunctionalBlock1_contentModeHidden" value="1" />
+
+
+
+       
+  <div id="idEventsTitleMainContainer" class="pageTitleOuterContainer">
+    <div id="idEventBackContainer" class="pageBackContainer">
+      <a id="FunctionalBlock1_ctl00_eventPageViewBase_ctl00_ctl00_back" class="eventBackLink" href="javascript: history.back();">Back</a>
+    </div>
+      
+    <div id="idEventViewSwitcher" class="pageViewSwitcherOuterContainer">
+      
+<div class="cornersContainer"><div class="topCorners"><div class="c1"></div><div class="c2"></div><div class="c3"></div><div class="c4"></div><div class="c5"></div></div></div>
+  <div class="pageViewSwitcherContainer"><div class="d1"><div class="d2"><div class="d3"><div class="d4"><div class="d5"><div class="d6"><div class="d7"><div class="d8"><div class="d9"><div class="inner">
+    <div id="init-add-event-to-calendar-dropdown-3934849" class="semantic-ui" style="color: inherit; background: transparent;"></div>
+    <script>
+      function initAddEventToCalendarDropDown3934849()
+      {
+        if (typeof window.initAddEventToCalendarDropDown !== 'function') { return; }
+      
+        const domNodeId = 'init-add-event-to-calendar-dropdown-3934849';
+        const event = {
+          id: '3934849',
+          title: 'Demystifying the drop-outs in single cell RNA-seq data',
+          description: 'Time: 9:00 AM - 10:00 AM PDT (12:00 PM - 1:00 PM EST), Friday, Aug. 28, 2020    Online Video Review:https://www.youtube.com/watch?v=D-cEpmrwF2s    Zoom.us link will be sent 24 hours before the event.    Abstract: Droplet-based single-cell RNA-sequencing (scRNA-seq) methods have changed the landscape of genomics research in complex biological systems by producing single cell resolution data at affordable costs. In the state-of-the-arts protocols, a step called barcoding unique molecular identifiers (UMI) has been introduced to remove amplification bias and further improve data quality. Recent literature suggests that barcoding has led to a different error structure in the count data with much less technical noise. Regardless, many tools do not acknowledge the differences between the read count data and UMI count data, still assuming that both suffer from excessive technical noise. In this presentation, I will make a brief overview of scRNA-seq data analysis pipelines and then present extensive analyses of publicly available UMI data sets that challenge the assumptions of most existing pre-processing tools. Our results suggest that resolving cell-type heterogeneity should be the foremost step of the scRNA-seq analysis pipeline. Normalizing or imputing the data set before resolving the heterogeneity can lead to adversary consequences in downstream analysis. As a result, we provide a new perspective on scRNA-seq data analysis by fully integrating pre-processing and clustering, which was classified as part of the downstream analysis. The proposed procedures have been implemented in software, HIPPO. If time permits, I will also talk about other single cell analysis tools developed in my group, VIPER, an imputation method for SMART-seq data, and dmatch, an alignment tool for multiple scRNA-seq samples batch correction.                     Biosketch:  Mengjie Chen is an assistant professor in Section of Genetic Medicine in the Department of Medicine and the Department of Human Genetics at the University of Chicago. Before joining U Chicago, she was an assistant professor in the Department of Biostatistics and Genetics at UNC-Chapel Hill from 2014 to 2016. She obtained her PhD in Computational Biology and Bioinformatics from Yale University in 2014 with Drs. Hongyu Zhao and Haifan Lin. Dr. Chen was a recipient of the Alfred P. Sloan Research fellowship in Computational and Molecular Evolutionary Biology in 2019. As a computational biologist and statistician by training, Dr. Chen’s research bridges statistical methodological advances and biomedical applications. Her group develop computational methods and open source tools to address challenges posed by high-throughput technologies for data analysis and interpretation. Currently, her research is focused on single cell genomics and epitranscriptomics.              '.replace(/\r+/g, ''),
+          location: 'ttps://www.youtube.com/watch?v=D-cEpmrwF2s',
+          url: window.location.href,
+          allDay: 'True' === 'False',
+          start: '2020-08-28T16:00:00Z', 
+          end: '2020-08-28T17:00:00Z',
+          sessions: [{"title":"Demystifying the drop-outs in single cell RNA-seq data","start":"2020-08-28T16:00:00Z","end":"2020-08-28T17:00:00Z","allDay":false}]
+        };
+      
+        window.initAddEventToCalendarDropDown(event, domNodeId);
+      }    
+    
+      window.BonaPage.addPageStateHandler(window.BonaPage.PAGE_PARSED, initAddEventToCalendarDropDown3934849);
+
+    </script>
+  </div></div></div></div></div></div></div></div></div></div></div>
+<div class="cornersContainer"><div class="bottomCorners"><div class="c5"></div><div class="c4"></div><div class="c3"></div><div class="c2"></div><div class="c1"></div></div></div>
+
+    </div>
+    <div class="pageTitleContainer eventsTitleContainer">
+      <h1 class="pageTitle SystemPageTitle">
+        Demystifying the drop-outs in single cell RNA-seq data
+      </h1>
+    </div>
+  </div>
+      
+
+      
+
+
+<div class="boxOuterContainer boxBaseView"><div class="cornersContainer"><div class="topCorners"><div class="c1"></div><div class="c2"></div><div class="c3"></div><div class="c4"></div><div class="c5"></div><!--[if gt IE 6]><!--><div class="r1"><div class="r2"><div class="r3"><div class="r4"><div class="r5"></div></div></div></div></div><!--<![endif]--></div></div><div  class="boxContainer"><div class="d1"><div class="d2"><div class="d3"><div class="d4"><div class="d5"><div class="d6"><div class="d7"><div class="d8"><div class="d9"><div class="inner">
+      
+    <div class="boxBodyOuterContainer"><div class="cornersContainer"><div class="topCorners"><div class="c1"></div><div class="c2"></div><div class="c3"></div><div class="c4"></div><div class="c5"></div><!--[if gt IE 6]><!--><div class="r1"><div class="r2"><div class="r3"><div class="r4"><div class="r5"></div></div></div></div></div><!--<![endif]--></div></div><div  class="boxBodyContainer"><div class="d1"><div class="d2"><div class="d3"><div class="d4"><div class="d5"><div class="d6"><div class="d7"><div class="d8"><div class="d9"><div class="inner">
+          
+        <div class="boxBodyInfoOuterContainer boxBodyInfoViewFill"><div class="cornersContainer"><div class="topCorners"><div class="c1"></div><div class="c2"></div><div class="c3"></div><div class="c4"></div><div class="c5"></div><!--[if gt IE 6]><!--><div class="r1"><div class="r2"><div class="r3"><div class="r4"><div class="r5"></div></div></div></div></div><!--<![endif]--></div></div><div  class="boxBodyInfoContainer"><div class="d1"><div class="d2"><div class="d3"><div class="d4"><div class="d5"><div class="d6"><div class="d7"><div class="d8"><div class="d9"><div class="inner">
+              
+            
+
+<div class="boxInfoContainer">
+  <ul class="boxInfo">
+    <li class="eventInfoStartDate">
+      <label class="eventInfoBoxLabel">When</label>
+      <div class="eventInfoBoxValue"><strong>Fri, August 28, 2020</strong></div>
+    </li>
+    <li id="FunctionalBlock1_ctl00_eventPageViewBase_ctl00_ctl00_eventInfoBox_startTimeLi" class="eventInfoStartTime">
+      <label class="eventInfoBoxLabel">&nbsp;</label>
+      <div class="eventInfoBoxValue"><span><div id="FunctionalBlock1_ctl00_eventPageViewBase_ctl00_ctl00_eventInfoBox_startTimeLocalizePanel" client-tz-item="America/Los_Angeles" client-tz-formatted=" (PDT)">
+	09:00 - 10:00
+</div></span></div>
+    </li>
+    
+    
+    
+    
+    <li id="FunctionalBlock1_ctl00_eventPageViewBase_ctl00_ctl00_eventInfoBox_locationLi" class="eventInfoLocation">
+      <label class="eventInfoBoxLabel">Location</label>
+      <div class="eventInfoBoxValue"><span>ttps://www.youtube.com/watch?v=D-cEpmrwF2s</span></div>
+    </li>
+    
+    
+  </ul>
+</div>
+
+            
+<div class="registrationInfoContainer">
+  
+  
+</div>
+
+              
+            
+              
+            
+
+            
+                
+            
+              
+          <div class="clearEndContainer"></div></div></div></div></div></div></div></div></div></div></div></div><div class="cornersContainer"><div class="bottomCorners"><!--[if gt IE 6]><!--><div class="r1"><div class="r2"><div class="r3"><div class="r4"><div class="r5"></div></div></div></div></div><!--<![endif]--><div class="c5"></div><div class="c4"></div><div class="c3"></div><div class="c2"></div><div class="c1"></div></div></div></div>
+
+          <div class="boxBodyContentOuterContainer"><div class="cornersContainer"><div class="topCorners"><div class="c1"></div><div class="c2"></div><div class="c3"></div><div class="c4"></div><div class="c5"></div><!--[if gt IE 6]><!--><div class="r1"><div class="r2"><div class="r3"><div class="r4"><div class="r5"></div></div></div></div></div><!--<![endif]--></div></div><div  class="boxBodyContentContainer fixedHeight"><div class="d1"><div class="d2"><div class="d3"><div class="d4"><div class="d5"><div class="d6"><div class="d7"><div class="d8"><div class="d9"><div class="inner gadgetEventEditableArea">
+                  <p style="line-height: 21px;"><font style="font-size: 13px;" color="#000000" face="Arial, Helvetica, sans-serif"><strong>Time:&nbsp;9:00 AM - 10:00 AM&nbsp;PDT (12:00 PM - 1:00 PM EST),&nbsp;Friday, Aug. 28, 2020</strong></font></p>
+
+<p style="line-height: 21px;"><font style="font-size: 13px;" face="Arial, Helvetica, sans-serif"><strong style=""><font color="#ED1C24">Online Video Review:</font><a href="https://urldefense.com/v3/__https://www.youtube.com/watch?v=D-cEpmrwF2s__;!!MLMg-p0Z!XdBZcNEIes7tb19q5dz_esFhz4QlXVQheT5q5h4XJ2mR5vyojkmkaTY6t8J7$" data-saferedirecturl="https://www.google.com/url?q=https://urldefense.com/v3/__https://www.youtube.com/watch?v%3DD-cEpmrwF2s__;!!MLMg-p0Z!XdBZcNEIes7tb19q5dz_esFhz4QlXVQheT5q5h4XJ2mR5vyojkmkaTY6t8J7$&amp;source=gmail&amp;ust=1602831180278000&amp;usg=AFQjCNFQmfHtlWNaEiFP0wky4TZTculY9Q" style="color: rgb(0, 0, 0);"><font color="#1155CC" face="Arial, Helvetica, sans-serif">https://www.youtube.com/watch?v=D-cEpmrwF2s</font></a></strong></font></p>
+
+<p style="line-height: 21px;"><strong style="font-size: 13px; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;">Zoom.us&nbsp;link will be sent 24 hours before the event.</strong></p>
+
+<p><span style="background-color: rgb(255, 255, 255);"><font color="#000000" face="Arial, Helvetica, sans-serif"><strong>Abstract</strong>: Droplet-based single-cell RNA-sequencing (scRNA-seq) methods have changed the landscape of genomics research in complex biological systems by producing single cell resolution data at affordable costs. In the state-of-the-arts protocols, a step called barcoding unique molecular identifiers (UMI) has been introduced to remove amplification bias and further improve data quality. Recent literature suggests that barcoding has led to a different error structure in the count data with much less technical noise. Regardless, many tools do not acknowledge the differences between the read count data and UMI count data, still assuming that both suffer from excessive technical noise. In this presentation, I will make a brief overview of scRNA-seq data analysis pipelines and then present extensive analyses of publicly available UMI data sets that challenge the assumptions of most existing pre-processing tools. Our results suggest that resolving cell-type heterogeneity should be the foremost step of the scRNA-seq analysis pipeline. Normalizing or imputing the data set before resolving the heterogeneity can lead to adversary consequences in downstream analysis. As a result, we provide a new perspective on scRNA-seq data analysis by fully integrating pre-processing and clustering, which was classified as part of the downstream analysis. The proposed procedures have been implemented in software, HIPPO. If time permits, I will also talk about other single cell analysis tools developed in my group, VIPER, an imputation method for SMART-seq data, and dmatch, an alignment tool for multiple scRNA-seq samples batch correction.</font></span><br></p>
+
+<p><font color="#000000" face="Arial, Helvetica, sans-serif"><br></font></p>
+
+<p align="center"><font color="#000000" face="Arial, Helvetica, sans-serif"><img src="../_assets/dahshu.wildapricot.org/resources/Pictures/Screen Shot 2018-11-02 at 4.45.56 PM (1).png" alt="" title="" border="0"><br></font></p>
+
+<p><font color="#000000" face="Arial, Helvetica, sans-serif"><br>
+<strong>Biosketch</strong>: &nbsp;Mengjie Chen is an assistant professor in Section of Genetic Medicine in the Department of Medicine and the Department of Human Genetics at the University of Chicago. Before joining U Chicago, she was an assistant professor in the Department of Biostatistics and Genetics at UNC-Chapel Hill from 2014 to 2016. She obtained her PhD in Computational Biology and Bioinformatics from Yale University in 2014 with Drs. Hongyu Zhao and Haifan Lin. Dr. Chen was a recipient of the Alfred P. Sloan Research fellowship in Computational and Molecular Evolutionary Biology in 2019. As a computational biologist and statistician by training, Dr. Chen’s research bridges statistical methodological advances and biomedical applications. Her group develop computational methods and open source tools to address challenges posed by high-throughput technologies for data analysis and interpretation. Currently, her research is focused on single cell genomics and epitranscriptomics.</font></p>
+
+<p><font color="#000000" face="Arial, Helvetica, sans-serif"><br></font></p>
+
+<p><font color="#000000" face="Arial, Helvetica, sans-serif"><br></font></p>
+              <div class="clearEndContainer"></div></div></div></div></div></div></div></div></div></div></div></div><div class="cornersContainer"><div class="bottomCorners"><!--[if gt IE 6]><!--><div class="r1"><div class="r2"><div class="r3"><div class="r4"><div class="r5"></div></div></div></div></div><!--<![endif]--><div class="c5"></div><div class="c4"></div><div class="c3"></div><div class="c2"></div><div class="c1"></div></div></div></div>
+        
+      <div class="clearEndContainer"></div></div></div></div></div></div></div></div></div></div></div></div><div class="cornersContainer"><div class="bottomCorners"><!--[if gt IE 6]><!--><div class="r1"><div class="r2"><div class="r3"><div class="r4"><div class="r5"></div></div></div></div></div><!--<![endif]--><div class="c5"></div><div class="c4"></div><div class="c3"></div><div class="c2"></div><div class="c1"></div></div></div></div>
+       
+  <div class="clearEndContainer"></div></div></div></div></div></div></div></div></div></div></div></div><div class="cornersContainer"><div class="bottomCorners"><!--[if gt IE 6]><!--><div class="r1"><div class="r2"><div class="r3"><div class="r4"><div class="r5"></div></div></div></div></div><!--<![endif]--><div class="c5"></div><div class="c4"></div><div class="c3"></div><div class="c2"></div><div class="c1"></div></div></div></div>
+
+
+
+<script>
+    var isBatchWizardRegistration = false;
+    if (isBatchWizardRegistration) 
+    {
+        var graphqlOuterEndpoint = '/sys/api/graphql';;
+        var batchEventRegistrationWizard = window.createBatchEventRegistrationWizard(graphqlOuterEndpoint);
+        
+        batchEventRegistrationWizard.openWizard({
+            eventId: 3934849
+        });
+    }
+</script>
+
+ 
+
+  
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2AE9EEA8" />
+</div></form></div></div>
+</div></div>
+		</div>
+	</div>
+	<!-- /content zone -->
+
+<!-- footer zone -->
+		<div class="zoneFooterOuter zoneOuter">
+			<div class="zoneFooter container_12">
+				<div class="zoneFooterInner zoneInner s1_grid_12 s2_grid_12 s3_grid_12 zoneRoundedCorners">
+<div id="id_Footer" data-componentId="Footer" class="WaPlaceHolder WaPlaceHolderFooter" style=""><div style=""><div id="id_lGaXJaj" class="WaGadgetOnly WaGadgetDonationGoal  gadgetStyle001" style="" data-componentId="lGaXJaj" ><div class="gadgetStyleTitle"><h4 class="gadgetTitleH4">
+Donation goal</h4></div>
+<div class="gadgetStyleBody " style=""  data-areaHeight="auto">
+<div class="donationGoalProgressContainer">
+	
+		<div class="progressBarWrapper progress-30">
+			<div class="progressPercentage">
+				<div>30%</div>
+			</div>
+			<div class="progressBar">
+				<div class="leftSide halfCircle"></div>
+				<div class="rightSide halfCircle"></div>
+			</div>
+		</div>
+		
+<div class="donationGoalProgressAmount">
+	<div>
+		<div class="donationGoalAmountTitle">Goal:</div>
+		<div class="donationGoalAmountValue">$10,000.00</div>
+	</div>
+</div><div class="donationGoalProgressCollected">
+	<div>
+		<div class="donationGoalCollectedTitle">Collected:</div>
+		<div class="donationGoalCollectedValue">$3,030.00</div>
+	</div>
+</div>	
+<div class="donationGoalButton">
+		<input type="button" class="typeButton" value="Donate" onclick="window.location.href='../Donate/index.html'" />
+	</div>
+</div>
+</div>
+</div></div>
+</div></div>
+			</div>
+		</div>
+		<div class="zoneFooter1Outer zoneOuter">
+			<div class="zoneFooter1 container_12">
+				<div class="zoneFooter1Inner zoneInner s1_grid_12 s2_grid_12 s3_grid_12">
+<div id="id_Footer1" data-componentId="Footer1" class="WaPlaceHolder WaPlaceHolderFooter1" style="background-color:transparent;"><div style=""><div id="id_t7HiHS1" class="WaGadgetFirst WaGadgetCustomMenu  gadgetStyle002Alt" style="margin-bottom:4px;" data-componentId="t7HiHS1" ><div class="gadgetStyleBody " style=""  data-areaHeight="auto">
+<div class="customMenuWrapper alignCenter">
+	<ul class="orientationHorizontal">
+
+<li>
+				<a href="../Home/index.html" title="Home">Home</a>
+			</li>
+<li>
+				<a href="../events/index.html" title="Events">Events</a>
+			</li>
+<li>
+				<a href="../join-us/index.html" title="Join Us">Join Us</a>
+			</li>
+<li>
+				<a href="../Donate/index.html" title="Support Us">Support Us</a>
+			</li>
+<li>
+				<a href="../contact-us/index.html" title="Contact Us">Contact Us</a>
+			</li>
+<li>
+				<a href="../forums/index.html" title="Forums">Forums</a>
+			</li>
+<li>
+				<a href="../HomeCHN/index.html" title="中文">中文</a>
+			</li>
+</ul>
+</div>
+</div>
+</div><div id="id_jiGAb7R" class="WaGadget WaGadgetContent  gadgetStyleNone" style="" data-componentId="jiGAb7R" ><div class="gadgetStyleBody gadgetContentEditableArea" style="" data-editableArea="0" data-areaHeight="auto">
+<p style="margin-bottom: 0px !important;"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="WaContentDivider WaContentDivider divider_style_border_solid" style="border-top-width: 1px; border-color: rgb(255, 255, 255);" data-wacomponenttype="ContentDivider"></p></div>
+</div><div id="id_JYjcSxI" data-componentId="JYjcSxI" class="WaLayoutContainer" style=""><table cellspacing="0" cellpadding="0" class="WaLayoutTable" style=""><tr data-componentId="JYjcSxI_row" class="WaLayoutRow"><td id="id_NKLhHHd" data-componentId="NKLhHHd" class="WaLayoutItem" style="width:25%;"><div id="id_A2ADHQ9" class="WaLayoutPlaceHolder placeHolderContainer" data-componentId="A2ADHQ9" style=""><div style=""><div id="id_WVmvaxY" class="WaGadgetOnly WaGadgetContent  gadgetStyleNone" style="" data-componentId="WVmvaxY" ><div class="gadgetStyleBody gadgetContentEditableArea" style="" data-editableArea="0" data-areaHeight="auto">
+<img src="../_assets/dahshu.wildapricot.org/resources/Pictures/5841c48ba6515b1e0ad75aa4.png" alt="" title="" border="0">
+
+<div alt="0" style="display: block;">
+  <div class="SL_ImTranslatorLogo" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/imtranslator-s.png&quot;); display: none;"></div>
+
+  <div style="display: none;"></div>
+
+  <div style="left: -10000px; top: -10000px; display: none;">
+    <div>
+      <div style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/up.png&quot;);"></div>
+
+      <div></div>
+
+      <div style="display: none;">
+        <div style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/delete.png&quot;);"></div>
+
+        <div></div>
+      </div>
+
+      <div>
+        <table cellspacing="1">
+          <tbody>
+            <tr>
+              <td class="SL_td" width="10%" align="right"><input type="checkbox" title="锁定语言"></td>
+
+              <td class="SL_td" width="20%" align="left"><select class="SL_lngs">
+                <option value="auto">
+                  检测语言
+                </option>
+
+                <option value="eo">
+                  世界语
+                </option>
+
+                <option value="zh-CN">
+                  中文简体
+                </option>
+
+                <option value="zh-TW">
+                  中文繁体
+                </option>
+
+                <option value="da">
+                  丹麦语
+                </option>
+
+                <option value="uk">
+                  乌克兰语
+                </option>
+
+                <option value="uz">
+                  乌兹别克语
+                </option>
+
+                <option value="ur">
+                  乌尔都语
+                </option>
+
+                <option value="hy">
+                  亚美尼亚语
+                </option>
+
+                <option value="ig">
+                  伊博语
+                </option>
+
+                <option value="ru">
+                  俄语
+                </option>
+
+                <option value="bg">
+                  保加利亚语
+                </option>
+
+                <option value="sd">
+                  信德语
+                </option>
+
+                <option value="sn">
+                  修纳语
+                </option>
+
+                <option value="si">
+                  僧伽罗语
+                </option>
+
+                <option value="hr">
+                  克罗地亚语
+                </option>
+
+                <option value="is">
+                  冰岛语
+                </option>
+
+                <option value="gl">
+                  加利西亚语
+                </option>
+
+                <option value="ca">
+                  加泰罗尼亚语
+                </option>
+
+                <option value="hu">
+                  匈牙利语
+                </option>
+
+                <option value="zu">
+                  南非祖鲁语
+                </option>
+
+                <option value="kn">
+                  卡纳达语
+                </option>
+
+                <option value="lb">
+                  卢森堡语
+                </option>
+
+                <option value="hi">
+                  印地语
+                </option>
+
+                <option value="su">
+                  印尼巽他语
+                </option>
+
+                <option value="jw">
+                  印尼爪哇语
+                </option>
+
+                <option value="id">
+                  印尼语
+                </option>
+
+                <option value="gu">
+                  古吉拉特语
+                </option>
+
+                <option value="ky">
+                  吉尔吉斯语
+                </option>
+
+                <option value="kk">
+                  哈萨克语
+                </option>
+
+                <option value="tr">
+                  土耳其语
+                </option>
+
+                <option value="tg">
+                  塔吉克语
+                </option>
+
+                <option value="sr">
+                  塞尔维亚语
+                </option>
+
+                <option value="st">
+                  塞索托语
+                </option>
+
+                <option value="haw">
+                  夏威夷语
+                </option>
+
+                <option value="cy">
+                  威尔士语
+                </option>
+
+                <option value="bn">
+                  孟加拉语
+                </option>
+
+                <option value="ceb">
+                  宿务语
+                </option>
+
+                <option value="ne">
+                  尼泊尔语
+                </option>
+
+                <option value="eu">
+                  巴斯克语
+                </option>
+
+                <option value="af">
+                  布尔语(南非荷兰语)
+                </option>
+
+                <option value="iw">
+                  希伯来语
+                </option>
+
+                <option value="el">
+                  希腊语
+                </option>
+
+                <option value="ku">
+                  库尔德语
+                </option>
+
+                <option value="fy">
+                  弗里西语
+                </option>
+
+                <option value="de">
+                  德语
+                </option>
+
+                <option value="it">
+                  意大利语
+                </option>
+
+                <option value="yi">
+                  意第绪语
+                </option>
+
+                <option value="la">
+                  拉丁语
+                </option>
+
+                <option value="lv">
+                  拉脱维亚语
+                </option>
+
+                <option value="no">
+                  挪威语
+                </option>
+
+                <option value="cs">
+                  捷克语
+                </option>
+
+                <option value="sk">
+                  斯洛伐克语
+                </option>
+
+                <option value="sl">
+                  斯洛文尼亚语
+                </option>
+
+                <option value="sw">
+                  斯瓦希里语
+                </option>
+
+                <option value="pa">
+                  旁遮普语
+                </option>
+
+                <option value="ja">
+                  日语
+                </option>
+
+                <option value="ps">
+                  普什图语
+                </option>
+
+                <option value="ka">
+                  格鲁吉亚语
+                </option>
+
+                <option value="mi">
+                  毛利语
+                </option>
+
+                <option value="fr">
+                  法语
+                </option>
+
+                <option value="pl">
+                  波兰语
+                </option>
+
+                <option value="bs">
+                  波斯尼亚语
+                </option>
+
+                <option value="fa">
+                  波斯语
+                </option>
+
+                <option value="te">
+                  泰卢固语
+                </option>
+
+                <option value="ta">
+                  泰米尔语
+                </option>
+
+                <option value="th">
+                  泰语
+                </option>
+
+                <option value="ht">
+                  海地克里奥尔语
+                </option>
+
+                <option value="ga">
+                  爱尔兰语
+                </option>
+
+                <option value="et">
+                  爱沙尼亚语
+                </option>
+
+                <option value="sv">
+                  瑞典语
+                </option>
+
+                <option value="be">
+                  白俄罗斯语
+                </option>
+
+                <option value="xh">
+                  科萨
+                </option>
+
+                <option value="co">
+                  科西嘉语
+                </option>
+
+                <option value="lt">
+                  立陶宛语
+                </option>
+
+                <option value="so">
+                  索马里语
+                </option>
+
+                <option value="yo">
+                  约鲁巴语
+                </option>
+
+                <option value="my">
+                  缅甸语
+                </option>
+
+                <option value="ro">
+                  罗马尼亚语
+                </option>
+
+                <option value="lo">
+                  老挝语
+                </option>
+
+                <option value="fi">
+                  芬兰语
+                </option>
+
+                <option value="gd">
+                  苏格兰盖尔语
+                </option>
+
+                <option value="hmn">
+                  苗语
+                </option>
+
+                <option value="en">
+                  英语
+                </option>
+
+                <option value="nl">
+                  荷兰语
+                </option>
+
+                <option value="tl">
+                  菲律宾语
+                </option>
+
+                <option value="sm">
+                  萨摩亚语
+                </option>
+
+                <option value="pt">
+                  葡萄牙语
+                </option>
+
+                <option value="mn">
+                  蒙古语
+                </option>
+
+                <option value="es">
+                  西班牙语
+                </option>
+
+                <option value="ha">
+                  豪萨语
+                </option>
+
+                <option value="vi">
+                  越南语
+                </option>
+
+                <option value="az">
+                  阿塞拜疆语
+                </option>
+
+                <option value="am">
+                  阿姆哈拉语
+                </option>
+
+                <option value="sq">
+                  阿尔巴尼亚语
+                </option>
+
+                <option value="ar">
+                  阿拉伯语
+                </option>
+
+                <option value="ko">
+                  韩语
+                </option>
+
+                <option value="mk">
+                  马其顿语
+                </option>
+
+                <option value="mg">
+                  马尔加什语
+                </option>
+
+                <option value="mr">
+                  马拉地语
+                </option>
+
+                <option value="ml">
+                  马拉雅拉姆语
+                </option>
+
+                <option value="ms">
+                  马来语
+                </option>
+
+                <option value="mt">
+                  马耳他语
+                </option>
+
+                <option value="km">
+                  高棉语
+                </option>
+
+                <option value="ny">
+                  齐切瓦语
+                </option>
+              </select></td>
+
+              <td class="SL_td" width="3" align="center">
+                <div title="切换语言" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/switchb.png&quot;);"></div>
+              </td>
+
+              <td class="SL_td" width="20%" align="left"><select class="SL_lngs">
+                <option value="eo">
+                  世界语
+                </option>
+
+                <option value="zh-CN">
+                  中文简体
+                </option>
+
+                <option value="zh-TW">
+                  中文繁体
+                </option>
+
+                <option value="da">
+                  丹麦语
+                </option>
+
+                <option value="uk">
+                  乌克兰语
+                </option>
+
+                <option value="uz">
+                  乌兹别克语
+                </option>
+
+                <option value="ur">
+                  乌尔都语
+                </option>
+
+                <option value="hy">
+                  亚美尼亚语
+                </option>
+
+                <option value="ig">
+                  伊博语
+                </option>
+
+                <option value="ru">
+                  俄语
+                </option>
+
+                <option value="bg">
+                  保加利亚语
+                </option>
+
+                <option value="sd">
+                  信德语
+                </option>
+
+                <option value="sn">
+                  修纳语
+                </option>
+
+                <option value="si">
+                  僧伽罗语
+                </option>
+
+                <option value="hr">
+                  克罗地亚语
+                </option>
+
+                <option value="is">
+                  冰岛语
+                </option>
+
+                <option value="gl">
+                  加利西亚语
+                </option>
+
+                <option value="ca">
+                  加泰罗尼亚语
+                </option>
+
+                <option value="hu">
+                  匈牙利语
+                </option>
+
+                <option value="zu">
+                  南非祖鲁语
+                </option>
+
+                <option value="kn">
+                  卡纳达语
+                </option>
+
+                <option value="lb">
+                  卢森堡语
+                </option>
+
+                <option value="hi">
+                  印地语
+                </option>
+
+                <option value="su">
+                  印尼巽他语
+                </option>
+
+                <option value="jw">
+                  印尼爪哇语
+                </option>
+
+                <option value="id">
+                  印尼语
+                </option>
+
+                <option value="gu">
+                  古吉拉特语
+                </option>
+
+                <option value="ky">
+                  吉尔吉斯语
+                </option>
+
+                <option value="kk">
+                  哈萨克语
+                </option>
+
+                <option value="tr">
+                  土耳其语
+                </option>
+
+                <option value="tg">
+                  塔吉克语
+                </option>
+
+                <option value="sr">
+                  塞尔维亚语
+                </option>
+
+                <option value="st">
+                  塞索托语
+                </option>
+
+                <option value="haw">
+                  夏威夷语
+                </option>
+
+                <option value="cy">
+                  威尔士语
+                </option>
+
+                <option value="bn">
+                  孟加拉语
+                </option>
+
+                <option value="ceb">
+                  宿务语
+                </option>
+
+                <option value="ne">
+                  尼泊尔语
+                </option>
+
+                <option value="eu">
+                  巴斯克语
+                </option>
+
+                <option value="af">
+                  布尔语(南非荷兰语)
+                </option>
+
+                <option value="iw">
+                  希伯来语
+                </option>
+
+                <option value="el">
+                  希腊语
+                </option>
+
+                <option value="ku">
+                  库尔德语
+                </option>
+
+                <option value="fy">
+                  弗里西语
+                </option>
+
+                <option value="de">
+                  德语
+                </option>
+
+                <option value="it">
+                  意大利语
+                </option>
+
+                <option value="yi">
+                  意第绪语
+                </option>
+
+                <option value="la">
+                  拉丁语
+                </option>
+
+                <option value="lv">
+                  拉脱维亚语
+                </option>
+
+                <option value="no">
+                  挪威语
+                </option>
+
+                <option value="cs">
+                  捷克语
+                </option>
+
+                <option value="sk">
+                  斯洛伐克语
+                </option>
+
+                <option value="sl">
+                  斯洛文尼亚语
+                </option>
+
+                <option value="sw">
+                  斯瓦希里语
+                </option>
+
+                <option value="pa">
+                  旁遮普语
+                </option>
+
+                <option value="ja">
+                  日语
+                </option>
+
+                <option value="ps">
+                  普什图语
+                </option>
+
+                <option value="ka">
+                  格鲁吉亚语
+                </option>
+
+                <option value="mi">
+                  毛利语
+                </option>
+
+                <option value="fr">
+                  法语
+                </option>
+
+                <option value="pl">
+                  波兰语
+                </option>
+
+                <option value="bs">
+                  波斯尼亚语
+                </option>
+
+                <option value="fa">
+                  波斯语
+                </option>
+
+                <option value="te">
+                  泰卢固语
+                </option>
+
+                <option value="ta">
+                  泰米尔语
+                </option>
+
+                <option value="th">
+                  泰语
+                </option>
+
+                <option value="ht">
+                  海地克里奥尔语
+                </option>
+
+                <option value="ga">
+                  爱尔兰语
+                </option>
+
+                <option value="et">
+                  爱沙尼亚语
+                </option>
+
+                <option value="sv">
+                  瑞典语
+                </option>
+
+                <option value="be">
+                  白俄罗斯语
+                </option>
+
+                <option value="xh">
+                  科萨
+                </option>
+
+                <option value="co">
+                  科西嘉语
+                </option>
+
+                <option value="lt">
+                  立陶宛语
+                </option>
+
+                <option value="so">
+                  索马里语
+                </option>
+
+                <option value="yo">
+                  约鲁巴语
+                </option>
+
+                <option value="my">
+                  缅甸语
+                </option>
+
+                <option value="ro">
+                  罗马尼亚语
+                </option>
+
+                <option value="lo">
+                  老挝语
+                </option>
+
+                <option value="fi">
+                  芬兰语
+                </option>
+
+                <option value="gd">
+                  苏格兰盖尔语
+                </option>
+
+                <option value="hmn">
+                  苗语
+                </option>
+
+                <option value="en">
+                  英语
+                </option>
+
+                <option value="nl">
+                  荷兰语
+                </option>
+
+                <option value="tl">
+                  菲律宾语
+                </option>
+
+                <option value="sm">
+                  萨摩亚语
+                </option>
+
+                <option value="pt">
+                  葡萄牙语
+                </option>
+
+                <option value="mn">
+                  蒙古语
+                </option>
+
+                <option value="es">
+                  西班牙语
+                </option>
+
+                <option value="ha">
+                  豪萨语
+                </option>
+
+                <option value="vi">
+                  越南语
+                </option>
+
+                <option value="az">
+                  阿塞拜疆语
+                </option>
+
+                <option value="am">
+                  阿姆哈拉语
+                </option>
+
+                <option value="sq">
+                  阿尔巴尼亚语
+                </option>
+
+                <option value="ar">
+                  阿拉伯语
+                </option>
+
+                <option value="ko">
+                  韩语
+                </option>
+
+                <option value="mk">
+                  马其顿语
+                </option>
+
+                <option value="mg">
+                  马尔加什语
+                </option>
+
+                <option value="mr">
+                  马拉地语
+                </option>
+
+                <option value="ml">
+                  马拉雅拉姆语
+                </option>
+
+                <option value="ms">
+                  马来语
+                </option>
+
+                <option value="mt">
+                  马耳他语
+                </option>
+
+                <option value="km">
+                  高棉语
+                </option>
+
+                <option value="ny">
+                  齐切瓦语
+                </option>
+              </select></td>
+
+              <td class="SL_td" width="5%" align="center"></td>
+
+              <td class="SL_td" width="8%" align="center">
+                <div title="undefined" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/ttsvoice.png&quot;);"></div>
+              </td>
+
+              <td class="SL_td" width="8%" align="center">
+                <div title="复制译文" class="SL_copy" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/copy.png&quot;);">
+                  <div></div>
+                </div>
+              </td>
+
+              <td class="SL_td" width="8%" align="center">
+                <div></div>
+
+                <div title="字体大小" class="SL_bbl_font" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/font.png&quot;);"></div>
+              </td>
+
+              <td class="SL_td" width="8%" align="center">
+                <div title="帮助" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/bhelp.png&quot;);"></div>
+              </td>
+
+              <td class="SL_td" width="15%" align="right">
+                <div class="SL_pin_off" title="固定弹出窗口" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/pin-on.png&quot;);"></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div style="visibility: visible;"></div>
+
+    <div class="SL_loading" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/loading.gif&quot;);"></div>
+
+    <div style="display: none;"></div>
+
+    <div style="display: none;">
+      文本转语音功能仅限200个字符
+    </div>
+
+    <div style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/bg3.png&quot;) rgb(255, 255, 255);">
+      <div style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/down.png&quot;);"></div>
+
+      <table width="100%">
+        <tbody>
+          <tr>
+            <td class="SL_td" width="5%" align="center"><input type="checkbox" checked="1" title="显示翻译器的按钮 3 秒"></td>
+
+            <td class="SL_td" width="5%" align="left">
+              <div title="显示翻译器的按钮 3 秒" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/bbl-logo.png&quot;);"></div>
+            </td>
+
+            <td class="SL_td" width="70%" align="center"><a href="chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/html/options/options.html?bbl" target="_blank" class="SL_options" title="显示选项">选项</a> : <a href="chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/html/options/options.html?hist" target="_blank" class="SL_options" title="翻译历史记录">历史</a> : <a href="chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/html/options/options.html?feed" target="_blank" class="SL_options" title="反馈">反馈</a> : <a href="https://imtranslator.net/extensions/?tp=chr-ImTranslator&amp;a=0" target="_blank" class="SL_options" title="作出一点点贡献">Donate</a></td>
+
+            <td class="SL_td" width="15%" align="right"><span class="SL_options" title="关闭">关闭</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div></div>
+</div></div></div></td><td style="" data-componentId="NKLhHHd_separator" class="WaLayoutSeparator"><div style="width: inherit;"></div></td><td id="id_SoNY5Km" data-componentId="SoNY5Km" class="WaLayoutItem" style="width:25%;"><div id="id_CyzpPZY" class="WaLayoutPlaceHolder placeHolderContainer" data-componentId="CyzpPZY" style=""><div style=""><div id="id_Ke4aFZo" class="WaGadgetOnly WaGadgetContent  gadgetStyleNone" style="" data-componentId="Ke4aFZo" ><div class="gadgetStyleBody gadgetContentEditableArea" style="" data-editableArea="0" data-areaHeight="auto">
+<p><img src="../_assets/dahshu.wildapricot.org/resources/Pictures/58e91a69eb97430e81906501.png" alt="" title="" border="0"><br></p></div>
+</div></div></div></td><td style="" data-componentId="SoNY5Km_separator" class="WaLayoutSeparator"><div style="width: inherit;"></div></td><td id="id_4qu3EQx" data-componentId="4qu3EQx" class="WaLayoutItem" style="width:25%;"><div id="id_myN92V5" class="WaLayoutPlaceHolder placeHolderContainer" data-componentId="myN92V5" style=""><div style=""><div id="id_a2b1VSL" class="WaGadgetOnly WaGadgetContent  gadgetStyleNone" style="" data-componentId="a2b1VSL" ><div class="gadgetStyleBody gadgetContentEditableArea" style="" data-editableArea="0" data-areaHeight="auto">
+<p><img src="../_assets/dahshu.wildapricot.org/resources/Pictures/58e91ad5eb97430e81906503.png" alt="" title="" border="0"><br></p></div>
+</div></div></div></td><td style="" data-componentId="4qu3EQx_separator" class="WaLayoutSeparator"><div style="width: inherit;"></div></td><td id="id_NJrgsXr" data-componentId="NJrgsXr" class="WaLayoutItem" style="width:25%;"><div id="id_8lEXH5A" class="WaLayoutPlaceHolder placeHolderContainer" data-componentId="8lEXH5A" style=""><div style=""><div id="id_uxGXyFw" class="WaGadgetOnly WaGadgetContent  gadgetStyleNone" style="" data-componentId="uxGXyFw" ><div class="gadgetStyleBody gadgetContentEditableArea" style="" data-editableArea="0" data-areaHeight="auto">
+<img src="../_assets/dahshu.wildapricot.org/resources/Pictures/58e91b24eb97430e81906505.png" alt="" title="" border="0"></div>
+</div></div></div></td></tr></table> </div><div id="id_OUKsTI2" data-componentId="OUKsTI2" class="WaLayoutContainerLast" style=""><table cellspacing="0" cellpadding="0" class="WaLayoutTable" style=""><tr data-componentId="OUKsTI2_row" class="WaLayoutRow"><td id="id_3GiIxoW" data-componentId="3GiIxoW" class="WaLayoutItem" style="width:80%;"></td><td style="" data-componentId="3GiIxoW_separator" class="WaLayoutSeparator"><div style="width: inherit;"></div></td><td id="id_47d3uqN" data-componentId="47d3uqN" class="WaLayoutItem" style="width:20%;"><div id="id_TnKwZaN" class="WaLayoutPlaceHolder placeHolderContainer" data-componentId="TnKwZaN" style=""><div style=""><div id="id_4Akyy4Z" class="WaGadgetOnly WaGadgetContent  gadgetStyleNone" style="" data-componentId="4Akyy4Z" ><div class="gadgetStyleBody gadgetContentEditableArea" style="" data-editableArea="0" data-areaHeight="auto">
+<p align="right"><font color="#666666">@Dahshu 2020</font></p>
+
+<div alt="0" style="display: block;">
+  <div class="SL_ImTranslatorLogo" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/imtranslator-s.png&quot;); display: none; opacity: 1; left: 5px; top: 20px;"></div>
+
+  <div style="display: none;"></div>
+
+  <div style="left: 0px; top: 9px; display: none;">
+    <div>
+      <div style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/up.png&quot;); display: none;"></div>
+
+      <div></div>
+
+      <div>
+        <div style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/delete.png&quot;);"></div>
+
+        <div></div>
+      </div>
+
+      <div>
+        <table cellspacing="1">
+          <tbody>
+            <tr>
+              <td class="SL_td" width="10%" align="right"><input type="checkbox" title="锁定语言"></td>
+
+              <td class="SL_td" width="20%" align="left"><select class="SL_lngs">
+                <option value="auto">
+                  检测语言
+                </option>
+
+                <option value="eo">
+                  世界语
+                </option>
+
+                <option value="zh-CN">
+                  中文简体
+                </option>
+
+                <option value="zh-TW">
+                  中文繁体
+                </option>
+
+                <option value="da">
+                  丹麦语
+                </option>
+
+                <option value="uk">
+                  乌克兰语
+                </option>
+
+                <option value="uz">
+                  乌兹别克语
+                </option>
+
+                <option value="ur">
+                  乌尔都语
+                </option>
+
+                <option value="hy">
+                  亚美尼亚语
+                </option>
+
+                <option value="ig">
+                  伊博语
+                </option>
+
+                <option value="ru">
+                  俄语
+                </option>
+
+                <option value="bg">
+                  保加利亚语
+                </option>
+
+                <option value="sd">
+                  信德语
+                </option>
+
+                <option value="sn">
+                  修纳语
+                </option>
+
+                <option value="si">
+                  僧伽罗语
+                </option>
+
+                <option value="hr">
+                  克罗地亚语
+                </option>
+
+                <option value="is">
+                  冰岛语
+                </option>
+
+                <option value="gl">
+                  加利西亚语
+                </option>
+
+                <option value="ca">
+                  加泰罗尼亚语
+                </option>
+
+                <option value="hu">
+                  匈牙利语
+                </option>
+
+                <option value="zu">
+                  南非祖鲁语
+                </option>
+
+                <option value="kn">
+                  卡纳达语
+                </option>
+
+                <option value="lb">
+                  卢森堡语
+                </option>
+
+                <option value="hi">
+                  印地语
+                </option>
+
+                <option value="su">
+                  印尼巽他语
+                </option>
+
+                <option value="jw">
+                  印尼爪哇语
+                </option>
+
+                <option value="id">
+                  印尼语
+                </option>
+
+                <option value="gu">
+                  古吉拉特语
+                </option>
+
+                <option value="ky">
+                  吉尔吉斯语
+                </option>
+
+                <option value="kk">
+                  哈萨克语
+                </option>
+
+                <option value="tr">
+                  土耳其语
+                </option>
+
+                <option value="tg">
+                  塔吉克语
+                </option>
+
+                <option value="sr">
+                  塞尔维亚语
+                </option>
+
+                <option value="st">
+                  塞索托语
+                </option>
+
+                <option value="haw">
+                  夏威夷语
+                </option>
+
+                <option value="cy">
+                  威尔士语
+                </option>
+
+                <option value="bn">
+                  孟加拉语
+                </option>
+
+                <option value="ceb">
+                  宿务语
+                </option>
+
+                <option value="ne">
+                  尼泊尔语
+                </option>
+
+                <option value="eu">
+                  巴斯克语
+                </option>
+
+                <option value="af">
+                  布尔语(南非荷兰语)
+                </option>
+
+                <option value="iw">
+                  希伯来语
+                </option>
+
+                <option value="el">
+                  希腊语
+                </option>
+
+                <option value="ku">
+                  库尔德语
+                </option>
+
+                <option value="fy">
+                  弗里西语
+                </option>
+
+                <option value="de">
+                  德语
+                </option>
+
+                <option value="it">
+                  意大利语
+                </option>
+
+                <option value="yi">
+                  意第绪语
+                </option>
+
+                <option value="la">
+                  拉丁语
+                </option>
+
+                <option value="lv">
+                  拉脱维亚语
+                </option>
+
+                <option value="no">
+                  挪威语
+                </option>
+
+                <option value="cs">
+                  捷克语
+                </option>
+
+                <option value="sk">
+                  斯洛伐克语
+                </option>
+
+                <option value="sl">
+                  斯洛文尼亚语
+                </option>
+
+                <option value="sw">
+                  斯瓦希里语
+                </option>
+
+                <option value="pa">
+                  旁遮普语
+                </option>
+
+                <option value="ja">
+                  日语
+                </option>
+
+                <option value="ps">
+                  普什图语
+                </option>
+
+                <option value="ka">
+                  格鲁吉亚语
+                </option>
+
+                <option value="mi">
+                  毛利语
+                </option>
+
+                <option value="fr">
+                  法语
+                </option>
+
+                <option value="pl">
+                  波兰语
+                </option>
+
+                <option value="bs">
+                  波斯尼亚语
+                </option>
+
+                <option value="fa">
+                  波斯语
+                </option>
+
+                <option value="te">
+                  泰卢固语
+                </option>
+
+                <option value="ta">
+                  泰米尔语
+                </option>
+
+                <option value="th">
+                  泰语
+                </option>
+
+                <option value="ht">
+                  海地克里奥尔语
+                </option>
+
+                <option value="ga">
+                  爱尔兰语
+                </option>
+
+                <option value="et">
+                  爱沙尼亚语
+                </option>
+
+                <option value="sv">
+                  瑞典语
+                </option>
+
+                <option value="be">
+                  白俄罗斯语
+                </option>
+
+                <option value="xh">
+                  科萨
+                </option>
+
+                <option value="co">
+                  科西嘉语
+                </option>
+
+                <option value="lt">
+                  立陶宛语
+                </option>
+
+                <option value="so">
+                  索马里语
+                </option>
+
+                <option value="yo">
+                  约鲁巴语
+                </option>
+
+                <option value="my">
+                  缅甸语
+                </option>
+
+                <option value="ro">
+                  罗马尼亚语
+                </option>
+
+                <option value="lo">
+                  老挝语
+                </option>
+
+                <option value="fi">
+                  芬兰语
+                </option>
+
+                <option value="gd">
+                  苏格兰盖尔语
+                </option>
+
+                <option value="hmn">
+                  苗语
+                </option>
+
+                <option value="en">
+                  英语
+                </option>
+
+                <option value="nl">
+                  荷兰语
+                </option>
+
+                <option value="tl">
+                  菲律宾语
+                </option>
+
+                <option value="sm">
+                  萨摩亚语
+                </option>
+
+                <option value="pt">
+                  葡萄牙语
+                </option>
+
+                <option value="mn">
+                  蒙古语
+                </option>
+
+                <option value="es">
+                  西班牙语
+                </option>
+
+                <option value="ha">
+                  豪萨语
+                </option>
+
+                <option value="vi">
+                  越南语
+                </option>
+
+                <option value="az">
+                  阿塞拜疆语
+                </option>
+
+                <option value="am">
+                  阿姆哈拉语
+                </option>
+
+                <option value="sq">
+                  阿尔巴尼亚语
+                </option>
+
+                <option value="ar">
+                  阿拉伯语
+                </option>
+
+                <option value="ko">
+                  韩语
+                </option>
+
+                <option value="mk">
+                  马其顿语
+                </option>
+
+                <option value="mg">
+                  马尔加什语
+                </option>
+
+                <option value="mr">
+                  马拉地语
+                </option>
+
+                <option value="ml">
+                  马拉雅拉姆语
+                </option>
+
+                <option value="ms">
+                  马来语
+                </option>
+
+                <option value="mt">
+                  马耳他语
+                </option>
+
+                <option value="km">
+                  高棉语
+                </option>
+
+                <option value="ny">
+                  齐切瓦语
+                </option>
+              </select></td>
+
+              <td class="SL_td" width="3" align="center">
+                <div title="切换语言" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/switchb.png&quot;);"></div>
+              </td>
+
+              <td class="SL_td" width="20%" align="left"><select class="SL_lngs">
+                <option value="eo">
+                  世界语
+                </option>
+
+                <option value="zh-CN">
+                  中文简体
+                </option>
+
+                <option value="zh-TW">
+                  中文繁体
+                </option>
+
+                <option value="da">
+                  丹麦语
+                </option>
+
+                <option value="uk">
+                  乌克兰语
+                </option>
+
+                <option value="uz">
+                  乌兹别克语
+                </option>
+
+                <option value="ur">
+                  乌尔都语
+                </option>
+
+                <option value="hy">
+                  亚美尼亚语
+                </option>
+
+                <option value="ig">
+                  伊博语
+                </option>
+
+                <option value="ru">
+                  俄语
+                </option>
+
+                <option value="bg">
+                  保加利亚语
+                </option>
+
+                <option value="sd">
+                  信德语
+                </option>
+
+                <option value="sn">
+                  修纳语
+                </option>
+
+                <option value="si">
+                  僧伽罗语
+                </option>
+
+                <option value="hr">
+                  克罗地亚语
+                </option>
+
+                <option value="is">
+                  冰岛语
+                </option>
+
+                <option value="gl">
+                  加利西亚语
+                </option>
+
+                <option value="ca">
+                  加泰罗尼亚语
+                </option>
+
+                <option value="hu">
+                  匈牙利语
+                </option>
+
+                <option value="zu">
+                  南非祖鲁语
+                </option>
+
+                <option value="kn">
+                  卡纳达语
+                </option>
+
+                <option value="lb">
+                  卢森堡语
+                </option>
+
+                <option value="hi">
+                  印地语
+                </option>
+
+                <option value="su">
+                  印尼巽他语
+                </option>
+
+                <option value="jw">
+                  印尼爪哇语
+                </option>
+
+                <option value="id">
+                  印尼语
+                </option>
+
+                <option value="gu">
+                  古吉拉特语
+                </option>
+
+                <option value="ky">
+                  吉尔吉斯语
+                </option>
+
+                <option value="kk">
+                  哈萨克语
+                </option>
+
+                <option value="tr">
+                  土耳其语
+                </option>
+
+                <option value="tg">
+                  塔吉克语
+                </option>
+
+                <option value="sr">
+                  塞尔维亚语
+                </option>
+
+                <option value="st">
+                  塞索托语
+                </option>
+
+                <option value="haw">
+                  夏威夷语
+                </option>
+
+                <option value="cy">
+                  威尔士语
+                </option>
+
+                <option value="bn">
+                  孟加拉语
+                </option>
+
+                <option value="ceb">
+                  宿务语
+                </option>
+
+                <option value="ne">
+                  尼泊尔语
+                </option>
+
+                <option value="eu">
+                  巴斯克语
+                </option>
+
+                <option value="af">
+                  布尔语(南非荷兰语)
+                </option>
+
+                <option value="iw">
+                  希伯来语
+                </option>
+
+                <option value="el">
+                  希腊语
+                </option>
+
+                <option value="ku">
+                  库尔德语
+                </option>
+
+                <option value="fy">
+                  弗里西语
+                </option>
+
+                <option value="de">
+                  德语
+                </option>
+
+                <option value="it">
+                  意大利语
+                </option>
+
+                <option value="yi">
+                  意第绪语
+                </option>
+
+                <option value="la">
+                  拉丁语
+                </option>
+
+                <option value="lv">
+                  拉脱维亚语
+                </option>
+
+                <option value="no">
+                  挪威语
+                </option>
+
+                <option value="cs">
+                  捷克语
+                </option>
+
+                <option value="sk">
+                  斯洛伐克语
+                </option>
+
+                <option value="sl">
+                  斯洛文尼亚语
+                </option>
+
+                <option value="sw">
+                  斯瓦希里语
+                </option>
+
+                <option value="pa">
+                  旁遮普语
+                </option>
+
+                <option value="ja">
+                  日语
+                </option>
+
+                <option value="ps">
+                  普什图语
+                </option>
+
+                <option value="ka">
+                  格鲁吉亚语
+                </option>
+
+                <option value="mi">
+                  毛利语
+                </option>
+
+                <option value="fr">
+                  法语
+                </option>
+
+                <option value="pl">
+                  波兰语
+                </option>
+
+                <option value="bs">
+                  波斯尼亚语
+                </option>
+
+                <option value="fa">
+                  波斯语
+                </option>
+
+                <option value="te">
+                  泰卢固语
+                </option>
+
+                <option value="ta">
+                  泰米尔语
+                </option>
+
+                <option value="th">
+                  泰语
+                </option>
+
+                <option value="ht">
+                  海地克里奥尔语
+                </option>
+
+                <option value="ga">
+                  爱尔兰语
+                </option>
+
+                <option value="et">
+                  爱沙尼亚语
+                </option>
+
+                <option value="sv">
+                  瑞典语
+                </option>
+
+                <option value="be">
+                  白俄罗斯语
+                </option>
+
+                <option value="xh">
+                  科萨
+                </option>
+
+                <option value="co">
+                  科西嘉语
+                </option>
+
+                <option value="lt">
+                  立陶宛语
+                </option>
+
+                <option value="so">
+                  索马里语
+                </option>
+
+                <option value="yo">
+                  约鲁巴语
+                </option>
+
+                <option value="my">
+                  缅甸语
+                </option>
+
+                <option value="ro">
+                  罗马尼亚语
+                </option>
+
+                <option value="lo">
+                  老挝语
+                </option>
+
+                <option value="fi">
+                  芬兰语
+                </option>
+
+                <option value="gd">
+                  苏格兰盖尔语
+                </option>
+
+                <option value="hmn">
+                  苗语
+                </option>
+
+                <option value="en">
+                  英语
+                </option>
+
+                <option value="nl">
+                  荷兰语
+                </option>
+
+                <option value="tl">
+                  菲律宾语
+                </option>
+
+                <option value="sm">
+                  萨摩亚语
+                </option>
+
+                <option value="pt">
+                  葡萄牙语
+                </option>
+
+                <option value="mn">
+                  蒙古语
+                </option>
+
+                <option value="es">
+                  西班牙语
+                </option>
+
+                <option value="ha">
+                  豪萨语
+                </option>
+
+                <option value="vi">
+                  越南语
+                </option>
+
+                <option value="az">
+                  阿塞拜疆语
+                </option>
+
+                <option value="am">
+                  阿姆哈拉语
+                </option>
+
+                <option value="sq">
+                  阿尔巴尼亚语
+                </option>
+
+                <option value="ar">
+                  阿拉伯语
+                </option>
+
+                <option value="ko">
+                  韩语
+                </option>
+
+                <option value="mk">
+                  马其顿语
+                </option>
+
+                <option value="mg">
+                  马尔加什语
+                </option>
+
+                <option value="mr">
+                  马拉地语
+                </option>
+
+                <option value="ml">
+                  马拉雅拉姆语
+                </option>
+
+                <option value="ms">
+                  马来语
+                </option>
+
+                <option value="mt">
+                  马耳他语
+                </option>
+
+                <option value="km">
+                  高棉语
+                </option>
+
+                <option value="ny">
+                  齐切瓦语
+                </option>
+              </select></td>
+
+              <td class="SL_td" width="5%" align="center"></td>
+
+              <td class="SL_td" width="8%" align="center">
+                <div title="undefined" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/ttsvoice.png&quot;);"></div>
+              </td>
+
+              <td class="SL_td" width="8%" align="center">
+                <div title="复制译文" class="SL_copy" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/copy.png&quot;);">
+                  <div></div>
+                </div>
+              </td>
+
+              <td class="SL_td" width="8%" align="center">
+                <div></div>
+
+                <div title="字体大小" class="SL_bbl_font" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/font.png&quot;);"></div>
+              </td>
+
+              <td class="SL_td" width="8%" align="center">
+                <div title="帮助" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/bhelp.png&quot;);"></div>
+              </td>
+
+              <td class="SL_td" width="15%" align="right">
+                <div class="SL_pin_off" title="固定弹出窗口" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/pin-off.png&quot;);"></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div style="visibility: visible;"></div>
+
+    <div class="SL_loading" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/loading.gif&quot;);"></div>
+
+    <div style="display: none;"></div>
+
+    <div style="display: none;">
+      文本转语音功能仅限200个字符
+    </div>
+
+    <div style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/bg3.png&quot;) rgb(255, 255, 255);">
+      <div style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/down.png&quot;); display: block;"></div>
+
+      <table width="100%">
+        <tbody>
+          <tr>
+            <td class="SL_td" width="5%" align="center"><input type="checkbox" checked="1" title="显示翻译器的按钮 3 秒"></td>
+
+            <td class="SL_td" width="5%" align="left">
+              <div title="显示翻译器的按钮 3 秒" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/bbl-logo.png&quot;);"></div>
+            </td>
+
+            <td class="SL_td" width="70%" align="center"><a href="chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/html/options/options.html?bbl" target="_blank" class="SL_options" title="显示选项">选项</a> : <a href="chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/html/options/options.html?hist" target="_blank" class="SL_options" title="翻译历史记录">历史</a> : <a href="chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/html/options/options.html?feed" target="_blank" class="SL_options" title="反馈">反馈</a> : <a href="https://imtranslator.net/extensions/?tp=chr-ImTranslator&amp;a=0" target="_blank" class="SL_options" title="作出一点点贡献">Donate</a></td>
+
+            <td class="SL_td" width="15%" align="right"><span class="SL_options" title="关闭">关闭</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<div alt="0" style="display: block;"><div class="SL_ImTranslatorLogo" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/imtranslator-s.png&quot;); display: none; opacity: 1;"></div><div style="display: none;"></div><div style="left: 0px; top: 9px; display: none;"><div><div style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/up.png&quot;); display: none;"></div><div><div class="SL_BL_LABLE_ON" title="Google"><div>G</div></div><div class="SL_BL_LABLE_ON" title="Microsoft"><div>M</div></div><div class="SL_BL_LABLE_ON" title="Translator"><div>T</div></div><div class="SL_BL_LABLE_ON" title="Yandex"><div>Y</div></div></div><div style="display: none;"><div style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/delete.png&quot;);"></div><div></div></div><div><table cellspacing="1"><tbody><tr><td class="SL_td" width="10%" align="right"><input type="checkbox" title="锁定语言"></td><td class="SL_td" width="20%" align="left"><select class="SL_lngs"><option value="auto">检测语言</option><option value="eo">世界语</option><option value="zh-CN">中文简体</option><option value="zh-TW">中文繁体</option><option value="da">丹麦语</option><option value="uk">乌克兰语</option><option value="uz">乌兹别克语</option><option value="ur">乌尔都语</option><option value="hy">亚美尼亚语</option><option value="ig">伊博语</option><option value="ru">俄语</option><option value="bg">保加利亚语</option><option value="sd">信德语</option><option value="sn">修纳语</option><option value="si">僧伽罗语</option><option value="hr">克罗地亚语</option><option value="is">冰岛语</option><option value="gl">加利西亚语</option><option value="ca">加泰罗尼亚语</option><option value="hu">匈牙利语</option><option value="zu">南非祖鲁语</option><option value="kn">卡纳达语</option><option value="lb">卢森堡语</option><option value="hi">印地语</option><option value="su">印尼巽他语</option><option value="jw">印尼爪哇语</option><option value="id">印尼语</option><option value="gu">古吉拉特语</option><option value="ky">吉尔吉斯语</option><option value="kk">哈萨克语</option><option value="tr">土耳其语</option><option value="tg">塔吉克语</option><option value="sr">塞尔维亚语</option><option value="st">塞索托语</option><option value="haw">夏威夷语</option><option value="cy">威尔士语</option><option value="bn">孟加拉语</option><option value="ceb">宿务语</option><option value="ne">尼泊尔语</option><option value="eu">巴斯克语</option><option value="af">布尔语(南非荷兰语)</option><option value="iw">希伯来语</option><option value="el">希腊语</option><option value="ku">库尔德语</option><option value="fy">弗里西语</option><option value="de">德语</option><option value="it">意大利语</option><option value="yi">意第绪语</option><option value="la">拉丁语</option><option value="lv">拉脱维亚语</option><option value="no">挪威语</option><option value="cs">捷克语</option><option value="sk">斯洛伐克语</option><option value="sl">斯洛文尼亚语</option><option value="sw">斯瓦希里语</option><option value="pa">旁遮普语</option><option value="ja">日语</option><option value="ps">普什图语</option><option value="ka">格鲁吉亚语</option><option value="mi">毛利语</option><option value="fr">法语</option><option value="pl">波兰语</option><option value="bs">波斯尼亚语</option><option value="fa">波斯语</option><option value="te">泰卢固语</option><option value="ta">泰米尔语</option><option value="th">泰语</option><option value="ht">海地克里奥尔语</option><option value="ga">爱尔兰语</option><option value="et">爱沙尼亚语</option><option value="sv">瑞典语</option><option value="be">白俄罗斯语</option><option value="xh">科萨</option><option value="co">科西嘉语</option><option value="lt">立陶宛语</option><option value="so">索马里语</option><option value="yo">约鲁巴语</option><option value="my">缅甸语</option><option value="ro">罗马尼亚语</option><option value="lo">老挝语</option><option value="fi">芬兰语</option><option value="gd">苏格兰盖尔语</option><option value="hmn">苗语</option><option value="en">英语</option><option value="nl">荷兰语</option><option value="tl">菲律宾语</option><option value="sm">萨摩亚语</option><option value="pt">葡萄牙语</option><option value="mn">蒙古语</option><option value="es">西班牙语</option><option value="ha">豪萨语</option><option value="vi">越南语</option><option value="az">阿塞拜疆语</option><option value="am">阿姆哈拉语</option><option value="sq">阿尔巴尼亚语</option><option value="ar">阿拉伯语</option><option value="ko">韩语</option><option value="mk">马其顿语</option><option value="mg">马尔加什语</option><option value="mr">马拉地语</option><option value="ml">马拉雅拉姆语</option><option value="ms">马来语</option><option value="mt">马耳他语</option><option value="km">高棉语</option><option value="ny">齐切瓦语</option></select></td><td class="SL_td" width="3" align="center"><div title="切换语言" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/switchb.png&quot;);"></div></td><td class="SL_td" width="20%" align="left"><select class="SL_lngs"><option selected="selected" value="eo">世界语</option><option value="zh-CN">中文简体</option><option value="zh-TW">中文繁体</option><option value="da">丹麦语</option><option value="uk">乌克兰语</option><option value="uz">乌兹别克语</option><option value="ur">乌尔都语</option><option value="hy">亚美尼亚语</option><option value="ig">伊博语</option><option value="ru">俄语</option><option value="bg">保加利亚语</option><option value="sd">信德语</option><option value="sn">修纳语</option><option value="si">僧伽罗语</option><option value="hr">克罗地亚语</option><option value="is">冰岛语</option><option value="gl">加利西亚语</option><option value="ca">加泰罗尼亚语</option><option value="hu">匈牙利语</option><option value="zu">南非祖鲁语</option><option value="kn">卡纳达语</option><option value="lb">卢森堡语</option><option value="hi">印地语</option><option value="su">印尼巽他语</option><option value="jw">印尼爪哇语</option><option value="id">印尼语</option><option value="gu">古吉拉特语</option><option value="ky">吉尔吉斯语</option><option value="kk">哈萨克语</option><option value="tr">土耳其语</option><option value="tg">塔吉克语</option><option value="sr">塞尔维亚语</option><option value="st">塞索托语</option><option value="haw">夏威夷语</option><option value="cy">威尔士语</option><option value="bn">孟加拉语</option><option value="ceb">宿务语</option><option value="ne">尼泊尔语</option><option value="eu">巴斯克语</option><option value="af">布尔语(南非荷兰语)</option><option value="iw">希伯来语</option><option value="el">希腊语</option><option value="ku">库尔德语</option><option value="fy">弗里西语</option><option value="de">德语</option><option value="it">意大利语</option><option value="yi">意第绪语</option><option value="la">拉丁语</option><option value="lv">拉脱维亚语</option><option value="no">挪威语</option><option value="cs">捷克语</option><option value="sk">斯洛伐克语</option><option value="sl">斯洛文尼亚语</option><option value="sw">斯瓦希里语</option><option value="pa">旁遮普语</option><option value="ja">日语</option><option value="ps">普什图语</option><option value="ka">格鲁吉亚语</option><option value="mi">毛利语</option><option value="fr">法语</option><option value="pl">波兰语</option><option value="bs">波斯尼亚语</option><option value="fa">波斯语</option><option value="te">泰卢固语</option><option value="ta">泰米尔语</option><option value="th">泰语</option><option value="ht">海地克里奥尔语</option><option value="ga">爱尔兰语</option><option value="et">爱沙尼亚语</option><option value="sv">瑞典语</option><option value="be">白俄罗斯语</option><option value="xh">科萨</option><option value="co">科西嘉语</option><option value="lt">立陶宛语</option><option value="so">索马里语</option><option value="yo">约鲁巴语</option><option value="my">缅甸语</option><option value="ro">罗马尼亚语</option><option value="lo">老挝语</option><option value="fi">芬兰语</option><option value="gd">苏格兰盖尔语</option><option value="hmn">苗语</option><option value="en">英语</option><option value="nl">荷兰语</option><option value="tl">菲律宾语</option><option value="sm">萨摩亚语</option><option value="pt">葡萄牙语</option><option value="mn">蒙古语</option><option value="es">西班牙语</option><option value="ha">豪萨语</option><option value="vi">越南语</option><option value="az">阿塞拜疆语</option><option value="am">阿姆哈拉语</option><option value="sq">阿尔巴尼亚语</option><option value="ar">阿拉伯语</option><option value="ko">韩语</option><option value="mk">马其顿语</option><option value="mg">马尔加什语</option><option value="mr">马拉地语</option><option value="ml">马拉雅拉姆语</option><option value="ms">马来语</option><option value="mt">马耳他语</option><option value="km">高棉语</option><option value="ny">齐切瓦语</option></select></td><td class="SL_td" width="5%" align="center"> </td><td class="SL_td" width="8%" align="center"><div title="undefined" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/ttsvoice.png&quot;);"></div></td><td class="SL_td" width="8%" align="center"><div title="复制译文" class="SL_copy" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/copy.png&quot;);"><div></div></div></td><td class="SL_td" width="8%" align="center"><div></div><div title="字体大小" class="SL_bbl_font" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/font.png&quot;);"></div></td><td class="SL_td" width="8%" align="center"><div title="帮助" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/bhelp.png&quot;);"></div></td><td class="SL_td" width="15%" align="right"><div class="SL_pin_off" title="固定弹出窗口" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/pin-off.png&quot;);"></div></td></tr></tbody></table></div></div><div style="visibility: visible;"></div><div class="SL_loading" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/loading.gif&quot;);"></div><div style="display: none;"></div><div style="display: none;">文本转语音功能仅限200个字符</div><div style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/bg3.png&quot;) rgb(255, 255, 255);"><div style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/down.png&quot;); display: block;"></div><table width="100%"><tbody><tr><td class="SL_td" width="5%" align="center"><input type="checkbox" checked="1" title="显示翻译器的按钮 3 秒"></td><td class="SL_td" width="5%" align="left"><div title="显示翻译器的按钮 3 秒" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/bbl-logo.png&quot;);"></div></td><td class="SL_td" width="70%" align="center"><a href="chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/html/options/options.html?bbl" target="_blank" class="SL_options" title="显示选项">选项</a> : <a href="chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/html/options/options.html?hist" target="_blank" class="SL_options" title="翻译历史记录">历史</a> : <a href="chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/html/options/options.html?feed" target="_blank" class="SL_options" title="反馈">反馈</a> : <a href="https://imtranslator.net/extensions/?tp=chr-ImTranslator&amp;a=0" target="_blank" class="SL_options" title="作出一点点贡献">Donate</a></td><td class="SL_td" width="15%" align="right"><span class="SL_options" title="关闭">关闭</span></td></tr></tbody></table></div></div></div></div>
+</div></div></div></td></tr></table> </div></div>
+</div></div>
+			</div>
+		</div>
+		<!-- /footer zone -->
+		
+		<!-- branding zone -->
+<div class="zoneBrandingOuter zoneOuter">
+			<div class="zoneBranding container_12">
+				<div class="zoneBrandingInner zoneInner s1_grid_12 s2_grid_12 s3_grid_12">
+<div id="idFooterPoweredByContainer">
+	<span id="idFooterPoweredByWA">
+Powered by <a href="http://www.wildapricot.com" target="_blank">Wild Apricot</a> Membership Software</span>
+</div>
+</div>
+			</div>
+		</div>
+<!-- /branding zone -->
+</div></body>
+</html>
+<script type="text/javascript">if (window.BonaPage && BonaPage.setPageState) { BonaPage.setPageState(BonaPage.PAGE_PARSED); }</script>

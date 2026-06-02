@@ -1,0 +1,1061 @@
+body
+{}
+.zoneHeaderOuter
+{}
+.zoneHeaderOuter .container_12 > DIV
+{}
+.zoneHeader1Outer
+{}
+.zoneHeader1Outer .container_12 > DIV
+{}
+.zoneHeader2Outer
+{}
+.zoneHeader2Outer .container_12 > DIV
+{}
+.zoneContentOuter
+{}
+.zoneContentOuter .container_12 > DIV
+{}
+.zoneFooterOuter
+{}
+.zoneFooterOuter .container_12 > DIV
+{}
+.zoneFooter1Outer
+{}
+.zoneFooter1Outer .container_12 > DIV
+{}
+
+
+
+BODY
+{}
+
+A:not(.linkAlternative):not(.stylizedButton), A:link:not(.linkAlternative):not(.stylizedButton), A:active:not(.linkAlternative):not(.stylizedButton), A:visited:not(.linkAlternative):not(.stylizedButton), .WaGadgetBlog .boxFooterOuterContainer .postBottom .boxFooterPrimaryOuterContainer .boxFooterPrimaryContainer a:before, .WaGadgetBlog .boxFooterOuterContainer .postBottom .boxFooterSecondaryOuterContainer .boxFooterSecondaryContainer a:before
+{}
+
+A:not(.linkAlternative):not(.stylizedButton):hover, .WaGadgetBlog .boxFooterOuterContainer .postBottom .boxFooterPrimaryOuterContainer .boxFooterPrimaryContainer a:hover:before, .WaGadgetBlog .boxFooterOuterContainer .postBottom .boxFooterSecondaryOuterContainer .boxFooterSecondaryContainer a:hover:before
+{}
+
+A.linkAlternative, A.linkAlternative:link, A.linkAlternative:active, A.linkAlternative:visited
+{}
+
+
+A.linkAlternative:hover
+{}
+
+H1.contStyleHeaderTitle
+{}
+
+H2.contStyleHeaderSubtitle
+{}
+
+H1.contStyleHeading1
+{}
+
+H1.contStyleHeading1Alt
+{}
+
+H2:not(.contStyleHeaderSubtitle):not(.contStyleHeading2Alt)
+{}
+
+H2.contStyleHeading2Alt
+{}
+
+H3
+{}
+
+H4
+{}
+
+.contStyleCaption
+{}
+
+.contStyleCaptionAlternative
+{}
+
+.quotedText
+{}
+
+.contStyleExcInlineSmaller
+{}
+
+.contStyleAlternativeText
+{}
+
+.WaGadgetEvents.WaGadgetEventsStateList h3.sectionTitle
+{}
+
+
+
+
+.gadgetStyleNone .gadgetStyleTitle h4
+{}
+
+.gadgetStyleNone:not(.WaGadgetDonationGoal):not(.WaGadgetPhotoAlbum):not(.WaGadgetGoogleMap):not(.WaGadgetSlideshow) .gadgetStyleBody ul li .title a,
+.WaGadgetFeaturedMember.gadgetStyleNone ul.layoutVertical li .rightPart a,
+.WaGadgetFeaturedMember.gadgetStyleNone ul.layoutHorizontal li .rightPart a,
+.WaGadgetFeaturedMember.gadgetStyleNone ul.layoutList li .rightPart a,
+.WaGadgetFeaturedMember.gadgetStyleNone .action a
+{}
+
+
+.WaGadgetRecentBlogPosts.gadgetStyleNone ul li .date span,
+.WaGadgetForumUpdates.gadgetStyleNone ul li .date span,
+.WaGadgetUpcomingEvents.gadgetStyleNone ul li .date span
+{}
+
+.WaGadgetUpcomingEvents.gadgetStyleNone ul li .location span
+{}
+
+.WaGadgetRecentBlogPosts.gadgetStyleNone ul li .author a,
+.WaGadgetRecentBlogPosts.gadgetStyleNone ul li .author span,
+.WaGadgetForumUpdates.gadgetStyleNone ul li .author span,
+.WaGadgetForumUpdates.gadgetStyleNone ul li .author a
+{}
+
+.gadgetStyle001:not(.WaGadgetSocialProfile):not(.WaGadgetBreadcrumbs):not(.WaGadgetSiteMap):not(.WaGadgetDonationGoal):not(.WaGadgetNavigationLinks):not(.WaGadgetMenuHorizontal):not(.WaGadgetMenuVertical):not(.WaGadgetCustomMenu)
+{}
+
+.gadgetStyle001:not(.WaGadgetNavigationLinks):not(.WaGadgetDonationGoal) .gadgetStyleTitle h4
+{}
+
+.gadgetStyle001:not(.WaGadgetDonationGoal):not(.WaGadgetPhotoAlbum):not(.WaGadgetGoogleMap):not(.WaGadgetSlideshow):not(.WaGadgetFeaturedMember) .gadgetStyleBody ul li .title a
+{}
+
+
+.WaGadgetRecentBlogPosts.gadgetStyle001 ul li .date span,
+.WaGadgetForumUpdates.gadgetStyle001 ul li .date span,
+.WaGadgetUpcomingEvents.gadgetStyle001 ul li .date span
+{}
+
+.WaGadgetUpcomingEvents.gadgetStyle001 ul li .location span
+{}
+
+.WaGadgetRecentBlogPosts.gadgetStyle001 ul li .author a,
+.WaGadgetRecentBlogPosts.gadgetStyle001 ul li .author span,
+.WaGadgetForumUpdates.gadgetStyle001 ul li .author span,
+.WaGadgetForumUpdates.gadgetStyle001 ul li .author a
+{}
+
+
+.gadgetStyle002:not(.WaGadgetSocialProfile):not(.WaGadgetBreadcrumbs):not(.WaGadgetSiteMap):not(.WaGadgetDonationGoal):not(.WaGadgetNavigationLinks):not(.WaGadgetMenuHorizontal):not(.WaGadgetMenuVertical):not(.WaGadgetCustomMenu)
+{}
+
+.gadgetStyle002:not(.WaGadgetDonationGoal) .gadgetStyleTitle h4,
+.WaGadgetPhotoAlbum.gadgetStyle002 .gadgetStyleTitle h4
+{}
+
+.gadgetStyle002 .gadgetStyleTitle h4:after
+{}
+
+.gadgetStyle002:not(.WaGadgetDonationGoal):not(.WaGadgetPhotoAlbum):not(.WaGadgetGoogleMap):not(.WaGadgetSlideshow):not(.WaGadgetFeaturedMember) .gadgetStyleBody ul li .title a
+{}
+
+.WaGadgetRecentBlogPosts.gadgetStyle002 ul li .date span,
+.WaGadgetForumUpdates.gadgetStyle002 ul li .date span,
+.WaGadgetUpcomingEvents.gadgetStyle002 ul li .date span
+{}
+
+.WaGadgetUpcomingEvents.gadgetStyle002 ul li .location span
+{}
+
+.WaGadgetRecentBlogPosts.gadgetStyle002 ul li .author a,
+.WaGadgetRecentBlogPosts.gadgetStyle002 ul li .author span,
+.WaGadgetForumUpdates.gadgetStyle002 ul li .author span,
+.WaGadgetForumUpdates.gadgetStyle002 ul li .author a
+{}
+
+
+.gadgetStyle003:not(.WaGadgetSocialProfile):not(.WaGadgetBreadcrumbs):not(.WaGadgetSiteMap):not(.WaGadgetDonationGoal):not(.WaGadgetNavigationLinks):not(.WaGadgetMenuHorizontal):not(.WaGadgetMenuVertical):not(.WaGadgetCustomMenu)
+{}
+
+.gadgetStyle003 .gadgetStyleTitle h4
+{}
+
+.gadgetStyle003:not(.WaGadgetDonationGoal):not(.WaGadgetPhotoAlbum):not(.WaGadgetGoogleMap):not(.WaGadgetSlideshow):not(.WaGadgetFeaturedMember) .gadgetStyleBody ul li .title a
+{}
+
+
+.WaGadgetRecentBlogPosts.gadgetStyle003 ul li .date span,
+.WaGadgetForumUpdates.gadgetStyle003 ul li .date span,
+.WaGadgetUpcomingEvents.gadgetStyle003 ul li .date span
+{}
+
+.WaGadgetUpcomingEvents.gadgetStyle003 ul li .location span
+{}
+
+.WaGadgetRecentBlogPosts.gadgetStyle003 ul li .author a,
+.WaGadgetRecentBlogPosts.gadgetStyle003 ul li .author span,
+.WaGadgetForumUpdates.gadgetStyle003 ul li .author span,
+.WaGadgetForumUpdates.gadgetStyle003 ul li .author a
+{}
+
+
+.generalFieldsContainer .fieldSubContainer .fieldLabel span,
+.generalFieldsContainer .fieldSubContainer .fieldLabel .mandatoryLabel,
+.generalFieldsContainer .fieldSubContainer .fieldLabel .mandatorySymbol,
+.WaGadgetForum .forumEditEntryBoxContainer .boxBodyOuterContainer .fieldContainer#idAuthorLabelContainer .fieldLabel,
+.WaGadgetMemberPublicProfile .memberDirectoryDetailsContainer .generalFieldsOuterContainer #idMembershipLevelContainer .fieldLabel,
+.WaGadgetBlog .boxBodyOuterContainer .generalFieldsContainer .fieldContainer#idAuthorLabelContainer .fieldLabel
+{}
+
+.generalFieldsContainer .fieldSubContainer .fieldLabel span:not(.mandatorySymbol),
+.generalFieldsContainer .fieldSubContainer .fieldLabel .mandatoryLabel,
+.WaGadgetForum .forumEditEntryBoxContainer .boxBodyOuterContainer .fieldContainer#idAuthorLabelContainer .fieldLabel,
+.WaGadgetMemberPublicProfile .memberDirectoryDetailsContainer .generalFieldsOuterContainer #idMembershipLevelContainer .fieldLabel,
+.WaGadgetBlog .boxBodyOuterContainer .generalFieldsContainer .fieldContainer#idAuthorLabelContainer .fieldLabel
+{}
+
+.generalFormContainer .criteriaListItem .valueContainer .fieldContainer .label,
+.fieldSubContainer .fieldBody,
+.fieldSubContainer.singleStringContainer .fieldBody [class='textLine'],
+.groupContainer .fieldSubContainer.radioGroupContainer .fieldBody [class='textLine'],
+.groupContainer .fieldSubContainer.checkboxGroupContainer .fieldBody [class='textLine'],
+.calculatedExtraChargeContainer .fieldSubContainer .fieldBody input + span
+{}
+
+.fieldSubContainer .fieldBody .fieldItem span.label .textLine strong
+{}
+
+
+.captionOuterContainer
+{}
+.captionOuterContainer .captionContainer .fieldBody h4
+{}
+.fieldSubContainer .fieldBody > .typeInstruction,
+.fieldSubContainer .fieldBody .fieldItem span.label .typeInstruction
+{}
+
+.WaGadgetBlogStateEditPost .boxHeaderOuterContainer .boxHeaderContainer h4.boxHeaderTitle,
+.WaGadgetBlogStateAddPost .boxHeaderOuterContainer .boxHeaderContainer h4.boxHeaderTitle,
+.WaGadgetBlogStateEditPost .boxBodyOuterContainer .generalFieldsContainer .mandatoryFieldsTitle,
+.WaGadgetBlogStateAddPost .boxBodyOuterContainer .generalFieldsContainer .mandatoryFieldsTitle,
+.WaGadgetForum .forumEditEntryBoxContainer .boxHeaderOuterContainer h4.boxHeaderTitle,
+.WaGadgetForum .forumEditEntryBoxContainer .boxBodyOuterContainer .mandatoryFieldsTitle,
+.formTitleOuterContainer .formTitleContainer .inner h3.formTitle,
+.formTitleOuterContainer .formTitleContainer .inner .mandatoryFieldsTitle strong,
+.WaGadgetEmailMember .mandatoryFieldsTitle,
+.WaGadgetEmailMember #idSendMailMainContainer .generalFormContainer .formOuterContainer .sectionOuterContainer .mandatoryFieldsTitle strong,
+.WaGadgetEmailMember #idSendMailMainContainer .generalFormContainer .formOuterContainer .sectionOuterContainer .mandatoryFieldsTitle span,
+.WaGadgetEmailMember #idSendMailMainContainer .generalFormContainer .formOuterContainer .captionOuterContainer .fieldBody h4,
+.WaGadgetBlog.WaGadgetBlogStateAddPost .boxHeaderOuterContainer .boxHeaderContainer h4.boxHeaderTitle
+{}
+
+.WaGadgetBlogStateEditPost .boxHeaderOuterContainer .boxHeaderContainer h4.boxHeaderTitle,
+.WaGadgetBlogStateAddPost .boxHeaderOuterContainer .boxHeaderContainer h4.boxHeaderTitle,
+.WaGadgetBlogStateEditPost .boxBodyOuterContainer .generalFieldsContainer .mandatoryFieldsTitle,
+.WaGadgetBlogStateAddPost .boxBodyOuterContainer .generalFieldsContainer .mandatoryFieldsTitle,
+.WaGadgetForum .forumEditEntryBoxContainer .boxHeaderOuterContainer h4.boxHeaderTitle,
+.WaGadgetForum .forumEditEntryBoxContainer .boxBodyOuterContainer .mandatoryFieldsTitle,
+.formTitleOuterContainer .formTitleContainer .inner h3.formTitle,
+.formTitleOuterContainer .formTitleContainer .inner .mandatoryFieldsTitle strong,
+.WaGadgetEmailMember .mandatoryFieldsTitle,
+.WaGadgetEmailMember #idSendMailMainContainer .generalFormContainer .formOuterContainer .sectionOuterContainer .mandatoryFieldsTitle strong,
+.WaGadgetEmailMember #idSendMailMainContainer .generalFormContainer .formOuterContainer .captionOuterContainer .fieldBody h4,
+.WaGadgetBlog.WaGadgetBlogStateAddPost .boxHeaderOuterContainer .boxHeaderContainer h4.boxHeaderTitle
+{}
+
+.WaGadgetBlog.WaGadgetBlogStateEditPost .boxHeaderOuterContainer,
+.WaGadgetBlog.WaGadgetBlogStateAddPost .boxHeaderOuterContainer,
+.WaGadgetForum .forumEditEntryBoxContainer .boxHeaderOuterContainer,
+.formTitleOuterContainer,
+.WaGadgetEmailMember #idSendMailMainContainer .generalFormContainer .formOuterContainer .captionOuterContainer
+{
+	border-bottom-color: #949493;
+}
+
+
+
+
+
+
+
+.genericListTable thead th,
+.membersTable thead th
+{}
+
+.genericListTable tbody td,
+.genericListTable tbody td .memberValue h5,
+.membersTable tbody td,
+.membersTable tbody td .memberValue h5
+{}
+.genericListTable tbody td,
+.membersTable tbody td
+{}
+
+.genericListTable tr.hover td,
+.genericListTable tr:hover td,
+.membersTable tr.hover td,
+.membersTable tr:hover td,
+.WaGadgetContactProfileStateFinances .genericList .genericListTable tr.noLine:hover
+{}
+
+.genericListTable tbody td a,
+.genericListTable tbody td .memberValue h5 a,
+.membersTable tbody td a,
+.membersTable tbody td .memberValue h5 a
+{}
+
+.genericListTable tbody td a:hover,
+.genericListTable tbody td .memberValue h5 a:hover,
+.membersTable tbody td a:hover,
+.membersTable tbody td .memberValue h5 a:hover
+{}
+
+
+
+
+
+
+
+
+.WaGadgetBlog .boxBodyInfoOuterContainer h5 .postedByLabel,
+.WaGadgetBlog .boxBodyInfoOuterContainer h5 .postedByLink,
+.WaGadgetBlog ul.blogCommentsList li.blogCommentItem .blogComment .commentViewContainer .boxHeaderOuterContainer h5 .postedByComment
+{}
+
+.WaGadgetBlog .boxBodyInfoOuterContainer h5 .postedOn,
+.WaGadgetBlog ul.blogCommentsList li.blogCommentItem .blogComment .commentViewContainer .boxHeaderOuterContainer h5 span:first-child
+{}
+
+
+
+
+
+
+
+
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer h5
+{font-size: 1.40em;}
+
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxHeaderOuterContainer table td h4,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxHeaderOuterContainer table td.threadTD div.thread h4.boxHeaderTitle,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxHeaderOuterContainer table td.lastReplyTD .lastReply h4.boxHeaderTitle,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxHeaderOuterContainer table td.repliesCountTD .repliesCount h4.boxHeaderTitle
+{font-size: 1.20em;}
+
+.WaGadgetForumStateList .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow td,
+.WaGadgetForum #idTopicListContainer .boxBodyOuterContainer table td,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow td.threadTD .thread a.forumTitle,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow td.threadTD .thread span.forumDescription,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow td.lastReplyTD .lastReply a,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow td.lastReplyTD .lastReply span,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxBodyOuterContainer table tr.topicListRow td.threadTD div.thread a,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxBodyOuterContainer table tr.topicListRow td.lastReplyTD .lastReply a,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxBodyOuterContainer table tr.topicListRow td.lastReplyTD .lastReply span,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxBodyOuterContainer table tr.topicListRow td.lastReplyTD .lastReply p,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td.threadTD .thread a.forumTitle,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td.threadTD .thread span.forumDescription,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td.lastReplyTD .lastReply a,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td.lastReplyTD .lastReply span,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td.lastReplyTD .lastReply p
+{font-size: 0.80em;}
+
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow td.threadTD .thread a.forumTitle,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow td.threadTD .thread span.forumDescription,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow td.lastReplyTD .lastReply a,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow td.lastReplyTD .lastReply span,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxBodyOuterContainer table tr.topicListRow td.threadTD div.thread a,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxBodyOuterContainer table tr.topicListRow td.lastReplyTD .lastReply a,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxBodyOuterContainer table tr.topicListRow td.lastReplyTD .lastReply span,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxBodyOuterContainer table tr.topicListRow td.lastReplyTD .lastReply p,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td.threadTD .thread a.forumTitle,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td.threadTD .thread span.forumDescription,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td.lastReplyTD .lastReply a,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td.lastReplyTD .lastReply span,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td.lastReplyTD .lastReply p
+{}
+
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td,
+.WaGadgetForum #idTopicListContainer .boxBodyOuterContainer table tr.topicListRow.highlight td,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td.threadTD .thread a.forumTitle,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td.threadTD .thread span.forumDescription,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td.lastReplyTD .lastReply a,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td.lastReplyTD .lastReply span,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td.topicsCountTD .topicsCount,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td.repliesCountTD .repliesCount,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxBodyOuterContainer table tr.topicListRow.highlight td.threadTD div.thread a,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxBodyOuterContainer table tr.topicListRow.highlight td.lastReplyTD .lastReply a,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxBodyOuterContainer table tr.topicListRow.highlight td.lastReplyTD .lastReply span,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxBodyOuterContainer table tr.topicListRow.highlight td.repliesCountTD .repliesCount span
+{}
+
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow td.lastReplyTD .lastReply a,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxBodyOuterContainer table tr.topicListRow td.threadTD div.thread a,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxBodyOuterContainer table tr.topicListRow td.lastReplyTD .lastReply a,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow td.threadTD .thread a.forumTitle,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td.threadTD .thread a.forumTitle,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td.lastReplyTD .lastReply a
+{}
+
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow td.threadTD .thread a.forumTitle:hover,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow td.lastReplyTD .lastReply a:hover,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxBodyOuterContainer table tr.topicListRow td.threadTD div.thread a:hover,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxBodyOuterContainer table tr.topicListRow td.lastReplyTD .lastReply a:hover
+{}
+
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow td.lastReplyTD .lastReply span,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td.lastReplyTD .lastReply span,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxBodyOuterContainer table tr.topicListRow td.lastReplyTD .lastReply span,
+.WaGadgetForum.WaGadgetForumStateMessageList .messageListOuterContainer .messageListContainer ul.boxesList li.boxesListItem .boxBodyOuterContainer table.forumMessageTable td.left .boxBodyInfoOuterContainer .boxBodyInfoContainer a,
+.WaGadgetForum.WaGadgetForumStateMessageList .messageListOuterContainer .messageListContainer ul.boxesList li.boxesListItem .boxBodyOuterContainer table.forumMessageTable td.left .boxBodyInfoOuterContainer .boxBodyInfoContainer span.postedByComment,
+.WaGadgetForumStateMessageList .messageListOuterContainer ul.boxesList li.boxesListItem .boxBodyOuterContainer table.forumMessageTable td.left .boxBodyInfoOuterContainer .boxBodyInfoContainer .inner
+{}
+
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow td.threadTD .thread span.forumDescription,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td.threadTD .thread span.forumDescription
+{font-size: 1.00em;}
+
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow td.lastReplyTD .lastReply a,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td.lastReplyTD .lastReply a,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxBodyOuterContainer table tr.topicListRow td.lastReplyTD .lastReply a,
+.WaGadgetForum.WaGadgetForumStateMessageList .messageListOuterContainer .messageListContainer ul.boxesList li.boxesListItem .boxHeaderOuterContainer table.forumMessageHeaderTable td.forumMessageHeaderInfoContainer .forumMessageHeaderInfo span
+{font-size: 1.10em;}
+
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td.lastReplyTD .lastReply a:hover,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxBodyOuterContainer table tr.topicListRow td.lastReplyTD .lastReply a:hover
+{}
+
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow td.pageStateIconTD .pageStateIcon .anybodyIconDiv,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow td.pageStateIconTD .pageStateIcon .memberIconDiv,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow td.pageStateIconTD .pageStateIcon .adminIconDiv,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxBodyOuterContainer table tr.topicListRow td.threadImageTD div.threadImage,
+.WaGadgetForum.WaGadgetForumStateMessageList .messageListOuterContainer .messageListContainer ul.boxesList li.boxesListItem .boxHeaderOuterContainer table.forumMessageHeaderTable td.forumMessageHeaderBodyContainer .messageActionsContainer a:before
+{}
+
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow td,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxBodyOuterContainer table tr td
+{}
+
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight td,
+.WaGadgetForumStateList .forumCategoryListOuterContainer .forumCategoryOuterContainer .forumCategoryContainer .forumListContainer .boxBodyOuterContainer table.forumListTable tr.forumListRow.highlight:first-child td,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxBodyOuterContainer table tr.topicListRow.highlight td,
+.WaGadgetForum.WaGadgetForumStateTopicList #idTopicListContainer .topicListContainer .boxBodyOuterContainer table tr.topicListRow.highlight:first-child td
+{}
+
+
+.WaGadgetLoginForm .loginContainerWrapper .loginContainerInnerWrapper .loginLink,
+.WaGadgetLoginButton .loginBoxLinkContainer .loginBoxLinkButton
+{}
+
+.WaGadgetLoginForm .loginContainerWrapper .loginContainerInnerWrapper .loginContainer .loginContainerForm.orientationHorizontal form [class$="TextBox"] input[class$="TextBoxControl"], 
+.WaGadgetLoginForm .loginContainerWrapper .loginContainerInnerWrapper .loginContainer .loginContainerForm.orientationVertical form [class$="TextBox"] input[class$="TextBoxControl"]
+{}
+
+.WaGadgetLoginForm .loginContainerWrapper .loginContainerInnerWrapper .loginContainer .loginContainerForm form [class$="Label"] label,
+.WaGadgetLoginForm .loginContainerWrapper .loginContainerInnerWrapper .loginContainer .loginContainerForm form .loginActionRememberMe label
+{}
+
+.WaGadgetLoginForm .loginContainerWrapper .loginContainerInnerWrapper .loginContainer .loginContainerForm form .loginPasswordForgot a,
+.WaGadgetLoginForm .loginContainerWrapper.authenticated .loginContainer .profileBox a,
+.WaGadgetLoginForm .loginContainerWrapper.authenticated .loginContainer .loggedAction .loginBoxLogout,
+.WaGadgetLoginButton .loginBoxLapsedMembership,
+.WaGadgetLoginButton .loginBoxProfileLink a,
+.WaGadgetLoginButton a.loginBoxChangePassword,
+.WaGadgetLoginButton a.loginBoxLogout 
+{}
+
+.WaGadgetLoginForm .loginContainerWrapper .loginContainerInnerWrapper .loginContainer .loginContainerForm form .loginPasswordForgot a:hover,
+.WaGadgetLoginForm .loginContainerWrapper.authenticated .loginContainer .profileBox a:hover,
+.WaGadgetLoginForm .loginContainerWrapper.authenticated .loginContainer .loggedAction .loginBoxLogout:hover,
+.WaGadgetLoginButton .loginBoxLapsedMembership:hover,
+.WaGadgetLoginButton .loginBoxProfileLink a:hover,
+.WaGadgetLoginButton a.loginBoxChangePassword:hover,
+.WaGadgetLoginButton a.loginBoxLogout:hover 
+{}
+
+.WaGadgetLoginForm .loginContainerWrapper .loginContainerInnerWrapper .loginContainer .loginContainerForm form .loginAction input.loginButton
+{}
+.WaGadgetLoginForm .loginContainerWrapper .loginContainerInnerWrapper .loginContainer .loginContainerForm form .loginAction input.loginButton:hover
+{}
+.WaGadgetLoginForm .loginContainerWrapper .loginContainerInnerWrapper .loginContainer .loginContainerForm form .loginAction input.loginButton:active
+{}
+
+a.stylizedButton.buttonStyle001
+{}
+
+a.stylizedButton.buttonStyle001:hover
+{}
+
+a.stylizedButton.buttonStyle001:active
+{}
+
+a.stylizedButton.buttonStyle002
+{}
+a.stylizedButton.buttonStyle002:hover
+{}
+a.stylizedButton.buttonStyle002:active
+{}
+
+a.stylizedButton.buttonStyle002Alt
+{}
+a.stylizedButton.buttonStyle002Alt:hover
+{}
+a.stylizedButton.buttonStyle002Alt:active
+{}
+
+a.stylizedButton.buttonStyle003
+{}
+a.stylizedButton.buttonStyle003:hover
+{}
+a.stylizedButton.buttonStyle003:active
+{}
+
+a.stylizedButton.buttonStyle004
+{}
+a.stylizedButton.buttonStyle004:hover
+{}
+a.stylizedButton.buttonStyle004:active
+{}
+
+a.stylizedButton.buttonStyle004Alt
+{}
+a.stylizedButton.buttonStyle004Alt:hover
+{}
+a.stylizedButton.buttonStyle004Alt:active
+{}
+
+
+
+.WaGadgetDonationGoal.gadgetStyle001
+{}
+.WaGadgetDonationGoal.gadgetStyle001 .gadgetStyleTitle h4
+{}
+
+
+.WaGadgetDonationGoal.gadgetStyle001 .donationGoalProgressContainer .progressBarWrapper .progressBar .halfCircle
+{}
+
+.WaGadgetDonationGoal.gadgetStyle001 .donationGoalProgressContainer .progressBarWrapper:before,
+.WaGadgetDonationGoal.gadgetStyle001 .donationGoalProgressContainer .progressBarWrapper:after
+{}
+
+.WaGadgetDonationGoal.gadgetStyle001 .donationGoalProgressContainer .progressBarWrapper .progressPercentage
+{}
+
+.WaGadgetDonationGoal.gadgetStyle001 .donationGoalProgressContainer .donationGoalProgressAmount > div .donationGoalAmountTitle,
+.WaGadgetDonationGoal.gadgetStyle001 .donationGoalProgressContainer .donationGoalProgressCollected > div .donationGoalCollectedTitle 
+{}
+
+.WaGadgetDonationGoal.gadgetStyle001 .donationGoalProgressContainer .donationGoalProgressAmount > div .donationGoalAmountValue 
+{}
+
+.WaGadgetDonationGoal.gadgetStyle001 .donationGoalProgressContainer .donationGoalProgressCollected > div .donationGoalCollectedValue
+{}
+
+.WaGadgetDonationGoal.gadgetStyle001 .donationGoalProgressContainer .donationGoalNotes 
+{}
+
+.WaGadgetDonationGoal.gadgetStyle001 .donationGoalProgressContainer .donationGoalButton input
+{} 
+
+.WaGadgetDonationGoal.gadgetStyle001 .donationGoalProgressContainer .donationGoalButton input:hover
+{}
+
+.WaGadgetDonationGoal.gadgetStyle001 .donationGoalProgressContainer .donationGoalButton input:active
+{}
+
+
+
+
+.WaGadgetDonationGoal.gadgetStyle002
+{}
+.WaGadgetDonationGoal.gadgetStyle002 .gadgetStyleTitle h4
+{}
+
+.WaGadgetDonationGoal.gadgetStyle002 .donationGoalProgressContainer .progressBarWrapper .progressBar .halfCircle
+{}
+
+.WaGadgetDonationGoal.gadgetStyle002 .donationGoalProgressContainer .progressBarWrapper:before,
+.WaGadgetDonationGoal.gadgetStyle002 .donationGoalProgressContainer .progressBarWrapper:after
+{}
+
+.WaGadgetDonationGoal.gadgetStyle002 .donationGoalProgressContainer .progressBarWrapper .progressPercentage
+{}
+
+.WaGadgetDonationGoal.gadgetStyle002 .donationGoalProgressContainer .donationGoalProgressAmount > div .donationGoalAmountTitle,
+.WaGadgetDonationGoal.gadgetStyle002 .donationGoalProgressContainer .donationGoalProgressCollected > div .donationGoalCollectedTitle 
+{}
+
+.WaGadgetDonationGoal.gadgetStyle002 .donationGoalProgressContainer .donationGoalProgressAmount > div .donationGoalAmountValue 
+{}
+
+.WaGadgetDonationGoal.gadgetStyle002 .donationGoalProgressContainer .donationGoalProgressCollected > div .donationGoalCollectedValue
+{}
+
+.WaGadgetDonationGoal.gadgetStyle002 .donationGoalProgressContainer .donationGoalNotes 
+{}
+
+.WaGadgetDonationGoal.gadgetStyle002 .donationGoalProgressContainer .donationGoalButton input
+{} 
+
+.WaGadgetDonationGoal.gadgetStyle002 .donationGoalProgressContainer .donationGoalButton input:hover
+{}
+
+.WaGadgetDonationGoal.gadgetStyle002 .donationGoalProgressContainer .donationGoalButton input:active
+{}
+
+
+
+.WaGadgetDonationGoal.gadgetStyle002Alt
+{}
+
+.WaGadgetDonationGoal.gadgetStyle002Alt .gadgetStyleTitle h4
+{}
+
+.WaGadgetDonationGoal.gadgetStyle002Alt .donationGoalProgressContainer .progressBarWrapper .progressBar .halfCircle
+{}
+
+.WaGadgetDonationGoal.gadgetStyle002Alt .donationGoalProgressContainer .progressBarWrapper:before,
+.WaGadgetDonationGoal.gadgetStyle002Alt .donationGoalProgressContainer .progressBarWrapper:after
+{}
+
+.WaGadgetDonationGoal.gadgetStyle002Alt .donationGoalProgressContainer .progressBarWrapper .progressPercentage
+{}
+
+.WaGadgetDonationGoal.gadgetStyle002Alt .donationGoalProgressContainer .donationGoalProgressAmount > div .donationGoalAmountTitle,
+.WaGadgetDonationGoal.gadgetStyle002Alt .donationGoalProgressContainer .donationGoalProgressCollected > div .donationGoalCollectedTitle 
+{}
+
+.WaGadgetDonationGoal.gadgetStyle002Alt .donationGoalProgressContainer .donationGoalProgressAmount > div .donationGoalAmountValue 
+{}
+
+.WaGadgetDonationGoal.gadgetStyle002Alt .donationGoalProgressContainer .donationGoalProgressCollected > div .donationGoalCollectedValue
+{}
+
+.WaGadgetDonationGoal.gadgetStyle002Alt .donationGoalProgressContainer .donationGoalNotes 
+{}
+
+.WaGadgetDonationGoal.gadgetStyle002Alt .donationGoalProgressContainer .donationGoalButton input
+{} 
+
+.WaGadgetDonationGoal.gadgetStyle002Alt .donationGoalProgressContainer .donationGoalButton input:hover
+{}
+
+.WaGadgetDonationGoal.gadgetStyle002Alt .donationGoalProgressContainer .donationGoalButton input:active
+{}
+
+
+
+
+.WaGadgetSocialProfile.gadgetStyle001
+{}
+.WaGadgetSocialProfile.gadgetStyle001 .gadgetStyleBody ul li a
+{}
+.WaGadgetSocialProfile.gadgetStyle001 .gadgetStyleBody ul li a:hover
+{}
+
+.WaGadgetSocialProfile.gadgetStyle001Alt
+{}
+.WaGadgetSocialProfile.gadgetStyle001Alt .gadgetStyleBody ul li a
+{}
+.WaGadgetSocialProfile.gadgetStyle001Alt .gadgetStyleBody ul li a:hover
+{}
+
+.WaGadgetSocialProfile.gadgetStyle002
+{}
+.WaGadgetSocialProfile.gadgetStyle002 .gadgetStyleBody ul li a
+{}
+.WaGadgetSocialProfile.gadgetStyle002 .gadgetStyleBody ul li a:hover
+{}
+
+.WaGadgetSocialProfile.gadgetStyle003
+{}
+.WaGadgetSocialProfile.gadgetStyle003 .gadgetStyleBody ul li a
+{}
+.WaGadgetSocialProfile.gadgetStyle003 .gadgetStyleBody ul li a:hover
+{}
+
+
+.WaGadgetSocialProfile.gadgetStyle004Alt
+{}
+
+
+.WaGadgetBreadcrumbs.gadgetStyle001 ul li a,
+.WaGadgetBreadcrumbs.gadgetStyle001 ul li.last
+{}
+.WaGadgetBreadcrumbs.gadgetStyle001 ul li a,
+.WaGadgetBreadcrumbs.gadgetStyle001 ul li.last
+{}
+
+.WaGadgetBreadcrumbs.gadgetStyle001 ul li + li:before
+{}
+.WaGadgetBreadcrumbs.gadgetStyle001 ul li a,
+.WaGadgetBreadcrumbs.gadgetStyle001 ul li a:link,
+.WaGadgetBreadcrumbs.gadgetStyle001 ul li a:visited,
+.WaGadgetBreadcrumbs.gadgetStyle001 ul li a:active
+{}
+.WaGadgetBreadcrumbs.gadgetStyle001 ul li a:hover
+{}
+.WaGadgetBreadcrumbs.gadgetStyle001 ul li.last
+{}
+
+.WaGadgetBreadcrumbs.gadgetStyle001Alt
+{}
+.WaGadgetBreadcrumbs.gadgetStyle001Alt ul li a,
+.WaGadgetBreadcrumbs.gadgetStyle001Alt ul li.last
+{}
+.WaGadgetBreadcrumbs.gadgetStyle001Alt ul li a,
+.WaGadgetBreadcrumbs.gadgetStyle001Alt ul li.last
+{}
+
+.WaGadgetBreadcrumbs.gadgetStyle001Alt ul li + li:before
+{}
+.WaGadgetBreadcrumbs.gadgetStyle001Alt ul li a,
+.WaGadgetBreadcrumbs.gadgetStyle001Alt ul li a:link,
+.WaGadgetBreadcrumbs.gadgetStyle001Alt ul li a:visited,
+.WaGadgetBreadcrumbs.gadgetStyle001Alt ul li a:active
+{}
+.WaGadgetBreadcrumbs.gadgetStyle001Alt ul li a:hover
+{}
+.WaGadgetBreadcrumbs.gadgetStyle001Alt ul li.last
+{}
+
+
+
+
+
+.WaGadgetSiteMap.gadgetStyle001
+{}
+.WaGadgetSiteMap.gadgetStyle001 ul li
+{}
+.WaGadgetSiteMap.gadgetStyle001 ul li a
+{}
+.WaGadgetSiteMap.gadgetStyle001 ul li a:hover
+{}
+
+.WaGadgetSiteMap.gadgetStyle001Alt
+{}
+.WaGadgetSiteMap.gadgetStyle001Alt ul li
+{}
+.WaGadgetSiteMap.gadgetStyle001Alt ul li a
+{}
+.WaGadgetSiteMap.gadgetStyle001Alt ul li a:hover
+{}
+
+.WaGadgetNavigationLinks.gadgetStyle001
+{}
+
+.WaGadgetNavigationLinks.gadgetStyle001 .gadgetStyleTitle h4
+{}
+
+
+.WaGadgetNavigationLinks.gadgetStyle001 ul.orientationVertical li:before,
+.WaGadgetNavigationLinks.gadgetStyle001 ul.orientationHorizontal li:before
+{}
+.WaGadgetNavigationLinks.gadgetStyle001 ul li a,
+.WaGadgetNavigationLinks.gadgetStyle001 ul li a:link,
+.WaGadgetNavigationLinks.gadgetStyle001 ul li a:visited,
+.WaGadgetNavigationLinks.gadgetStyle001 ul li a:active
+{}
+.WaGadgetNavigationLinks.gadgetStyle001 ul li a:hover
+{}
+
+.WaGadgetNavigationLinks.gadgetStyle001Alt
+{}
+
+.WaGadgetNavigationLinks.gadgetStyle001Alt .gadgetStyleTitle h4
+{}
+
+.WaGadgetNavigationLinks.gadgetStyle001Alt ul.orientationVertical li:before,
+.WaGadgetNavigationLinks.gadgetStyle001Alt ul.orientationHorizontal li:before
+{}
+.WaGadgetNavigationLinks.gadgetStyle001Alt ul li a,
+.WaGadgetNavigationLinks.gadgetStyle001Alt ul li a:link,
+.WaGadgetNavigationLinks.gadgetStyle001Alt ul li a:visited,
+.WaGadgetNavigationLinks.gadgetStyle001Alt ul li a:active
+{}
+.WaGadgetNavigationLinks.gadgetStyle001Alt ul li a:hover
+{}
+
+.WaGadgetNavigationLinks.gadgetStyle002 .gadgetStyleBody ul.orientationHorizontal li:before,
+.WaGadgetNavigationLinks.gadgetStyle002 .gadgetStyleBody ul.orientationHorizontal li:after,
+.WaGadgetNavigationLinks.gadgetStyle002 .gadgetStyleBody ul.orientationVertical li:before,
+.WaGadgetNavigationLinks.gadgetStyle002 .gadgetStyleBody ul.orientationVertical li:after
+{}
+
+.WaGadgetNavigationLinks.gadgetStyle003 ul li a,
+.WaGadgetNavigationLinks.gadgetStyle003 ul li a:hover,
+.WaGadgetNavigationLinks.gadgetStyle003 ul li a:link,
+.WaGadgetNavigationLinks.gadgetStyle003 ul li a:visited,
+.WaGadgetNavigationLinks.gadgetStyle003 ul li a:active
+{}
+
+
+
+.WaGadgetNavigationLinks.gadgetStyle003 ul li a:hover
+{}
+
+
+.WaGadgetMenuHorizontal.menuStyle001 .als-container
+{}
+
+.WaGadgetMenuHorizontal .als-container .als-viewport .als-wrapper .als-item a
+{font-weight: bold;color: #212121;
+}
+.WaGadgetMenuHorizontal .als-container .als-viewport .als-wrapper .als-item a .als-item-wrap
+{}
+
+.WaGadgetMenuHorizontal .als-container .als-viewport .als-wrapper .als-item a.act .als-item-wrap
+{
+ 	border-bottom-color: #69797E;
+}
+.WaGadgetMenuHorizontal .als-container .als-viewport .als-wrapper .als-item a:hover
+{
+	color: #000000;
+}
+.WaGadgetMenuHorizontal .als-container .als-viewport .als-wrapper .als-item a:hover .als-item-wrap
+{
+	border-bottom-color: #69797E;
+	border-top-color: #69797E;
+}
+
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner
+{}
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li > .item > a
+{
+	font-family: Times New Roman, Times, serif;color: #FFFFFF;
+}
+
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li:not(.phantom) > .item > a
+{}
+
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li > .item > a:after
+{
+	background-color: #FFFFFF;
+}
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li.sel > .item > a > span
+{
+	border-bottom-color: #FFFFFF;
+}
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li > .item:hover > a
+{
+	color: #949493;
+}
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li > .item:hover > a:after
+{
+	background-color: #949493;
+}
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li > .item:hover > a > span
+{
+	border-bottom-color: #949493;
+}
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner ul ul
+{
+	background-color: #438CCA;
+	border-color: #FFFFFF;
+}
+
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner ul ul li > .item > a
+{
+	font-family: Times New Roman, Times, serif;color: #FFFFFF;
+}
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner ul ul li > .item > a > span:after
+{
+	background-color: #FFFFFF;
+}
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner ul ul li.sel > .item > a
+{
+	color: #488616;
+}
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner ul ul li.sel > .item > a > span:after
+{
+	background-color: #488616;
+}
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner ul ul > li.sel > .item
+{
+	background-color: #FFFFFF;
+}
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner ul ul > li > .item:hover > a
+{
+	color: #221E1F;
+}
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner ul ul > li > .item:hover > a > span:after
+{
+	background-color: #221E1F;
+}
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner ul ul > li > .item:hover,
+.WaGadgetMenuHorizontal .menuInner ul ul li.sel > .item:hover 
+{
+	background-color: #EEEEEE;
+}
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner .menuButton
+{
+	background-color: #085E8D;
+	color: #FFFFFF;
+}
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView ul.firstLevel,
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView ul.firstLevel > li
+{
+	border-color: #085E8D;
+}
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView ul,
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView ul ul
+{
+	background-color: #438CCA;
+}
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView ul li.sel > .item > a,
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView ul ul li.sel > .item > a,
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView ul li.sel > .item > a:hover,
+.WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView ul ul li.sel > .item > a:hover
+{
+	color: #488616;
+	background-color: #FFFFFF;
+}
+
+
+
+
+.WaGadgetMenuVertical.menuStyle001 .menuInner
+{}
+.WaGadgetMenuVertical.menuStyle001 .menuInner ul.firstLevel
+{}
+.WaGadgetMenuVertical.menuStyle001 .menuInner ul.firstLevel > li > .item > a
+{}
+.WaGadgetMenuVertical.menuStyle001 .menuInner ul.firstLevel > li.dir > .item > a > span:after
+{}
+.WaGadgetMenuVertical.menuStyle001 .menuInner ul.firstLevel > li:hover > .item > a,
+.WaGadgetMenuVertical.menuStyle001 .menuInner ul.firstLevel > li.sel:hover > .item > a
+{}
+.WaGadgetMenuVertical.menuStyle001 .menuInner ul.firstLevel > li.dir:hover > .item > a > span:after
+{}
+.WaGadgetMenuVertical.menuStyle001 .menuInner ul.firstLevel > li:hover > .item,
+.WaGadgetMenuVertical.menuStyle001 .menuInner ul.firstLevel > li.sel:hover > .item
+{}
+.WaGadgetMenuVertical.menuStyle001 .menuInner ul.firstLevel > li.sel > .item 
+{}
+.WaGadgetMenuVertical.menuStyle001 .menuInner ul.firstLevel > li.sel > .item > a 
+{}
+.WaGadgetMenuVertical.menuStyle001 .menuInner ul.firstLevel > li.sel > .item > a > span:after
+{}
+.WaGadgetMenuVertical.menuStyle001 .menuInner ul ul
+{}
+.WaGadgetMenuVertical.menuStyle001 .menuInner ul ul > li > .item > a
+{}
+.WaGadgetMenuVertical.menuStyle001 .menuInner ul ul > li.dir > .item > a > span:after
+{}
+.WaGadgetMenuVertical.menuStyle001 .menuInner ul ul > li:hover > .item > a,
+.WaGadgetMenuVertical.menuStyle001 .menuInner ul ul > li.sel:hover > .item > a
+{}
+.WaGadgetMenuVertical.menuStyle001 .menuInner ul ul > li.dir:hover > .item > a > span:after
+{}
+.WaGadgetMenuVertical.menuStyle001 .menuInner ul ul > li:hover > .item,
+.WaGadgetMenuVertical.menuStyle001 .menuInner ul ul > li.sel:hover > .item
+{}
+.WaGadgetMenuVertical.menuStyle001 .menuInner ul ul > li.sel > .item 
+{}
+.WaGadgetMenuVertical.menuStyle001 .menuInner ul ul > li.sel > .item > a 
+{}
+.WaGadgetMenuVertical.menuStyle001 .menuInner ul ul > li.sel > .item > a > span:after
+{}
+
+
+
+.WaGadgetMenuVertical.menuStyle002 .menuInner
+{}
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel
+{}
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel > li > .item > a
+{}
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel > li.dir > .item > a > span:after
+{}
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel > li:hover > .item > a,
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel > li.sel:hover > .item > a,
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel > li.sel.dir:hover > .item > a 
+{}
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel > li.dir:hover > .item > a > span:after,
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel > li.sel.dir:hover > .item > a > span:after
+{}
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel > li:hover > .item,
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel > li.sel:hover > .item
+{}
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel > li.sel > .item 
+{}
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel > li.sel > .item > a,
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel > li.sel.dir > .item > a 
+{}
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel > li.sel > .item > a > span:after,
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel > li.sel.dir > .item > a > span:after
+{}
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel ul
+{}
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel ul > li > .item > a
+{}
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel ul > li.dir > .item > a > span:after
+{}
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel ul > li:hover > .item > a,
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel ul > li.sel:hover > .item > a,
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel ul > li.sel.dir:hover > .item > a
+{}
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel ul > li.dir:hover > .item > a > span:after,
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel ul > li.sel.dir:hover > .item > a > span:after
+{}
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel ul > li:hover > .item,
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel ul > li.sel:hover > .item
+{}
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel ul > li.sel > .item 
+{}
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel ul > li.sel > .item > a,
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel ul > li.sel.dir > .item > a 
+{}
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel ul > li.sel > .item > a > span:after,
+.WaGadgetMenuVertical.menuStyle002 .menuInner ul.firstLevel ul > li.sel.dir > .item > a > span:after
+{}
+
+.WaGadgetCustomMenu.gadgetStyleNone 
+{}
+.WaGadgetCustomMenu.gadgetStyleNone ul li a
+{
+	font-family: Times New Roman, Times, serif;
+	font-size: 1.20em;color: #CCCCCC;
+}
+.WaGadgetCustomMenu.gadgetStyleNone ul li a:hover
+{}
+.WaGadgetCustomMenu.gadgetStyleNone ul.orientationHorizontal li:after,
+.WaGadgetCustomMenu.gadgetStyleNone ul[class*="orientationVertical"] li:after,
+.WaGadgetCustomMenu.gadgetStyleNone ul[class*="orientationVertical"] li:before
+{
+	color: #CCCCCC;
+	font-size: 1.20em;
+}
+.WaGadgetCustomMenu.gadgetStyle001 
+{}
+.WaGadgetCustomMenu.gadgetStyle001 ul li a
+{}
+.WaGadgetCustomMenu.gadgetStyle001 ul li a:hover
+{}
+.WaGadgetCustomMenu.gadgetStyle001 ul.orientationHorizontal li:after,
+.WaGadgetCustomMenu.gadgetStyle001 ul[class*="orientationVertical"] li:after,
+.WaGadgetCustomMenu.gadgetStyle001 ul[class*="orientationVertical"] li:before
+{}
+
+.WaGadgetCustomMenu.gadgetStyle002Alt 
+{}
+.WaGadgetCustomMenu.gadgetStyle002Alt ul li a
+{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 0.80em;}
+
+.WaGadgetCustomMenu.gadgetStyle002Alt ul li a:hover
+{}
+.WaGadgetCustomMenu.gadgetStyle002Alt ul.orientationHorizontal li:after,
+.WaGadgetCustomMenu.gadgetStyle002Alt ul[class*="orientationVertical"] li:after,
+.WaGadgetCustomMenu.gadgetStyle002Alt ul[class*="orientationVertical"] li:before
+{font-size: 0.80em;
+}
+
+.zoneBrandingOuter
+{}
+
+.zoneBrandingOuter .container_12 > DIV
+{}
+
+#idFooterPoweredByWA
+{}
+
+#idFooterPoweredByWA a
+{}
+
+#idFooterPoweredByWA a:hover
+{}

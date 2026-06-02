@@ -1,0 +1,64 @@
+.dsdss2026Page .light-blue-button,
+.dsdss2026Page .heavy-blue-button,
+.dsdss2026Page .sky-blue-button,
+.dsdss2026Page .navy-blue-button,
+.dsdss2026Page .warm-peach-button,
+.dsdss2026Page .cool-teal-button,
+.dsdss2026Section .light-blue-button,
+.dsdss2026Section .heavy-blue-button,
+.dsdss2026Section .sky-blue-button,
+.dsdss2026Section .navy-blue-button,
+.dsdss2026Section .warm-peach-button,
+.dsdss2026Section .cool-teal-button {
+  color: #ffffff;
+  border: none;
+}
+
+.dsdss2026Page .light-blue-button,
+.dsdss2026Page .heavy-blue-button,
+.dsdss2026Page .sky-blue-button,
+.dsdss2026Page .navy-blue-button,
+.dsdss2026Section .light-blue-button,
+.dsdss2026Section .heavy-blue-button,
+.dsdss2026Section .sky-blue-button,
+.dsdss2026Section .navy-blue-button {
+  background: linear-gradient(45deg, #c4495c, #a51c30) !important;
+}
+
+.dsdss2026Page .warm-peach-button,
+.dsdss2026Page .cool-teal-button,
+.dsdss2026Section .warm-peach-button,
+.dsdss2026Section .cool-teal-button {
+  background: linear-gradient(135deg, #c4495c 0%, #a51c30 100%) !important;
+  text-shadow: none !important;
+}
+
+.dsdss2026Page .light-blue-button:hover,
+.dsdss2026Page .heavy-blue-button:hover,
+.dsdss2026Page .sky-blue-button:hover,
+.dsdss2026Page .navy-blue-button:hover,
+.dsdss2026Page .warm-peach-button:hover,
+.dsdss2026Page .cool-teal-button:hover,
+.dsdss2026Section .light-blue-button:hover,
+.dsdss2026Section .heavy-blue-button:hover,
+.dsdss2026Section .sky-blue-button:hover,
+.dsdss2026Section .navy-blue-button:hover,
+.dsdss2026Section .warm-peach-button:hover,
+.dsdss2026Section .cool-teal-button:hover {
+  box-shadow: 0 10px 18px rgba(165, 28, 48, 0.28) !important;
+}
+
+.dsdss2026Page .light-blue-button:active,
+.dsdss2026Page .heavy-blue-button:active,
+.dsdss2026Page .sky-blue-button:active,
+.dsdss2026Page .navy-blue-button:active,
+.dsdss2026Page .warm-peach-button:active,
+.dsdss2026Page .cool-teal-button:active,
+.dsdss2026Section .light-blue-button:active,
+.dsdss2026Section .heavy-blue-button:active,
+.dsdss2026Section .sky-blue-button:active,
+.dsdss2026Section .navy-blue-button:active,
+.dsdss2026Section .warm-peach-button:active,
+.dsdss2026Section .cool-teal-button:active {
+  box-shadow: 0 4px 10px rgba(165, 28, 48, 0.22) !important;
+}
