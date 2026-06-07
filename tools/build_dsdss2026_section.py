@@ -2,6 +2,8 @@
 
 from pathlib import Path
 
+from update_dsdss2026_scientific_sessions import rebuild_scientific_sessions
+
 
 SITE_ROOT = Path(__file__).resolve().parent.parent / "site"
 UCONN_LOGO = "../_assets/dahshu.wildapricot.org/resources/Pictures/uconn2.png"
@@ -160,3 +162,4 @@ def patch_existing() -> None:
 if __name__ == "__main__":
     clone_pages()
     patch_existing()
+    rebuild_scientific_sessions()
