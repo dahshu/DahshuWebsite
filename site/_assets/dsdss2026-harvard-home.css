@@ -14,38 +14,65 @@
 
 body {
   margin: 0;
-  background: #f2f2f2;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #ede7e8 0%, #ffffff 28%);
   color: var(--ink);
   font-family: "Source Sans 3", Arial, sans-serif;
 }
 
 .page-shell {
-  max-width: 1000px;
-  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
   background: var(--paper);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
 }
 
 .top-band {
   background: var(--harvard-crimson);
-  border: 8px solid #f2f2f2;
-  border-bottom-width: 0;
-  padding: 12px 18px;
+  padding: 0;
 }
 
-.crest {
-  width: 46px;
-  height: 46px;
+.wa-home-header {
+  position: relative;
+  z-index: 20;
+  padding: 0 clamp(16px, 4vw, 54px);
+}
+
+.wa-home-header .WaLayoutContainer {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.wa-home-header .WaLayoutTable {
+  width: 100%;
+}
+
+.wa-home-header .wa-header-logo-cell .gadgetStyleBody {
+  padding: 14px 0 6px;
+}
+
+.wa-home-header .wa-header-logo-cell img {
+  width: 52px;
+  height: auto;
   display: block;
+}
+
+.wa-home-header .WaGadgetMenuHorizontal {
+  margin-top: 14px !important;
+}
+
+.wa-home-header .WaGadgetMenuHorizontal .menuInner {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .hero {
   display: grid;
   grid-template-columns: minmax(260px, 1fr) minmax(320px, 1.15fr);
-  gap: 26px;
-  padding: 18px 18px 10px;
+  align-items: center;
+  gap: 48px;
+  min-height: max(620px, calc(100vh - 146px));
+  padding: 34px clamp(22px, 4vw, 54px) 54px;
   background: var(--harvard-crimson);
-  border: 8px solid #f2f2f2;
 }
 
 .hero-copy {
@@ -55,7 +82,7 @@ body {
 .hero-copy h1 {
   margin: 0 0 18px;
   font-family: "Libre Baskerville", Georgia, serif;
-  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  font-size: clamp(2.9rem, 5vw, 5rem);
   line-height: 1.03;
   letter-spacing: -0.03em;
 }
@@ -68,13 +95,13 @@ body {
 }
 
 .hero-date {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 14px;
 }
 
 .hero-school,
 .hero-location {
-  font-size: 1.1rem;
+  font-size: 1.14rem;
   margin-bottom: 6px;
 }
 
@@ -112,7 +139,7 @@ body {
 .carousel-frame {
   position: relative;
   overflow: hidden;
-  min-height: 300px;
+  min-height: 380px;
   background: #d9d9d9;
   border: 6px solid rgba(255, 255, 255, 0.15);
 }
@@ -157,8 +184,8 @@ body {
 }
 
 .section-heading {
-  margin: 0 8px;
-  padding: 12px 14px;
+  margin: 0;
+  padding: 16px clamp(22px, 4vw, 54px);
   background: linear-gradient(180deg, #fafafa 0%, #efefef 100%);
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
@@ -174,7 +201,7 @@ body {
 }
 
 .about-copy {
-  padding: 18px 18px 28px;
+  padding: 26px clamp(22px, 4vw, 54px) 36px;
 }
 
 .about-copy p {
@@ -191,8 +218,8 @@ body {
 .speaker-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 28px 38px;
-  padding: 26px 20px 16px;
+  gap: 34px 52px;
+  padding: 30px clamp(22px, 4vw, 54px) 20px;
 }
 
 .speaker-card {
@@ -226,7 +253,7 @@ body {
 
 .keynote-link {
   margin: 0;
-  padding: 6px 18px 28px;
+  padding: 10px clamp(22px, 4vw, 54px) 32px;
   text-align: center;
 }
 
@@ -241,7 +268,7 @@ body {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   gap: 24px;
-  padding: 20px 18px;
+  padding: 24px clamp(22px, 4vw, 54px);
   background: var(--harvard-crimson);
   color: #fff;
 }
@@ -306,7 +333,7 @@ body {
 
 .photo-credit {
   margin: 0;
-  padding: 10px 18px 18px;
+  padding: 12px clamp(22px, 4vw, 54px) 22px;
   color: var(--muted);
   background: #fff;
   font-size: 0.82rem;
@@ -319,8 +346,33 @@ body {
 }
 
 @media (max-width: 860px) {
+  .wa-home-header {
+    padding: 0 12px;
+  }
+
+  .wa-home-header .WaLayoutTable,
+  .wa-home-header .WaLayoutTable tbody,
+  .wa-home-header .WaLayoutTable tr,
+  .wa-home-header .WaLayoutTable td {
+    display: block;
+    width: 100% !important;
+  }
+
+  .wa-home-header .wa-header-logo-cell .gadgetStyleBody {
+    padding-bottom: 0;
+  }
+
+  .wa-home-header .WaLayoutSeparator {
+    display: none !important;
+  }
+
+  .wa-home-header .WaGadgetMenuHorizontal .menuInner {
+    justify-content: flex-start;
+  }
+
   .hero {
     grid-template-columns: 1fr;
+    min-height: 0;
   }
 
   .carousel-frame {
@@ -337,15 +389,6 @@ body {
 }
 
 @media (max-width: 520px) {
-  .page-shell {
-    box-shadow: none;
-  }
-
-  .top-band,
-  .hero {
-    border-width: 4px;
-  }
-
   .hero-copy h1 {
     font-size: 2.3rem;
   }

@@ -1,420 +1,372 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html lang="en" class="no-js ie6 "><![endif]-->
-<!--[if IE 7 ]><html lang="en" class="no-js ie7 "> <![endif]-->
-<!--[if IE 8 ]><html lang="en" class="no-js ie8 "> <![endif]-->
-<!--[if IE 9 ]><html lang="en" class="no-js ie9 "><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js "> <!--<![endif]-->
-  <head id="Head1">
-		<link rel="stylesheet" type="text/css" href="../_assets/kit-pro.fontawesome.com/releases/latest/css/pro.min.css" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="../_assets/sf.wildapricot.org/BuiltTheme/showcase_green.v3.0/current/3a527004/Styles/combined.css" rel="stylesheet" type="text/css" /><link href="../_assets/dahshu.wildapricot.org/resources/theme/customStyles__7a503e4d77.css" rel="stylesheet" type="text/css" /><link href="../_assets/dahshu.wildapricot.org/resources/theme/user__3f1ae45425.css" rel="stylesheet" type="text/css" /><link href="../_assets/live-sf.wildapricot.org/WebUI/built9.16.0-e938026/scripts/public/react/index-84b33b4.css" rel="stylesheet" type="text/css" /><link href="../_assets/live-sf.wildapricot.org/WebUI/built9.16.0-e938026/css/shared/ui/shared-ui-compiled.css" rel="stylesheet" type="text/css" /><script type="text/javascript" language="javascript" id="idJavaScriptEnvironment">var bonaPage_BuildVer='9.16.0-e938026';
-var bonaPage_AdminBackendUrl = '/admin/';
-var bonaPage_StatRes='../_assets/live-sf.wildapricot.org/WebUI/';
-var bonaPage_InternalPageType = { isUndefinedPage : false,isWebPage : true,isAdminPage : false,isDialogPage : false,isSystemPage : false,isErrorPage : false,isError404Page : false };
-var bonaPage_PageView = { isAnonymousView : true,isMemberView : false,isAdminView : false };
-var WidgetMode = 0;
-var bonaPage_IsUserAnonymous = true;
-var bonaPage_ThemeVer='3a527004638934911290000000638870726180380000'; var bonaPage_ThemeId = 'showcase_green.v3.0'; var bonaPage_ThemeVersion = '3.0';
-var bonaPage_id='18125'; version_id='';
-if (bonaPage_InternalPageType && (bonaPage_InternalPageType.isSystemPage || bonaPage_InternalPageType.isWebPage) && window.self !== window.top) { var success = true; try { var tmp = top.location.href; if (!tmp) { top.location = self.location; } } catch (err) { try { if (self != top) { top.location = self.location; } } catch (err) { try { if (self != top) { top = self; } success = false; } catch (err) { success = false; } } success = false; } if (!success) { window.onload = function() { document.open('text/html', 'replace'); document.write('<ht'+'ml><he'+'ad></he'+'ad><bo'+'dy><h1>Wrong document context!</h1></bo'+'dy></ht'+'ml>'); document.close(); } } }
-try { function waMetricsGlobalHandler(args) { if (WA.topWindow.waMetricsOuterGlobalHandler && typeof(WA.topWindow.waMetricsOuterGlobalHandler) === 'function') { WA.topWindow.waMetricsOuterGlobalHandler(args); }}} catch(err) {}
- try { if (parent && parent.BonaPage) parent.BonaPage.implementBonaPage(window); } catch (err) { }
-try { document.write('<style type="text/css"> .WaHideIfJSEnabled, .HideIfJSEnabled { display: none; } </style>'); } catch(err) {}
-var bonaPage_WebPackRootPath = '../_assets/live-sf.wildapricot.org/WebUI/built9.16.0-e938026/scripts/public/react/';</script><script type="text/javascript" language="javascript" src="../_assets/live-sf.wildapricot.org/WebUI/built9.16.0-e938026/scripts/shared/bonapagetop/bonapagetop-compiled.js" id="idBonaPageTop"></script><script type="text/javascript" language="javascript" src="../_assets/live-sf.wildapricot.org/WebUI/built9.16.0-e938026/scripts/public/react/index-84b33b4.js" id="ReactPublicJs"></script><script type="text/javascript" language="javascript" src="../_assets/live-sf.wildapricot.org/WebUI/built9.16.0-e938026/scripts/shared/ui/shared-ui-compiled.js" id="idSharedJs"></script><script type="text/javascript" language="javascript" src="../_assets/live-sf.wildapricot.org/WebUI/built9.16.0-e938026/General.js" id=""></script><script type="text/javascript" language="javascript" src="../_assets/sf.wildapricot.org/BuiltTheme/showcase_green.v3.0/current/3a527004/Scripts/combined.js" id=""></script><title>DahShu - DSDSS2026</title>
-<link rel="search" type="application/opensearchdescription+xml" title="dahshu.wildapricot.org" href="../opensearch.ashx/index.html" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap" /><link rel="stylesheet" href="../_assets/dsdss2026.css" /></head>
-  <body id="PAGEID_18125" class="publicContentView LayoutPlain dsdss2026Page dsdss2026Section">
-<div class="mLayout layoutPlain state1" id="mLayout">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DahShu Data Science Symposium 2026</title>
+  <link rel="stylesheet" href="../_assets/kit-pro.fontawesome.com/releases/latest/css/pro.min.css">
+  <link href="../_assets/sf.wildapricot.org/BuiltTheme/showcase_green.v3.0/current/3a527004/Styles/combined.css" rel="stylesheet" type="text/css">
+  <link href="../_assets/dahshu.wildapricot.org/resources/theme/customStyles__7a503e4d77.css" rel="stylesheet" type="text/css">
+  <link href="../_assets/dahshu.wildapricot.org/resources/theme/user__3f1ae45425.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&family=Roboto:wght@300;400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="../_assets/dsdss2026.css">
+  <link rel="stylesheet" href="../_assets/dsdss2026-harvard-home.css">
+  <script src="../_assets/sf.wildapricot.org/BuiltTheme/showcase_green.v3.0/current/3a527004/Scripts/combined.js"></script>
+</head>
+<body class="publicContentView LayoutPlain dsdss2026Section">
+  <div class="page-shell">
+    <header class="top-band wa-home-header">
+      <div id="id_homeMenuRoot" class="WaLayoutContainer" style="background-color:#A51C30;">
+        <table cellspacing="0" cellpadding="0" class="WaLayoutTable">
+          <tr class="WaLayoutRow">
+            <td class="WaLayoutItem wa-header-logo-cell" style="width:12%;">
+              <div class="WaGadgetOnly WaGadgetContent gadgetStyleNone" style="background-color:#A51C30;">
+                <div class="gadgetStyleBody gadgetContentEditableArea" data-editableArea="0" data-areaHeight="auto">
+                  <p><img src="../_assets/Harvard_University_coat_of_arms.svg" alt="Harvard crest" title="Harvard crest" border="0"></p>
+                </div>
+              </div>
+            </td>
+            <td class="WaLayoutSeparator"><div style="width: inherit;"></div></td>
+            <td class="WaLayoutItem" style="width:88%;">
+              <div id="id_homeMenu" class="WaGadgetOnly WaGadgetMenuHorizontal menuStyle002" style="margin-top:15px;">
+                <div class="menuInner">
+                  <ul class="firstLevel">
+                    <li class="sel dir">
+                      <div class="item">
+                        <a href="index.html" title="DSDSS2026"><span>DSDSS2026</span></a>
+                        <ul class="secondLevel">
+                          <li class=" ">
+                            <div class="item">
+                              <a href="../DSDSS2026-abstract-submission/index.html" title="Abstract Submission"><span>Abstract Submission</span></a>
+                            </div>
+                          </li>
+                          <li class=" ">
+                            <div class="item">
+                              <a href="../DSDSS2026-poster-submission/index.html" title="Poster Submission"><span>Poster Submission</span></a>
+                            </div>
+                          </li>
+                          <li class=" ">
+                            <div class="item">
+                              <a href="../DSDSS2026-registration/index.html" title="Registration"><span>Registration</span></a>
+                            </div>
+                          </li>
+                          <li class=" ">
+                            <div class="item">
+                              <a href="../DSDSS2026-committee/index.html" title="Committee"><span>Committee</span></a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class=" dir">
+                      <div class="item">
+                        <a href="../DSDSS2026-agenda/index.html" title="Agenda &amp; Program"><span>Agenda &amp; Program</span></a>
+                        <ul class="secondLevel">
+                          <li class=" ">
+                            <div class="item">
+                              <a href="../DSDSS2026-opening-remarks/index.html" title="Openning Remarks"><span>Openning Remarks</span></a>
+                            </div>
+                          </li>
+                          <li class=" dir">
+                            <div class="item">
+                              <a href="../DSDSS2026-keynote-sessions/index.html" title="Keynote Sessions"><span>Keynote Sessions</span></a>
+                              <ul class="secondLevel">
+                                <li class=" ">
+                                  <div class="item">
+                                    <a href="../DSDSS2026-keynote-session-1/index.html" title="Keynote Session 1"><span>Keynote Session 1</span></a>
+                                  </div>
+                                </li>
+                                <li class=" ">
+                                  <div class="item">
+                                    <a href="../DSDSS2026-keynote-session-2/index.html" title="Keynote Session 2"><span>Keynote Session 2</span></a>
+                                  </div>
+                                </li>
+                                <li class=" ">
+                                  <div class="item">
+                                    <a href="../DSDSS2026-keynote-session-3/index.html" title="Keynote Session 3"><span>Keynote Session 3</span></a>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class=" dir">
+                            <div class="item">
+                              <a href="../DSDSS2026-scientific-sessions/index.html" title="Scientific Sessions"><span>Scientific Sessions</span></a>
+                              <ul class="secondLevel">
+                                <li class=" ">
+                                  <div class="item">
+                                    <a href="../DSDSS2026-scientific-session-1/index.html" title="Session 1"><span>Session 1</span></a>
+                                  </div>
+                                </li>
+                                <li class=" ">
+                                  <div class="item">
+                                    <a href="../DSDSS2026-scientific-session-2/index.html" title="Session 2"><span>Session 2</span></a>
+                                  </div>
+                                </li>
+                                <li class=" ">
+                                  <div class="item">
+                                    <a href="../DSDSS2026-scientific-session-3/index.html" title="Session 3"><span>Session 3</span></a>
+                                  </div>
+                                </li>
+                                <li class=" ">
+                                  <div class="item">
+                                    <a href="../DSDSS2026-scientific-session-4/index.html" title="Session 4"><span>Session 4</span></a>
+                                  </div>
+                                </li>
+                                <li class=" ">
+                                  <div class="item">
+                                    <a href="../DSDSS2026-scientific-session-5/index.html" title="Session 5"><span>Session 5</span></a>
+                                  </div>
+                                </li>
+                                <li class=" ">
+                                  <div class="item">
+                                    <a href="../DSDSS2026-scientific-session-6/index.html" title="Session 6"><span>Session 6</span></a>
+                                  </div>
+                                </li>
+                                <li class=" ">
+                                  <div class="item">
+                                    <a href="../DSDSS2026-scientific-session-7/index.html" title="Session 7"><span>Session 7</span></a>
+                                  </div>
+                                </li>
+                                <li class=" ">
+                                  <div class="item">
+                                    <a href="../DSDSS2026-scientific-session-8/index.html" title="Session 8"><span>Session 8</span></a>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class=" ">
+                            <div class="item">
+                              <a href="../DSDSS2026-banquet/index.html" title="Banquet"><span>Banquet</span></a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class=" ">
+                      <div class="item">
+                        <a href="../DSDSS2026-sponsor/index.html" title="Sponsor"><span>Sponsor</span></a>
+                      </div>
+                    </li>
+                    <li class=" ">
+                      <div class="item">
+                        <a href="../DSDSS2026-short-course/index.html" title="Short Course"><span>Short Course</span></a>
+                      </div>
+                    </li>
+                    <li class=" dir">
+                      <div class="item">
+                        <a href="../DSDSS2026-speakers/index.html" title="Speakers"><span>Speakers</span></a>
+                        <ul class="secondLevel">
+                          <li class=" ">
+                            <div class="item">
+                              <a href="../DSDSS2026-banquet-speakers/index.html" title="Banquet Speakers"><span>Banquet Speakers</span></a>
+                            </div>
+                          </li>
+                          <li class=" ">
+                            <div class="item">
+                              <a href="../DSDSS2026-invited-speakers/index.html" title="Invited Speakers"><span>Invited Speakers</span></a>
+                            </div>
+                          </li>
+                          <li class=" ">
+                            <div class="item">
+                              <a href="../DSDSS2026-keynote-speakers/index.html" title="Keynote Speakers"><span>Keynote Speakers</span></a>
+                            </div>
+                          </li>
+                          <li class=" ">
+                            <div class="item">
+                              <a href="../DSDSS2026-panelists/index.html" title="Panelists"><span>Panelists</span></a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class=" ">
+                      <div class="item">
+                        <a href="../DSDSS2026-venue/index.html" title="Venue"><span>Venue</span></a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <script type="text/javascript">
+                  if (window.WaMenuHorizontal) { new WaMenuHorizontal({ id: "id_homeMenu" }); }
+                </script>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </header>
 
- <!-- content zone -->
-	<div class="zoneContentOuter zoneOuter">
-		<div class="zoneContent container_12">
-			<div class="zoneContentInner zoneInner s1_grid_12 s2_grid_12 s3_grid_12">
-<div id="id_Content" data-componentId="Content" class="WaPlaceHolder WaPlaceHolderContent" style="background-image:url(../_assets/sf.wildapricot.org/ThemeSharedRes/HeaderBackgroundImages/Bg-pattern-7.png);background-position:left top;background-color:#E6E6E6;"><div style="padding-top:4px;padding-right:2px;padding-bottom:2px;padding-left:1px;"><div id="id_aXa1idK" class="WaGadgetFirst WaGadgetBreadcrumbs  gadgetStyle001" style="margin-top:-7px;margin-right:-7px;" data-componentId="aXa1idK" ><div class="gadgetStyleBody " style=""  data-areaHeight="auto">
-<ul>
-<li><a href="../index.html">Home</a></li>
-<li class="last">DSDSS2026</li>
-</ul>
-</div>
-</div><div id="id_3HZnuUn" data-componentId="RMdgjDA" class="WaLayoutContainer" style="background-color:#A51C30;"><table cellspacing="0" cellpadding="0" class="WaLayoutTable" style=""><tr data-componentId="3HZnuUn_row" class="WaLayoutRow"><td id="id_EbthRru" data-componentId="jPWflEY" class="WaLayoutItem" style="width:12%;"><div id="id_knZm8rP" class="WaLayoutPlaceHolder placeHolderContainer" data-componentId="qPoqG8c" style=""><div style=""><div id="id_rztj2p7" class="WaGadgetOnly WaGadgetContent  gadgetStyleNone" style="" data-componentId="rztj2p7" ><div class="gadgetStyleBody gadgetContentEditableArea" style="" data-editableArea="0" data-areaHeight="auto">
-<p><img src="../_assets/Harvard_University_coat_of_arms.svg" alt="" title="" border="0"><br></p></div>
-</div></div></div></td><td style="" data-componentId="jPWflEY_separator" class="WaLayoutSeparator"><div style="width: inherit;"></div></td><td id="id_39t6uw6" data-componentId="ocVQO3b" class="WaLayoutItem" style="width:88%;"><div id="id_tPHbiLK" class="WaLayoutPlaceHolder placeHolderContainer" data-componentId="AZt2vLU" style=""><div style=""><div id="id_d5WBRcn" class="WaGadgetOnly WaGadgetMenuHorizontal  menuStyle002" style="margin-top:15px;" data-componentId="vWOtrmM" ><div class="menuInner">
-	<ul class="firstLevel">
-<li class=" dir">
-	<div class="item">
-		<a href="index.html" title="DSDSS2026"><span>DSDSS2026</span></a>
-<ul class="secondLevel">
-<li class=" ">
-	<div class="item">
-		<a href="../DSDSS2026-abstract-submission/index.html" title="Abstract Submission"><span>Abstract Submission</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="../DSDSS2026-poster-submission/index.html" title="Poster Submission"><span>Poster Submission</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="../DSDSS2026-registration/index.html" title="Registration"><span>Registration</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="../DSDSS2026-committee/index.html" title="Committee"><span>Committee</span></a>
-</div>
-</li>
-	
-</ul>
-</div>
-</li>
-	
-<li class=" dir">
-	<div class="item">
-		<a href="../DSDSS2026-agenda/index.html" title="Agenda &amp; Program"><span>Agenda &amp; Program</span></a>
-<ul class="secondLevel">
-<li class=" ">
-	<div class="item">
-		<a href="../DSDSS2026-opening-remarks/index.html" title="Openning Remarks"><span>Openning Remarks</span></a>
-</div>
-</li>
-	
-<li class=" dir">
-	<div class="item">
-		<a href="../DSDSS2026-keynote-sessions/index.html" title="Keynote Sessions"><span>Keynote Sessions</span></a>
-<ul class="secondLevel">
-<li class=" ">
-	<div class="item">
-		<a href="../DSDSS2026-keynote-session-1/index.html" title="Keynote Session 1"><span>Keynote Session 1</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="../DSDSS2026-keynote-session-2/index.html" title="Keynote Session 2"><span>Keynote Session 2</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="../DSDSS2026-keynote-session-3/index.html" title="Keynote Session 3"><span>Keynote Session 3</span></a>
-</div>
-</li>
-	
-</ul>
-</div>
-</li>
-	
-<li class=" dir">
-	<div class="item">
-		<a href="../DSDSS2026-scientific-sessions/index.html" title="Scientific Sessions"><span>Scientific Sessions</span></a>
-<ul class="secondLevel">
-<li class=" ">
-	<div class="item">
-		<a href="../DSDSS2026-scientific-session-1/index.html" title="Session 1"><span>Session 1</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="../DSDSS2026-scientific-session-2/index.html" title="Session 2"><span>Session 2</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="../DSDSS2026-scientific-session-3/index.html" title="Session 3"><span>Session 3</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="../DSDSS2026-scientific-session-4/index.html" title="Session 4"><span>Session 4</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="../DSDSS2026-scientific-session-5/index.html" title="Session 5"><span>Session 5</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="../DSDSS2026-scientific-session-6/index.html" title="Session 6"><span>Session 6</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="../DSDSS2026-scientific-session-7/index.html" title="Session 7"><span>Session 7</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="../DSDSS2026-scientific-session-8/index.html" title="Session 8"><span>Session 8</span></a>
-</div>
-</li>
-	
-</ul>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="../DSDSS2026-banquet/index.html" title="Banquet"><span>Banquet</span></a>
-</div>
-</li>
-	
-</ul>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="../DSDSS2026-sponsor/index.html" title="Sponsor"><span>Sponsor</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="../DSDSS2026-short-course/index.html" title="Short Course"><span>Short Course</span></a>
-</div>
-</li>
-	
-<li class=" dir">
-	<div class="item">
-		<a href="../DSDSS2026-speakers/index.html" title="Speakers"><span>Speakers</span></a>
-<ul class="secondLevel">
-<li class=" ">
-	<div class="item">
-		<a href="../DSDSS2026-banquet-speakers/index.html" title="Banquet Speakers"><span>Banquet Speakers</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="../DSDSS2026-invited-speakers/index.html" title="Invited Speakers"><span>Invited Speakers</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="../DSDSS2026-keynote-speakers/index.html" title="Keynote Speakers"><span>Keynote Speakers</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="../DSDSS2026-panelists/index.html" title="Panelists"><span>Panelists</span></a>
-</div>
-</li>
-	
-</ul>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="../DSDSS2026-venue/index.html" title="Venue"><span>Venue</span></a>
-</div>
-</li>
-	
-</ul>
-</div>
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>DahShu<br>Data Science<br>Symposium</h1>
+        <p class="hero-date">October xx-xx, 2026</p>
+        <p class="hero-school">Harvard University</p>
+        <p class="hero-location">Boston | Massachusetts</p>
+        <a class="registration-pill" href="../DSDSS2026-registration/index.html">
+          <span class="registration-icon"><i class="fa-light fa-circle-check"></i></span>
+          Registration
+        </a>
+      </div>
 
-<script type="text/javascript">
-  if (window.WaMenuHorizontal) { new WaMenuHorizontal({ id: "id_d5WBRcn" }); }
-</script>
-</div></div></div></td></tr></table> </div><div id="id_lC2yKQC" data-componentId="YaCaytE" class="WaLayoutContainer" style="background-color:#FFFFFF;"><table cellspacing="0" cellpadding="0" class="WaLayoutTable" style=""><tr data-componentId="lC2yKQC_row" class="WaLayoutRow"><td id="id_E6LDQTM" data-componentId="M7AvSTT" class="WaLayoutItem" style="width:51%;"><div id="id_ifrSJpr" class="WaLayoutPlaceHolder placeHolderContainer" data-componentId="OPkTuce" style=""><div style=""><div id="id_4TINHKp" class="WaGadgetOnly WaGadgetContent  gadgetStyleNone" style="background-color:#FFFFFF;" data-componentId="D7KsDAJ" ><div class="gadgetStyleBody gadgetContentEditableArea" style="padding-top:5px;padding-bottom:5px;" data-editableArea="0" data-areaHeight="auto">
-<p><font><font color="#1A1A1A" face="Georgia" style="font-size: 36px;"><strong style=""><font style=""><font style="">DahShu&nbsp;</font></font><font style=""><font style=""><font style=""><font style=""><font style="">Data Science&nbsp;<font style="">Symposium 2026</font></font></font></font></font></font></strong></font></font></p>
+      <div class="hero-media">
+        <div class="carousel-frame">
+          <div class="carousel-slide is-active">
+            <img src="../_assets/harvard-campus/widener-library.jpg" alt="Widener Library at Harvard University">
+          </div>
+          <div class="carousel-slide">
+            <img src="../_assets/harvard-campus/harvard-hall.jpg" alt="Harvard Hall">
+          </div>
+          <div class="carousel-slide">
+            <img src="../_assets/harvard-campus/memorial-hall.jpg" alt="Memorial Hall at Harvard University">
+          </div>
+          <div class="carousel-slide">
+            <img src="../_assets/harvard-campus/harvard-yard-aerial.jpg" alt="Aerial view of Harvard Yard">
+          </div>
+        </div>
+        <div class="carousel-dots" aria-label="Campus image carousel navigation">
+          <button class="dot is-active" type="button" aria-label="Show slide 1"></button>
+          <button class="dot" type="button" aria-label="Show slide 2"></button>
+          <button class="dot" type="button" aria-label="Show slide 3"></button>
+          <button class="dot" type="button" aria-label="Show slide 4"></button>
+        </div>
+      </div>
+    </section>
 
-<p style="line-height: 43px; margin-top: 1em !important;"><font><strong style="" lucida=""><font color="#1A1A1A" face="Georgia" style="font-size: 14px;"><em style="">Innovative Frontiers: AI and Data-Driven Advances in Drug Development, Precision Medicine, Healthcare</em></font></strong></font></p><button class="light-blue-button" onclick="window.location.href='../DSDSS2026-committee/index.html'">Committee</button> <!-- Heavier blue button for Agenda -->
- <button class="heavy-blue-button" onclick="window.location.href='../DSDSS2026-agenda/index.html'">Agenda</button> <button class="sky-blue-button" onclick="window.location.href='../DSDSS2026-short-course/index.html'">Short Courses</button> <button class="navy-blue-button" onclick="window.location.href='../DSDSS2026-speakers/index.html'">Speakers</button><br>
-<!--<button class="cool‑teal‑button" onclick="window.location.href='../_assets/dahshu.wildapricot.org/resources/Pictures/DahShu Flyer0818.png'">Click here for Flyer</button>-->
-<button type="button" class="cool-teal-button" onclick="openFlyersWithDelay()">Click here for Flyers</button> <script type="text/javascript">try { 
+    <section class="section-heading">
+      <h2>ABOUT</h2>
+    </section>
 
-function openFlyersWithDelay() {
-    window.open('https://dahshu.wildapricot.org/resources/Pictures/flyer1.png','_blank','noopener,noreferrer');
-    setTimeout(() => {
-        window.open('https://dahshu.wildapricot.org/resources/Pictures/flyer2.png','_blank','noopener,noreferrer');
-    }, 100); // 100ms delay
-}
+    <section class="about-copy">
+      <p>We cordially invite you to join the DahShu Data Science Symposium at Harvard University in October 2026. As a non-profit organization, DahShu is dedicated to advancing research and education in data science. Our global membership surpasses 6,000 individuals, and our monthly virtual journal club consistently attracts over 100 attendees. We are committed to expanding our services to better serve our community. This year, we are excited to host our symposium in Boston, with Harvard serving as an academic anchor for collaboration across the region.</p>
+      <p>This year's symposium, themed "Empowering Medical Insights with Data and AI", will feature ten scientific sessions and four short courses from over 40 outstanding speakers. Our scientific sessions will explore a broad spectrum of data science topics in biomedical and clinical research, with short courses focusing on emerging topics such as generative AI and large language models, novel clinical trial design, as well as single-cell and spatial informatics. We expect the symposium to attract hundreds of researchers from both industry and academia, fostering vibrant discussions on the emerging opportunities and challenges in data-driven healthcare, drug discovery, and biomedical research. We look forward to welcoming you in person in Boston.</p>
+    </section>
 
- } catch(e) {}</script>
+    <section class="section-heading keynote-heading">
+      <h2>KEYNOTE SPEAKERS</h2>
+    </section>
 
-<p style="line-height: 35px;"><strong><font color="#1A1A1A"><font style="font-size: 24px;">&nbsp;</font></font></strong></p>
+    <section class="speaker-grid">
+      <article class="speaker-card">
+        <img src="../_assets/dahshu.wildapricot.org/resources/Pictures/Dahshu24/Keynote/XihongLiu.png" alt="Xihong Lin">
+        <div class="speaker-info">
+          <h3>Xihong Lin</h3>
+          <p>Professor</p>
+          <p>Department of Biostatistics</p>
+          <p>Department of Statistics</p>
+          <p>Harvard University</p>
+        </div>
+      </article>
 
-<p style="line-height: 20px;"><strong><font color="#1A1A1A"><font face="Georgia" style="font-size: 18px;">&nbsp;</font> <font face="Georgia" style="font-size: 14px;">October 16-18, 2025</font></font></strong></p>
+      <article class="speaker-card">
+        <img src="../_assets/dahshu.wildapricot.org/resources/Pictures/Dahshu24/Keynote/ShirleyLiu.png" alt="Shirley Liu">
+        <div class="speaker-info">
+          <h3>Shirley Liu</h3>
+          <p>CEO</p>
+          <p>GV20 Therapeutics</p>
+        </div>
+      </article>
 
-<p style="line-height: 20px;"><strong><font color="#1A1A1A"><font face="Georgia" style="font-size: 14px;">&nbsp; &nbsp;University of Connecticut</font></font></strong></p>
+      <article class="speaker-card">
+        <img src="../_assets/dahshu.wildapricot.org/resources/Pictures/Dahshu24/Keynote/Bhramar%20Mukherjee.png" alt="Bhramar Mukherjee">
+        <div class="speaker-info">
+          <h3>Bhramar Mukherjee</h3>
+          <p>Professor and Chair</p>
+          <p>Department of Biostatistics</p>
+          <p>University of Michigan</p>
+        </div>
+      </article>
 
-<p style="line-height: 20px;"><font color="#1A1A1A" face="Georgia" style="font-size: 14px;">&nbsp; &nbsp;&nbsp;<font style="">Storrs |&nbsp;</font>Connecticut</font></p>
+      <article class="speaker-card">
+        <img src="../_assets/dahshu.wildapricot.org/resources/Pictures/Dahshu24/Keynote/JiayangSun.png" alt="Jiayang Sun">
+        <div class="speaker-info">
+          <h3>Jiayang Sun</h3>
+          <p>Professor and Chair</p>
+          <p>Department of Statistics</p>
+          <p>George Mason University</p>
+        </div>
+      </article>
+    </section>
 
-<p style="font-size: 24px; line-height: 35px; font-weight: 700;"><span><font color="#EDEFF1">&nbsp; &nbsp;</font></span>&nbsp; &nbsp; &nbsp;<span style="color: rgb(237, 239, 241);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p></div>
-</div></div></div></td><td style="" data-componentId="M7AvSTT_separator" class="WaLayoutSeparator"><div style="width: inherit;"></div></td><td id="id_rg2QKc8" data-componentId="RBQUXH8" class="WaLayoutItem" style="background-color:#FFFFFF;width:49%;"><div id="id_pwS8dtS" class="WaLayoutPlaceHolder placeHolderContainer" data-componentId="wTP3c6v" style=""><div style=""><div id="id_3T5QHGt" class="WaGadgetFirst WaGadgetContent  gadgetStyleNone" style="height:40px;" data-componentId="j2oeaeM" ><div class="gadgetStyleBody gadgetContentEditableArea" style="" data-editableArea="0" data-areaHeight="auto">
-<p><br></p></div>
-<script type="text/javascript">if (window.WA) { new WaContentGadgetResizer({ id: 'id_3T5QHGt' }); }</script>
-</div><div id="id_NlLI7AB" class="WaGadget WaGadgetSlideshow  gadgetStyleNone" style="margin-top:0px;margin-right:0px;" data-componentId="Ik9fRbn" ><script language="javascript">
+    <p class="keynote-link">
+      <a href="../DSDSS2026-keynote-speakers/index.html">Click here to learn more about this year's keynote speakers</a>
+    </p>
 
-	jq$(function(){
+    <footer class="footer-panel">
+      <div class="footer-column">
+        <h3>DahShu 2026 Contact</h3>
+        <p>For all general questions about the symposium, including program details, registration, and logistics:</p>
+        <div class="email-row">
+          <span>Email</span>
+          <a href="mailto:dahshu2026@gmail.com">DAHSHU2026@GMAIL.COM</a>
+        </div>
+      </div>
 
-		var imgAmount = jq$('#camera_wrap_Ik9fRbn > div').size();
-		var cameraNavigation = ( imgAmount <= 1 ) ? false : true,
-				cameraAutoAdvance = ( imgAmount <= 1 ) ? false : true;
+      <div class="footer-column">
+        <h3>Our Social Networks</h3>
+        <div class="social-row">
+          <a class="social-link x-link" href="https://x.com/wildapricot" aria-label="X" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a class="social-link linkedin-link" href="https://www.linkedin.com/company/dahshu/" aria-label="LinkedIn" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a class="social-link youtube-link" href="https://www.youtube.com/" aria-label="YouTube" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
 
-		jq$('#camera_wrap_Ik9fRbn').camera
-		(
-		  {
-			componentId: 'Ik9fRbn',
-			thumbnails: true,
-			loader: 'bar',
-			fx: 'simpleFade',
-			time: (5*1000),
-			transPeriod: (750),
-			portrait: false,
-			randomSlide: false,
-			playPause: false,
-			pauseOnClick: false,
-			thumbnails: false,
-			pagination: cameraNavigation,
-			navigation: cameraNavigation,
-			autoAdvance: cameraAutoAdvance,
-			mobileAutoAdvance: cameraAutoAdvance,
-			height: '56%'		  }
-		);		
-	});
+    <p class="photo-credit">
+      Campus carousel images from Wikimedia Commons:
+      <a href="https://commons.wikimedia.org/wiki/File:Harvard_University_Widener_Library.jpg" target="_blank" rel="noreferrer">Widener Library</a>,
+      <a href="https://commons.wikimedia.org/wiki/File:Harvard_Hall_-_Harvard_University.jpg" target="_blank" rel="noreferrer">Harvard Hall</a>,
+      <a href="https://commons.wikimedia.org/wiki/File:Memorial_Hall_at_Harvard_University.JPG" target="_blank" rel="noreferrer">Memorial Hall</a>,
+      <a href="https://commons.wikimedia.org/wiki/File:Harvard_Yard_aerial.JPG" target="_blank" rel="noreferrer">Harvard Yard aerial</a>.
+    </p>
+  </div>
 
-</script>
+  <script>
+    (function () {
+      const slides = Array.from(document.querySelectorAll(".carousel-slide"));
+      const dots = Array.from(document.querySelectorAll(".dot"));
+      let currentIndex = 0;
+      let timerId = null;
 
-	<div class="camera_wrap camera_charcoal_skin" id="camera_wrap_Ik9fRbn">
-<div data-link="" data-src="../_assets/dahshu.wildapricot.org/resources/Pictures/Dahshu24/UConn-Homepage/1.jpg" data-target="" data-thumb="https://dahshu.wildapricot.org/resources/Pictures/Dahshu24/UConn-Homepage/1.jpg" data-title="">
-    </div><div data-link="" data-src="../_assets/dahshu.wildapricot.org/resources/Pictures/Dahshu24/UConn-Homepage/2.jpg" data-target="" data-thumb="https://dahshu.wildapricot.org/resources/Pictures/Dahshu24/UConn-Homepage/2.jpg" data-title="">
-    </div><div data-link="" data-src="../_assets/dahshu.wildapricot.org/resources/Pictures/Dahshu24/UConn-Homepage/3.jpg" data-target="" data-thumb="https://dahshu.wildapricot.org/resources/Pictures/Dahshu24/UConn-Homepage/3.jpg" data-title="">
-    </div><div data-link="" data-src="../_assets/dahshu.wildapricot.org/resources/Pictures/Dahshu24/UConn-Homepage/4.jpg" data-target="" data-thumb="https://dahshu.wildapricot.org/resources/Pictures/Dahshu24/UConn-Homepage/4.jpg" data-title="">
-    </div></div>
-</div><div id="id_sQyK9N2" class="WaGadgetLast WaGadgetContent  gadgetStyleNone" style="" data-componentId="sQyK9N2" ><div class="gadgetStyleBody gadgetContentEditableArea" style="" data-editableArea="0" data-areaHeight="auto">
-<button class="warm-peach-button" onclick="window.location.href='https://dahshu.wildapricot.org/event-6208640?CalendarViewType=0&amp;SelectedDate=6/20/2025'">Register Now!</button></div>
-</div></div></div></td></tr></table> </div><div id="id_OYaz8r5" class="WaGadget WaGadgetContent  gadgetStyleNone" style="background-image:url(../_assets/sf.wildapricot.org/ThemeSharedRes/HeaderBackgroundImages/Bg-pattern-7.png);background-position:left top;background-color:#FFFFFF;" data-componentId="OYaz8r5" ><div class="gadgetStyleBody gadgetContentEditableArea" style="" data-editableArea="0" data-areaHeight="auto">
-<p style="line-height: 28px; margin-top: 1em !important;"><font><font><font style=""><font style="font-family: &quot;Lucida Console&quot;;"><strong style=""><font color="#333333" style="font-size: 16px;"><font><font style="" face="Georgia"><u>Conference Information:</u></font><font face="Lucida Console">&nbsp;</font></font><font face="Georgia">The 2025 symposium will focus on how cutting-edge advancements in AI, data science, and big data analytics are transforming biomedical research, drug development, and healthcare &amp; clinical practice, while also stimulating further development of fundamental research and fostering collaborations among academia, industry, and regulatory bodies. We will explore a broad range of topics, including AI-driven drug discovery, Automation using AI/ML to increase the efficiency and productivity of drug development, multi-omics integration, advanced predictive analytics for clinical trials, computational biology, and the use of real-world evidence in decision-making. The symposium will feature a series of scientific sessions and interactive short courses that not only showcase state-of-the-art research but also foster vibrant discussions on the opportunities and challenges of driving precision medicine forward.</font></font></strong></font></font></font></font></p>
+      function showSlide(index) {
+        slides[currentIndex].classList.remove("is-active");
+        dots[currentIndex].classList.remove("is-active");
+        currentIndex = index;
+        slides[currentIndex].classList.add("is-active");
+        dots[currentIndex].classList.add("is-active");
+      }
 
-<p><br></p></div>
-</div><div id="id_eDCSBko" class="WaGadget WaGadgetContent  gadgetStyleNone" style="background-color:#FFFFFF;" data-componentId="eDCSBko" ><div class="gadgetStyleBody gadgetContentEditableArea" style="" data-editableArea="0" data-areaHeight="auto">
-<p align="center"><strong style="font-family: Georgia;"><font style="font-size: 24px;" face="Times New Roman" color="#A51C30">KEYNOTE SPEAKERS</font></strong><br></p></div>
-</div><div id="id_5NAPESF" class="WaGadget WaGadgetCustomHTML  gadgetStyleNone" style="" data-componentId="5NAPESF" ><div class="gadgetStyleBody " style=""  data-areaHeight="auto">
-<div class="speakers-container">
-    <!-- Speaker 1 -->
-    <div class="speaker">
-      <a href="../DSDSS2026-keynote-speakers/index.html" class="speaker">
-      <img src="../_assets/dahshu.wildapricot.org/resources/Pictures/madigan.jpg" alt="David Madigan">
-      <h2>David Madigan</h2>
-      <p>
-        Provost and Senior Vice President for Academic Affairs<br />
-        Northeastern University
-      </p>
-      </a>
-    </div>
+      function nextSlide() {
+        showSlide((currentIndex + 1) % slides.length);
+      }
 
-    <div class="speaker">
-      <a href="../DSDSS2026-keynote-speakers/index.html" class="speaker">
-      <img src="../_assets/dahshu.wildapricot.org/resources/Pictures/haiyan.png" alt="Dr. Haiyan Huang">
-      <h2>Haiyan Huang</h2>
-      <p>
-        Professor<br />
-        University of California, Berkeley
-      </p>
-      </a>
-    </div>
+      function startCarousel() {
+        timerId = window.setInterval(nextSlide, 4200);
+      }
 
-    <div class="speaker">
-      <a href="../DSDSS2026-keynote-speakers/index.html" class="speaker">
-      <img src="../_assets/dahshu.wildapricot.org/resources/Pictures/Gene.jpg" alt="Dr. Gene A. Pennello">
-      <h2> Gene A. Pennello</h2>
-      <p>
-        FDA
-      </p>
-      </a>
-    </div>
-</div>
-   </div>
-</div><div id="id_oexbzIl" class="WaGadget WaGadgetContent  gadgetStyleNone" style="background-image:url(../_assets/sf.wildapricot.org/none.bin);background-position:left top;background-color:#FFFFFF;" data-componentId="oexbzIl" ><div class="gadgetStyleBody gadgetContentEditableArea" style="" data-editableArea="0" data-areaHeight="auto">
-<p align="center"><strong style="font-family: Georgia;"><font style="font-size: 24px;" face="Times New Roman" color="#A51C30">OPENING REMARKS</font></strong><br></p></div>
-</div><div id="id_LhIiKL9" class="WaGadget WaGadgetCustomHTML  gadgetStyleNone" style="" data-componentId="LhIiKL9" ><div class="gadgetStyleBody " style=""  data-areaHeight="auto">
-<div class="speakers-container">
-    <!-- Speaker 1 -->
-    <div class="speaker">
-      <a href="../DSDSS2026-opening-remarks/index.html" class="speaker">
-      <img src="../_assets/dahshu.wildapricot.org/resources/Pictures/wells.jpg" alt="Barry Wells">
-      <h2>Barry Wells</h2>
-      <p>
-        UConn CLAS Associate Dean
-      </p>
-      </a>
-    </div>
+      function resetCarousel(index) {
+        if (timerId) {
+          window.clearInterval(timerId);
+        }
+        showSlide(index);
+        startCarousel();
+      }
 
-    <div class="speaker">
-      <a href="../DSDSS2026-opening-remarks/index.html" class="speaker">
-      <img src="../_assets/dahshu.wildapricot.org/resources/Pictures/Sammi.jpg" alt="Rui (Sammi) Tang">
-      <h2>Rui (Sammi) Tang</h2>
-      <p>
-        Senior Vice President and Global Head of Quantitative Sciences and Evidence Generation<br />
-         Astellas Pharmaceuticals
-      </p>
-      </a>
-    </div>
+      dots.forEach((dot, index) => {
+        dot.addEventListener("click", function () {
+          resetCarousel(index);
+        });
+      });
 
-</div>
-   </div>
-</div><div id="id_WpXCHAw" data-componentId="sp6nVpB" class="WaLayoutContainerLast" style="background-color:#A51C30;"><table cellspacing="0" cellpadding="0" class="WaLayoutTable" style=""><tr data-componentId="WpXCHAw_row" class="WaLayoutRow"><td id="id_dtX8lfG" data-componentId="XnW4J3w" class="WaLayoutItem" style="width:50%;"><div id="id_l8qVStJ" class="WaLayoutPlaceHolder placeHolderContainer" data-componentId="egOdtym" style=""><div style=""><div id="id_9Bzla2j" class="WaGadgetOnly WaGadgetContent  gadgetStyleNone" style="background-color:#A51C30;" data-componentId="YDDo7tZ" ><div class="gadgetStyleBody gadgetContentEditableArea" style="padding-left:10px;" data-editableArea="0" data-areaHeight="auto">
-<h3 style="line-height: 19px; margin-top: 1em !important;"><strong><font style="font-size: 16px;" face="Times New Roman" color="#FFFFFF">DahShu 2026 Contact</font></strong></h3>
-
-<p style="margin-top:1em !important;"><font style="font-size: 16px;" face="Times New Roman" color="#FFFFFF">For all general questions about the symposium, including program details, registration, and logistics:</font></p>
-
-<p style="margin-top:1em !important;"><font face="Times New Roman" color="#FFFFFF"><span style="">Email: dahshu2025@gmail.com</span></font></p>
-
-
-
-<p><br></p></div>
-</div></div></div></td><td style="" data-componentId="XnW4J3w_separator" class="WaLayoutSeparator"><div style="width: inherit;"></div></td><td id="id_K55aycS" data-componentId="46GGbLl" class="WaLayoutItem" style="width:50%;"><div id="id_rVsefe4" class="WaLayoutPlaceHolder placeHolderContainer" data-componentId="WP9e9uU" style=""><div style=""><div id="id_pXCUC3o" class="WaGadgetFirst WaGadgetContent  gadgetStyleNone" style="" data-componentId="CkEzCSi" ><div class="gadgetStyleBody gadgetContentEditableArea" style="" data-editableArea="0" data-areaHeight="auto">
-<h3 style="line-height: 19px; margin-top: 1em !important;"><strong><font style="font-size: 16px;" face="Times New Roman" color="#ffffff">Our Social Networks</font></strong></h3></div>
-</div><div id="id_vEln2qo" class="WaGadget WaGadgetSocialProfile  gadgetStyleNone" style="" data-componentId="vEln2qo" ><div class="gadgetStyleBody " style=""  data-areaHeight="auto">
-<div class="socialProfileWrapper alignLeft">
-	<ul class="orientationHorizontal">
-    <li>
-				<a href="https://x.com/wildapricot" title="X" class="X" target="_blank"></a>
-			</li>
-<li>
-				<a href="https://www.linkedin.com/company/dahshu/" title="LinkedIn" class="LinkedIn" target="_blank"></a>
-			</li>
-		
- 
-	</ul>
-</div>
-</div>
-</div><div id="id_P3hEExV" class="WaGadgetLast WaGadgetContent  gadgetStyleNone" style="" data-componentId="ijVTEnb" ><div class="gadgetStyleBody gadgetContentEditableArea" style="" data-editableArea="0" data-areaHeight="auto">
-<p align="right"><br></p></div>
-</div></div></div></td></tr></table> </div></div>
-</div></div>
-		</div>
-	</div>
-	<!-- /content zone -->
-
-<!-- branding zone -->
-<div class="zoneBrandingOuter zoneOuter">
-			<div class="zoneBranding container_12">
-				<div class="zoneBrandingInner zoneInner s1_grid_12 s2_grid_12 s3_grid_12">
-<div id="idFooterPoweredByContainer">
-	<span id="idFooterPoweredByWA">
-Powered by <a href="http://www.wildapricot.com" target="_blank">Wild Apricot</a> Membership Software</span>
-</div>
-</div>
-			</div>
-		</div>
-<!-- /branding zone -->
-
-</div></body>
+      startCarousel();
+    }());
+  </script>
+</body>
 </html>
-<script type="text/javascript">if (window.BonaPage && BonaPage.setPageState) { BonaPage.setPageState(BonaPage.PAGE_PARSED); }</script>
