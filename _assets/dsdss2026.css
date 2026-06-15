@@ -15,6 +15,15 @@
   color: #ffffff !important;
 }
 
+.dsdss2026Page .WaGadgetMenuHorizontal .menuInner ul.firstLevel > li.dir > .item > a:after,
+.dsdss2026Section .WaGadgetMenuHorizontal .menuInner ul.firstLevel > li.dir > .item > a:after,
+.dsdss2026Page .WaGadgetMenuHorizontal .menuInner ul.secondLevel li.dir > .item > a:after,
+.dsdss2026Section .WaGadgetMenuHorizontal .menuInner ul.secondLevel li.dir > .item > a:after,
+.dsdss2026Page .WaGadgetMenuHorizontal .menuInner ul.thirdLevel li.dir > .item > a:after,
+.dsdss2026Section .WaGadgetMenuHorizontal .menuInner ul.thirdLevel li.dir > .item > a:after {
+  display: none !important;
+}
+
 .dsdss2026Page .WaGadgetMenuHorizontal ul.firstLevel > li.sel > .item > a,
 .dsdss2026Section .WaGadgetMenuHorizontal ul.firstLevel > li.sel > .item > a,
 .dsdss2026Page .WaGadgetMenuHorizontal ul.firstLevel > li:hover > .item > a,
@@ -249,4 +258,95 @@
 .dsdss2026Section .warm-peach-button:active,
 .dsdss2026Section .cool-teal-button:active {
   box-shadow: 0 4px 10px rgba(165, 28, 48, 0.22) !important;
+}
+
+.footer-panel {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 24px;
+  padding: 20px 18px;
+  background: #a51c30;
+  color: #fff;
+  font-family: "Source Sans 3", Arial, sans-serif;
+}
+
+.footer-panel,
+.footer-panel * {
+  color: #fff !important;
+}
+
+.footer-panel a {
+  color: #fff !important;
+}
+
+.footer-panel .footer-column h3 {
+  margin: 0 0 10px;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 1.1rem;
+}
+
+.footer-panel .footer-column p {
+  margin: 0 0 14px;
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.footer-panel .email-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.footer-panel .email-row a {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  color: #fff !important;
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+.footer-panel .social-row {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-panel .social-link {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff !important;
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.footer-panel .linkedin-link {
+  background: #0a66c2;
+}
+
+.footer-panel .social-glyph {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  line-height: 1;
+}
+
+.footer-panel .social-glyph-linkedin {
+  font-size: 0.88rem;
+  text-transform: lowercase;
+}
+
+@media (max-width: 860px) {
+  .footer-panel {
+    grid-template-columns: 1fr;
+  }
 }
