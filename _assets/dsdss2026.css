@@ -8,11 +8,44 @@
   --d26-ink: #2f1f22;
 }
 
+.dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li,
+.dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li,
+.dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.secondLevel li,
+.dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.secondLevel li,
+.dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.thirdLevel li,
+.dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.thirdLevel li {
+  margin: 0 !important;
+  background: transparent !important;
+}
+
+.dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li > .item,
+.dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li > .item,
+.dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.secondLevel li > .item,
+.dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.secondLevel li > .item,
+.dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.thirdLevel li > .item,
+.dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.thirdLevel li > .item {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
 .dsdss2026Page .WaGadgetMenuHorizontal .menuInner ul.firstLevel > li > .item > a,
 .dsdss2026Section .WaGadgetMenuHorizontal .menuInner ul.firstLevel > li > .item > a,
 .dsdss2026Page .WaGadgetMenuHorizontal .menuInner ul.firstLevel > li > .item > a span,
 .dsdss2026Section .WaGadgetMenuHorizontal .menuInner ul.firstLevel > li > .item > a span {
   color: #ffffff !important;
+}
+
+.dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li > .item > a,
+.dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li > .item > a {
+  display: flex !important;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 16px !important;
+  line-height: 1.2;
+  background-clip: padding-box;
+  box-shadow: none !important;
 }
 
 .dsdss2026Page .WaGadgetMenuHorizontal .menuInner ul.firstLevel > li.dir > .item > a:after,
@@ -40,6 +73,17 @@
 .dsdss2026Section .WaGadgetMenuHorizontal ul.thirdLevel {
   background: var(--d26-crimson) !important;
   border-color: rgba(255, 255, 255, 0.18) !important;
+  margin: 0 !important;
+  padding: 6px 0 !important;
+  box-shadow: 0 10px 22px rgba(70, 10, 19, 0.18) !important;
+}
+
+.dsdss2026Page .WaGadgetMenuHorizontal ul.secondLevel ul.secondLevel,
+.dsdss2026Page .WaGadgetMenuHorizontal ul.secondLevel ul.thirdLevel,
+.dsdss2026Section .WaGadgetMenuHorizontal ul.secondLevel ul.secondLevel,
+.dsdss2026Section .WaGadgetMenuHorizontal ul.secondLevel ul.thirdLevel {
+  background: var(--d26-crimson) !important;
+  border-color: rgba(255, 255, 255, 0.18) !important;
 }
 
 .dsdss2026Page .WaGadgetMenuHorizontal ul.secondLevel li > .item > a,
@@ -51,6 +95,28 @@
 .dsdss2026Section .WaGadgetMenuHorizontal ul.secondLevel li > .item > a span,
 .dsdss2026Section .WaGadgetMenuHorizontal ul.thirdLevel li > .item > a span {
   color: #ffffff !important;
+  background: transparent !important;
+}
+
+.dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.secondLevel li > .item > a,
+.dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.thirdLevel li > .item > a,
+.dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.secondLevel li > .item > a,
+.dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.thirdLevel li > .item > a {
+  display: block !important;
+  margin: 0 !important;
+  padding: 9px 16px !important;
+  line-height: 1.3;
+  box-shadow: none !important;
+}
+
+.dsdss2026Page .WaGadgetMenuHorizontal ul.secondLevel li.sel > .item,
+.dsdss2026Page .WaGadgetMenuHorizontal ul.thirdLevel li.sel > .item,
+.dsdss2026Page .WaGadgetMenuHorizontal ul.secondLevel li:hover > .item,
+.dsdss2026Page .WaGadgetMenuHorizontal ul.thirdLevel li:hover > .item,
+.dsdss2026Section .WaGadgetMenuHorizontal ul.secondLevel li.sel > .item,
+.dsdss2026Section .WaGadgetMenuHorizontal ul.thirdLevel li.sel > .item,
+.dsdss2026Section .WaGadgetMenuHorizontal ul.secondLevel li:hover > .item,
+.dsdss2026Section .WaGadgetMenuHorizontal ul.thirdLevel li:hover > .item {
   background: transparent !important;
 }
 

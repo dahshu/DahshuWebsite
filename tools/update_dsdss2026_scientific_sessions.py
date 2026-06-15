@@ -12,6 +12,7 @@ SESSIONS = [
         "title": "Session 1",
         "organizer_name": "Haoda Fu",
         "organizer_org": "Amgen",
+        "photo": "../_assets/scientific-session-speakers/haoda-fu.webp",
         "day": "Thursday, October 22, 2026",
         "time": "9:50 AM - 11:30 AM",
         "summary": [
@@ -26,6 +27,7 @@ SESSIONS = [
         "title": "Session 2",
         "organizer_name": "Runze Li",
         "organizer_org": "PSU",
+        "photo": "../_assets/scientific-session-speakers/runze-li.jpg",
         "day": "Thursday, October 22, 2026",
         "time": "1:00 PM - 2:40 PM",
         "summary": [
@@ -37,6 +39,7 @@ SESSIONS = [
         "title": "Session 3",
         "organizer_name": "Sara Hamon",
         "organizer_org": "Regeneron",
+        "photo": "../_assets/scientific-session-speakers/sara-hamon.svg",
         "day": "Thursday, October 22, 2026",
         "time": "2:50 PM - 4:30 PM",
         "summary": [
@@ -50,6 +53,7 @@ SESSIONS = [
         "title": "Session 4",
         "organizer_name": "Jane Zhang",
         "organizer_org": "AbbVie",
+        "photo": None,
         "day": "Thursday, October 22, 2026",
         "time": "4:40 PM - 5:40 PM",
         "summary": [
@@ -63,6 +67,7 @@ SESSIONS = [
         "title": "Session 5",
         "organizer_name": "Jacek Urbanek",
         "organizer_org": "Regeneron",
+        "photo": "../_assets/scientific-session-speakers/jacek-urbanek.jpg",
         "day": "Friday, October 23, 2026",
         "time": "8:30 AM - 9:30 AM",
         "summary": [
@@ -76,6 +81,7 @@ SESSIONS = [
         "title": "Session 6",
         "organizer_name": "Nancy Zhang",
         "organizer_org": "Upenn",
+        "photo": "../_assets/scientific-session-speakers/nancy-zhang.jpg",
         "summary": [
             "This session will highlight emerging methods at the intersection of rigorous statistical inference and modern machine learning for analyzing high-dimensional genomic data.",
         ],
@@ -85,6 +91,7 @@ SESSIONS = [
         "title": "Session 7",
         "organizer_name": "Mercedeh Ghadessi",
         "organizer_org": "Bayer",
+        "photo": "../_assets/scientific-session-speakers/mercedeh-ghadessi.jpg",
         "summary": [
             "Explainable Artificial Intelligence (XAI) refers to a set of methods and techniques in artificial intelligence (AI) that aim to make the decision-making processes of AI systems understandable to human users.",
             "The primary goal of XAI is to provide transparency, accountability, and interpretability in AI models, particularly those that are complex and often considered \"black boxes,\" such as deep learning models.",
@@ -95,6 +102,7 @@ SESSIONS = [
         "title": "Session 8",
         "organizer_name": "Ming-Hui Chen",
         "organizer_org": "UConn",
+        "photo": "../_assets/scientific-session-speakers/ming-hui-chen.jpg",
         "summary": [
             "This is going to be a Bayesian session.",
             "This session mainly focuses on recent advancement or reactions in responding to a recent FDA landmark draft guidance, \"Use of Bayesian Methodology in Clinical Trials of Drug and Biological Products,\" jointly released by the Center for Drug Evaluation and Research (CDER) and the Center for Biologics Evaluation and Research (CBER).",
@@ -230,6 +238,11 @@ def styles_block() -> str:
       margin: 0 1.5rem 1rem 0;
       background: linear-gradient(135deg, #f6ecee 0%, #ffffff 100%);
     }
+    .speaker-photo {
+      display: block;
+      object-fit: cover;
+      background: #f4f4f4;
+    }
     .read-more-btn {
       display: block;
       margin: 1rem 0 0 calc(200px + 1rem);
@@ -271,6 +284,15 @@ def scripts_block() -> str:
 </script>"""
 
 
+def speaker_photo_html(session: dict) -> str:
+    if not session.get("photo"):
+        return '<div class="blank-photo" aria-hidden="true"></div>'
+    return (
+        f'<img class="blank-photo speaker-photo" src="{session["photo"]}" '
+        f'alt="{session["organizer_name"]}">'
+    )
+
+
 def landing_card(session: dict) -> str:
     summary_html = "\n".join(
         f"      <p>{paragraph}</p>" for paragraph in session["summary"]
@@ -281,7 +303,7 @@ def landing_card(session: dict) -> str:
     return f"""  <div class="plenary-talk" id="session-{session["number"]}">
     <h3><strong>{session["title"]}</strong></h3>
     <div class="plenary-details">
-      <div class="blank-photo"></div>
+      {speaker_photo_html(session)}
       <h3><strong>Organizer: <a href="../DSDSS2026-speakers/index.html">{session["organizer_name"]}</a></strong></h3>
       <p><strong>{session["organizer_org"]}</strong></p>
 {schedule_html}      <div class="abstract-content">
@@ -364,7 +386,7 @@ def session_inner_html(session: dict) -> str:
 
   <div class="plenary-talk" id="session-{session["number"]}">
     <div class="plenary-details">
-      <div class="blank-photo"></div>
+      {speaker_photo_html(session)}
       <h3><strong>{session["title"]}</strong></h3>
       <h3><strong>Organizer: <a href="../DSDSS2026-speakers/index.html">{session["organizer_name"]}</a></strong></h3>
       <p><strong>{session["organizer_org"]}</strong></p>
