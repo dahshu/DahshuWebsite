@@ -39,7 +39,7 @@ SESSIONS = [
         "title": "Session 3",
         "organizer_name": "Sara Hamon",
         "organizer_org": "Regeneron",
-        "photo": "../_assets/scientific-session-speakers/sara-hamon.svg",
+        "photo": None,
         "day": "Thursday, October 22, 2026",
         "time": "2:50 PM - 4:30 PM",
         "summary": [
