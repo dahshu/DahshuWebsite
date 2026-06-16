@@ -477,8 +477,8 @@ def update_homepages() -> None:
 def update_footer_emails() -> None:
     for page in ROOT.glob("DSDSS2026*/index.html"):
       text = page.read_text(encoding="utf-8", errors="ignore")
-      text = text.replace("dahshu2025@gmail.com", "dahshu2026@gmail.com")
-      text = text.replace("DAHSHU2025@GMAIL.COM", "DAHSHU2026@GMAIL.COM")
+      text = text.replace("dahshu2025@gmail.com", "dahshuinfo@gmail.com")
+      text = text.replace("DAHSHU2025@GMAIL.COM", "DAHSHUINFO@GMAIL.COM")
       page.write_text(text, encoding="utf-8")
 
 

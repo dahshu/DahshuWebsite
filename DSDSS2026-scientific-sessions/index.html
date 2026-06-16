@@ -275,6 +275,28 @@ var bonaPage_WebPackRootPath = '../_assets/live-sf.wildapricot.org/WebUI/built9.
     .plenary-details {
       text-align: left;
     }
+    .plenary-details::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .compact-session-layout {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+    .compact-session-layout::after {
+      content: none;
+    }
+    .compact-session-layout .blank-photo {
+      float: none;
+      flex: 0 0 200px;
+      margin: 0;
+    }
+    .compact-session-copy {
+      flex: 1 1 auto;
+      min-width: 0;
+    }
     .plenary-details h3 {
       margin: 0 0 0.5rem;
       font-size: 1.3rem;
@@ -322,6 +344,13 @@ var bonaPage_WebPackRootPath = '../_assets/live-sf.wildapricot.org/WebUI/built9.
       background: #861627;
     }
     @media (max-width: 600px) {
+      .compact-session-layout {
+        display: block;
+      }
+      .compact-session-layout .blank-photo {
+        float: left;
+        margin: 0 1.5rem 1rem 0;
+      }
       .blank-photo {
         width: 100%;
         height: 200px;
@@ -422,10 +451,7 @@ var bonaPage_WebPackRootPath = '../_assets/live-sf.wildapricot.org/WebUI/built9.
       <h3><strong>Organizer: <a href="../DSDSS2026-speakers/index.html">Runze Li</a></strong></h3>
       <p><strong>PSU</strong></p>
       <p><strong>Thursday, October 22, 2026</strong><br>1:00 PM - 2:40 PM</p>
-      <div class="abstract-content">
       <p>Abstract to be provided.</p>
-      </div>
-      <button class="read-more-btn" onclick="toggleBio(this)">Read more</button>
     </div>
   </div>
 
@@ -483,10 +509,7 @@ var bonaPage_WebPackRootPath = '../_assets/live-sf.wildapricot.org/WebUI/built9.
       <img class="blank-photo speaker-photo" src="../_assets/scientific-session-speakers/nancy-zhang.jpg" alt="Nancy Zhang">
       <h3><strong>Organizer: <a href="../DSDSS2026-speakers/index.html">Nancy Zhang</a></strong></h3>
       <p><strong>Upenn</strong></p>
-      <div class="abstract-content">
       <p>This session will highlight emerging methods at the intersection of rigorous statistical inference and modern machine learning for analyzing high-dimensional genomic data.</p>
-      </div>
-      <button class="read-more-btn" onclick="toggleBio(this)">Read more</button>
     </div>
   </div>
 
@@ -528,7 +551,7 @@ var bonaPage_WebPackRootPath = '../_assets/live-sf.wildapricot.org/WebUI/built9.
     <p>For all general questions about the symposium, including program details, registration, and logistics:</p>
     <div class="email-row">
       <span>Email</span>
-      <a href="mailto:dahshu2026@gmail.com">DAHSHU2026@GMAIL.COM</a>
+      <a href="mailto:dahshuinfo@gmail.com">DAHSHUINFO@GMAIL.COM</a>
     </div>
   </div>
 

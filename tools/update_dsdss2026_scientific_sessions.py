@@ -454,6 +454,28 @@ def styles_block() -> str:
     .plenary-details {
       text-align: left;
     }
+    .plenary-details::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .compact-session-layout {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+    .compact-session-layout::after {
+      content: none;
+    }
+    .compact-session-layout .blank-photo {
+      float: none;
+      flex: 0 0 200px;
+      margin: 0;
+    }
+    .compact-session-copy {
+      flex: 1 1 auto;
+      min-width: 0;
+    }
     .plenary-details h3 {
       margin: 0 0 0.5rem;
       font-size: 1.3rem;
@@ -501,6 +523,13 @@ def styles_block() -> str:
       background: #861627;
     }
     @media (max-width: 600px) {
+      .compact-session-layout {
+        display: block;
+      }
+      .compact-session-layout .blank-photo {
+        float: left;
+        margin: 0 1.5rem 1rem 0;
+      }
       .blank-photo {
         width: 100%;
         height: 200px;
@@ -535,10 +564,25 @@ def speaker_photo_html(session: dict) -> str:
     )
 
 
+def needs_read_more(session: dict) -> bool:
+    summary = session.get("summary", [])
+    total_chars = sum(len(paragraph.strip()) for paragraph in summary)
+    return len(summary) > 1 or total_chars > 220
+
+
 def landing_card(session: dict) -> str:
     summary_html = "\n".join(
         f"      <p>{paragraph}</p>" for paragraph in session["summary"]
     )
+    if needs_read_more(session):
+        abstract_block = (
+            '      <div class="abstract-content">\n'
+            f"{summary_html}\n"
+            "      </div>\n"
+            '      <button class="read-more-btn" onclick="toggleBio(this)">Read more</button>'
+        )
+    else:
+        abstract_block = summary_html
     schedule_html = ""
     if session.get("day") and session.get("time"):
         schedule_html = f'      <p><strong>{session["day"]}</strong><br>{session["time"]}</p>\n'
@@ -548,10 +592,7 @@ def landing_card(session: dict) -> str:
       {speaker_photo_html(session)}
       <h3><strong>Organizer: <a href="../DSDSS2026-speakers/index.html">{session["organizer_name"]}</a></strong></h3>
       <p><strong>{session["organizer_org"]}</strong></p>
-{schedule_html}      <div class="abstract-content">
-{summary_html}
-      </div>
-      <button class="read-more-btn" onclick="toggleBio(this)">Read more</button>
+{schedule_html}{abstract_block}
     </div>
   </div>"""
 
@@ -593,6 +634,16 @@ def session_inner_html(session: dict) -> str:
     summary_html = "\n".join(
         f"      <p>{paragraph}</p>" for paragraph in session["summary"]
     )
+    is_compact = not needs_read_more(session)
+    if not is_compact:
+        abstract_block = (
+            '      <div class="abstract-content">\n'
+            f"{summary_html}\n"
+            "      </div>\n"
+            '      <button class="read-more-btn" onclick="toggleBio(this)">Read more</button>'
+        )
+    else:
+        abstract_block = summary_html
     schedule_list_item = ""
     schedule_html = ""
     if session.get("day") and session.get("time"):
@@ -602,6 +653,9 @@ def session_inner_html(session: dict) -> str:
 """
         schedule_html = f"""      <p><strong>Schedule:</strong> {session["day"]}<br>{session["time"]}</p>
 """
+    details_open = '<div class="plenary-details compact-session-layout">' if is_compact else '<div class="plenary-details">'
+    content_open = '<div class="compact-session-copy">' if is_compact else ''
+    content_close = '</div>' if is_compact else ''
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -627,15 +681,14 @@ def session_inner_html(session: dict) -> str:
   </ul>
 
   <div class="plenary-talk" id="session-{session["number"]}">
-    <div class="plenary-details">
+    {details_open}
       {speaker_photo_html(session)}
+      {content_open}
       <h3><strong>{session["title"]}</strong></h3>
       <h3><strong>Organizer: <a href="../DSDSS2026-speakers/index.html">{session["organizer_name"]}</a></strong></h3>
       <p><strong>{session["organizer_org"]}</strong></p>
-{schedule_html}      <div class="abstract-content">
-{summary_html}
-      </div>
-      <button class="read-more-btn" onclick="toggleBio(this)">Read more</button>
+{schedule_html}{abstract_block}
+      {content_close}
     </div>
   </div>
 
