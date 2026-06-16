@@ -111,15 +111,18 @@ SESSIONS = [
     },
 ]
 
+HOME_CURRENT_PAGE = "__home__"
+
 
 def session_path(number: int) -> Path:
     return SITE_ROOT / f"DSDSS2026-scientific-session-{number}" / "index.html"
 
 
-def submenu_item(number: int, current_page: str) -> str:
+def submenu_item(number: int, current_page: str, prefix: str) -> str:
     title = f"Session {number}"
-    href = "index.html" if current_page == f"DSDSS2026-scientific-session-{number}" else f"../DSDSS2026-scientific-session-{number}/index.html"
-    li_class = "sel " if current_page == f"DSDSS2026-scientific-session-{number}" else " "
+    page_name = f"DSDSS2026-scientific-session-{number}"
+    href = nav_href(page_name, current_page, prefix)
+    li_class = menu_li_class(current_page == page_name, False)
     return (
         f'<li class="{li_class}">\n'
         '\t<div class="item">\n'
@@ -129,8 +132,208 @@ def submenu_item(number: int, current_page: str) -> str:
     )
 
 
-def build_submenu(current_page: str) -> str:
-    return "".join(submenu_item(session["number"], current_page) for session in SESSIONS)
+def build_submenu(current_page: str, prefix: str) -> str:
+    return "".join(submenu_item(session["number"], current_page, prefix) for session in SESSIONS)
+
+
+def menu_li_class(selected: bool, is_dir: bool) -> str:
+    if selected and is_dir:
+        return "sel dir"
+    if selected:
+        return "sel "
+    if is_dir:
+        return " dir"
+    return " "
+
+
+def nav_href(target: str, current_page: str, prefix: str) -> str:
+    if current_page == target:
+        return "index.html"
+    return f"{prefix}{target}/index.html"
+
+
+def root_href(current_page: str, prefix: str) -> str:
+    if current_page == HOME_CURRENT_PAGE:
+        return "index.html"
+    return f"{prefix}index.html"
+
+
+def menu_block_html(current_page: str, prefix: str) -> str:
+    scientific_items = build_submenu(current_page, prefix)
+    dsdss_class = menu_li_class(current_page == HOME_CURRENT_PAGE, True)
+    agenda_class = menu_li_class(current_page == "DSDSS2026-agenda", True)
+    keynote_class = menu_li_class(current_page == "DSDSS2026-keynote-sessions", True)
+    scientific_class = menu_li_class(current_page == "DSDSS2026-scientific-sessions", True)
+    sponsor_class = menu_li_class(current_page == "page-18143", False)
+    short_course_class = menu_li_class(current_page == "DSDSS2026-short-course", False)
+    speakers_class = menu_li_class(current_page == "DSDSS2026-speakers", True)
+    venue_class = menu_li_class(current_page == "DSDSS2026-venue", False)
+    opening_remarks_class = menu_li_class(current_page == "DSDSS2026-opening-remarks", False)
+    banquet_class = menu_li_class(current_page == "DSDSS2026-banquet", False)
+    keynote_1_class = menu_li_class(current_page == "DSDSS2026-keynote-session-1", False)
+    keynote_2_class = menu_li_class(current_page == "DSDSS2026-keynote-session-2", False)
+    abstract_class = menu_li_class(current_page == "DSDSS2026-abstract-submission", False)
+    poster_class = menu_li_class(current_page == "DSDSS2026-poster-submission", False)
+    registration_class = menu_li_class(current_page == "DSDSS2026-registration", False)
+    committee_class = menu_li_class(current_page == "DSDSS2026-committee", False)
+    banquet_speakers_class = menu_li_class(current_page == "DSDSS2026-banquet-speakers", False)
+    invited_speakers_class = menu_li_class(current_page == "DSDSS2026-invited-speakers", False)
+    keynote_speakers_class = menu_li_class(current_page == "DSDSS2026-keynote-speakers", False)
+    panelists_class = menu_li_class(current_page == "DSDSS2026-panelists", False)
+
+    return f"""<div id="id_d5WBRcn" class="WaGadgetOnly WaGadgetMenuHorizontal  menuStyle002" style="margin-top:15px;" data-componentId="MMsqyjY" ><div class="menuInner">
+\t<ul class="firstLevel">
+<li class="{dsdss_class}">
+\t<div class="item">
+\t\t<a href="{root_href(current_page, prefix)}" title="DSDSS2026"><span>DSDSS2026</span></a>
+<ul class="secondLevel">
+<li class="{abstract_class}">
+\t<div class="item">
+\t\t<a href="{nav_href("DSDSS2026-abstract-submission", current_page, prefix)}" title="Abstract Submission"><span>Abstract Submission</span></a>
+</div>
+</li>
+\t
+<li class="{poster_class}">
+\t<div class="item">
+\t\t<a href="{nav_href("DSDSS2026-poster-submission", current_page, prefix)}" title="Poster Submission"><span>Poster Submission</span></a>
+</div>
+</li>
+\t
+<li class="{registration_class}">
+\t<div class="item">
+\t\t<a href="{nav_href("DSDSS2026-registration", current_page, prefix)}" title="Registration"><span>Registration</span></a>
+</div>
+</li>
+\t
+<li class="{committee_class}">
+\t<div class="item">
+\t\t<a href="{nav_href("DSDSS2026-committee", current_page, prefix)}" title="Committee"><span>Committee</span></a>
+</div>
+</li>
+\t
+</ul>
+\t</div>
+</li>
+\t
+<li class="{agenda_class}">
+\t<div class="item">
+\t\t<a href="{nav_href("DSDSS2026-agenda", current_page, prefix)}" title="Agenda &amp; Program"><span>Agenda &amp; Program</span></a>
+<ul class="secondLevel">
+<li class="{opening_remarks_class}">
+\t<div class="item">
+\t\t<a href="{nav_href("DSDSS2026-opening-remarks", current_page, prefix)}" title="Opening Remarks"><span>Opening Remarks</span></a>
+</div>
+</li>
+\t
+<li class="{keynote_class}">
+\t<div class="item">
+\t\t<a href="{nav_href("DSDSS2026-keynote-sessions", current_page, prefix)}" title="Keynotes"><span>Keynotes</span></a>
+<ul class="secondLevel">
+<li class="{keynote_1_class}">
+\t<div class="item">
+\t\t<a href="{nav_href("DSDSS2026-keynote-session-1", current_page, prefix)}" title="Goncalo Rocha Abecasis"><span>Goncalo Rocha Abecasis</span></a>
+</div>
+</li>
+\t
+<li class="{keynote_2_class}">
+\t<div class="item">
+\t\t<a href="{nav_href("DSDSS2026-keynote-session-2", current_page, prefix)}" title="Susan Murphy"><span>Susan Murphy</span></a>
+</div>
+</li>
+\t
+</ul>
+\t</div>
+</li>
+\t
+<li class="{scientific_class}">
+\t<div class="item">
+\t\t<a href="{nav_href("DSDSS2026-scientific-sessions", current_page, prefix)}" title="Scientific Sessions"><span>Scientific Sessions</span></a>
+<ul class="secondLevel">
+{scientific_items}</ul>
+\t</div>
+</li>
+\t
+<li class="{banquet_class}">
+\t<div class="item">
+\t\t<a href="{nav_href("DSDSS2026-banquet", current_page, prefix)}" title="Banquet"><span>Banquet</span></a>
+</div>
+</li>
+\t
+</ul>
+\t</div>
+</li>
+\t
+<li class="{sponsor_class}">
+\t<div class="item">
+\t\t<a href="{prefix}page-18143/index.html" title="Sponsor"><span>Sponsor</span></a>
+</div>
+</li>
+\t
+<li class="{short_course_class}">
+\t<div class="item">
+\t\t<a href="{nav_href("DSDSS2026-short-course", current_page, prefix)}" title="Short Course"><span>Short Course</span></a>
+</div>
+</li>
+\t
+<li class="{speakers_class}">
+\t<div class="item">
+\t\t<a href="{nav_href("DSDSS2026-speakers", current_page, prefix)}" title="Speakers"><span>Speakers</span></a>
+<ul class="secondLevel">
+<li class="{banquet_speakers_class}">
+\t<div class="item">
+\t\t<a href="{nav_href("DSDSS2026-banquet-speakers", current_page, prefix)}" title="Banquet Speakers"><span>Banquet Speakers</span></a>
+</div>
+</li>
+\t
+<li class="{invited_speakers_class}">
+\t<div class="item">
+\t\t<a href="{nav_href("DSDSS2026-invited-speakers", current_page, prefix)}" title="Invited Speakers"><span>Invited Speakers</span></a>
+</div>
+</li>
+\t
+<li class="{keynote_speakers_class}">
+\t<div class="item">
+\t\t<a href="{nav_href("DSDSS2026-keynote-speakers", current_page, prefix)}" title="Keynote Speakers"><span>Keynote Speakers</span></a>
+</div>
+</li>
+\t
+<li class="{panelists_class}">
+\t<div class="item">
+\t\t<a href="{nav_href("DSDSS2026-panelists", current_page, prefix)}" title="Panelists"><span>Panelists</span></a>
+</div>
+</li>
+\t
+</ul>
+\t</div>
+</li>
+\t
+<li class="{venue_class}">
+\t<div class="item">
+\t\t<a href="{nav_href("DSDSS2026-venue", current_page, prefix)}" title="Venue"><span>Venue</span></a>
+\t</div>
+</li>
+</ul>
+</div>
+
+<script type="text/javascript">
+  if (window.WaMenuHorizontal) {{ new WaMenuHorizontal({{ id: "id_d5WBRcn" }}); }}
+</script>"""
+
+
+def replace_menu_block(text: str, current_page: str, prefix: str = "../") -> str:
+    pattern = re.compile(
+        r'<div id="id_d5WBRcn".*?<script type="text/javascript">\s*if \(window\.WaMenuHorizontal\) \{ new WaMenuHorizontal\(\{ id: "id_d5WBRcn" \}\); \}\s*</script>',
+        re.DOTALL,
+    )
+    return pattern.sub(menu_block_html(current_page, prefix), text, count=1)
+
+
+def home_header_html() -> str:
+    return f"""    <header class="top-band wa-home-header">
+      <div id="id_3HZnuUn" data-componentId="yBuHGEW" class="WaLayoutContainer" style="background-color:#A51C30;"><table cellspacing="0" cellpadding="0" class="WaLayoutTable" style=""><tr data-componentId="3HZnuUn_row" class="WaLayoutRow"><td id="id_EbthRru" data-componentId="ppUrZBP" class="WaLayoutItem wa-header-logo-cell" style="width:12%;"><div id="id_knZm8rP" class="WaLayoutPlaceHolder placeHolderContainer" data-componentId="CbQdC8V" style=""><div style=""><div id="id_NIEfxLe" class="WaGadgetOnly WaGadgetContent  gadgetStyleNone" style="background-color:#A51C30;" data-componentId="NIEfxLe" ><div class="gadgetStyleBody gadgetContentEditableArea" style="" data-editableArea="0" data-areaHeight="auto">
+<p><img src="_assets/Harvard_University_coat_of_arms.svg" alt="Harvard crest" title="Harvard crest" border="0"></p></div>
+</div></div></div></td><td style="" data-componentId="ppUrZBP_separator" class="WaLayoutSeparator"><div style="width: inherit;"></div></td><td id="id_39t6uw6" data-componentId="bLGm9Jo" class="WaLayoutItem" style="width:88%;"><div id="id_tPHbiLK" class="WaLayoutPlaceHolder placeHolderContainer" data-componentId="XFXso2h" style=""><div style="">{menu_block_html(HOME_CURRENT_PAGE, "")}</div></div></div></td></tr></table></div>
+    </header>"""
 
 
 def replace_scientific_submenu(text: str, current_page: str) -> str:
@@ -143,6 +346,38 @@ def replace_scientific_submenu(text: str, current_page: str) -> str:
     )
     pattern = re.compile(
         r'<a href="(?:\.\./DSDSS2026-scientific-sessions/index\.html|index\.html)" title="Scientific Sessions"><span>Scientific Sessions</span></a>\s*<ul class="secondLevel">\s*.*?\s*</ul>',
+        re.DOTALL,
+    )
+    return pattern.sub(new_block, text, count=1)
+
+
+def replace_keynote_submenu(text: str, current_page: str) -> str:
+    parent_href = "index.html" if current_page == "DSDSS2026-keynote-sessions" else "../DSDSS2026-keynote-sessions/index.html"
+    keynote_1_href = "index.html" if current_page == "DSDSS2026-keynote-session-1" else "../DSDSS2026-keynote-session-1/index.html"
+    keynote_2_href = "index.html" if current_page == "DSDSS2026-keynote-session-2" else "../DSDSS2026-keynote-session-2/index.html"
+    keynote_1_class = "sel " if current_page == "DSDSS2026-keynote-session-1" else " "
+    keynote_2_class = "sel " if current_page == "DSDSS2026-keynote-session-2" else " "
+    new_block = (
+        '<li class=" dir">\n'
+        '\t<div class="item">\n'
+        f'<a href="{parent_href}" title="Keynotes"><span>Keynotes</span></a>\n'
+        '<ul class="secondLevel">\n'
+        f'<li class="{keynote_1_class}">\n'
+        '\t<div class="item">\n'
+        f'\t\t<a href="{keynote_1_href}" title="Goncalo Rocha Abecasis"><span>Goncalo Rocha Abecasis</span></a>\n'
+        "</div>\n"
+        "</li>\n\t\n"
+        f'<li class="{keynote_2_class}">\n'
+        '\t<div class="item">\n'
+        f'\t\t<a href="{keynote_2_href}" title="Susan Murphy"><span>Susan Murphy</span></a>\n'
+        "</div>\n"
+        "</li>\n\t\n"
+        "</ul>\n"
+        "\t</div>\n"
+        "</li>"
+    )
+    pattern = re.compile(
+        r'<li class=" dir">\s*<div class="item">\s*<a href="(?:\.\./DSDSS2026-keynote-sessions/index\.html|index\.html)" title="Keynotes"><span>Keynotes</span></a>\s*<ul class="secondLevel">\s*.*?\s*</ul>\s*</div>\s*</li>(?=\s*<li class=" dir">\s*<div class="item">\s*<a href="(?:\.\./DSDSS2026-scientific-sessions/index\.html|index\.html)" title="Scientific Sessions")',
         re.DOTALL,
     )
     return pattern.sub(new_block, text, count=1)
@@ -241,8 +476,15 @@ def styles_block() -> str:
     .speaker-photo {
       display: block;
       object-fit: cover;
+      object-position: 50% 32%;
       background: #f4f4f4;
     }
+    .speaker-photo[alt="Haoda Fu"] { object-position: 50% 30%; }
+    .speaker-photo[alt="Runze Li"] { object-position: 50% 22%; }
+    .speaker-photo[alt="Jacek Urbanek"] { object-position: 50% 38%; }
+    .speaker-photo[alt="Nancy Zhang"] { object-position: 46% 18%; }
+    .speaker-photo[alt="Mercedeh Ghadessi"] { object-position: 48% 34%; }
+    .speaker-photo[alt="Ming-Hui Chen"] { object-position: 50% 28%; }
     .read-more-btn {
       display: block;
       margin: 1rem 0 0 calc(200px + 1rem);
@@ -404,7 +646,7 @@ def session_inner_html(session: dict) -> str:
 def update_landing_page() -> None:
     landing_path = SITE_ROOT / "DSDSS2026-scientific-sessions" / "index.html"
     text = landing_path.read_text(encoding="utf-8", errors="ignore")
-    text = replace_scientific_submenu(text, "DSDSS2026-scientific-sessions")
+    text = replace_menu_block(text, "DSDSS2026-scientific-sessions")
     text = set_title(text, "Scientific Sessions")
     text = replace_inner_html(text, landing_inner_html())
     landing_path.write_text(text, encoding="utf-8")
@@ -420,7 +662,7 @@ def update_session_pages() -> None:
             path.parent.mkdir(parents=True, exist_ok=True)
             text = template
         current_page = f"DSDSS2026-scientific-session-{session['number']}"
-        text = replace_scientific_submenu(text, current_page)
+        text = replace_menu_block(text, current_page)
         text = set_title(text, session["title"])
         text = set_breadcrumb_last(text, session["title"])
         text = replace_inner_html(text, session_inner_html(session))
@@ -433,11 +675,25 @@ def update_all_2026_navs() -> None:
         if page_name == "DSDSS2026-scientific-sessions" or page_name.startswith("DSDSS2026-scientific-session-"):
             continue
         text = path.read_text(encoding="utf-8", errors="ignore")
-        updated = replace_scientific_submenu(text, page_name)
+        updated = replace_menu_block(text, page_name)
         path.write_text(updated, encoding="utf-8")
 
 
+def update_homepage_nav() -> None:
+    homepage_path = SITE_ROOT / "index.html"
+    text = homepage_path.read_text(encoding="utf-8", errors="ignore")
+    updated = re.sub(
+        r'<header class="top-band wa-home-header">.*?</header>',
+        home_header_html(),
+        text,
+        count=1,
+        flags=re.DOTALL,
+    )
+    homepage_path.write_text(updated, encoding="utf-8")
+
+
 def rebuild_scientific_sessions() -> None:
+    update_homepage_nav()
     update_all_2026_navs()
     update_landing_page()
     update_session_pages()
