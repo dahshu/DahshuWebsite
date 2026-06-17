@@ -16,7 +16,7 @@ body {
   margin: 0;
   background: #f2f2f2;
   color: var(--ink);
-  font-family: "Source Sans 3", Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .page-shell {
@@ -90,7 +90,6 @@ body {
 
 .hero-copy h1 {
   margin: 0 0 18px;
-  font-family: "Libre Baskerville", Georgia, serif;
   font-size: clamp(2.2rem, 4vw, 3.6rem);
   line-height: 1.03;
   letter-spacing: -0.03em;
@@ -204,7 +203,6 @@ body {
 .section-heading h2 {
   margin: 0;
   color: var(--harvard-crimson);
-  font-family: "Libre Baskerville", Georgia, serif;
   font-size: 1.7rem;
   letter-spacing: 0.03em;
 }
@@ -215,7 +213,6 @@ body {
 
 .about-copy p {
   margin: 0 0 18px;
-  font-family: Georgia, "Times New Roman", serif;
   font-size: 1.02rem;
   line-height: 1.78;
 }
@@ -257,14 +254,12 @@ body {
 
 .speaker-info h3 {
   margin: 8px 0 10px;
-  font-family: "Libre Baskerville", Georgia, serif;
   font-size: 1.18rem;
   color: #3b3133;
 }
 
 .speaker-info p {
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
   font-size: 0.99rem;
   line-height: 1.4;
 }
@@ -282,7 +277,6 @@ body {
 .keynote-link a {
   color: var(--harvard-crimson);
   text-decoration: none;
-  font-family: Georgia, "Times New Roman", serif;
   font-size: 1rem;
 }
 

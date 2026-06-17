@@ -6,6 +6,14 @@
   --d26-rose: #f7ecef;
   --d26-rose-line: #e4c9cf;
   --d26-ink: #2f1f22;
+  --d26-font-serif: "Times New Roman", Times, serif;
+}
+
+.dsdss2026Page,
+.dsdss2026Section,
+.dsdss2026Page body,
+.dsdss2026Section body {
+  font-family: var(--d26-font-serif);
 }
 
 .dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li,
@@ -35,6 +43,7 @@
 .dsdss2026Page .WaGadgetMenuHorizontal .menuInner ul.firstLevel > li > .item > a span,
 .dsdss2026Section .WaGadgetMenuHorizontal .menuInner ul.firstLevel > li > .item > a span {
   color: #ffffff !important;
+  font-family: var(--d26-font-serif) !important;
 }
 
 .dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li > .item > a,
@@ -96,6 +105,7 @@
 .dsdss2026Section .WaGadgetMenuHorizontal ul.thirdLevel li > .item > a span {
   color: #ffffff !important;
   background: transparent !important;
+  font-family: var(--d26-font-serif) !important;
 }
 
 .dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.secondLevel li > .item > a,
@@ -144,6 +154,7 @@
 .dsdss2026Section .WaGadgetCustomHTML body {
   background: linear-gradient(180deg, var(--d26-rose) 0%, #ffffff 100%) !important;
   color: var(--d26-ink) !important;
+  font-family: var(--d26-font-serif) !important;
 }
 
 .dsdss2026Page .WaGadgetCustomHTML h1,
@@ -159,6 +170,26 @@
 .dsdss2026Section .WaGadgetCustomHTML h5,
 .dsdss2026Section .WaGadgetCustomHTML h6 {
   color: var(--d26-crimson) !important;
+  font-family: var(--d26-font-serif) !important;
+}
+
+.dsdss2026Page .WaGadgetCustomHTML p,
+.dsdss2026Page .WaGadgetCustomHTML li,
+.dsdss2026Page .WaGadgetCustomHTML div,
+.dsdss2026Page .WaGadgetCustomHTML span,
+.dsdss2026Page .WaGadgetCustomHTML label,
+.dsdss2026Page .WaGadgetCustomHTML input,
+.dsdss2026Page .WaGadgetCustomHTML textarea,
+.dsdss2026Page .WaGadgetCustomHTML select,
+.dsdss2026Section .WaGadgetCustomHTML p,
+.dsdss2026Section .WaGadgetCustomHTML li,
+.dsdss2026Section .WaGadgetCustomHTML div,
+.dsdss2026Section .WaGadgetCustomHTML span,
+.dsdss2026Section .WaGadgetCustomHTML label,
+.dsdss2026Section .WaGadgetCustomHTML input,
+.dsdss2026Section .WaGadgetCustomHTML textarea,
+.dsdss2026Section .WaGadgetCustomHTML select {
+  font-family: var(--d26-font-serif) !important;
 }
 
 .dsdss2026Page .WaGadgetCustomHTML [class*="button"],
@@ -333,7 +364,7 @@
   padding: 20px 18px;
   background: #a51c30;
   color: #fff;
-  font-family: "Source Sans 3", Arial, sans-serif;
+  font-family: var(--d26-font-serif);
 }
 
 .footer-panel,
@@ -347,7 +378,7 @@
 
 .footer-panel .footer-column h3 {
   margin: 0 0 10px;
-  font-family: "Libre Baskerville", Georgia, serif;
+  font-family: var(--d26-font-serif);
   font-size: 1.1rem;
 }
 
@@ -402,7 +433,7 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  font-family: Arial, sans-serif;
+  font-family: var(--d26-font-serif);
   line-height: 1;
 }
 

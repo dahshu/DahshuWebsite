@@ -106,7 +106,6 @@ SESSIONS = [
         "summary": [
             "This is going to be a Bayesian session.",
             "This session mainly focuses on recent advancement or reactions in responding to a recent FDA landmark draft guidance, \"Use of Bayesian Methodology in Clinical Trials of Drug and Biological Products,\" jointly released by the Center for Drug Evaluation and Research (CDER) and the Center for Biologics Evaluation and Research (CBER).",
-            "Welcome comments from other committee members.",
         ],
     },
 ]
