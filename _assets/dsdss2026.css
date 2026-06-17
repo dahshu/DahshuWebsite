@@ -443,7 +443,90 @@
 }
 
 @media (max-width: 860px) {
+  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable,
+  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable tbody,
+  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable tr,
+  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable td,
+  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable,
+  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable tbody,
+  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable tr,
+  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable td {
+    display: block;
+    width: 100% !important;
+  }
+
+  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutSeparator,
+  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutSeparator {
+    display: none !important;
+  }
+
+  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody,
+  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody {
+    padding: 10px 0 4px !important;
+    text-align: center;
+  }
+
+  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone img,
+  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone img {
+    width: 42px !important;
+    height: auto !important;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetMenuHorizontal.menuStyle002,
+  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetMenuHorizontal.menuStyle002 {
+    margin-top: 6px !important;
+  }
+
+  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetMenuHorizontal .menuInner,
+  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetMenuHorizontal .menuInner {
+    justify-content: flex-start;
+  }
+
+  .dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li > .item > a,
+  .dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li > .item > a {
+    min-height: 34px;
+    padding: 0 12px !important;
+    font-size: 0.92rem !important;
+  }
+
+  .dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.secondLevel li > .item > a,
+  .dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.thirdLevel li > .item > a,
+  .dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.secondLevel li > .item > a,
+  .dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.thirdLevel li > .item > a {
+    padding: 8px 12px !important;
+    font-size: 0.9rem !important;
+  }
+
   .footer-panel {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody,
+  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody {
+    padding: 8px 0 2px !important;
+  }
+
+  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone img,
+  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone img {
+    width: 36px !important;
+  }
+
+  .dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li > .item > a,
+  .dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li > .item > a {
+    min-height: 30px;
+    padding: 0 10px !important;
+    font-size: 0.84rem !important;
+  }
+
+  .dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.secondLevel li > .item > a,
+  .dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.thirdLevel li > .item > a,
+  .dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.secondLevel li > .item > a,
+  .dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.thirdLevel li > .item > a {
+    padding: 7px 10px !important;
+    font-size: 0.84rem !important;
   }
 }

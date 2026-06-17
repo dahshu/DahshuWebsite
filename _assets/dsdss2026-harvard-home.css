@@ -308,11 +308,19 @@ body {
   }
 
   .wa-home-header .wa-header-logo-cell .gadgetStyleBody {
-    padding-bottom: 0;
+    padding: 10px 0 4px;
+  }
+
+  .wa-home-header .wa-header-logo-cell img {
+    width: 42px;
   }
 
   .wa-home-header .WaLayoutSeparator {
     display: none !important;
+  }
+
+  .wa-home-header .WaGadgetMenuHorizontal {
+    margin-top: 6px !important;
   }
 
   .wa-home-header .WaGadgetMenuHorizontal .menuInner {
@@ -337,6 +345,14 @@ body {
 }
 
 @media (max-width: 520px) {
+  .wa-home-header .wa-header-logo-cell .gadgetStyleBody {
+    padding: 8px 0 2px;
+  }
+
+  .wa-home-header .wa-header-logo-cell img {
+    width: 36px;
+  }
+
   .hero-copy h1 {
     font-size: 2.3rem;
   }
