@@ -573,7 +573,8 @@ def landing_card(session: dict) -> str:
     summary_html = "\n".join(
         f"      <p>{paragraph}</p>" for paragraph in session["summary"]
     )
-    if needs_read_more(session):
+    is_compact = not needs_read_more(session)
+    if not is_compact:
         abstract_block = (
             '      <div class="abstract-content">\n'
             f"{summary_html}\n"
@@ -585,13 +586,18 @@ def landing_card(session: dict) -> str:
     schedule_html = ""
     if session.get("day") and session.get("time"):
         schedule_html = f'      <p><strong>{session["day"]}</strong><br>{session["time"]}</p>\n'
+    details_open = '<div class="plenary-details compact-session-layout">' if is_compact else '<div class="plenary-details">'
+    content_open = '<div class="compact-session-copy">' if is_compact else ''
+    content_close = '</div>' if is_compact else ''
     return f"""  <div class="plenary-talk" id="session-{session["number"]}">
     <h3><strong>{session["title"]}</strong></h3>
-    <div class="plenary-details">
+    {details_open}
       {speaker_photo_html(session)}
+      {content_open}
       <h3><strong>Organizer: <a href="../DSDSS2026-speakers/index.html">{session["organizer_name"]}</a></strong></h3>
       <p><strong>{session["organizer_org"]}</strong></p>
 {schedule_html}{abstract_block}
+      {content_close}
     </div>
   </div>"""
 
