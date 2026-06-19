@@ -8,6 +8,7 @@ from update_dsdss2026_scientific_sessions import rebuild_scientific_sessions
 SITE_ROOT = Path(__file__).resolve().parent.parent
 UCONN_LOGO = "../_assets/dahshu.wildapricot.org/resources/Pictures/uconn2.png"
 HARVARD_LOGO = "../_assets/Harvard_University_coat_of_arms.svg"
+DAHSHU_LOGO = "../_assets/dahshu.wildapricot.org/resources/Pictures/smallDahshu.png"
 
 PAGE_MAP = {
     "DSDS2025": "DSDSS2026",
@@ -135,6 +136,10 @@ def rewrite_content(text: str) -> str:
     }
     for old, new in replacements.items():
         text = text.replace(old, new)
+    text = text.replace(
+        f'<p><img src="{HARVARD_LOGO}" alt="" title="" border="0"><br></p>',
+        f'<div class="header-co-branding"><img class="header-logo" src="{HARVARD_LOGO}" alt="Harvard crest" title="Harvard crest" border="0"><a class="header-logo-link" href="https://dahshu.wildapricot.org" target="_blank" rel="noopener noreferrer"><img class="header-logo" src="{DAHSHU_LOGO}" alt="DahShu logo" title="DahShu logo" border="0"></a></div>',
+    )
     return text
 
 

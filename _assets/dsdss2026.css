@@ -141,6 +141,20 @@
   background: var(--d26-crimson-deep) !important;
 }
 
+.dsdss2026Page .wa-header-logo-cell .header-co-branding,
+.dsdss2026Section .wa-header-logo-cell .header-co-branding {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dsdss2026Page .wa-header-logo-cell .header-co-branding img,
+.dsdss2026Section .wa-header-logo-cell .header-co-branding img {
+  width: 52px;
+  height: auto;
+  display: block;
+}
+
 .dsdss2026Page .WaGadgetBreadcrumbs a,
 .dsdss2026Section .WaGadgetBreadcrumbs a,
 .dsdss2026Page .WaLayoutContainer:not(.WaLayoutContainerLast) .WaGadgetContent a,
@@ -443,6 +457,12 @@
 }
 
 @media (max-width: 860px) {
+  .dsdss2026Page .wa-header-logo-cell .header-co-branding,
+  .dsdss2026Section .wa-header-logo-cell .header-co-branding {
+    justify-content: center;
+    gap: 8px;
+  }
+
   .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody,
   .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody {
     padding: 8px 0 2px !important;
@@ -515,6 +535,11 @@
 }
 
 @media (max-width: 520px) {
+  .dsdss2026Page .wa-header-logo-cell .header-co-branding,
+  .dsdss2026Section .wa-header-logo-cell .header-co-branding {
+    gap: 6px;
+  }
+
   .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody,
   .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody {
     padding: 6px 0 1px !important;

@@ -50,6 +50,12 @@ body {
   padding: 14px 0 6px;
 }
 
+.wa-home-header .wa-header-logo-cell .header-co-branding {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .wa-home-header .wa-header-logo-cell img {
   width: 52px;
   height: auto;
@@ -311,6 +317,11 @@ body {
     padding: 10px 0 4px;
   }
 
+  .wa-home-header .wa-header-logo-cell .header-co-branding {
+    justify-content: center;
+    gap: 8px;
+  }
+
   .wa-home-header .wa-header-logo-cell img {
     width: 42px;
   }
@@ -347,6 +358,10 @@ body {
 @media (max-width: 520px) {
   .wa-home-header .wa-header-logo-cell .gadgetStyleBody {
     padding: 8px 0 2px;
+  }
+
+  .wa-home-header .wa-header-logo-cell .header-co-branding {
+    gap: 6px;
   }
 
   .wa-home-header .wa-header-logo-cell img {
