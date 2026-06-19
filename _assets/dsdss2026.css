@@ -1,5 +1,7 @@
 .dsdss2026Page,
 .dsdss2026Section {
+  --d26-shell-width: 1000px;
+  --d26-shell-gutter: 24px;
   --d26-crimson: #a51c30;
   --d26-crimson-deep: #861627;
   --d26-crimson-soft: #c4495c;
@@ -14,6 +16,34 @@
 .dsdss2026Page body,
 .dsdss2026Section body {
   font-family: var(--d26-font-serif);
+}
+
+body.publicContentView .zoneContent.container_12,
+body.publicContentView .zoneFooter.container_12,
+body.publicContentView .zoneFooter1.container_12,
+body.publicContentView .zoneBranding.container_12 {
+  width: min(var(--d26-shell-width), calc(100% - var(--d26-shell-gutter))) !important;
+  max-width: var(--d26-shell-width) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  float: none !important;
+}
+
+body.publicContentView .zoneContentInner,
+body.publicContentView .zoneFooterInner,
+body.publicContentView .zoneFooter1Inner,
+body.publicContentView .zoneBrandingInner {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+body.publicContentView .mLayout.layoutPlain > .zoneContentOuter,
+body.publicContentView .mLayout.layoutPlain > .zoneFooterOuter,
+body.publicContentView .mLayout.layoutPlain > .zoneFooter1Outer,
+body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
+  width: 100%;
 }
 
 .dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li,
@@ -379,6 +409,18 @@
   background: #a51c30;
   color: #fff;
   font-family: var(--d26-font-serif);
+}
+
+.shared-footer-host {
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.shared-footer-shell {
+  width: 100%;
+  max-width: var(--d26-shell-width);
+  margin: 0 auto;
 }
 
 .footer-panel,

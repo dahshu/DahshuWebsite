@@ -111,6 +111,46 @@ SESSIONS = [
 ]
 
 HOME_CURRENT_PAGE = "__home__"
+SHARED_HEADER_SCRIPT = "_assets/shared-header-react.js"
+SHARED_HEADER_STYLESHEET = "_assets/dsdss2026.css"
+REACT_UMD_TAGS = (
+    '<script defer src="https://unpkg.com/react@17/umd/react.production.min.js" '
+    'crossorigin="anonymous"></script>'
+    '<script defer src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" '
+    'crossorigin="anonymous"></script>'
+)
+
+
+def shared_header_mount_html(current_page: str, prefix: str, variant: str) -> str:
+    return (
+        f'<div data-shared-header-root="1" data-current-page="{current_page}" '
+        f'data-nav-prefix="{prefix}" data-header-variant="{variant}"></div>'
+    )
+
+
+def ensure_shared_header_assets(text: str, prefix: str) -> str:
+    stylesheet_tag = f'<link rel="stylesheet" href="{prefix}{SHARED_HEADER_STYLESHEET}" />'
+    if SHARED_HEADER_STYLESHEET not in text:
+        text = text.replace("</head>", f"{stylesheet_tag}</head>", 1)
+    if SHARED_HEADER_SCRIPT not in text:
+        tags = (
+            f'{REACT_UMD_TAGS}<script defer src="{prefix}{SHARED_HEADER_SCRIPT}"></script>'
+        )
+        text = text.replace("</head>", f"{tags}</head>", 1)
+    return text
+
+
+def relative_prefix(path: Path) -> str:
+    depth = len(path.relative_to(SITE_ROOT).parts) - 1
+    return "../" * depth
+
+
+def page_name_for_path(path: Path) -> str:
+    if path == SITE_ROOT / "index.html":
+        return HOME_CURRENT_PAGE
+    if path == SITE_ROOT / "page-18143" / "index.html":
+        return "DSDSS2026-sponsor"
+    return path.parent.name
 
 
 def session_path(number: int) -> Path:
@@ -319,20 +359,21 @@ def menu_block_html(current_page: str, prefix: str) -> str:
 </script>"""
 
 
-def replace_menu_block(text: str, current_page: str, prefix: str = "../") -> str:
+def replace_inner_header(text: str, current_page: str, prefix: str = "../") -> str:
     pattern = re.compile(
-        r'<div id="id_d5WBRcn".*?<script type="text/javascript">\s*if \(window\.WaMenuHorizontal\) \{ new WaMenuHorizontal\(\{ id: "id_d5WBRcn" \}\); \}\s*</script>',
+        r'<div id="id_3HZnuUn".*?<script type="text/javascript">\s*if \(window\.WaMenuHorizontal\) \{ new WaMenuHorizontal\(\{ id: "id_d5WBRcn" \}\); \}\s*</script>',
         re.DOTALL,
     )
-    return pattern.sub(menu_block_html(current_page, prefix), text, count=1)
+    updated = pattern.sub(
+        shared_header_mount_html(current_page, prefix, "inner"),
+        text,
+        count=1,
+    )
+    return ensure_shared_header_assets(updated, prefix)
 
 
 def home_header_html() -> str:
-    return f"""    <header class="top-band wa-home-header">
-      <div id="id_3HZnuUn" data-componentId="yBuHGEW" class="WaLayoutContainer" style="background-color:#A51C30;"><table cellspacing="0" cellpadding="0" class="WaLayoutTable" style=""><tr data-componentId="3HZnuUn_row" class="WaLayoutRow"><td id="id_EbthRru" data-componentId="ppUrZBP" class="WaLayoutItem wa-header-logo-cell" style="width:12%;"><div id="id_knZm8rP" class="WaLayoutPlaceHolder placeHolderContainer" data-componentId="CbQdC8V" style=""><div style=""><div id="id_NIEfxLe" class="WaGadgetOnly WaGadgetContent  gadgetStyleNone" style="background-color:#A51C30;" data-componentId="NIEfxLe" ><div class="gadgetStyleBody gadgetContentEditableArea" style="" data-editableArea="0" data-areaHeight="auto">
-<div class="header-co-branding"><img class="header-logo" src="_assets/Harvard_University_coat_of_arms.svg" alt="Harvard crest" title="Harvard crest" border="0"><a class="header-logo-link" href="https://dahshu.wildapricot.org" target="_blank" rel="noopener noreferrer"><img class="header-logo" src="_assets/dahshu.wildapricot.org/resources/Pictures/smallDahshu.png" alt="DahShu logo" title="DahShu logo" border="0"></a></div></div>
-</div></div></div></td><td style="" data-componentId="ppUrZBP_separator" class="WaLayoutSeparator"><div style="width: inherit;"></div></td><td id="id_39t6uw6" data-componentId="bLGm9Jo" class="WaLayoutItem" style="width:88%;"><div id="id_tPHbiLK" class="WaLayoutPlaceHolder placeHolderContainer" data-componentId="XFXso2h" style=""><div style="">{menu_block_html(HOME_CURRENT_PAGE, "")}</div></div></div></td></tr></table></div>
-    </header>"""
+    return shared_header_mount_html(HOME_CURRENT_PAGE, "", "home")
 
 
 def replace_scientific_submenu(text: str, current_page: str) -> str:
@@ -704,7 +745,11 @@ def session_inner_html(session: dict) -> str:
 def update_landing_page() -> None:
     landing_path = SITE_ROOT / "DSDSS2026-scientific-sessions" / "index.html"
     text = landing_path.read_text(encoding="utf-8", errors="ignore")
-    text = replace_menu_block(text, "DSDSS2026-scientific-sessions")
+    text = replace_inner_header(
+        text,
+        "DSDSS2026-scientific-sessions",
+        relative_prefix(landing_path),
+    )
     text = set_title(text, "Scientific Sessions")
     text = replace_inner_html(text, landing_inner_html())
     landing_path.write_text(text, encoding="utf-8")
@@ -720,7 +765,7 @@ def update_session_pages() -> None:
             path.parent.mkdir(parents=True, exist_ok=True)
             text = template
         current_page = f"DSDSS2026-scientific-session-{session['number']}"
-        text = replace_menu_block(text, current_page)
+        text = replace_inner_header(text, current_page, relative_prefix(path))
         text = set_title(text, session["title"])
         text = set_breadcrumb_last(text, session["title"])
         text = replace_inner_html(text, session_inner_html(session))
@@ -728,12 +773,15 @@ def update_session_pages() -> None:
 
 
 def update_all_2026_navs() -> None:
-    for path in SITE_ROOT.glob("DSDSS2026*/index.html"):
+    extra_paths = [SITE_ROOT / "Old" / "DSDSS2026-agenda" / "index.html"]
+    for path in list(SITE_ROOT.glob("DSDSS2026*/index.html")) + extra_paths:
+        if not path.exists():
+            continue
         page_name = path.parent.name
         if page_name == "DSDSS2026-scientific-sessions" or page_name.startswith("DSDSS2026-scientific-session-"):
             continue
         text = path.read_text(encoding="utf-8", errors="ignore")
-        updated = replace_menu_block(text, page_name)
+        updated = replace_inner_header(text, page_name, relative_prefix(path))
         path.write_text(updated, encoding="utf-8")
 
 
@@ -747,7 +795,32 @@ def update_homepage_nav() -> None:
         count=1,
         flags=re.DOTALL,
     )
+    updated = ensure_shared_header_assets(updated, "")
     homepage_path.write_text(updated, encoding="utf-8")
+
+
+def update_sitewide_headers() -> None:
+    for path in SITE_ROOT.rglob("index.html"):
+        if path == SITE_ROOT / "index.html":
+            continue
+        text = path.read_text(encoding="utf-8", errors="ignore")
+        prefix = relative_prefix(path)
+        current_page = page_name_for_path(path)
+
+        if 'data-shared-header-root="1"' in text:
+            updated = ensure_shared_header_assets(text, prefix)
+            if updated != text:
+                path.write_text(updated, encoding="utf-8")
+            continue
+
+        if 'id_3HZnuUn' in text and 'WaMenuHorizontal' in text:
+            updated = replace_inner_header(text, current_page, prefix)
+            path.write_text(updated, encoding="utf-8")
+            continue
+
+        updated = ensure_shared_header_assets(text, prefix)
+        if updated != text:
+            path.write_text(updated, encoding="utf-8")
 
 
 def rebuild_scientific_sessions() -> None:
@@ -755,6 +828,7 @@ def rebuild_scientific_sessions() -> None:
     update_all_2026_navs()
     update_landing_page()
     update_session_pages()
+    update_sitewide_headers()
 
 
 if __name__ == "__main__":

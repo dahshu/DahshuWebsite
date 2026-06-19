@@ -8,7 +8,7 @@ from update_dsdss2026_scientific_sessions import rebuild_scientific_sessions
 SITE_ROOT = Path(__file__).resolve().parent.parent
 UCONN_LOGO = "../_assets/dahshu.wildapricot.org/resources/Pictures/uconn2.png"
 HARVARD_LOGO = "../_assets/Harvard_University_coat_of_arms.svg"
-DAHSHU_LOGO = "../_assets/dahshu.wildapricot.org/resources/Pictures/smallDahshu.png"
+DAHSHU_LOGO = "../_assets/Dahshu.png"
 
 PAGE_MAP = {
     "DSDS2025": "DSDSS2026",
