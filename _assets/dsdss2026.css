@@ -46,6 +46,47 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
   width: 100%;
 }
 
+[data-shared-header-root] .WaLayoutContainer {
+  max-width: none;
+  margin: 0;
+}
+
+[data-shared-header-root] .WaLayoutTable {
+  width: 100%;
+}
+
+[data-shared-header-root] .wa-header-logo-cell .gadgetStyleBody {
+  padding: 14px 0 6px;
+}
+
+[data-shared-header-root] .WaGadgetMenuHorizontal {
+  margin-top: 14px !important;
+}
+
+[data-shared-header-root] .WaGadgetMenuHorizontal .menuInner {
+  display: flex;
+  justify-content: flex-end;
+}
+
+[data-shared-header-root] .WaGadgetMenuHorizontal .menuInner .menuButton {
+  display: none;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+[data-shared-header-root] .WaGadgetMenuHorizontal .menuInner .menuButtonBars {
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin-left: auto;
+  background: #ffffff;
+  border-radius: 999px;
+  box-shadow: 0 -7px 0 #ffffff, 0 7px 0 #ffffff;
+}
+
 .dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li,
 .dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li,
 .dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.secondLevel li,
@@ -521,6 +562,31 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
 }
 
 @media (max-width: 860px) {
+  [data-shared-header-root] .WaLayoutTable,
+  [data-shared-header-root] .WaLayoutTable tbody,
+  [data-shared-header-root] .WaLayoutTable tr,
+  [data-shared-header-root] .WaLayoutTable td {
+    display: block;
+    width: 100% !important;
+  }
+
+  [data-shared-header-root] .wa-header-logo-cell .gadgetStyleBody {
+    padding: 10px 0 4px !important;
+    text-align: center;
+  }
+
+  [data-shared-header-root] .WaLayoutSeparator {
+    display: none !important;
+  }
+
+  [data-shared-header-root] .WaGadgetMenuHorizontal {
+    margin-top: 6px !important;
+  }
+
+  [data-shared-header-root] .WaGadgetMenuHorizontal .menuInner {
+    justify-content: flex-start;
+  }
+
   .dsdss2026Page .wa-header-logo-cell .header-co-branding,
   .dsdss2026Section .wa-header-logo-cell .header-co-branding {
     justify-content: center;
@@ -607,6 +673,10 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
 }
 
 @media (max-width: 520px) {
+  [data-shared-header-root] .wa-header-logo-cell .gadgetStyleBody {
+    padding: 8px 0 2px !important;
+  }
+
   .dsdss2026Page .wa-header-logo-cell .header-co-branding,
   .dsdss2026Section .wa-header-logo-cell .header-co-branding {
     gap: 6px;
@@ -656,17 +726,20 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
 }
 
 @media only screen and (max-width: 616px) {
+  [data-shared-header-root] .WaLayoutTable,
   .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable,
   .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable {
     display: table !important;
     width: 100% !important;
   }
 
+  [data-shared-header-root] .WaLayoutTable tbody,
   .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable tbody,
   .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable tbody {
     display: table-row-group !important;
   }
 
+  [data-shared-header-root] .WaLayoutTable tr,
   .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable tr,
   .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable tr {
     display: flex !important;
@@ -674,34 +747,40 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
     flex-wrap: nowrap;
   }
 
+  [data-shared-header-root] .WaLayoutTable td,
   .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable td,
   .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable td {
     display: block !important;
     width: auto !important;
   }
 
+  [data-shared-header-root] .WaLayoutTable td:first-child,
   .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable td:first-child,
   .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable td:first-child {
     flex: 0 0 74px;
   }
 
+  [data-shared-header-root] .WaLayoutTable td:last-child,
   .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable td:last-child,
   .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable td:last-child {
     flex: 1 1 auto;
     min-width: 0;
   }
 
+  [data-shared-header-root] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody,
   .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody,
   .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody {
     padding: 6px 6px 6px 10px !important;
     text-align: left;
   }
 
+  [data-shared-header-root] .WaGadgetContent.gadgetStyleNone p,
   .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone p,
   .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone p {
     margin: 0 !important;
   }
 
+  [data-shared-header-root] .WaGadgetContent.gadgetStyleNone img,
   .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone img,
   .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone img {
     width: 54px !important;
@@ -711,12 +790,14 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
     display: block;
   }
 
+  [data-shared-header-root] .WaGadgetMenuHorizontal.menuStyle002,
   .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetMenuHorizontal.menuStyle002,
   .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetMenuHorizontal.menuStyle002 {
     margin-top: 0 !important;
     padding: 0 8px 0 0 !important;
   }
 
+  [data-shared-header-root] .WaGadgetMenuHorizontal.menuStyle002 .menuInner,
   .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetMenuHorizontal.menuStyle002 .menuInner,
   .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetMenuHorizontal.menuStyle002 .menuInner {
     display: block !important;
@@ -724,17 +805,26 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
     width: 100%;
   }
 
+  [data-shared-header-root] .WaGadgetMenuHorizontal.menuStyle002 .menuInner .menuButton,
   .dsdss2026Page .zoneContentOuter .WaGadgetMenuHorizontal.menuStyle002 .menuInner .menuButton,
   .dsdss2026Section .zoneContentOuter .WaGadgetMenuHorizontal.menuStyle002 .menuInner .menuButton {
+    display: block !important;
     background: transparent !important;
     color: #ffffff !important;
     text-shadow: none !important;
-    font: 42px/16px var(--d26-font-serif) !important;
-    height: 20px !important;
-    padding: 16px 8px 16px 16px !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    width: 52px !important;
+    height: 44px !important;
+    padding: 11px 10px !important;
     text-align: right !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
   }
 
+  [data-shared-header-root] .WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView ul.firstLevel,
   .dsdss2026Page .zoneContentOuter .WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView ul.firstLevel,
   .dsdss2026Section .zoneContentOuter .WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView ul.firstLevel {
     top: calc(100% + 2px) !important;
@@ -745,11 +835,21 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
     box-shadow: 0 10px 22px rgba(70, 10, 19, 0.22) !important;
   }
 
+  [data-shared-header-root] .WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView:not(.is-open) ul.firstLevel {
+    display: none !important;
+  }
+
+  [data-shared-header-root] .WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView.is-open ul.firstLevel {
+    display: block !important;
+  }
+
+  [data-shared-header-root] .WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView ul.firstLevel > li,
   .dsdss2026Page .zoneContentOuter .WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView ul.firstLevel > li,
   .dsdss2026Section .zoneContentOuter .WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView ul.firstLevel > li {
     border-top: 1px solid rgba(255, 255, 255, 0.14) !important;
   }
 
+  [data-shared-header-root] .WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView ul.firstLevel > li > .item > a,
   .dsdss2026Page .zoneContentOuter .WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView ul.firstLevel > li > .item > a,
   .dsdss2026Section .zoneContentOuter .WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView ul.firstLevel > li > .item > a {
     color: #ffffff !important;
@@ -758,6 +858,8 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
     padding: 12px 16px !important;
   }
 
+  [data-shared-header-root] .WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView ul.firstLevel > li.sel > .item > a,
+  [data-shared-header-root] .WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView ul.firstLevel > li > .item > a:hover,
   .dsdss2026Page .zoneContentOuter .WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView ul.firstLevel > li.sel > .item > a,
   .dsdss2026Page .zoneContentOuter .WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView ul.firstLevel > li > .item > a:hover,
   .dsdss2026Section .zoneContentOuter .WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView ul.firstLevel > li.sel > .item > a,

@@ -373,7 +373,7 @@ def replace_inner_header(text: str, current_page: str, prefix: str = "../") -> s
 
 
 def home_header_html() -> str:
-    return shared_header_mount_html(HOME_CURRENT_PAGE, "", "home")
+    return shared_header_mount_html(HOME_CURRENT_PAGE, "", "inner")
 
 
 def replace_scientific_submenu(text: str, current_page: str) -> str:
