@@ -203,7 +203,7 @@ def menu_block_html(current_page: str, prefix: str) -> str:
     agenda_class = menu_li_class(current_page == "DSDSS2026-agenda", True)
     keynote_class = menu_li_class(current_page == "DSDSS2026-keynote-sessions", True)
     scientific_class = menu_li_class(current_page == "DSDSS2026-scientific-sessions", True)
-    sponsor_class = menu_li_class(current_page == "page-18143", False)
+    sponsor_class = menu_li_class(current_page == "DSDSS2026-sponsor", False)
     short_course_class = menu_li_class(current_page == "DSDSS2026-short-course", False)
     speakers_class = menu_li_class(current_page == "DSDSS2026-speakers", True)
     venue_class = menu_li_class(current_page == "DSDSS2026-venue", False)
@@ -304,7 +304,7 @@ def menu_block_html(current_page: str, prefix: str) -> str:
 \t
 <li class="{sponsor_class}">
 \t<div class="item">
-\t\t<a href="{prefix}page-18143/index.html" title="Sponsor"><span>Sponsor</span></a>
+\t\t<a href="{nav_href("DSDSS2026-sponsor", current_page, prefix)}" title="Sponsor"><span>Sponsor</span></a>
 </div>
 </li>
 \t

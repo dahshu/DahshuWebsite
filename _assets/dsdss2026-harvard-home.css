@@ -55,12 +55,26 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  overflow: visible;
+  line-height: 0;
+}
+
+.wa-home-header .wa-header-logo-cell .header-logo-link,
+.wa-home-header .wa-header-logo-cell .gadgetStyleBody {
+  display: block;
+  overflow: visible;
 }
 
 .wa-home-header .wa-header-logo-cell img {
-  width: 52px;
-  height: auto;
+  width: auto;
+  height: 52px;
+  max-width: none;
+  object-fit: contain;
   display: block;
+}
+
+.wa-home-header .wa-header-logo-cell .header-logo-dahshu {
+  height: 62px;
 }
 
 .wa-home-header .WaGadgetMenuHorizontal {
@@ -324,7 +338,13 @@ body {
   }
 
   .wa-home-header .wa-header-logo-cell img {
-    width: 42px;
+    width: auto;
+    height: 42px;
+    max-width: none;
+  }
+
+  .wa-home-header .wa-header-logo-cell .header-logo-dahshu {
+    height: 50px;
   }
 
   .wa-home-header .WaLayoutSeparator {
@@ -366,7 +386,13 @@ body {
   }
 
   .wa-home-header .wa-header-logo-cell img {
-    width: 36px;
+    width: auto;
+    height: 36px;
+    max-width: none;
+  }
+
+  .wa-home-header .wa-header-logo-cell .header-logo-dahshu {
+    height: 42px;
   }
 
   .hero-copy h1 {

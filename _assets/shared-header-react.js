@@ -75,8 +75,8 @@
       },
       {
         label: "Sponsor",
-        target: "page-18143",
-        selectedPages: ["page-18143", "DSDSS2026-sponsor"],
+        target: "DSDSS2026-sponsor",
+        selectedPages: ["DSDSS2026-sponsor", "page-18143"],
       },
       {
         label: "Short Course",
@@ -195,7 +195,7 @@
                 id: "id_EbthRru",
                 "data-componentId": "ppUrZBP",
                 className: "WaLayoutItem wa-header-logo-cell",
-                style: { width: "12%" },
+                style: { width: "17%" },
               },
               e(
                 "div",
@@ -226,7 +226,7 @@
                         "div",
                         { className: "header-co-branding" },
                         e("img", {
-                          className: "header-logo",
+                          className: "header-logo header-logo-harvard",
                           src: ctx.prefix + "_assets/Harvard_University_coat_of_arms.svg",
                           alt: "Harvard crest",
                           title: "Harvard crest",
@@ -241,7 +241,7 @@
                             rel: "noopener noreferrer",
                           },
                           e("img", {
-                            className: "header-logo",
+                            className: "header-logo header-logo-dahshu",
                             src: ctx.prefix + "_assets/Dahshu.png",
                             alt: "DahShu logo",
                             title: "DahShu logo",
@@ -268,7 +268,7 @@
                 id: "id_39t6uw6",
                 "data-componentId": "bLGm9Jo",
                 className: "WaLayoutItem",
-                style: { width: "88%" },
+                style: { width: "83%" },
               },
               e(
                 "div",

@@ -176,13 +176,35 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
   display: flex;
   align-items: center;
   gap: 10px;
+  overflow: visible;
+  line-height: 0;
+}
+
+.dsdss2026Page .wa-header-logo-cell .header-logo-link,
+.dsdss2026Section .wa-header-logo-cell .header-logo-link,
+.dsdss2026Page .wa-header-logo-cell .gadgetStyleBody,
+.dsdss2026Section .wa-header-logo-cell .gadgetStyleBody {
+  display: block;
+  overflow: visible !important;
+}
+
+.dsdss2026Page .wa-header-logo-cell,
+.dsdss2026Section .wa-header-logo-cell {
+  min-width: 190px;
 }
 
 .dsdss2026Page .wa-header-logo-cell .header-co-branding img,
 .dsdss2026Section .wa-header-logo-cell .header-co-branding img {
-  width: 52px;
-  height: auto;
+  width: auto;
+  height: 52px;
+  max-width: none;
+  object-fit: contain;
   display: block;
+}
+
+.dsdss2026Page .wa-header-logo-cell .header-co-branding .header-logo-dahshu,
+.dsdss2026Section .wa-header-logo-cell .header-co-branding .header-logo-dahshu {
+  height: 62px;
 }
 
 .dsdss2026Page .WaGadgetBreadcrumbs a,
@@ -512,7 +534,8 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
 
   .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone img,
   .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone img {
-    width: 32px !important;
+    width: auto !important;
+    height: 32px !important;
   }
 
   .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable,
@@ -540,10 +563,17 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
 
   .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone img,
   .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone img {
-    width: 42px !important;
-    height: auto !important;
+    width: auto !important;
+    height: 42px !important;
+    max-width: none !important;
+    object-fit: contain !important;
     margin: 0 auto;
     display: block;
+  }
+
+  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .header-logo-dahshu,
+  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .header-logo-dahshu {
+    height: 50px !important;
   }
 
   .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetMenuHorizontal.menuStyle002,
@@ -589,7 +619,8 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
 
   .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone img,
   .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone img {
-    width: 26px !important;
+    width: auto !important;
+    height: 26px !important;
   }
 
   .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody,
@@ -599,7 +630,13 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
 
   .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone img,
   .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone img {
-    width: 36px !important;
+    width: auto !important;
+    height: 36px !important;
+  }
+
+  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .header-logo-dahshu,
+  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .header-logo-dahshu {
+    height: 42px !important;
   }
 
   .dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li > .item > a,
