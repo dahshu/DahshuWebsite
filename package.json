@@ -1,0 +1,19 @@
+{
+  "name": "dahshu-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static DahShu DSDSS2026 site. The shared header/footer are authored in JSX (DSDSS2026/) and baked into a deployable dist/ as static HTML (no runtime React).",
+  "scripts": {
+    "build": "node DSDSS2026/render.mjs",
+    "build:header": "node DSDSS2026/render.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
