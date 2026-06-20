@@ -68,25 +68,6 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
   justify-content: flex-end;
 }
 
-[data-shared-header-root] .WaGadgetMenuHorizontal .menuInner .menuButton {
-  display: none;
-  border: 0;
-  cursor: pointer;
-  background: transparent;
-  appearance: none;
-  -webkit-appearance: none;
-}
-
-[data-shared-header-root] .WaGadgetMenuHorizontal .menuInner .menuButtonBars {
-  display: block;
-  width: 22px;
-  height: 2px;
-  margin-left: auto;
-  background: #ffffff;
-  border-radius: 999px;
-  box-shadow: 0 -7px 0 #ffffff, 0 7px 0 #ffffff;
-}
-
 .dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li,
 .dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li,
 .dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.secondLevel li,
@@ -593,42 +574,42 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
     gap: 8px;
   }
 
-  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody,
-  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody {
+  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody,
+  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody {
     padding: 8px 0 2px !important;
   }
 
-  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone img,
-  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone img {
+  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone img,
+  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone img {
     width: auto !important;
     height: 32px !important;
   }
 
-  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable,
-  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable tbody,
-  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable tr,
-  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable td,
-  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable,
-  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable tbody,
-  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable tr,
-  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable td {
+  .dsdss2026Page .WaLayoutContainer[style*="A51C30"] .WaLayoutTable,
+  .dsdss2026Page .WaLayoutContainer[style*="A51C30"] .WaLayoutTable tbody,
+  .dsdss2026Page .WaLayoutContainer[style*="A51C30"] .WaLayoutTable tr,
+  .dsdss2026Page .WaLayoutContainer[style*="A51C30"] .WaLayoutTable td,
+  .dsdss2026Section .WaLayoutContainer[style*="A51C30"] .WaLayoutTable,
+  .dsdss2026Section .WaLayoutContainer[style*="A51C30"] .WaLayoutTable tbody,
+  .dsdss2026Section .WaLayoutContainer[style*="A51C30"] .WaLayoutTable tr,
+  .dsdss2026Section .WaLayoutContainer[style*="A51C30"] .WaLayoutTable td {
     display: block;
     width: 100% !important;
   }
 
-  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutSeparator,
-  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutSeparator {
+  .dsdss2026Page .WaLayoutContainer[style*="A51C30"] .WaLayoutSeparator,
+  .dsdss2026Section .WaLayoutContainer[style*="A51C30"] .WaLayoutSeparator {
     display: none !important;
   }
 
-  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody,
-  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody {
+  .dsdss2026Page .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody,
+  .dsdss2026Section .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody {
     padding: 10px 0 4px !important;
     text-align: center;
   }
 
-  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone img,
-  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone img {
+  .dsdss2026Page .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone img,
+  .dsdss2026Section .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone img {
     width: auto !important;
     height: 42px !important;
     max-width: none !important;
@@ -637,18 +618,18 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
     display: block;
   }
 
-  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .header-logo-dahshu,
-  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .header-logo-dahshu {
+  .dsdss2026Page .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone .header-logo-dahshu,
+  .dsdss2026Section .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone .header-logo-dahshu {
     height: 50px !important;
   }
 
-  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetMenuHorizontal.menuStyle002,
-  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetMenuHorizontal.menuStyle002 {
+  .dsdss2026Page .WaLayoutContainer[style*="A51C30"] .WaGadgetMenuHorizontal.menuStyle002,
+  .dsdss2026Section .WaLayoutContainer[style*="A51C30"] .WaGadgetMenuHorizontal.menuStyle002 {
     margin-top: 6px !important;
   }
 
-  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetMenuHorizontal .menuInner,
-  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetMenuHorizontal .menuInner {
+  .dsdss2026Page .WaLayoutContainer[style*="A51C30"] .WaGadgetMenuHorizontal .menuInner,
+  .dsdss2026Section .WaLayoutContainer[style*="A51C30"] .WaGadgetMenuHorizontal .menuInner {
     justify-content: flex-start;
   }
 
@@ -682,44 +663,44 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
     gap: 6px;
   }
 
-  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody,
-  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody {
+  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody,
+  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody {
     padding: 6px 0 1px !important;
   }
 
-  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone img,
-  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone img {
+  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone img,
+  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone img {
     width: auto !important;
     height: 26px !important;
   }
 
-  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody,
-  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody {
+  .dsdss2026Page .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody,
+  .dsdss2026Section .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody {
     padding: 8px 0 2px !important;
   }
 
-  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone img,
-  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone img {
+  .dsdss2026Page .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone img,
+  .dsdss2026Section .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone img {
     width: auto !important;
     height: 36px !important;
   }
 
-  .dsdss2026Page .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .header-logo-dahshu,
-  .dsdss2026Section .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .header-logo-dahshu {
+  .dsdss2026Page .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone .header-logo-dahshu,
+  .dsdss2026Section .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone .header-logo-dahshu {
     height: 42px !important;
   }
 
-  .dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li > .item > a,
-  .dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li > .item > a {
+  .dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner:not(.mobileView) ul.firstLevel > li > .item > a,
+  .dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner:not(.mobileView) ul.firstLevel > li > .item > a {
     min-height: 30px;
     padding: 0 10px !important;
     font-size: 0.84rem !important;
   }
 
-  .dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.secondLevel li > .item > a,
-  .dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.thirdLevel li > .item > a,
-  .dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.secondLevel li > .item > a,
-  .dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.thirdLevel li > .item > a {
+  .dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner:not(.mobileView) ul.secondLevel li > .item > a,
+  .dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner:not(.mobileView) ul.thirdLevel li > .item > a,
+  .dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner:not(.mobileView) ul.secondLevel li > .item > a,
+  .dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner:not(.mobileView) ul.thirdLevel li > .item > a {
     padding: 7px 10px !important;
     font-size: 0.84rem !important;
   }
@@ -727,62 +708,62 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
 
 @media only screen and (max-width: 616px) {
   [data-shared-header-root] .WaLayoutTable,
-  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable,
-  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable {
+  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaLayoutTable,
+  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaLayoutTable {
     display: table !important;
     width: 100% !important;
   }
 
   [data-shared-header-root] .WaLayoutTable tbody,
-  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable tbody,
-  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable tbody {
+  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaLayoutTable tbody,
+  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaLayoutTable tbody {
     display: table-row-group !important;
   }
 
   [data-shared-header-root] .WaLayoutTable tr,
-  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable tr,
-  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable tr {
+  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaLayoutTable tr,
+  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaLayoutTable tr {
     display: flex !important;
     align-items: center;
     flex-wrap: nowrap;
   }
 
   [data-shared-header-root] .WaLayoutTable td,
-  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable td,
-  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable td {
+  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaLayoutTable td,
+  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaLayoutTable td {
     display: block !important;
     width: auto !important;
   }
 
   [data-shared-header-root] .WaLayoutTable td:first-child,
-  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable td:first-child,
-  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable td:first-child {
+  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaLayoutTable td:first-child,
+  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaLayoutTable td:first-child {
     flex: 0 0 74px;
   }
 
   [data-shared-header-root] .WaLayoutTable td:last-child,
-  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable td:last-child,
-  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaLayoutTable td:last-child {
+  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaLayoutTable td:last-child,
+  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaLayoutTable td:last-child {
     flex: 1 1 auto;
     min-width: 0;
   }
 
   [data-shared-header-root] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody,
-  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody,
-  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody {
+  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody,
+  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody {
     padding: 6px 6px 6px 10px !important;
     text-align: left;
   }
 
   [data-shared-header-root] .WaGadgetContent.gadgetStyleNone p,
-  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone p,
-  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone p {
+  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone p,
+  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone p {
     margin: 0 !important;
   }
 
   [data-shared-header-root] .WaGadgetContent.gadgetStyleNone img,
-  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone img,
-  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetContent.gadgetStyleNone img {
+  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone img,
+  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone img {
     width: 54px !important;
     max-width: 54px !important;
     height: auto !important;
@@ -791,15 +772,15 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
   }
 
   [data-shared-header-root] .WaGadgetMenuHorizontal.menuStyle002,
-  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetMenuHorizontal.menuStyle002,
-  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetMenuHorizontal.menuStyle002 {
+  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaGadgetMenuHorizontal.menuStyle002,
+  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaGadgetMenuHorizontal.menuStyle002 {
     margin-top: 0 !important;
     padding: 0 8px 0 0 !important;
   }
 
   [data-shared-header-root] .WaGadgetMenuHorizontal.menuStyle002 .menuInner,
-  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetMenuHorizontal.menuStyle002 .menuInner,
-  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="background-color:#A51C30"] .WaGadgetMenuHorizontal.menuStyle002 .menuInner {
+  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaGadgetMenuHorizontal.menuStyle002 .menuInner,
+  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaGadgetMenuHorizontal.menuStyle002 .menuInner {
     display: block !important;
     position: relative;
     width: 100%;
@@ -808,20 +789,13 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
   [data-shared-header-root] .WaGadgetMenuHorizontal.menuStyle002 .menuInner .menuButton,
   .dsdss2026Page .zoneContentOuter .WaGadgetMenuHorizontal.menuStyle002 .menuInner .menuButton,
   .dsdss2026Section .zoneContentOuter .WaGadgetMenuHorizontal.menuStyle002 .menuInner .menuButton {
-    display: block !important;
     background: transparent !important;
     color: #ffffff !important;
     text-shadow: none !important;
-    font-size: 0 !important;
-    line-height: 0 !important;
-    width: 52px !important;
-    height: 44px !important;
-    padding: 11px 10px !important;
+    font: 42px/16px var(--d26-font-serif) !important;
+    height: 20px !important;
+    padding: 16px 8px 16px 16px !important;
     text-align: right !important;
-    display: flex !important;
-    align-items: center;
-    justify-content: flex-end;
-    overflow: hidden;
   }
 
   [data-shared-header-root] .WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView ul.firstLevel,
@@ -833,14 +807,6 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
     background: var(--d26-crimson) !important;
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
     box-shadow: 0 10px 22px rgba(70, 10, 19, 0.22) !important;
-  }
-
-  [data-shared-header-root] .WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView:not(.is-open) ul.firstLevel {
-    display: none !important;
-  }
-
-  [data-shared-header-root] .WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView.is-open ul.firstLevel {
-    display: block !important;
   }
 
   [data-shared-header-root] .WaGadgetMenuHorizontal.menuStyle002 .menuInner.mobileView ul.firstLevel > li,

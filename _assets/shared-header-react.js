@@ -149,58 +149,6 @@
           new window.WaMenuHorizontal({ id: "id_d5WBRcn" });
         } catch (err) {}
       }
-
-      var menuInner = document.querySelector("#id_d5WBRcn .menuInner");
-      var firstLevel = document.querySelector("#id_d5WBRcn ul.firstLevel");
-      if (!menuInner || !firstLevel) {
-        return;
-      }
-
-      var menuButton = menuInner.querySelector(".menuButton");
-      if (!menuButton) {
-        menuButton = document.createElement("button");
-        menuButton.type = "button";
-        menuButton.className = "menuButton";
-        menuButton.setAttribute("aria-label", "Toggle menu");
-        menuButton.setAttribute("aria-expanded", "false");
-        menuButton.innerHTML = '<span class="menuButtonBars" aria-hidden="true"></span>';
-        menuInner.insertBefore(menuButton, firstLevel);
-      }
-
-      function closeMenu() {
-        menuInner.classList.remove("is-open");
-        menuButton.setAttribute("aria-expanded", "false");
-      }
-
-      function updateMobileState() {
-        var mobile = window.innerWidth <= 616;
-        if (mobile) {
-          menuInner.classList.add("mobileView");
-          closeMenu();
-        } else {
-          menuInner.classList.remove("mobileView");
-          menuInner.classList.remove("is-open");
-          menuButton.setAttribute("aria-expanded", "false");
-        }
-      }
-
-      function onButtonClick() {
-        if (!menuInner.classList.contains("mobileView")) {
-          return;
-        }
-        var nextOpen = !menuInner.classList.contains("is-open");
-        menuInner.classList.toggle("is-open", nextOpen);
-        menuButton.setAttribute("aria-expanded", nextOpen ? "true" : "false");
-      }
-
-      menuButton.addEventListener("click", onButtonClick);
-      window.addEventListener("resize", updateMobileState);
-      updateMobileState();
-
-      return function () {
-        menuButton.removeEventListener("click", onButtonClick);
-        window.removeEventListener("resize", updateMobileState);
-      };
     }, []);
 
     var menu = e(
