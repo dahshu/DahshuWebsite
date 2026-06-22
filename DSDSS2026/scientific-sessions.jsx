@@ -126,7 +126,7 @@ export function ScientificSessions() {
             <div className="speaker-body">
               <h3>Session {s.number}</h3>
               <p>
-                <strong>Organizer:</strong> <a href={speakers}>{s.organizer}</a>
+                <strong>Organizer:</strong> {s.organizer}
               </p>
               <p>
                 <strong>{s.affiliation}</strong>
