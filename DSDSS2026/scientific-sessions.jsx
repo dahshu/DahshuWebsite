@@ -19,7 +19,7 @@ const SESSIONS = [
     number: 1,
     organizer: "Haoda Fu",
     affiliation: "Amgen",
-    schedule: "Thursday, October 22, 2026, 9:50 AM - 11:30 AM",
+    schedule: null,
     photo: "haoda-fu.webp",
     abstract: [
       "This showcase bridges the gap between academic research and pharmaceutical industry application by bringing together leading experts to highlight the real-world impact of artificial intelligence.",
@@ -32,7 +32,7 @@ const SESSIONS = [
     number: 2,
     organizer: "Runze Li",
     affiliation: "PSU",
-    schedule: "Thursday, October 22, 2026, 1:00 PM - 2:40 PM",
+    schedule: null,
     photo: "runze-li.jpg",
     abstract: ["Abstract to be provided."],
   },
@@ -40,7 +40,7 @@ const SESSIONS = [
     number: 3,
     organizer: "Sara Hamon",
     affiliation: "Regeneron",
-    schedule: "Thursday, October 22, 2026, 2:50 PM - 4:30 PM",
+    schedule: null,
     photo: null,
     abstract: [
       "This session examines how advanced technologies are reshaping clinical trials as artificial intelligence (AI), machine learning (ML), and digital health tools become embedded across the drug development life cycle - from trial design and patient selection to endpoint assessment and regulatory decision-making.",
@@ -52,7 +52,7 @@ const SESSIONS = [
     number: 4,
     organizer: "Jane Zhang",
     affiliation: "AbbVie",
-    schedule: "Thursday, October 22, 2026, 4:40 PM - 5:40 PM",
+    schedule: null,
     photo: null,
     abstract: [
       "As the volume of Real-World Data (RWD) expands, the pharmaceutical industry faces a critical bottleneck: transforming unstructured data into rigorous, actionable clinical evidence.",
@@ -64,7 +64,7 @@ const SESSIONS = [
     number: 5,
     organizer: "Jacek Urbanek",
     affiliation: "Regeneron",
-    schedule: "Friday, October 23, 2026, 8:30 AM - 9:30 AM",
+    schedule: null,
     photo: "jacek-urbanek.jpg",
     abstract: [
       "This session traces the end-to-end arc of immunology-driven drug development - from population-scale genetics that nominate causal targets, through translational biomarker discovery and patient stratification, to late-phase clinical trials that convert hypotheses into actionable evidence.",
