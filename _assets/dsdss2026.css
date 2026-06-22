@@ -9,6 +9,7 @@
   --d26-rose-line: #e4c9cf;
   --d26-ink: #2f1f22;
   --d26-font-serif: "Times New Roman", Times, serif;
+  --d26-nav-breakpoint: 820px;
 }
 
 .dsdss2026Page,
@@ -18,455 +19,387 @@
   font-family: var(--d26-font-serif);
 }
 
-body.publicContentView .zoneContent.container_12,
-body.publicContentView .zoneFooter.container_12,
-body.publicContentView .zoneFooter1.container_12,
-body.publicContentView .zoneBranding.container_12 {
-  width: min(var(--d26-shell-width), calc(100% - var(--d26-shell-gutter))) !important;
-  max-width: var(--d26-shell-width) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  float: none !important;
-}
-
-body.publicContentView .zoneContentInner,
-body.publicContentView .zoneFooterInner,
-body.publicContentView .zoneFooter1Inner,
-body.publicContentView .zoneBrandingInner {
-  width: 100% !important;
-  max-width: none !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-body.publicContentView .mLayout.layoutPlain > .zoneContentOuter,
-body.publicContentView .mLayout.layoutPlain > .zoneFooterOuter,
-body.publicContentView .mLayout.layoutPlain > .zoneFooter1Outer,
-body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
-  width: 100%;
-}
-
-[data-shared-header-root] .WaLayoutContainer {
-  max-width: none;
+/* Generic page layout, shared by every page rendered from the JSX shell.
+   The shell is a full-height flex column so the footer rests at the bottom of
+   the viewport when content is short, and below the content when it is tall. */
+body:has(> .page-shell) {
   margin: 0;
 }
 
-[data-shared-header-root] .WaLayoutTable {
+.page-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--d26-rose);
+  color: var(--d26-ink);
+}
+
+.page-main {
+  flex: 1 0 auto;
+  width: min(var(--d26-shell-width), calc(100% - var(--d26-shell-gutter)));
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* A simple framed content block for short, centered page content. */
+.content-card {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  background: #fff;
+  border-top: 6px solid var(--d26-crimson);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.content-card h1 {
+  margin: 0 0 1rem;
+  color: var(--d26-crimson);
+  font-size: 2rem;
+}
+
+.content-card p {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.content-card a {
+  color: var(--d26-crimson);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.content-card a:hover {
+  text-decoration: underline;
+}
+
+/* Call-to-action button (e.g. abstract / poster upload links). */
+.btn-upload {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff !important;
+  background: var(--d26-crimson);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.btn-upload:hover {
+  background: var(--d26-crimson-deep);
+  text-decoration: none;
+}
+
+/* Article body for text-heavy pages: a left-aligned column with styled
+   headings, lists, links, and tables. Shared by any prose page. */
+.content-prose {
+  line-height: 1.6;
+}
+
+.content-prose h1 {
+  margin: 0 0 1.5rem;
+  color: var(--d26-crimson);
+  text-align: center;
+  font-size: 2rem;
+}
+
+.content-prose h2 {
+  margin: 2rem 0 0.8rem;
+  padding-bottom: 0.3rem;
+  color: var(--d26-crimson);
+  font-size: 1.3rem;
+  border-bottom: 2px solid var(--d26-rose-line);
+}
+
+.content-prose ul {
+  padding-left: 1.4rem;
+}
+
+.content-prose a {
+  color: var(--d26-crimson);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.content-prose a:hover {
+  text-decoration: underline;
+}
+
+/* Centered wrapper for a call-to-action button within prose. */
+.content-cta {
+  text-align: center;
+  margin: 1rem 0 1.5rem;
+}
+
+/* A simple bordered data table (e.g. registration rates, committee rosters).
+   table-layout: fixed gives every column an equal share of the width so the
+   columns align across separate tables on the same page. */
+.content-table {
   width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin: 0.8rem 0 1rem;
 }
 
-[data-shared-header-root] .wa-header-logo-cell .gadgetStyleBody {
-  padding: 14px 0 6px;
+.content-table th,
+.content-table td {
+  padding: 8px 12px;
+  border: 1px solid #e3e3e3;
+  text-align: left;
+  overflow-wrap: break-word;
 }
 
-[data-shared-header-root] .WaGadgetMenuHorizontal {
-  margin-top: 14px !important;
+.content-table th {
+  background: var(--d26-rose);
+  font-weight: bold;
 }
 
-[data-shared-header-root] .WaGadgetMenuHorizontal .menuInner {
+/* A generic content card: a framed container with rounded corners and a soft
+   shadow. Content-agnostic — used for speakers, sessions, and the like. */
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  margin: 0 0 2rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card > :first-child {
+  margin-top: 0;
+}
+
+.card > :last-child {
+  margin-bottom: 0;
+}
+
+.card h3 {
+  margin: 0 0 0.6rem;
+  color: var(--d26-crimson-deep);
+  font-size: 1.3rem;
+}
+
+.card p {
+  margin: 0 0 0.6rem;
+  line-height: 1.6;
+}
+
+/* A responsive inline content image: scales to its container up to a sensible
+   cap, with a light frame. */
+.content-image {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Speaker layout inside a card: a fixed-width photo beside a text column.
+   Reused by any page that shows a person with a portrait. */
+.card.speaker {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.speaker-figure {
+  flex: 0 0 auto;
+}
+
+.speaker-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.speaker-photo-blank {
+  background: linear-gradient(135deg, var(--d26-rose) 0%, #fff 100%);
+}
+
+.speaker-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.speaker-body h3 {
+  margin: 0 0 0.5rem;
+  color: var(--d26-crimson-deep);
+  font-size: 1.3rem;
+}
+
+.speaker-body p {
+  margin: 0 0 0.6rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .card.speaker {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .speaker-photo {
+    width: 100%;
+    max-width: 240px;
+  }
+}
+
+/* ===========================================================================
+   Site header + navigation
+
+   A standard responsive navbar. Above --d26-nav-breakpoint the menu is a
+   horizontal row with hover fly-out submenus. Below it, the .nav-button
+   hamburger toggles the menu via the .nav-toggle checkbox — pure CSS, no JS.
+   =========================================================================== */
+.site-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  max-width: var(--d26-shell-width);
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 10px 18px;
+  background: var(--d26-crimson);
+}
+
+.site-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  flex: 0 0 auto;
+}
+
+.site-logo {
+  display: block;
+  height: 48px;
+  width: auto;
+}
+
+/* --- The nav itself ------------------------------------------------------- */
+.site-nav {
+  flex: 1 1 auto;
   display: flex;
   justify-content: flex-end;
+}
+
+.nav-menu,
+.nav-submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav-menu li {
   position: relative;
 }
 
-/* Pure-CSS hamburger toggle. Hidden on desktop (menu shows inline); the
-   checkbox + label only come into play in the <=616px media query below. */
-[data-shared-header-root] .menuInner .nav-toggle,
-[data-shared-header-root] .menuInner .menu-button {
+.nav-menu a,
+.nav-menu .nav-parent {
+  display: flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 16px;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Parent items don't navigate, so the cursor stays the default arrow. */
+.nav-menu .nav-parent {
+  cursor: default;
+}
+
+.nav-menu .is-current > a,
+.nav-menu .is-current > .nav-parent,
+.nav-menu li:hover > a,
+.nav-menu li:hover > .nav-parent {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+/* Submenus: hidden, revealed on hover of their parent item. The second level
+   drops below; deeper levels fly out to the side. */
+.nav-submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: var(--d26-crimson);
+  box-shadow: 0 10px 22px rgba(70, 10, 19, 0.18);
+  z-index: 50;
+}
+
+.nav-submenu .nav-submenu {
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu li:hover > .nav-submenu {
+  display: block;
+}
+
+.nav-submenu a {
+  min-height: 0;
+  padding: 9px 16px;
+}
+
+/* The hamburger button and its checkbox: present in the markup but hidden
+   until the narrow-screen media query below switches them on. */
+.nav-toggle,
+.nav-button {
   display: none;
 }
 
-.dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li,
-.dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li,
-.dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.secondLevel li,
-.dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.secondLevel li,
-.dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.thirdLevel li,
-.dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.thirdLevel li {
-  margin: 0 !important;
-  background: transparent !important;
-}
-
-.dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li > .item,
-.dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li > .item,
-.dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.secondLevel li > .item,
-.dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.secondLevel li > .item,
-.dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.thirdLevel li > .item,
-.dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.thirdLevel li > .item {
-  margin: 0 !important;
-  padding: 0 !important;
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
-.dsdss2026Page .WaGadgetMenuHorizontal .menuInner ul.firstLevel > li > .item > a,
-.dsdss2026Section .WaGadgetMenuHorizontal .menuInner ul.firstLevel > li > .item > a,
-.dsdss2026Page .WaGadgetMenuHorizontal .menuInner ul.firstLevel > li > .item > a span,
-.dsdss2026Section .WaGadgetMenuHorizontal .menuInner ul.firstLevel > li > .item > a span {
-  color: #ffffff !important;
-  font-family: var(--d26-font-serif) !important;
-}
-
-.dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li > .item > a,
-.dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li > .item > a {
-  display: flex !important;
-  align-items: center;
-  min-height: 42px;
-  padding: 0 16px !important;
-  line-height: 1.2;
-  background-clip: padding-box;
-  box-shadow: none !important;
-}
-
-.dsdss2026Page .WaGadgetMenuHorizontal .menuInner ul.firstLevel > li.dir > .item > a:after,
-.dsdss2026Section .WaGadgetMenuHorizontal .menuInner ul.firstLevel > li.dir > .item > a:after,
-.dsdss2026Page .WaGadgetMenuHorizontal .menuInner ul.secondLevel li.dir > .item > a:after,
-.dsdss2026Section .WaGadgetMenuHorizontal .menuInner ul.secondLevel li.dir > .item > a:after,
-.dsdss2026Page .WaGadgetMenuHorizontal .menuInner ul.thirdLevel li.dir > .item > a:after,
-.dsdss2026Section .WaGadgetMenuHorizontal .menuInner ul.thirdLevel li.dir > .item > a:after {
-  display: none !important;
-}
-
-.dsdss2026Page .WaGadgetMenuHorizontal ul.firstLevel > li.sel > .item > a,
-.dsdss2026Section .WaGadgetMenuHorizontal ul.firstLevel > li.sel > .item > a,
-.dsdss2026Page .WaGadgetMenuHorizontal ul.firstLevel > li:hover > .item > a,
-.dsdss2026Section .WaGadgetMenuHorizontal ul.firstLevel > li:hover > .item > a,
-.dsdss2026Page .WaGadgetMenuHorizontal ul.firstLevel > li.dir:hover > .item > a,
-.dsdss2026Section .WaGadgetMenuHorizontal ul.firstLevel > li.dir:hover > .item > a {
-  background: rgba(255, 255, 255, 0.14) !important;
-  color: #ffffff !important;
-}
-
-.dsdss2026Page .WaGadgetMenuHorizontal ul.secondLevel,
-.dsdss2026Page .WaGadgetMenuHorizontal ul.thirdLevel,
-.dsdss2026Section .WaGadgetMenuHorizontal ul.secondLevel,
-.dsdss2026Section .WaGadgetMenuHorizontal ul.thirdLevel {
-  background: var(--d26-crimson) !important;
-  border-color: rgba(255, 255, 255, 0.18) !important;
-  margin: 0 !important;
-  padding: 6px 0 !important;
-  box-shadow: 0 10px 22px rgba(70, 10, 19, 0.18) !important;
-}
-
-.dsdss2026Page .WaGadgetMenuHorizontal ul.secondLevel ul.secondLevel,
-.dsdss2026Page .WaGadgetMenuHorizontal ul.secondLevel ul.thirdLevel,
-.dsdss2026Section .WaGadgetMenuHorizontal ul.secondLevel ul.secondLevel,
-.dsdss2026Section .WaGadgetMenuHorizontal ul.secondLevel ul.thirdLevel {
-  background: var(--d26-crimson) !important;
-  border-color: rgba(255, 255, 255, 0.18) !important;
-}
-
-.dsdss2026Page .WaGadgetMenuHorizontal ul.secondLevel li > .item > a,
-.dsdss2026Page .WaGadgetMenuHorizontal ul.thirdLevel li > .item > a,
-.dsdss2026Section .WaGadgetMenuHorizontal ul.secondLevel li > .item > a,
-.dsdss2026Section .WaGadgetMenuHorizontal ul.thirdLevel li > .item > a,
-.dsdss2026Page .WaGadgetMenuHorizontal ul.secondLevel li > .item > a span,
-.dsdss2026Page .WaGadgetMenuHorizontal ul.thirdLevel li > .item > a span,
-.dsdss2026Section .WaGadgetMenuHorizontal ul.secondLevel li > .item > a span,
-.dsdss2026Section .WaGadgetMenuHorizontal ul.thirdLevel li > .item > a span {
-  color: #ffffff !important;
-  background: transparent !important;
-  font-family: var(--d26-font-serif) !important;
-}
-
-.dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.secondLevel li > .item > a,
-.dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.thirdLevel li > .item > a,
-.dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.secondLevel li > .item > a,
-.dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.thirdLevel li > .item > a {
-  display: block !important;
-  margin: 0 !important;
-  padding: 9px 16px !important;
-  line-height: 1.3;
-  box-shadow: none !important;
-}
-
-.dsdss2026Page .WaGadgetMenuHorizontal ul.secondLevel li.sel > .item,
-.dsdss2026Page .WaGadgetMenuHorizontal ul.thirdLevel li.sel > .item,
-.dsdss2026Page .WaGadgetMenuHorizontal ul.secondLevel li:hover > .item,
-.dsdss2026Page .WaGadgetMenuHorizontal ul.thirdLevel li:hover > .item,
-.dsdss2026Section .WaGadgetMenuHorizontal ul.secondLevel li.sel > .item,
-.dsdss2026Section .WaGadgetMenuHorizontal ul.thirdLevel li.sel > .item,
-.dsdss2026Section .WaGadgetMenuHorizontal ul.secondLevel li:hover > .item,
-.dsdss2026Section .WaGadgetMenuHorizontal ul.thirdLevel li:hover > .item {
-  background: transparent !important;
-}
-
-.dsdss2026Page .WaGadgetMenuHorizontal ul.secondLevel li.sel > .item > a,
-.dsdss2026Page .WaGadgetMenuHorizontal ul.thirdLevel li.sel > .item > a,
-.dsdss2026Page .WaGadgetMenuHorizontal ul.secondLevel li:hover > .item > a,
-.dsdss2026Page .WaGadgetMenuHorizontal ul.thirdLevel li:hover > .item > a,
-.dsdss2026Section .WaGadgetMenuHorizontal ul.secondLevel li.sel > .item > a,
-.dsdss2026Section .WaGadgetMenuHorizontal ul.thirdLevel li.sel > .item > a,
-.dsdss2026Section .WaGadgetMenuHorizontal ul.secondLevel li:hover > .item > a,
-.dsdss2026Section .WaGadgetMenuHorizontal ul.thirdLevel li:hover > .item > a {
-  background: var(--d26-crimson-deep) !important;
-}
-
-.dsdss2026Page .wa-header-logo-cell .header-co-branding,
-.dsdss2026Section .wa-header-logo-cell .header-co-branding {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  overflow: visible;
-  line-height: 0;
-}
-
-.dsdss2026Page .wa-header-logo-cell .header-logo-link,
-.dsdss2026Section .wa-header-logo-cell .header-logo-link,
-.dsdss2026Page .wa-header-logo-cell .gadgetStyleBody,
-.dsdss2026Section .wa-header-logo-cell .gadgetStyleBody {
+.nav-button-bars,
+.nav-button-bars::before,
+.nav-button-bars::after {
+  content: "";
   display: block;
-  overflow: visible !important;
+  width: 26px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
 }
 
-.dsdss2026Page .wa-header-logo-cell,
-.dsdss2026Section .wa-header-logo-cell {
-  min-width: 190px;
+.nav-button-bars {
+  position: relative;
 }
 
-.dsdss2026Page .wa-header-logo-cell .header-co-branding img,
-.dsdss2026Section .wa-header-logo-cell .header-co-branding img {
-  width: auto;
-  height: 52px;
-  max-width: none;
-  object-fit: contain;
-  display: block;
+.nav-button-bars::before {
+  position: absolute;
+  top: -8px;
 }
 
-.dsdss2026Page .wa-header-logo-cell .header-co-branding .header-logo-dahshu,
-.dsdss2026Section .wa-header-logo-cell .header-co-branding .header-logo-dahshu {
-  height: 62px;
+.nav-button-bars::after {
+  position: absolute;
+  top: 8px;
 }
 
-.dsdss2026Page .WaGadgetBreadcrumbs a,
-.dsdss2026Section .WaGadgetBreadcrumbs a,
-.dsdss2026Page .WaLayoutContainer:not(.WaLayoutContainerLast) .WaGadgetContent a,
-.dsdss2026Section .WaLayoutContainer:not(.WaLayoutContainerLast) .WaGadgetContent a,
-.dsdss2026Page .WaGadgetCustomHTML a,
-.dsdss2026Section .WaGadgetCustomHTML a {
-  color: var(--d26-crimson) !important;
-}
-
-.dsdss2026Page .WaGadgetCustomHTML body,
-.dsdss2026Section .WaGadgetCustomHTML body {
-  background: linear-gradient(180deg, var(--d26-rose) 0%, #ffffff 100%) !important;
-  color: var(--d26-ink) !important;
-  font-family: var(--d26-font-serif) !important;
-}
-
-.dsdss2026Page .WaGadgetCustomHTML h1,
-.dsdss2026Page .WaGadgetCustomHTML h2,
-.dsdss2026Page .WaGadgetCustomHTML h3,
-.dsdss2026Page .WaGadgetCustomHTML h4,
-.dsdss2026Page .WaGadgetCustomHTML h5,
-.dsdss2026Page .WaGadgetCustomHTML h6,
-.dsdss2026Section .WaGadgetCustomHTML h1,
-.dsdss2026Section .WaGadgetCustomHTML h2,
-.dsdss2026Section .WaGadgetCustomHTML h3,
-.dsdss2026Section .WaGadgetCustomHTML h4,
-.dsdss2026Section .WaGadgetCustomHTML h5,
-.dsdss2026Section .WaGadgetCustomHTML h6 {
-  color: var(--d26-crimson) !important;
-  font-family: var(--d26-font-serif) !important;
-}
-
-.dsdss2026Page .WaGadgetCustomHTML p,
-.dsdss2026Page .WaGadgetCustomHTML li,
-.dsdss2026Page .WaGadgetCustomHTML div,
-.dsdss2026Page .WaGadgetCustomHTML span,
-.dsdss2026Page .WaGadgetCustomHTML label,
-.dsdss2026Page .WaGadgetCustomHTML input,
-.dsdss2026Page .WaGadgetCustomHTML textarea,
-.dsdss2026Page .WaGadgetCustomHTML select,
-.dsdss2026Section .WaGadgetCustomHTML p,
-.dsdss2026Section .WaGadgetCustomHTML li,
-.dsdss2026Section .WaGadgetCustomHTML div,
-.dsdss2026Section .WaGadgetCustomHTML span,
-.dsdss2026Section .WaGadgetCustomHTML label,
-.dsdss2026Section .WaGadgetCustomHTML input,
-.dsdss2026Section .WaGadgetCustomHTML textarea,
-.dsdss2026Section .WaGadgetCustomHTML select {
-  font-family: var(--d26-font-serif) !important;
-}
-
-.dsdss2026Page .WaGadgetCustomHTML [class*="button"],
-.dsdss2026Page .WaGadgetCustomHTML button,
-.dsdss2026Page .WaGadgetCustomHTML input[type="submit"],
-.dsdss2026Page .WaGadgetCustomHTML input[type="button"],
-.dsdss2026Section .WaGadgetCustomHTML [class*="button"],
-.dsdss2026Section .WaGadgetCustomHTML button,
-.dsdss2026Section .WaGadgetCustomHTML input[type="submit"],
-.dsdss2026Section .WaGadgetCustomHTML input[type="button"],
-.dsdss2026Page .functionalButton,
-.dsdss2026Page .typeButton,
-.dsdss2026Section .functionalButton,
-.dsdss2026Section .typeButton {
-  background: linear-gradient(135deg, var(--d26-crimson-soft) 0%, var(--d26-crimson) 100%) !important;
-  border-color: var(--d26-crimson) !important;
-  color: #ffffff !important;
-  text-shadow: none !important;
-}
-
-.dsdss2026Page .WaGadgetCustomHTML [class*="button"]:hover,
-.dsdss2026Page .WaGadgetCustomHTML button:hover,
-.dsdss2026Page .WaGadgetCustomHTML input[type="submit"]:hover,
-.dsdss2026Page .WaGadgetCustomHTML input[type="button"]:hover,
-.dsdss2026Section .WaGadgetCustomHTML [class*="button"]:hover,
-.dsdss2026Section .WaGadgetCustomHTML button:hover,
-.dsdss2026Section .WaGadgetCustomHTML input[type="submit"]:hover,
-.dsdss2026Section .WaGadgetCustomHTML input[type="button"]:hover,
-.dsdss2026Page .functionalButton:hover,
-.dsdss2026Page .typeButton:hover,
-.dsdss2026Section .functionalButton:hover,
-.dsdss2026Section .typeButton:hover {
-  background: var(--d26-crimson-deep) !important;
-}
-
-.dsdss2026Page .WaGadgetCustomHTML .intro,
-.dsdss2026Page .WaGadgetCustomHTML .speaker-card,
-.dsdss2026Page .WaGadgetCustomHTML .plenary-talk,
-.dsdss2026Page .WaGadgetCustomHTML .sponsor-card,
-.dsdss2026Page .WaGadgetCustomHTML .venue-card,
-.dsdss2026Section .WaGadgetCustomHTML .intro,
-.dsdss2026Section .WaGadgetCustomHTML .speaker-card,
-.dsdss2026Section .WaGadgetCustomHTML .plenary-talk,
-.dsdss2026Section .WaGadgetCustomHTML .sponsor-card,
-.dsdss2026Section .WaGadgetCustomHTML .venue-card {
-  border-color: var(--d26-rose-line) !important;
-  box-shadow: 0 10px 24px rgba(165, 28, 48, 0.08) !important;
-}
-
-.dsdss2026Page .WaGadgetCustomHTML [style*="color:#0b1f44" i],
-.dsdss2026Page .WaGadgetCustomHTML [style*="color: #0b1f44" i],
-.dsdss2026Page .WaGadgetCustomHTML [style*="color:#004080" i],
-.dsdss2026Page .WaGadgetCustomHTML [style*="color: #004080" i],
-.dsdss2026Page .WaGadgetCustomHTML [style*="color:#438cca" i],
-.dsdss2026Page .WaGadgetCustomHTML [style*="color: #438cca" i],
-.dsdss2026Page .WaGadgetCustomHTML [style*="color:lightblue" i],
-.dsdss2026Page .WaGadgetCustomHTML [style*="color: lightblue" i],
-.dsdss2026Section .WaGadgetCustomHTML [style*="color:#0b1f44" i],
-.dsdss2026Section .WaGadgetCustomHTML [style*="color: #0b1f44" i],
-.dsdss2026Section .WaGadgetCustomHTML [style*="color:#004080" i],
-.dsdss2026Section .WaGadgetCustomHTML [style*="color: #004080" i],
-.dsdss2026Section .WaGadgetCustomHTML [style*="color:#438cca" i],
-.dsdss2026Section .WaGadgetCustomHTML [style*="color: #438cca" i],
-.dsdss2026Section .WaGadgetCustomHTML [style*="color:lightblue" i],
-.dsdss2026Section .WaGadgetCustomHTML [style*="color: lightblue" i] {
-  color: var(--d26-crimson) !important;
-}
-
-.dsdss2026Page .WaGadgetCustomHTML [style*="background-color:#438cca" i],
-.dsdss2026Page .WaGadgetCustomHTML [style*="background-color: #438cca" i],
-.dsdss2026Page .WaGadgetCustomHTML [style*="background-color:#004080" i],
-.dsdss2026Page .WaGadgetCustomHTML [style*="background-color: #004080" i],
-.dsdss2026Page .WaGadgetCustomHTML [style*="background:#438cca" i],
-.dsdss2026Page .WaGadgetCustomHTML [style*="background: #438cca" i],
-.dsdss2026Page .WaGadgetCustomHTML [style*="background:#004080" i],
-.dsdss2026Page .WaGadgetCustomHTML [style*="background: #004080" i],
-.dsdss2026Page .WaGadgetCustomHTML [style*="background:#4cb5c4" i],
-.dsdss2026Page .WaGadgetCustomHTML [style*="background: #4cb5c4" i],
-.dsdss2026Page .WaGadgetCustomHTML [style*="background:#f0f8ff" i],
-.dsdss2026Page .WaGadgetCustomHTML [style*="background: #f0f8ff" i],
-.dsdss2026Section .WaGadgetCustomHTML [style*="background-color:#438cca" i],
-.dsdss2026Section .WaGadgetCustomHTML [style*="background-color: #438cca" i],
-.dsdss2026Section .WaGadgetCustomHTML [style*="background-color:#004080" i],
-.dsdss2026Section .WaGadgetCustomHTML [style*="background-color: #004080" i],
-.dsdss2026Section .WaGadgetCustomHTML [style*="background:#438cca" i],
-.dsdss2026Section .WaGadgetCustomHTML [style*="background: #438cca" i],
-.dsdss2026Section .WaGadgetCustomHTML [style*="background:#004080" i],
-.dsdss2026Section .WaGadgetCustomHTML [style*="background: #004080" i],
-.dsdss2026Section .WaGadgetCustomHTML [style*="background:#4cb5c4" i],
-.dsdss2026Section .WaGadgetCustomHTML [style*="background: #4cb5c4" i],
-.dsdss2026Section .WaGadgetCustomHTML [style*="background:#f0f8ff" i],
-.dsdss2026Section .WaGadgetCustomHTML [style*="background: #f0f8ff" i] {
-  background: linear-gradient(180deg, var(--d26-rose) 0%, #ffffff 100%) !important;
-  background-color: var(--d26-rose) !important;
-  border-color: var(--d26-rose-line) !important;
-}
-
-.dsdss2026Page .WaGadgetSocialProfile a,
-.dsdss2026Section .WaGadgetSocialProfile a {
-  background: var(--d26-crimson) !important;
-}
-
-.dsdss2026Page .light-blue-button,
-.dsdss2026Page .heavy-blue-button,
-.dsdss2026Page .sky-blue-button,
-.dsdss2026Page .navy-blue-button,
-.dsdss2026Page .warm-peach-button,
-.dsdss2026Page .cool-teal-button,
-.dsdss2026Section .light-blue-button,
-.dsdss2026Section .heavy-blue-button,
-.dsdss2026Section .sky-blue-button,
-.dsdss2026Section .navy-blue-button,
-.dsdss2026Section .warm-peach-button,
-.dsdss2026Section .cool-teal-button {
-  color: #ffffff;
-  border: none;
-}
-
-.dsdss2026Page .light-blue-button,
-.dsdss2026Page .heavy-blue-button,
-.dsdss2026Page .sky-blue-button,
-.dsdss2026Page .navy-blue-button,
-.dsdss2026Section .light-blue-button,
-.dsdss2026Section .heavy-blue-button,
-.dsdss2026Section .sky-blue-button,
-.dsdss2026Section .navy-blue-button {
-  background: linear-gradient(45deg, #c4495c, #a51c30) !important;
-}
-
-.dsdss2026Page .warm-peach-button,
-.dsdss2026Page .cool-teal-button,
-.dsdss2026Section .warm-peach-button,
-.dsdss2026Section .cool-teal-button {
-  background: linear-gradient(135deg, #c4495c 0%, #a51c30 100%) !important;
-  text-shadow: none !important;
-}
-
-.dsdss2026Page .light-blue-button:hover,
-.dsdss2026Page .heavy-blue-button:hover,
-.dsdss2026Page .sky-blue-button:hover,
-.dsdss2026Page .navy-blue-button:hover,
-.dsdss2026Page .warm-peach-button:hover,
-.dsdss2026Page .cool-teal-button:hover,
-.dsdss2026Section .light-blue-button:hover,
-.dsdss2026Section .heavy-blue-button:hover,
-.dsdss2026Section .sky-blue-button:hover,
-.dsdss2026Section .navy-blue-button:hover,
-.dsdss2026Section .warm-peach-button:hover,
-.dsdss2026Section .cool-teal-button:hover {
-  box-shadow: 0 10px 18px rgba(165, 28, 48, 0.28) !important;
-}
-
-.dsdss2026Page .light-blue-button:active,
-.dsdss2026Page .heavy-blue-button:active,
-.dsdss2026Page .sky-blue-button:active,
-.dsdss2026Page .navy-blue-button:active,
-.dsdss2026Page .warm-peach-button:active,
-.dsdss2026Page .cool-teal-button:active,
-.dsdss2026Section .light-blue-button:active,
-.dsdss2026Section .heavy-blue-button:active,
-.dsdss2026Section .sky-blue-button:active,
-.dsdss2026Section .navy-blue-button:active,
-.dsdss2026Section .warm-peach-button:active,
-.dsdss2026Section .cool-teal-button:active {
-  box-shadow: 0 4px 10px rgba(165, 28, 48, 0.22) !important;
-}
-
+/* ===========================================================================
+   Site footer
+   =========================================================================== */
 .footer-panel {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   gap: 24px;
   padding: 20px 18px;
-  background: #a51c30;
+  background: var(--d26-crimson);
   color: #fff;
   font-family: var(--d26-font-serif);
-}
-
-.shared-footer-host {
-  display: block;
-  width: 100%;
-  clear: both;
 }
 
 .shared-footer-shell {
@@ -477,16 +410,11 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
 
 .footer-panel,
 .footer-panel * {
-  color: #fff !important;
-}
-
-.footer-panel a {
-  color: #fff !important;
+  color: #fff;
 }
 
 .footer-panel .footer-column h3 {
   margin: 0 0 10px;
-  font-family: var(--d26-font-serif);
   font-size: 1.1rem;
 }
 
@@ -508,7 +436,6 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
   display: inline-block;
   padding: 4px 10px;
   border: 1px solid rgba(255, 255, 255, 0.45);
-  color: #fff !important;
   text-decoration: none;
   font-size: 0.95rem;
   letter-spacing: 0.02em;
@@ -525,7 +452,6 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #fff !important;
   text-decoration: none;
   font-size: 0.92rem;
   font-weight: 700;
@@ -541,7 +467,6 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
   justify-content: center;
   width: 100%;
   height: 100%;
-  font-family: var(--d26-font-serif);
   line-height: 1;
 }
 
@@ -550,265 +475,81 @@ body.publicContentView .mLayout.layoutPlain > .zoneBrandingOuter {
   text-transform: lowercase;
 }
 
-@media (max-width: 860px) {
-  [data-shared-header-root] .WaLayoutTable,
-  [data-shared-header-root] .WaLayoutTable tbody,
-  [data-shared-header-root] .WaLayoutTable tr,
-  [data-shared-header-root] .WaLayoutTable td {
-    display: block;
-    width: 100% !important;
+/* ===========================================================================
+   Narrow screens: collapse the nav to a hamburger and the footer to one column
+   =========================================================================== */
+@media (max-width: 820px) {
+  .site-header {
+    flex-wrap: wrap;
+    padding: 8px 16px;
+    gap: 12px;
   }
 
-  [data-shared-header-root] .wa-header-logo-cell .gadgetStyleBody {
-    padding: 10px 0 4px !important;
-    text-align: center;
+  .site-logo {
+    height: 40px;
   }
 
-  [data-shared-header-root] .WaLayoutSeparator {
-    display: none !important;
+  /* The menu now lives in a dropdown anchored to the header. */
+  .site-nav {
+    position: static;
   }
 
-  [data-shared-header-root] .WaGadgetMenuHorizontal {
-    margin-top: 6px !important;
-  }
-
-  [data-shared-header-root] .WaGadgetMenuHorizontal .menuInner {
-    justify-content: flex-start;
-  }
-
-  .dsdss2026Page .wa-header-logo-cell .header-co-branding,
-  .dsdss2026Section .wa-header-logo-cell .header-co-branding {
+  .nav-button {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 8px;
+    height: 44px;
+    width: 48px;
+    margin-left: auto;
+    cursor: pointer;
   }
 
-  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody,
-  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody {
-    padding: 8px 0 2px !important;
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--d26-crimson);
+    box-shadow: 0 10px 22px rgba(70, 10, 19, 0.22);
+    z-index: 50;
   }
 
-  .dsdss2026Page .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone img,
-  .dsdss2026Section .zoneContentOuter .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone img {
-    width: auto !important;
-    height: 32px !important;
+  /* Checkbox toggles the menu open; keyboard focus rings the button. */
+  .nav-toggle:checked ~ .nav-menu {
+    display: flex;
   }
 
-  .dsdss2026Page .WaLayoutContainer[style*="A51C30"] .WaLayoutTable,
-  .dsdss2026Page .WaLayoutContainer[style*="A51C30"] .WaLayoutTable tbody,
-  .dsdss2026Page .WaLayoutContainer[style*="A51C30"] .WaLayoutTable tr,
-  .dsdss2026Page .WaLayoutContainer[style*="A51C30"] .WaLayoutTable td,
-  .dsdss2026Section .WaLayoutContainer[style*="A51C30"] .WaLayoutTable,
-  .dsdss2026Section .WaLayoutContainer[style*="A51C30"] .WaLayoutTable tbody,
-  .dsdss2026Section .WaLayoutContainer[style*="A51C30"] .WaLayoutTable tr,
-  .dsdss2026Section .WaLayoutContainer[style*="A51C30"] .WaLayoutTable td {
+  .nav-toggle:focus-visible ~ .nav-button {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+  }
+
+  .nav-menu li {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+  }
+
+  /* Submenus stack inline (indented) instead of flying out. */
+  .nav-submenu,
+  .nav-submenu .nav-submenu {
+    position: static;
     display: block;
-    width: 100% !important;
+    min-width: 0;
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.12);
   }
 
-  .dsdss2026Page .WaLayoutContainer[style*="A51C30"] .WaLayoutSeparator,
-  .dsdss2026Section .WaLayoutContainer[style*="A51C30"] .WaLayoutSeparator {
-    display: none !important;
+  .nav-submenu a {
+    padding-left: 32px;
   }
 
-  .dsdss2026Page .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody,
-  .dsdss2026Section .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody {
-    padding: 10px 0 4px !important;
-    text-align: center;
-  }
-
-  .dsdss2026Page .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone img,
-  .dsdss2026Section .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone img {
-    width: auto !important;
-    height: 42px !important;
-    max-width: none !important;
-    object-fit: contain !important;
-    margin: 0 auto;
-    display: block;
-  }
-
-  .dsdss2026Page .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone .header-logo-dahshu,
-  .dsdss2026Section .WaLayoutContainer[style*="A51C30"] .WaGadgetContent.gadgetStyleNone .header-logo-dahshu {
-    height: 50px !important;
-  }
-
-  .dsdss2026Page .WaLayoutContainer[style*="A51C30"] .WaGadgetMenuHorizontal.menuStyle002,
-  .dsdss2026Section .WaLayoutContainer[style*="A51C30"] .WaGadgetMenuHorizontal.menuStyle002 {
-    margin-top: 6px !important;
-  }
-
-  .dsdss2026Page .WaLayoutContainer[style*="A51C30"] .WaGadgetMenuHorizontal .menuInner,
-  .dsdss2026Section .WaLayoutContainer[style*="A51C30"] .WaGadgetMenuHorizontal .menuInner {
-    justify-content: flex-start;
-  }
-
-  .dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li > .item > a,
-  .dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.firstLevel > li > .item > a {
-    min-height: 34px;
-    padding: 0 12px !important;
-    font-size: 0.92rem !important;
-  }
-
-  .dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.secondLevel li > .item > a,
-  .dsdss2026Page .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.thirdLevel li > .item > a,
-  .dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.secondLevel li > .item > a,
-  .dsdss2026Section .WaGadgetMenuHorizontal.menuStyle002 .menuInner ul.thirdLevel li > .item > a {
-    padding: 8px 12px !important;
-    font-size: 0.9rem !important;
+  .nav-submenu .nav-submenu a {
+    padding-left: 48px;
   }
 
   .footer-panel {
     grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 520px) {
-  /* Slightly tighter logos on very small screens. The menu is already a
-     dropdown here (see the <=616px block), so only the logo cell needs tuning. */
-  [data-shared-header-root] .wa-header-logo-cell .gadgetStyleBody {
-    padding: 8px 0 2px !important;
-  }
-  [data-shared-header-root] .wa-header-logo-cell .header-co-branding {
-    gap: 6px;
-  }
-  [data-shared-header-root] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody {
-    padding: 8px 0 2px !important;
-  }
-  [data-shared-header-root] .WaGadgetContent.gadgetStyleNone img {
-    width: 44px !important;
-    max-width: 44px !important;
-    height: auto !important;
-  }
-}
-
-@media only screen and (max-width: 616px) {
-  /* Stack the header so the logo and menu sit on one compact row. */
-  [data-shared-header-root] .WaLayoutTable {
-    display: table !important;
-    width: 100% !important;
-  }
-  [data-shared-header-root] .WaLayoutTable tbody {
-    display: table-row-group !important;
-  }
-  [data-shared-header-root] .WaLayoutTable tr {
-    display: flex !important;
-    align-items: center;
-    flex-wrap: nowrap;
-  }
-  [data-shared-header-root] .WaLayoutTable td {
-    display: block !important;
-    width: auto !important;
-  }
-  [data-shared-header-root] .WaLayoutTable td:first-child {
-    flex: 0 0 74px;
-  }
-  [data-shared-header-root] .WaLayoutTable td:last-child {
-    flex: 1 1 auto;
-    min-width: 0;
-  }
-
-  [data-shared-header-root] .WaGadgetContent.gadgetStyleNone .gadgetStyleBody {
-    padding: 6px 6px 6px 10px !important;
-    text-align: left;
-  }
-  [data-shared-header-root] .WaGadgetContent.gadgetStyleNone p {
-    margin: 0 !important;
-  }
-  [data-shared-header-root] .WaGadgetContent.gadgetStyleNone img {
-    width: 54px !important;
-    max-width: 54px !important;
-    height: auto !important;
-    margin: 0 !important;
-    display: block;
-  }
-
-  [data-shared-header-root] .WaGadgetMenuHorizontal.menuStyle002 {
-    margin-top: 0 !important;
-    padding: 0 8px 0 0 !important;
-  }
-  [data-shared-header-root] .WaGadgetMenuHorizontal.menuStyle002 .menuInner {
-    display: block !important;
-    position: relative;
-    width: 100%;
-  }
-
-  /* The hamburger button (the <label>); icon drawn in CSS (3 bars) so the
-     markup stays ASCII-only and encoding-independent. */
-  [data-shared-header-root] .menuInner .menu-button {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    cursor: pointer;
-    background: transparent;
-    height: 52px;
-    padding: 0 8px 0 16px;
-    user-select: none;
-  }
-  [data-shared-header-root] .menuInner .menu-button .menu-button-bars,
-  [data-shared-header-root] .menuInner .menu-button .menu-button-bars::before,
-  [data-shared-header-root] .menuInner .menu-button .menu-button-bars::after {
-    display: block;
-    width: 26px;
-    height: 3px;
-    background: #ffffff;
-    border-radius: 2px;
-    content: "";
-  }
-  [data-shared-header-root] .menuInner .menu-button .menu-button-bars {
-    position: relative;
-  }
-  [data-shared-header-root] .menuInner .menu-button .menu-button-bars::before {
-    position: absolute;
-    top: -8px;
-    left: 0;
-  }
-  [data-shared-header-root] .menuInner .menu-button .menu-button-bars::after {
-    position: absolute;
-    top: 8px;
-    left: 0;
-  }
-
-  /* Closed by default; the checkbox reveals it. (.nav-toggle stays
-     visually hidden but focusable for keyboard users.) */
-  [data-shared-header-root] .menuInner .nav-toggle {
-    position: absolute;
-    opacity: 0;
-    width: 1px;
-    height: 1px;
-    margin: 0;
-    pointer-events: none;
-  }
-  [data-shared-header-root] .menuInner ul.firstLevel {
-    display: none;
-    position: absolute;
-    top: calc(100% + 2px);
-    left: 0;
-    width: 100%;
-    background: var(--d26-crimson);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 10px 22px rgba(70, 10, 19, 0.22);
-    z-index: 50;
-  }
-  [data-shared-header-root] .menuInner .nav-toggle:checked ~ ul.firstLevel {
-    display: block;
-  }
-  /* Keyboard focus ring on the button when the hidden checkbox is focused. */
-  [data-shared-header-root] .menuInner .nav-toggle:focus-visible ~ .menu-button {
-    outline: 2px solid #ffffff;
-    outline-offset: 2px;
-  }
-
-  [data-shared-header-root] .menuInner ul.firstLevel > li {
-    border-top: 1px solid rgba(255, 255, 255, 0.14);
-  }
-  [data-shared-header-root] .menuInner ul.firstLevel > li > .item > a {
-    color: #ffffff !important;
-    background: transparent !important;
-    font-size: 0.95rem !important;
-    padding: 12px 16px !important;
-  }
-  [data-shared-header-root] .menuInner ul.firstLevel > li.sel > .item > a,
-  [data-shared-header-root] .menuInner ul.firstLevel > li > .item > a:hover {
-    background: rgba(255, 255, 255, 0.14) !important;
-    color: #ffffff !important;
   }
 }

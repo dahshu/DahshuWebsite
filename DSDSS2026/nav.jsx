@@ -1,106 +1,88 @@
-// The site navigation menu, written as JSX markup.
+// The site navigation menu.
 //
 // THIS IS THE FILE TO EDIT to change menu links, labels, order, or nesting.
-// After editing, run:  npm run build:header
+// After editing, run:  npm run build
 //
 // <Item> renders one menu entry. Props:
-//   target   page folder name -> links to <target>/index.html.
-//            Use the ROOT_TARGET constant for the site root (index.html).
+//   target   page slug (e.g. "sponsor") -> links to "sponsor.html".
 //   label    text shown in the menu.
-//   on       optional list of `data-current-page` values that highlight this item.
+//   on       optional list of page slugs that mark this item as current.
+//   link     for an item with a submenu, keep it clickable (links to its page)
+//            instead of being a non-navigating submenu toggle.
 //   children nested <Item>s become a submenu automatically.
 //
-// `page` and `prefix` are threaded down from the build (current page + path depth).
-// You normally don't touch them here — just write the menu structure below.
+// `page` (the current page slug) is threaded down from the build. You normally
+// don't touch it — just write the menu.
 
 import React from "react";
 
-export const HOME_PAGE = "__home__";
-export const ROOT_TARGET = "__root__";
-
-function hrefFor(target, page, prefix) {
-  if (target === ROOT_TARGET) {
-    return page === HOME_PAGE ? "index.html" : prefix + "index.html";
-  }
-  if (page === target) return "index.html";
-  return prefix + target + "/index.html";
-}
-
-function liClass(selected, isDir) {
-  if (selected && isDir) return "sel dir";
-  if (selected) return "sel ";
-  if (isDir) return " dir";
-  return " ";
-}
-
-export function Item({ target, label, on = [], page, prefix, children }) {
+export function Item({ target, label, on = [], link = false, page, children }) {
   const kids = React.Children.toArray(children);
-  const isDir = kids.length > 0;
-  const selected = on.includes(page);
+  const hasSubmenu = kids.length > 0;
+  // An item is current when it links to the current page, or when `on` lists
+  // the current page (used to highlight a parent for its child pages).
+  const isCurrent = target === page || on.includes(page);
+  const classes = [hasSubmenu && "has-submenu", isCurrent && "is-current"]
+    .filter(Boolean)
+    .join(" ");
+
+  // Parent items don't navigate by default — clicking the label just reveals
+  // the submenu (which opens on hover). Pass `link` to keep a parent clickable
+  // (e.g. the top-level item that should still go to its own page). Leaf items
+  // always link to their page.
+  const navigates = !hasSubmenu || link;
 
   return (
-    <li className={liClass(selected, isDir)}>
-      <div className="item">
-        <a href={hrefFor(target, page, prefix)} title={label}>
-          <span>{label}</span>
-        </a>
-        {isDir && (
-          <ul className="secondLevel">
-            {kids.map((child) => React.cloneElement(child, { page, prefix }))}
-          </ul>
-        )}
-      </div>
+    <li className={classes || undefined}>
+      {navigates ? (
+        <a href={`${target}.html`}>{label}</a>
+      ) : (
+        <span className="nav-parent">{label}</span>
+      )}
+      {hasSubmenu && (
+        <ul className="nav-submenu">
+          {kids.map((child, i) => React.cloneElement(child, { page, key: i }))}
+        </ul>
+      )}
     </li>
   );
 }
 
-// Threads `page`/`prefix` into the top-level items so the menu markup below
-// can stay clean (no need to pass them on every <Item>).
-export function Nav({ page, prefix }) {
-  const thread = (node) => React.cloneElement(node, { page, prefix });
+// The menu structure. `page` is threaded into each item so the markup below
+// stays clean.
+export function Nav({ page }) {
+  const thread = (node, i) => React.cloneElement(node, { page, key: i });
 
   return (
-    <ul className="firstLevel">
+    <ul className="nav-menu">
       {[
-        <Item target={ROOT_TARGET} label="DSDSS2026" on={[HOME_PAGE, "page-18129"]}>
-          <Item target="DSDSS2026-abstract-submission" label="Abstract Submission" />
-          <Item target="DSDSS2026-poster-submission" label="Poster Submission" />
-          <Item target="DSDSS2026-registration" label="Registration" />
-          <Item target="DSDSS2026-committee" label="Committee" />
+        <Item target="index" label="DSDSS2026" link>
+          <Item target="abstract-submission" label="Abstract Submission" />
+          <Item target="poster-submission" label="Poster Submission" />
+          <Item target="registration" label="Registration" />
+          <Item target="committee" label="Committee" />
         </Item>,
 
-        <Item target="DSDSS2026-agenda" label="Agenda & Program" on={["DSDSS2026-agenda"]}>
-          <Item target="DSDSS2026-opening-remarks" label="Opening Remarks" />
-          <Item target="DSDSS2026-keynote-sessions" label="Keynotes" on={["DSDSS2026-keynote-sessions"]}>
-            <Item target="DSDSS2026-keynote-session-1" label="Goncalo Rocha Abecasis" />
-            <Item target="DSDSS2026-keynote-session-2" label="Susan Murphy" />
-          </Item>
-          <Item target="DSDSS2026-scientific-sessions" label="Scientific Sessions" on={["DSDSS2026-scientific-sessions"]}>
-            <Item target="DSDSS2026-scientific-session-1" label="Session 1" />
-            <Item target="DSDSS2026-scientific-session-2" label="Session 2" />
-            <Item target="DSDSS2026-scientific-session-3" label="Session 3" />
-            <Item target="DSDSS2026-scientific-session-4" label="Session 4" />
-            <Item target="DSDSS2026-scientific-session-5" label="Session 5" />
-            <Item target="DSDSS2026-scientific-session-6" label="Session 6" />
-            <Item target="DSDSS2026-scientific-session-7" label="Session 7" />
-            <Item target="DSDSS2026-scientific-session-8" label="Session 8" />
-          </Item>
-          <Item target="DSDSS2026-banquet" label="Banquet" />
+        <Item target="agenda" label="Agenda & Program">
+          <Item target="opening-remarks" label="Opening Remarks" />
+          <Item target="keynote-sessions" label="Keynotes" />
+          <Item target="scientific-sessions" label="Scientific Sessions" />
+          <Item target="banquet" label="Banquet" />
         </Item>,
 
-        <Item target="DSDSS2026-sponsor" label="Sponsor" on={["DSDSS2026-sponsor", "page-18143"]} />,
+        <Item target="sponsor" label="Sponsor" />,
 
-        <Item target="DSDSS2026-short-course" label="Short Course" on={["DSDSS2026-short-course"]} />,
+        <Item target="short-course" label="Short Course" />,
 
-        <Item target="DSDSS2026-speakers" label="Speakers" on={["DSDSS2026-speakers"]}>
-          <Item target="DSDSS2026-banquet-speakers" label="Banquet Speakers" />
-          <Item target="DSDSS2026-invited-speakers" label="Invited Speakers" />
-          <Item target="DSDSS2026-keynote-speakers" label="Keynote Speakers" />
-          <Item target="DSDSS2026-panelists" label="Panelists" />
+        <Item target="speakers" label="Speakers">
+          <Item target="banquet-speakers" label="Banquet Speakers" />
+          <Item target="invited-speakers" label="Invited Speakers" />
+          <Item target="keynote-speakers" label="Keynote Speakers" />
+          <Item target="panelists" label="Panelists" />
         </Item>,
 
-        <Item target="DSDSS2026-venue" label="Venue" on={["DSDSS2026-venue"]} />,
-      ].map((node, i) => React.cloneElement(thread(node), { key: i }))}
+        <Item target="venue" label="Venue" />,
+      ].map(thread)}
     </ul>
   );
 }

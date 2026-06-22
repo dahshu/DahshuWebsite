@@ -1,3 +1,6 @@
+/* Home-page-specific styles: the hero, about, and keynote sections. The shared
+   page shell, header, and footer come from dsdss2026.css. */
+
 :root {
   --harvard-crimson: #a51c30;
   --harvard-crimson-deep: #8f182a;
@@ -8,111 +11,13 @@
   --mist: #f6f2f3;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background: #f2f2f2;
-  color: var(--ink);
-  font-family: "Times New Roman", Times, serif;
-}
-
-.page-shell {
-  width: min(1000px, calc(100% - 24px));
-  max-width: 1000px;
+/* The home content sits in the same centered column as the header and footer,
+   on a white panel so the sections read as a single page. */
+.home-main {
+  width: 100%;
+  max-width: var(--d26-shell-width);
   margin: 0 auto;
   background: var(--paper);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-}
-
-.homepage-header-shell,
-.homepage-header-shell .zoneContent.container_12,
-.homepage-header-shell .zoneContentOuter,
-.homepage-header-shell .zoneContentInner,
-.homepage-header-shell .homepage-header-placeholder {
-  width: 100% !important;
-  max-width: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  background: var(--harvard-crimson) !important;
-}
-
-.homepage-header-shell {
-  border-bottom: 8px solid #f2f2f2;
-}
-
-.homepage-header-shell .homepage-header-placeholder > div {
-  padding: 0 !important;
-}
-
-.homepage-header-shell,
-.homepage-header-shell .mLayout,
-.homepage-header-shell .zoneOuter,
-.homepage-header-shell .zoneInner {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.top-band {
-  background: var(--harvard-crimson);
-  padding: 0;
-}
-
-.wa-home-header {
-  position: relative;
-  z-index: 20;
-  padding: 0;
-}
-
-.wa-home-header .WaLayoutContainer {
-  max-width: none;
-  margin: 0;
-}
-
-.wa-home-header .WaLayoutTable {
-  width: 100%;
-}
-
-.wa-home-header .wa-header-logo-cell .gadgetStyleBody {
-  padding: 14px 0 6px;
-}
-
-.wa-home-header .wa-header-logo-cell .header-co-branding {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  overflow: visible;
-  line-height: 0;
-}
-
-.wa-home-header .wa-header-logo-cell .header-logo-link,
-.wa-home-header .wa-header-logo-cell .gadgetStyleBody {
-  display: block;
-  overflow: visible;
-}
-
-.wa-home-header .wa-header-logo-cell img {
-  width: auto;
-  height: 52px;
-  max-width: none;
-  object-fit: contain;
-  display: block;
-}
-
-.wa-home-header .wa-header-logo-cell .header-logo-dahshu {
-  height: 62px;
-}
-
-.wa-home-header .WaGadgetMenuHorizontal {
-  margin-top: 14px !important;
-}
-
-.wa-home-header .WaGadgetMenuHorizontal .menuInner {
-  display: flex;
-  justify-content: flex-end;
 }
 
 .hero {
@@ -121,11 +26,6 @@ body {
   gap: 26px;
   padding: 18px 18px 10px;
   background: var(--harvard-crimson);
-  border-top: 0;
-}
-
-.hero-copy {
-  color: #fff;
 }
 
 .hero-copy,
@@ -135,7 +35,7 @@ body {
 .hero-copy strong,
 .hero-copy em,
 .hero-copy a {
-  color: #fff !important;
+  color: #fff;
 }
 
 .hero-copy h1 {
@@ -194,51 +94,28 @@ body {
   align-self: center;
 }
 
-.carousel-frame {
-  position: relative;
-  overflow: hidden;
+/* The Swiper carousel sits in the hero. Swiper handles the slide mechanics;
+   these rules size the frame and the imagery. */
+.hero-carousel {
   min-height: 300px;
-  background: #d9d9d9;
   border: 6px solid rgba(255, 255, 255, 0.15);
 }
 
-.carousel-slide {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  transition: opacity 0.45s ease;
-}
-
-.carousel-slide.is-active {
-  opacity: 1;
-}
-
-.carousel-slide img {
+.hero-carousel .swiper-slide img {
+  display: block;
   width: 100%;
   height: 100%;
-  display: block;
   object-fit: cover;
   filter: saturate(0.82) contrast(0.94);
 }
 
-.carousel-dots {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 12px;
+.hero-carousel .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.45);
+  opacity: 1;
 }
 
-.dot {
-  width: 11px;
-  height: 11px;
-  border: 0;
-  border-radius: 50%;
-  background: rgba(255, 213, 219, 0.88);
-  cursor: pointer;
-}
-
-.dot.is-active {
-  background: #a51c30;
+.hero-carousel .swiper-pagination-bullet-active {
+  background: #ffffff;
 }
 
 .section-heading {
@@ -294,14 +171,6 @@ body {
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
 
-.speaker-placeholder {
-  width: 132px;
-  height: 132px;
-  border-radius: 50%;
-  background: #ece7e8;
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
-}
-
 .speaker-info h3 {
   margin: 8px 0 10px;
   font-size: 1.18rem;
@@ -312,10 +181,6 @@ body {
   margin: 0;
   font-size: 0.99rem;
   line-height: 1.4;
-}
-
-.speaker-info-empty {
-  min-height: 132px;
 }
 
 .keynote-link {
@@ -334,7 +199,6 @@ body {
   margin: 0;
   padding: 10px 18px 18px;
   color: var(--muted);
-  background: #fff;
   font-size: 0.82rem;
   line-height: 1.5;
   text-align: center;
@@ -345,85 +209,20 @@ body {
 }
 
 @media (max-width: 860px) {
-  .wa-home-header {
-    padding: 0;
-  }
-
-  .wa-home-header .WaLayoutTable,
-  .wa-home-header .WaLayoutTable tbody,
-  .wa-home-header .WaLayoutTable tr,
-  .wa-home-header .WaLayoutTable td {
-    display: block;
-    width: 100% !important;
-  }
-
-  .wa-home-header .wa-header-logo-cell .gadgetStyleBody {
-    padding: 10px 0 4px;
-  }
-
-  .wa-home-header .wa-header-logo-cell .header-co-branding {
-    justify-content: center;
-    gap: 8px;
-  }
-
-  .wa-home-header .wa-header-logo-cell img {
-    width: auto;
-    height: 42px;
-    max-width: none;
-  }
-
-  .wa-home-header .wa-header-logo-cell .header-logo-dahshu {
-    height: 50px;
-  }
-
-  .wa-home-header .WaLayoutSeparator {
-    display: none !important;
-  }
-
-  .wa-home-header .WaGadgetMenuHorizontal {
-    margin-top: 6px !important;
-  }
-
-  .wa-home-header .WaGadgetMenuHorizontal .menuInner {
-    justify-content: flex-start;
-  }
-
   .hero {
     grid-template-columns: 1fr;
   }
 
-  .carousel-frame {
+  .hero-carousel {
     min-height: 260px;
   }
 
   .speaker-grid {
     grid-template-columns: 1fr;
   }
-
-  .footer-panel {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 520px) {
-  .wa-home-header .wa-header-logo-cell .gadgetStyleBody {
-    padding: 8px 0 2px;
-  }
-
-  .wa-home-header .wa-header-logo-cell .header-co-branding {
-    gap: 6px;
-  }
-
-  .wa-home-header .wa-header-logo-cell img {
-    width: auto;
-    height: 36px;
-    max-width: none;
-  }
-
-  .wa-home-header .wa-header-logo-cell .header-logo-dahshu {
-    height: 42px;
-  }
-
   .hero-copy h1 {
     font-size: 2.3rem;
   }
@@ -435,10 +234,5 @@ body {
 
   .speaker-card img {
     margin: 0 auto;
-  }
-
-  .email-row {
-    align-items: flex-start;
-    flex-direction: column;
   }
 }
