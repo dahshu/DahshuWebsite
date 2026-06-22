@@ -60,10 +60,10 @@ export function Index() {
       <section className="hero">
         <div className="hero-copy">
           <h1>
-            DahShu
-            <br />
-            Data Science
-            <br />
+            DahShu{" "}
+            <br className="hero-br" />
+            Data Science{" "}
+            <br className="hero-br" />
             Symposium
           </h1>
           <p className="hero-date">October 22 - October 23, 2026</p>

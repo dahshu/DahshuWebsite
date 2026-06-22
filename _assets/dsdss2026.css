@@ -248,6 +248,17 @@ body:has(> .page-shell) {
     width: 100%;
     max-width: 240px;
   }
+
+  /* The blank placeholder is an empty div with no intrinsic size, so under the
+     column flex it can collapse instead of holding a box like the real photo.
+     Match the real photo's mobile sizing (width:100%, max 240px) and give it a
+     min-width floor + square aspect-ratio so it holds a box without growing
+     larger than the actual photos. */
+  .speaker-photo-blank {
+    min-width: 200px;
+    aspect-ratio: 1;
+    height: auto;
+  }
 }
 
 /* ===========================================================================
