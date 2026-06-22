@@ -152,25 +152,6 @@ export function Index() {
         </a>
       </p>
 
-      <p className="photo-credit">
-        Campus carousel images from Wikimedia Commons:{" "}
-        <a href="https://commons.wikimedia.org/wiki/File:Harvard_University_Widener_Library.jpg" target="_blank" rel="noreferrer">
-          Widener Library
-        </a>
-        ,{" "}
-        <a href="https://commons.wikimedia.org/wiki/File:Harvard_Hall_-_Harvard_University.jpg" target="_blank" rel="noreferrer">
-          Harvard Hall
-        </a>
-        ,{" "}
-        <a href="https://commons.wikimedia.org/wiki/File:Memorial_Hall_at_Harvard_University.JPG" target="_blank" rel="noreferrer">
-          Memorial Hall
-        </a>
-        ,{" "}
-        <a href="https://commons.wikimedia.org/wiki/File:Harvard_Yard_aerial.JPG" target="_blank" rel="noreferrer">
-          Harvard Yard aerial
-        </a>
-        .
-      </p>
       </div>
     </Page>
   );
