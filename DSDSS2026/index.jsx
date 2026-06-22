@@ -36,7 +36,6 @@ export function Index() {
       bare
       head={
         <>
-          <link rel="stylesheet" href={assets + "kit-pro.fontawesome.com/releases/latest/css/pro.min.css"} />
           <link rel="stylesheet" href={assets + "dsdss2026-harvard-home.css"} />
           <link rel="stylesheet" href={SWIPER_CSS} />
         </>
@@ -77,9 +76,7 @@ export function Index() {
           </p>
           <p className="hero-location">Boston | Massachusetts</p>
           <a className="registration-pill" href="registration.html">
-            <span className="registration-icon">
-              <i className="fa-light fa-circle-check"></i>
-            </span>
+            <span className="registration-icon"> </span>
             Register Now
           </a>
         </div>
