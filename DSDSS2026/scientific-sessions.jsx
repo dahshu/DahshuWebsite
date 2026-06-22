@@ -131,11 +131,9 @@ export function ScientificSessions() {
               <p>
                 <strong>{s.affiliation}</strong>
               </p>
-              {s.schedule && (
-                <p>
-                  <strong>Schedule:</strong> {s.schedule}
-                </p>
-              )}
+              <p>
+                <strong>Schedule:</strong> {s.schedule || "TBD"}
+              </p>
               {s.abstract.map((para, i) => (
                 <p key={i}>{para}</p>
               ))}
