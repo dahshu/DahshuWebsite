@@ -25,6 +25,9 @@ export function Page({ page, title, head, scripts, bare = false, children }) {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{title}</title>
+        {/* Explicit empty icon so the browser doesn't fall back to requesting
+            /favicon.ico (which can surface a stale icon from a prior site). */}
+        <link rel="icon" href="data:," />
         <link rel="stylesheet" href="_assets/dsdss2026.css" />
         {head}
       </head>
