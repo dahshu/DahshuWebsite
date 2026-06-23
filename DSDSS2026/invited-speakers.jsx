@@ -121,29 +121,31 @@ export function InvitedSpeakers() {
       <article className="content-prose">
         <h1>Invited Speakers</h1>
 
-        {SPEAKERS.map((s) => (
-          <Card key={s.id} className="speaker">
-            <div className="speaker-figure">
-              {s.photo ? (
-                <img className="speaker-photo" src={photoDir + s.photo} alt={s.name} />
-              ) : (
-                <div className="speaker-photo speaker-photo-blank" aria-hidden="true" />
-              )}
-            </div>
-            <div className="speaker-body">
-              <h3>{s.name}</h3>
-              <p>
-                <strong>{s.affiliation}</strong>
-              </p>
-              <p>
-                <strong>Session:</strong>{" "}
-                <a href={`scientific-sessions.html#session${s.session.replace(/\D/g, "")}`}>
-                  {s.session}
-                </a>
-              </p>
-            </div>
-          </Card>
-        ))}
+        <div className="speaker-grid-4">
+          {SPEAKERS.map((s) => (
+            <Card key={s.id} className="speaker speaker-vertical">
+              <div className="speaker-figure">
+                {s.photo ? (
+                  <img className="speaker-photo" src={photoDir + s.photo} alt={s.name} />
+                ) : (
+                  <div className="speaker-photo speaker-photo-blank" aria-hidden="true" />
+                )}
+              </div>
+              <div className="speaker-body">
+                <h3>{s.name}</h3>
+                <p>
+                  <strong>{s.affiliation}</strong>
+                </p>
+                <p>
+                  <strong>Session:</strong>{" "}
+                  <a href={`scientific-sessions.html#session${s.session.replace(/\D/g, "")}`}>
+                    {s.session}
+                  </a>
+                </p>
+              </div>
+            </Card>
+          ))}
+        </div>
       </article>
     </Page>
   );

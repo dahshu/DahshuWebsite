@@ -240,6 +240,51 @@ body:has(> .page-shell) {
   line-height: 1.6;
 }
 
+/* A grid of vertical speaker cards: image on top, text beneath, 4 per row.
+   Used by the Invited Speakers page. Degrades to fewer columns as the
+   viewport narrows. */
+.speaker-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+/* Vertical card modifier: stack the figure above the body and center both,
+   overriding the default horizontal .card.speaker layout. */
+.card.speaker.speaker-vertical {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.speaker-vertical .speaker-figure {
+  width: 100%;
+}
+
+.speaker-vertical .speaker-photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+}
+
+@media (max-width: 980px) {
+  .speaker-grid-4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .speaker-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .speaker-grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 600px) {
   .card.speaker {
     flex-direction: column;
