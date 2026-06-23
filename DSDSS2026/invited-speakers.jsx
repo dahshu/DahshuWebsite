@@ -137,7 +137,7 @@ export function InvitedSpeakers() {
                   <strong>{s.affiliation}</strong>
                 </p>
                 <p>
-                  <strong>Session:</strong>{" "}
+                  <strong></strong>{" "}
                   <a href={`scientific-sessions.html#session${s.session.replace(/\D/g, "")}`}>
                     {s.session}
                   </a>
