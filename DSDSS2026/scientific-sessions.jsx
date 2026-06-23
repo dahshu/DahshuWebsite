@@ -115,7 +115,7 @@ export function ScientificSessions() {
         <h1>Scientific Sessions</h1>
 
         {SESSIONS.map((s) => (
-          <Card key={s.number} className="speaker">
+          <Card key={s.number} id={`session${s.number}`} className="speaker">
             <div className="speaker-figure">
               {s.photo ? (
                 <img className="speaker-photo" src={photoDir + s.photo} alt={s.organizer} />

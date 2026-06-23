@@ -13,6 +13,10 @@
 
 import React from "react";
 
-export function Card({ className, children }) {
-  return <div className={className ? `card ${className}` : "card"}>{children}</div>;
+export function Card({ className, children, ...rest }) {
+  return (
+    <div className={className ? `card ${className}` : "card"} {...rest}>
+      {children}
+    </div>
+  );
 }
