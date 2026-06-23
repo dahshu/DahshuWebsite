@@ -9,7 +9,7 @@ export const meta = {
   title: "DSDSS2026 Registration",
 };
 
-const REGISTER_URL = "https://dahshu.wildapricot.org/event-6727823";
+const REGISTER_URL = "https://dahshu.wildapricot.org/event-6727823/Registration";
 
 export function Registration() {
   return (
