@@ -138,12 +138,6 @@ export function InvitedSpeakers() {
               <p>
                 <strong>Session:</strong> {s.session}
               </p>
-              <p>
-                <strong>Schedule:</strong> {s.schedule}
-              </p>
-              {s.bio.map((para, i) => (
-                <p key={i}>{para}</p>
-              ))}
             </div>
           </Card>
         ))}

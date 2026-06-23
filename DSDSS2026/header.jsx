@@ -7,7 +7,7 @@
 // The responsive menu is pure CSS: the .nav-toggle checkbox holds the
 // open/closed state and the .nav-button label is the hamburger. A media query
 // in dsdss2026.css shows the button and collapses the menu below a breakpoint;
-// no JavaScript involved.
+// no JavaScript involved. 
 
 import React from "react";
 import { Nav } from "./nav.jsx";
@@ -21,12 +21,15 @@ export function Header({ page }) {
           src="_assets/Harvard_University_coat_of_arms.svg"
           alt="Harvard crest"
         />
+        </a>
+        <a className="site-brand" href="https://dahshu.wildapricot.org">
         <img
           className="site-logo site-logo-dahshu"
           src="_assets/Dahshu.png"
           alt="DahShu logo"
         />
-      </a>
+        </a>
+      
 
       <nav className="site-nav" aria-label="Main">
         <input type="checkbox" id="nav-toggle" className="nav-toggle" />
