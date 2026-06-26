@@ -41,7 +41,7 @@ const SESSIONS = [
     organizer: "Sara Hamon",
     affiliation: "Regeneron",
     schedule: null,
-    photo: null,
+    photo: "sara-hamon.jpg",
     abstract: [
       "This session examines how advanced technologies are reshaping clinical trials as artificial intelligence (AI), machine learning (ML), and digital health tools become embedded across the drug development life cycle - from trial design and patient selection to endpoint assessment and regulatory decision-making.",
       "The session will share case examples leveraging predictive models, wearable-derived endpoints, and real-world data.",
@@ -53,7 +53,7 @@ const SESSIONS = [
     organizer: "Jane Zhang",
     affiliation: "AbbVie",
     schedule: null,
-    photo: null,
+    photo: "jane-zhang.jpg",
     abstract: [
       "As the volume of Real-World Data (RWD) expands, the pharmaceutical industry faces a critical bottleneck: transforming unstructured data into rigorous, actionable clinical evidence.",
       "This session explores the end-to-end architecture required to achieve this, bridging cutting-edge causal inference methodology with modern data infrastructure and pharmaceutical execution.",
