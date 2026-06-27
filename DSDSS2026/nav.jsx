@@ -72,8 +72,6 @@ export function Nav({ page }) {
 
         <Item target="sponsor" label="Sponsor" />,
 
-        <Item target="short-course" label="Short Course" />,
-
         <Item target="speakers" label="Speakers">
           <Item target="banquet-speakers" label="Banquet Speakers" />
           <Item target="invited-speakers" label="Invited Speakers" />

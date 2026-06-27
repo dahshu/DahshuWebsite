@@ -66,7 +66,6 @@ const PAGES = [
   "poster-submission.jsx",
   "registration.jsx",
   "scientific-sessions.jsx",
-  "short-course.jsx",
   "sponsor.jsx",
   "venue.jsx",
 ];
