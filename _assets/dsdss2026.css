@@ -240,6 +240,64 @@ body:has(> .page-shell) {
   line-height: 1.6;
 }
 
+/* Multi-speaker session: stack several speakers vertically inside the figure
+   column. Each item is a photo with a small name + affiliation label beneath.
+   The card itself keeps the standard horizontal layout. */
+.speaker-figure-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.speaker-stack-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  width: 200px;
+}
+
+.speaker-stack-role {
+  margin: 0;
+  font-size: 0.75rem;
+  font-style: italic;
+  color: var(--d26-crimson-deep);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.speaker-stack-name {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--d26-crimson-deep);
+  text-align: center;
+  line-height: 1.3;
+}
+
+.speaker-stack-affiliation {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #555;
+  text-align: center;
+  line-height: 1.3;
+}
+
+@media (max-width: 600px) {
+  .speaker-figure-stack {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .speaker-stack-item {
+    width: auto;
+    max-width: 240px;
+  }
+}
+
 /* A grid of vertical speaker cards: image on top, text beneath, 4 per row.
    Used by the Invited Speakers page. Degrades to fewer columns as the
    viewport narrows. */
