@@ -167,28 +167,30 @@ export function ScientificSessions() {
         <h1>Scientific Sessions</h1>
 
         {SESSIONS.map((s) => (
-          <Card key={s.number} id={`session${s.number}`} className="speaker">
-            <div className="speaker-figure speaker-figure-stack">
-              {s.speakers.map((sp, i) => (
-                <div key={i} className="speaker-stack-item">
-                  {sp.photo ? (
-                    <img className="speaker-photo" src={photoDir + sp.photo} alt={sp.name} />
-                  ) : (
-                    <div className="speaker-photo speaker-photo-blank" aria-hidden="true" />
-                  )}
-                  {sp.role && <p className="speaker-stack-role">{sp.role}</p>}
-                  <p className="speaker-stack-name">{sp.name}</p>
-                  <p className="speaker-stack-affiliation">{sp.affiliation}</p>
-                </div>
-              ))}
-            </div>
-            <div className="speaker-body">
+          <Card key={s.number} id={`session${s.number}`} className="session">
+            <div className="session-body">
               <h3>Session {s.number}</h3>
               <p>
                 <strong>Schedule:</strong> {s.schedule || "TBD"}
               </p>
               {s.abstract.map((para, i) => (
                 <p key={i}>{para}</p>
+              ))}
+            </div>
+            <div className="session-speakers">
+              {s.speakers.map((sp, i) => (
+                <div key={i} className="session-speaker-row">
+                  {sp.photo ? (
+                    <img className="session-speaker-photo" src={photoDir + sp.photo} alt={sp.name} />
+                  ) : (
+                    <div className="session-speaker-photo speaker-photo-blank" aria-hidden="true" />
+                  )}
+                  <div className="session-speaker-info">
+                    {sp.role && <p className="session-speaker-role">{sp.role}</p>}
+                    <p className="session-speaker-name">{sp.name}</p>
+                    <p className="session-speaker-affiliation">{sp.affiliation}</p>
+                  </div>
+                </div>
               ))}
             </div>
           </Card>

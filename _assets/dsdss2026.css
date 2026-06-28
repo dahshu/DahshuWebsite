@@ -376,6 +376,65 @@ body:has(> .page-shell) {
   }
 }
 
+/* Scientific Sessions card: the session info (title, schedule, abstract) sits
+   on top, with the speaker list stacked beneath it — one speaker per row. Each
+   row is a small photo on the left with the name/affiliation to its right.
+   The .card.session keeps the default block (non-flex) card layout so the body
+   and the speaker list stack vertically. */
+.session-body {
+  margin-bottom: 1.5rem;
+}
+
+.session-speakers {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.session-speaker-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.session-speaker-photo {
+  flex: 0 0 auto;
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.session-speaker-info {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.session-speaker-role {
+  margin: 0 0 0.2rem;
+  font-size: 0.75rem;
+  font-style: italic;
+  color: var(--d26-crimson-deep);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.session-speaker-name {
+  margin: 0 0 0.2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--d26-crimson-deep);
+  line-height: 1.3;
+}
+
+.session-speaker-affiliation {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.35;
+}
+
 /* ===========================================================================
    Site header + navigation
 
