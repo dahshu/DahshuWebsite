@@ -2,7 +2,7 @@
 // render.mjs builds this to dist/keynote-sessions.html.
 //
 // Edit the SPEAKERS array below. Each speaker: id (React key), name,
-// affiliation, abstract, photo (filename under _assets/, or null for a blank
+// affiliation, sessionDetails, photo (filename under _assets/, or null for a blank
 // placeholder), and detail (the speaker's own session page folder).
 
 import React from "react";
@@ -17,16 +17,16 @@ export const meta = {
 const SPEAKERS = [
   {
     id: "key1",
-    name: "Goncalo Rocha Abecasis",
+    name: "Gonçalo Abecasis",
     affiliation: "Regeneron",
-    abstract: "To be provided.",
+    sessionDetails: "To be provided.",
     photo: "goncalo-rocha-abecasis-user-current.jpg",
   },
   {
     id: "key2",
     name: "Susan Murphy",
     affiliation: "Harvard University",
-    abstract: "To be provided.",
+    sessionDetails: "To be provided.",
     photo: "7d07c87a0885fc27a8bb61d04b5c10bb.JPG",
   },
 ];
@@ -53,7 +53,7 @@ export function KeynoteSessions() {
                 <strong>Affiliation:</strong> {s.affiliation}
               </p>
               <p>
-                <strong>Abstract:</strong> {s.abstract}
+                <strong>Session Details:</strong> {s.sessionDetails}
               </p>
             </div>
           </Card>

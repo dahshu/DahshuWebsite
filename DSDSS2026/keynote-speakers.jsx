@@ -17,17 +17,17 @@ export const meta = {
 const SPEAKERS = [
   {
     id: "goncalo",
-    name: "Goncalo Rocha Abecasis",
+    name: "Gonçalo Abecasis",
     affiliation: "Regeneron",
     photo: "goncalo-rocha-abecasis-user-current.jpg",
-    bio: ["Abstract to be provided."],
+    bio: ["Gonçalo Abecasis is a renowned biomedical researcher at the University of Michigan, serves as Vice President & Chief Genomics and Data Science Officer at the Regeneron Genetics Center, and was chair of the Department of Biostatistics in the School of Public Health. He leads a group at the Center for Statistical Genetics in the Department of Biostatistics, where he is also the Felix E. Moore Collegiate Professor of Biostatistics and director of the Michigan Genomic Initiative. His group develops statistical tools to analyze the genetics of human disease."],
   },
   {
     id: "susan",
     name: "Susan Murphy",
     affiliation: "Harvard University",
     photo: "7d07c87a0885fc27a8bb61d04b5c10bb.JPG",
-    bio: ["Abstract to be provided."],
+    bio: ["Susan Murphy is a prominent statistician and computer scientist known for her work applying statistical methods to clinical trials of treatments for chronic and relapsing medical conditions. She is the Mallinckrodt Professor of Statistics and of Computer Science at Harvard University, a MacArthur Fellow, and a member of the National Academy of Sciences."],
   },
 ];
 
