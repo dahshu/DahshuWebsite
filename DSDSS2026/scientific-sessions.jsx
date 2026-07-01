@@ -5,8 +5,10 @@
 // speakers (one or more {name, affiliation, photo, role?}), and abstract
 // (one or more paragraphs). photo is a filename under
 // _assets/scientific-session-speakers/ or null for a blank placeholder.
-// role is optional (e.g., "Moderator") and shown as a small label above
-// the speaker's name.
+// role is optional (e.g., "Speaker", "Session Organizer", "Moderator") and
+// shown as a small label above the speaker's name. affiliation may be empty
+// (e.g., for a "To Be Announced" placeholder), in which case the line is
+// omitted.
 
 import React from "react";
 import { Page } from "./page.jsx";
@@ -23,9 +25,16 @@ const SESSIONS = [
     schedule: null,
     speakers: [
       {
+        name: "To Be Announced",
+        affiliation: "",
+        photo: null,
+        role: "Speaker",
+      },
+      {
         name: "Dr. Haoda Fu",
         affiliation: "Head of Exploratory Biostatistics, Amgen",
         photo: "haoda-fu.webp",
+        role: "Session Organizer",
       },
     ],
     abstract: [
@@ -40,9 +49,16 @@ const SESSIONS = [
     schedule: null,
     speakers: [
       {
+        name: "To Be Announced",
+        affiliation: "",
+        photo: null,
+        role: "Speaker",
+      },
+      {
         name: "Dr. Runze Li",
         affiliation: "Eberly Family Chair in Statistics, Pennsylvania State University",
         photo: "runze-li.jpg",
+        role: "Session Organizer",
       },
     ],
     abstract: ["Abstract to be provided."],
@@ -52,9 +68,16 @@ const SESSIONS = [
     schedule: null,
     speakers: [
       {
+        name: "To Be Announced",
+        affiliation: "",
+        photo: null,
+        role: "Speaker",
+      },
+      {
         name: "Dr. Sara Hamon",
         affiliation: "Senior Director, Precision Medicine-Quantitative Translational Sciences, Regeneron",
         photo: "sara-hamon.jpg",
+        role: "Session Organizer",
       },
     ],
     abstract: [
@@ -68,9 +91,16 @@ const SESSIONS = [
     schedule: null,
     speakers: [
       {
+        name: "To Be Announced",
+        affiliation: "",
+        photo: null,
+        role: "Speaker",
+      },
+      {
         name: "Dr. Jane Zhang",
         affiliation: "Head of Immunology Statistics, AbbVie",
         photo: "jane-zhang.jpg",
+        role: "Session Organizer",
       },
     ],
     abstract: [
@@ -87,16 +117,19 @@ const SESSIONS = [
         name: "Dr. Junrui Di",
         affiliation: "Director, Data Science & Digital Health, Neuroscience, Johnson & Johnson",
         photo: "junrui-di.jpg",
+        role: "Speaker",
       },
       {
         name: "Dr. Jacek K. Urbanek",
         affiliation: "Director, Biostatistics, Regeneron",
         photo: "jacek-urbanek.jpg",
+        role: "Speaker",
       },
       {
         name: "Dr. Marta Karas",
         affiliation: "Senior Manager, Statistics, Takeda",
         photo: "marta-karas.jpg",
+        role: "Speaker",
       },
       {
         name: "Dr. Jaroslaw Harezlak",
@@ -118,9 +151,16 @@ const SESSIONS = [
     schedule: null,
     speakers: [
       {
+        name: "To Be Announced",
+        affiliation: "",
+        photo: null,
+        role: "Speaker",
+      },
+      {
         name: "Dr. Nancy Zhang",
         affiliation: "Ge Li and Ning Zhao Professor of Statistics, The Wharton School, University of Pennsylvania",
         photo: "nancy-zhang.jpg",
+        role: "Session Organizer",
       },
     ],
     abstract: [
@@ -132,9 +172,16 @@ const SESSIONS = [
     schedule: null,
     speakers: [
       {
+        name: "To Be Announced",
+        affiliation: "",
+        photo: null,
+        role: "Speaker",
+      },
+      {
         name: "Mercedeh Ghadessi",
         affiliation: "Director, Principal Statistician, Bayer",
         photo: "mercedeh-ghadessi.jpg",
+        role: "Session Organizer",
       },
     ],
     abstract: [
@@ -147,9 +194,16 @@ const SESSIONS = [
     schedule: null,
     speakers: [
       {
+        name: "To Be Announced",
+        affiliation: "",
+        photo: null,
+        role: "Speaker",
+      },
+      {
         name: "Dr. Ming-Hui Chen",
         affiliation: "Board of Trustees Distinguished Professor of Statistics, University of Connecticut",
         photo: "ming-hui-chen.jpg",
+        role: "Session Organizer",
       },
     ],
     abstract: [
@@ -188,7 +242,7 @@ export function ScientificSessions() {
                   <div className="session-speaker-info">
                     {sp.role && <p className="session-speaker-role">{sp.role}</p>}
                     <p className="session-speaker-name">{sp.name}</p>
-                    <p className="session-speaker-affiliation">{sp.affiliation}</p>
+                    {sp.affiliation && <p className="session-speaker-affiliation">{sp.affiliation}</p>}
                   </div>
                 </div>
               ))}
