@@ -34,7 +34,7 @@ export function Registration() {
           The registration fee is the same for both virtual and in-person
           attendance.{" "}
           <strong>
-            Invited speakers and sponsors will receive discounts. Please reach out to an organizer or contact dahshuinfo@gmail.com to receive the discount code.
+            Invited speakers can register for free and sponsors will receive a 25% off discount. Please reach out to an organizer or contact dahshuinfo@gmail.com to receive these discount codes.
           </strong>
         </p>
         <table className="content-table">
