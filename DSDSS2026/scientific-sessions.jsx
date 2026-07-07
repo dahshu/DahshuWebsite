@@ -172,9 +172,21 @@ const SESSIONS = [
     schedule: null,
     speakers: [
       {
-        name: "To Be Announced",
-        affiliation: "",
-        photo: null,
+        name: "Dr. Fahimeh Mamashli",
+        affiliation: "Associate Director, Data Science, Data and Statistical Science AI/ML, Daiichi Sankyo",
+        photo: "fahimeh-mamashli.jpg",
+        role: "Speaker",
+      },
+      {
+        name: "Dr. Alex Sverdlov",
+        affiliation: "Senior Director, Statistical Scientist, Novartis",
+        photo: "alex-sverdlov.jpg",
+        role: "Speaker",
+      },
+      {
+        name: "Claude Viman",
+        affiliation: "Senior Partner, EnQubes",
+        photo: "claude-viman.jpg",
         role: "Speaker",
       },
       {
