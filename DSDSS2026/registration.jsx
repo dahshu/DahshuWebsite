@@ -32,7 +32,10 @@ export function Registration() {
         <h2>Registration Fees</h2>
         <p>
           The registration fee is the same for both virtual and in-person
-          attendance.
+          attendance.{" "}
+          <strong>
+            Invited speakers and sponsors will receive discounts. Please reach out to an organizer or contact dahshuinfo@gmail.com to receive the discount code.
+          </strong>
         </p>
         <table className="content-table">
           <thead>
