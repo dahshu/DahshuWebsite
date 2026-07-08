@@ -150,11 +150,18 @@ body:has(> .page-shell) {
   border: 1px solid #e3e3e3;
   text-align: left;
   overflow-wrap: break-word;
+  background: #fff;
 }
 
 .content-table th {
   background: var(--d26-rose);
   font-weight: bold;
+}
+
+/* Agenda schedule tables: crimson header band with white text. */
+.content-table.agenda-table th {
+  background: var(--d26-crimson);
+  color: #fff;
 }
 
 /* A generic content card: a framed container with rounded corners and a soft

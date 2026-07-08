@@ -63,7 +63,7 @@ export function Nav({ page }) {
           <Item target="committee" label="Committee" />
         </Item>,
 
-        <Item target="agenda" label="Agenda & Program">
+        <Item target="agenda" label="Agenda & Program" link>
           <Item target="opening-remarks" label="Opening Remarks" />
           <Item target="keynote-sessions" label="Keynotes" />
           <Item target="scientific-sessions" label="Scientific Sessions" />

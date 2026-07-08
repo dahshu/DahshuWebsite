@@ -55,6 +55,7 @@ const EXCLUDE_TOP = new Set([
 const PAGES = [
   "index.jsx",
   "abstract-submission.jsx",
+  "agenda.jsx",
   "banquet.jsx",
   "banquet-speakers.jsx",
   "committee.jsx",
