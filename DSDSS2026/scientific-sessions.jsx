@@ -64,9 +64,15 @@ const SESSIONS = [
     schedule: null,
     speakers: [
       {
-        name: "To Be Announced",
-        affiliation: "",
-        photo: null,
+        name: "Ye Tian",
+        affiliation: "Pennsylvania State University",
+        photo: "ye-tian.jpg",
+        role: "Speaker",
+      },
+      {
+        name: "Mengyan Li",
+        affiliation: "Bentley University",
+        photo: "mengyan-li.jpg",
         role: "Speaker",
       },
       {
@@ -76,7 +82,11 @@ const SESSIONS = [
         role: "Session Organizer",
       },
     ],
-    abstract: ["Abstract to be provided."],
+    abstract: [
+      "This session presents new theory and methodology for high-dimensional statistical learning in modern biomedical applications, from cross-population genetic prediction to representation learning from electronic health records.",
+      "Ye Tian studies cross-population polygenic risk score (PRS) prediction, which leverages large datasets to improve prediction in smaller populations. Using a high-dimensional sparse linear regression framework with population-specific and genetically correlated shared signals, the work characterizes how optimal estimation depends on genetic correlation, sample sizes, and signal and noise variances, and shows that Bayesian estimators can achieve near-optimal performance where some global-penalization transfer learning methods do not.",
+      "Mengyan Li introduces SCORE, a semi-supervised representation learning framework for clustering and embedding high-dimensional count data such as EHR and RNA sequencing. Built on a Poisson-adapted latent factor mixture model with a hybrid EM and Gaussian variational algorithm, SCORE uses a small labeled subset to refine estimation on large unlabeled data, with convergence guarantees and error rates. It is demonstrated on predicting disability status in multiple sclerosis from EHR data.",
+    ],
   },
   {
     number: 3,
