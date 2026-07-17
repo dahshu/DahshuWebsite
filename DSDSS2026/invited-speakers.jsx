@@ -17,7 +17,7 @@ export const meta = {
 const SPEAKERS = [
   {
     id: "susan-gruber",
-    name: "Susan Gruber",
+    name: "Dr. Susan Gruber",
     affiliation: "TL Revolution LLC",
     session: "Session 1",
     schedule: "Thursday, October 22, 2026, 9:50 AM - 11:30 AM",
@@ -26,7 +26,7 @@ const SPEAKERS = [
   },
   {
     id: "miguel-hernan",
-    name: "Miguel Hernán",
+    name: "Dr. Miguel Hernán",
     affiliation: "Harvard University",
     session: "Session 1",
     schedule: "Thursday, October 22, 2026, 9:50 AM - 11:30 AM",
@@ -35,7 +35,7 @@ const SPEAKERS = [
   },
   {
     id: "xiang-zhang",
-    name: "Xiang Zhang",
+    name: "Dr. Xiang Zhang",
     affiliation: "CSL Behring",
     session: "Session 1",
     schedule: "Thursday, October 22, 2026, 9:50 AM - 11:30 AM",
@@ -44,7 +44,7 @@ const SPEAKERS = [
   },
   {
     id: "ye-tian",
-    name: "Ye Tian",
+    name: "Dr. Ye Tian",
     affiliation: "Pennsylvania State University",
     session: "Session 2",
     schedule: "Thursday, October 22, 2026, 1:00 PM - 2:40 PM",
@@ -53,7 +53,7 @@ const SPEAKERS = [
   },
   {
     id: "mengyan-li",
-    name: "Mengyan Li",
+    name: "Dr. Mengyan Li",
     affiliation: "Bentley University",
     session: "Session 2",
     schedule: "Thursday, October 22, 2026, 1:00 PM - 2:40 PM",
