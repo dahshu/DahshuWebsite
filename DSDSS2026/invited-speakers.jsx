@@ -16,18 +16,31 @@ export const meta = {
 
 const SPEAKERS = [
   {
-    id: "session-1-tba",
-    name: "To Be Announced",
-    affiliation: "",
+    id: "susan-gruber",
+    name: "Susan Gruber",
+    affiliation: "TL Revolution LLC",
     session: "Session 1",
     schedule: "Thursday, October 22, 2026, 9:50 AM - 11:30 AM",
-    photo: null,
-    bio: [
-      "This showcase bridges the gap between academic research and pharmaceutical industry application by bringing together leading experts to highlight the real-world impact of artificial intelligence.",
-      "Moving past theoretical hype, the session features a curated selection of high-impact, concrete case studies demonstrating how AI is actively transforming medicine.",
-      "Featured presentations will explore verified success stories across accelerated drug discovery, clinical trial optimization, and translational research.",
-      "By focusing on evidence-based examples, this event provides a practical blueprint for cross-disciplinary collaboration and offers a clear view of how data-driven innovation is driving the next generation of biomedical solutions.",
-    ],
+    photo: "susan-gruber.jpg",
+    bio: ["Bio to be provided."],
+  },
+  {
+    id: "miguel-hernan",
+    name: "Miguel Hernán",
+    affiliation: "Harvard University",
+    session: "Session 1",
+    schedule: "Thursday, October 22, 2026, 9:50 AM - 11:30 AM",
+    photo: "miguel-hernan.png",
+    bio: ["Bio to be provided."],
+  },
+  {
+    id: "xiang-zhang",
+    name: "Xiang Zhang",
+    affiliation: "CSL Behring",
+    session: "Session 1",
+    schedule: "Thursday, October 22, 2026, 9:50 AM - 11:30 AM",
+    photo: "xiang-zhang.jpg",
+    bio: ["Bio to be provided."],
   },
   {
     id: "session-2-tba",
@@ -133,17 +146,42 @@ const SPEAKERS = [
     bio: ["Bio to be provided."],
   },
   {
-    id: "session-8-tba",
-    name: "To Be Announced",
-    affiliation: "",
+    id: "yuhua-zhang",
+    name: "Yuhua Zhang",
+    affiliation: "University of Florida",
+    session: "Session 8",
+    schedule: "Friday, October 23, 2026, 3:00 PM - 4:40 PM",
+    photo: "yuhua-zhang.jpg",
+    bio: ["Bio to be provided."],
+  },
+  {
+    id: "chenguang-wang",
+    name: "Chenguang Wang",
+    affiliation: "Regeneron",
     session: "Session 8",
     schedule: "Friday, October 23, 2026, 3:00 PM - 4:40 PM",
     photo: null,
-    bio: [
-      "This is going to be a Bayesian session.",
-      'This session mainly focuses on recent advancement or reactions in responding to a recent FDA landmark draft guidance, "Use of Bayesian Methodology in Clinical Trials of Drug and Biological Products," jointly released by the Center for Drug Evaluation and Research (CDER) and the Center for Biologics Evaluation and Research (CBER).',
-    ],
+    bio: ["Bio to be provided."],
   },
+  {
+    id: "ming-hui-chen",
+    name: "Dr. Ming-Hui Chen",
+    affiliation: "Board of Trustees Distinguished Professor of Statistics, University of Connecticut",
+    session: "Session 8",
+    schedule: "Friday, October 23, 2026, 3:00 PM - 4:40 PM",
+    photo: "ming-hui-chen.jpg",
+    bio: ["Bio to be provided."],
+  },
+  {
+    id: "wanxue-zou",
+    name: "Wanxue Zou",
+    affiliation: "Regeneron",
+    session: "Session 8",
+    schedule: "Friday, October 23, 2026, 3:00 PM - 4:40 PM",
+    photo: "wanxue-zou.png",
+    bio: ["Bio to be provided."],
+  },
+
 ];
 
 export function InvitedSpeakers() {

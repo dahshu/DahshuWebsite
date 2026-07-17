@@ -442,6 +442,14 @@ body:has(> .page-shell) {
   line-height: 1.35;
 }
 
+.session-speaker-talk {
+  margin: 0.3rem 0 0;
+  font-size: 0.88rem;
+  font-style: italic;
+  color: #333;
+  line-height: 1.35;
+}
+
 /* ===========================================================================
    Site header + navigation
 

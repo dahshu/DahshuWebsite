@@ -22,13 +22,29 @@ export const meta = {
 const SESSIONS = [
   {
     number: 1,
+    title: "The Architecture of Causal Evidence: Translating Targeted Learning into Real-World Data Reality",
     schedule: null,
     speakers: [
       {
-        name: "To Be Announced",
-        affiliation: "",
-        photo: null,
+        name: "Susan Gruber",
+        affiliation: "TL Revolution LLC",
+        photo: "susan-gruber.jpg",
         role: "Speaker",
+        talk: "Targeted Maximum Likelihood Estimation (TMLE)",
+      },
+      {
+        name: "Miguel Hernán",
+        affiliation: "Harvard University",
+        photo: "miguel-hernan.png",
+        role: "Speaker",
+        talk: "Target Trial Emulation",
+      },
+      {
+        name: "Xiang Zhang",
+        affiliation: "CSL Behring",
+        photo: "xiang-zhang.jpg",
+        role: "Speaker",
+        talk: "Real World Application",
       },
       {
         name: "Dr. Jane Zhang",
@@ -203,22 +219,45 @@ const SESSIONS = [
   },
   {
     number: 8,
+    title: "Recent Advancement on Bayesian Methodology in Clinical Trials for Drugs and Biologics",
     schedule: null,
     speakers: [
       {
-        name: "To Be Announced",
-        affiliation: "",
+        name: "Yuhua Zhang",
+        affiliation: "University of Florida",
+        photo: "yuhua-zhang.jpg",
+        role: "Speaker",
+        talk: "Flexible Evaluation of Trial-Level Surrogates Using a Combination of Randomized and Observational Subgroups",
+      },
+      {
+        name: "Chenguang Wang",
+        affiliation: "Regeneron",
         photo: null,
         role: "Speaker",
+        talk: "Bridging Bayesian Trial Design from FDA Guidance to Practice",
       },
       {
         name: "Dr. Ming-Hui Chen",
         affiliation: "Board of Trustees Distinguished Professor of Statistics, University of Connecticut",
         photo: "ming-hui-chen.jpg",
-        role: "Session Organizer",
+        role: "Speaker",
+        talk: "Statistical Methods for Borrowing Information in Pediatric Clinical Trials: A Comparative Review",
+      },
+      {
+        name: "Lei Nie",
+        affiliation: "Division of Biometrics IV, Office of Biostatistics, OTS, CDER, FDA",
+        photo: null,
+        role: "Discussant",
+      },
+      {
+        name: "Wanxue Zou",
+        affiliation: "Regeneron",
+        photo: "wanxue-zou.png",
+        role: "Session Chair",
       },
     ],
     abstract: [
+      "Session Organizers: Ming-Hui Chen and Chenguang Wang.",
       "This is going to be a Bayesian session.",
       'This session mainly focuses on recent advancement or reactions in responding to a recent FDA landmark draft guidance, "Use of Bayesian Methodology in Clinical Trials of Drug and Biological Products," jointly released by the Center for Drug Evaluation and Research (CDER) and the Center for Biologics Evaluation and Research (CBER).',
     ],
@@ -235,7 +274,7 @@ export function ScientificSessions() {
         {SESSIONS.map((s) => (
           <Card key={s.number} id={`session${s.number}`} className="session">
             <div className="session-body">
-              <h3>Session {s.number}</h3>
+              <h3>{s.title ? `Session ${s.number}: ${s.title}` : `Session ${s.number}`}</h3>
               <p>
                 <strong>Schedule:</strong> {s.schedule || "TBD"}
               </p>
@@ -255,6 +294,7 @@ export function ScientificSessions() {
                     {sp.role && <p className="session-speaker-role">{sp.role}</p>}
                     <p className="session-speaker-name">{sp.name}</p>
                     {sp.affiliation && <p className="session-speaker-affiliation">{sp.affiliation}</p>}
+                    {sp.talk && <p className="session-speaker-talk">{sp.talk}</p>}
                   </div>
                 </div>
               ))}
