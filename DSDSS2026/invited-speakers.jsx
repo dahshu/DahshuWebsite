@@ -165,11 +165,11 @@ const SPEAKERS = [
   },
   {
     id: "chenguang-wang",
-    name: "Chenguang Wang",
+    name: "Dr. Chenguang Wang",
     affiliation: "Regeneron",
     session: "Session 8",
     schedule: "Friday, October 23, 2026, 3:00 PM - 4:40 PM",
-    photo: null,
+    photo: "chenguang-wang.jpg",
     bio: ["Bio to be provided."],
   },
   {
@@ -183,7 +183,7 @@ const SPEAKERS = [
   },
   {
     id: "wanxue-zou",
-    name: "Wanxue Zou",
+    name: "Dr. Wanxue Zou",
     affiliation: "Regeneron",
     session: "Session 8",
     schedule: "Friday, October 23, 2026, 3:00 PM - 4:40 PM",
