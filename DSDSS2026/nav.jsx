@@ -68,6 +68,7 @@ export function Nav({ page }) {
           <Item target="keynote-sessions" label="Keynotes" />
           <Item target="scientific-sessions" label="Scientific Sessions" />
           <Item target="banquet" label="Banquet" />
+          <Item target="closing-remarks" label="Closing Remarks" />
         </Item>,
 
         <Item target="sponsor" label="Sponsor" />,

@@ -69,11 +69,37 @@ const DAYS = [
   },
 ];
 
+// Agenda items link to the relevant page and are color-coded by category so the
+// different kinds of program events are visually distinguishable. Each rule maps
+// a text pattern to a destination and a category class (agenda-link-*). Items
+// that match nothing render as plain text.
+const AGENDA_LINKS = [
+  { test: /^Session (\d+)/, href: (m) => `scientific-sessions.html#session${m[1]}`, category: "session" },
+  { test: /^Keynote/, href: () => "keynote-sessions.html", category: "keynote" },
+  { test: /^Opening Remarks/, href: () => "opening-remarks.html", category: "remarks" },
+  { test: /^Closing Remarks/, href: () => "closing-remarks.html", category: "remarks" },
+  { test: /^Banquet/, href: () => "banquet.html", category: "banquet" },
+];
+
+function AgendaItem({ text }) {
+  for (const { test, href, category } of AGENDA_LINKS) {
+    const match = text.match(test);
+    if (match) {
+      return (
+        <a className={`agenda-link agenda-link-${category}`} href={href(match)}>
+          {text}
+        </a>
+      );
+    }
+  }
+  return text;
+}
+
 export function AgendaHighlights() {
   return (
     <>
       <section className="section-heading agenda-heading">
-        <h2>DRAFT AGENDA HIGHLIGHTS</h2>
+        <h2>AGENDA HIGHLIGHTS</h2>
       </section>
 
       <section className="agenda-grid">
@@ -90,7 +116,9 @@ export function AgendaHighlights() {
                   {block.items.length > 0 && (
                     <ul>
                       {block.items.map((item) => (
-                        <li key={item}>{item}</li>
+                        <li key={item}>
+                          <AgendaItem text={item} />
+                        </li>
                       ))}
                     </ul>
                   )}
@@ -102,6 +130,12 @@ export function AgendaHighlights() {
       </section>
 
       <p className="agenda-note">Draft agenda — subject to change.</p>
+
+      <p className="agenda-cta">
+        <a className="agenda-cta-button" href="agenda.html">
+          Click here for full agenda
+        </a>
+      </p>
     </>
   );
 }

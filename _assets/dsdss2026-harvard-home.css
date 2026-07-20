@@ -295,11 +295,61 @@
 
 .agenda-note {
   margin: 0;
-  padding: 4px 18px 28px;
+  padding: 4px 18px 10px;
   text-align: center;
   font-style: italic;
   font-size: 0.85rem;
   color: var(--muted);
+}
+
+/* Agenda items link to their relevant page, color-coded by category with
+   distinct shades of red so the event types are easy to tell apart. */
+.agenda-link {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.agenda-link:hover {
+  text-decoration: underline;
+}
+
+.agenda-link-session {
+  color: #a51c30; /* crimson — scientific sessions */
+}
+
+.agenda-link-keynote {
+  color: #6d0f1c; /* dark maroon — keynotes */
+}
+
+.agenda-link-remarks {
+  color: #c4495c; /* soft rose-red — opening/closing remarks */
+}
+
+.agenda-link-banquet {
+  color: #d64545; /* warm red — banquet & networking */
+}
+
+/* "Click here for full agenda" call-to-action button. */
+.agenda-cta {
+  margin: 0;
+  padding: 4px 18px 30px;
+  text-align: center;
+}
+
+.agenda-cta-button {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  font-weight: 700;
+  font-size: 0.98rem;
+  color: #fff;
+  background: var(--harvard-crimson);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.agenda-cta-button:hover {
+  background: var(--harvard-crimson-deep);
 }
 
 @media (max-width: 860px) {

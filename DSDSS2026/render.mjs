@@ -63,6 +63,7 @@ const PAGES = [
   "keynote-sessions.jsx",
   "keynote-speakers.jsx",
   "opening-remarks.jsx",
+  "closing-remarks.jsx",
   "panelists.jsx",
   "poster-submission.jsx",
   "registration.jsx",
