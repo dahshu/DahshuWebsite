@@ -244,11 +244,6 @@
   color: #fff;
 }
 
-/* Day 2 uses the deeper crimson so the two columns read as distinct. */
-.agenda-day:last-child .agenda-day-header {
-  background: var(--harvard-crimson-deep);
-}
-
 .agenda-day-label {
   font-size: 1.15rem;
   font-weight: 700;
