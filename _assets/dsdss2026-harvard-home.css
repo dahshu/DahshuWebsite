@@ -215,6 +215,93 @@
   color: var(--harvard-crimson);
 }
 
+/* Draft agenda highlights: a two-column Day 1 / Day 2 card. Each day is a
+   panel with a crimson header band and a list of timed blocks. */
+.agenda-heading {
+  margin-top: 6px;
+}
+
+.agenda-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  padding: 26px 20px 8px;
+}
+
+.agenda-day {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--paper);
+}
+
+.agenda-day-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 12px 16px;
+  background: var(--harvard-crimson);
+  color: #fff;
+}
+
+/* Day 2 uses the deeper crimson so the two columns read as distinct. */
+.agenda-day:last-child .agenda-day-header {
+  background: var(--harvard-crimson-deep);
+}
+
+.agenda-day-label {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.agenda-day-date {
+  font-size: 0.9rem;
+  opacity: 0.92;
+}
+
+.agenda-day-body {
+  padding: 14px 16px 18px;
+}
+
+.agenda-block {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.agenda-block:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.agenda-block h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  color: var(--harvard-crimson-deep);
+}
+
+.agenda-block ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.agenda-block li {
+  margin: 0 0 4px;
+  font-size: 0.94rem;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.agenda-note {
+  margin: 0;
+  padding: 4px 18px 28px;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
 @media (max-width: 860px) {
   .hero {
     grid-template-columns: 1fr;
@@ -228,6 +315,10 @@
   }
 
   .speaker-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .agenda-grid {
     grid-template-columns: 1fr;
   }
 }

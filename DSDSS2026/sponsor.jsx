@@ -16,6 +16,13 @@ export function Sponsor() {
         <h1>Sponsors</h1>
         <p>To be announced.</p>
       </article>
+
+      <article className="content-card">
+        <h1>Donate Now</h1>
+        <a className="btn-upload" href="https://dahshu.wildapricot.org/Donate" target="_blank" rel="noopener noreferrer">
+          Donate Now
+        </a>
+      </article>
     </Page>
   );
 }
