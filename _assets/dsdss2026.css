@@ -383,6 +383,32 @@ body:has(> .page-shell) {
   }
 }
 
+/* Sponsor cards reuse the invited-speaker vertical card (.speaker-vertical in
+   a .speaker-grid-4). The sponsorship level is a banner above each group of
+   cards rather than a per-card label. */
+.content-prose .sponsor-tier-banner {
+  margin: 2rem 0 1.25rem;
+  padding: 0.6rem 1rem;
+  background: var(--d26-crimson);
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: 0.05em;
+  border: 0;
+  border-radius: 6px;
+}
+
+/* Sponsor logos are wide brand marks, so fit the whole logo inside the square
+   frame (contain, not cover) on a white ground with a little padding.
+   box-sizing keeps the padding + border inside the 100% width so the image
+   doesn't overflow its figure and end up off-center from the rest of the card. */
+.sponsor-logo {
+  object-fit: contain;
+  background: #fff;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
 /* Scientific Sessions card: the session info (title, schedule, abstract) sits
    on top, with the speaker list stacked beneath it — one speaker per row. Each
    row is a small photo on the left with the name/affiliation to its right.

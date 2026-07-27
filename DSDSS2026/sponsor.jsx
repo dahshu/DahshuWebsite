@@ -3,18 +3,32 @@
 
 import React from "react";
 import { Page } from "./page.jsx";
+import { SponsorCard } from "./sponsor-card.jsx";
 
 export const meta = {
   page: "sponsor",
   title: "DSDSS2026 Sponsors",
 };
 
+const SILVER_SPONSORS = [
+  { image: "astellas-cropped.jpg", name: "Astellas" },
+  { image: "pfizer-cropped.png", name: "Pfizer" },
+  { image: "regeneron-logo-png_seeklogo-507092.png", name: "Regeneron" },
+  { image: "sentieon-cropped.png", name: "Sentieon" },
+];
+
 export function Sponsor() {
   return (
     <Page page={meta.page} title={meta.title}>
-      <article className="content-card">
+      <article className="content-prose">
         <h1>Sponsors</h1>
-        <p>To be announced.</p>
+
+        <h2 className="sponsor-tier-banner">Silver Level</h2>
+        <div className="speaker-grid-4">
+          {SILVER_SPONSORS.map((s, i) => (
+            <SponsorCard key={i} {...s} />
+          ))}
+        </div>
       </article>
 
       <article className="content-card">
