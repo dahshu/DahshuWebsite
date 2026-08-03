@@ -33,7 +33,7 @@ const PROGRAM = [
   ["Li Wang", "AbbVie"],
   ["Jane Zhang", "AbbVie Immunology"],
   ["Nancy Zhang", "University of Pennsylvania"],
-  ["Heng Zhou", "Merck"],
+  ["Heng Zhou", "Bristol Myers Squibb"],
 ];
 
 const LOCAL = [
@@ -50,7 +50,7 @@ const LOCAL = [
 
 function Roster({ members }) {
   return (
-    <table className="content-table">
+    <table className="content-table agenda-table">
       <thead>
         <tr>
           <th>Name</th>

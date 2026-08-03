@@ -23,7 +23,7 @@ const SESSIONS = [
   {
     number: 1,
     title: "The Architecture of Causal Evidence: Translating Targeted Learning into Real-World Data Reality",
-    schedule: null,
+    schedule: "Thursday, October 22, 2026, 9:50 am - 11:30 am",
     speakers: [
       {
         name: "Dr. Susan Gruber",
@@ -61,7 +61,7 @@ const SESSIONS = [
   },
   {
     number: 2,
-    schedule: null,
+    schedule: "Thursday, October 22, 2026, 1:00 pm - 2:40 pm",
     speakers: [
       {
         name: "Dr. Ye Tian",
@@ -90,7 +90,7 @@ const SESSIONS = [
   },
   {
     number: 3,
-    schedule: null,
+    schedule: "Thursday, October 22, 2026, 2:50 pm - 4:30 pm",
     speakers: [
       {
         name: "To Be Announced",
@@ -113,7 +113,7 @@ const SESSIONS = [
   },
   {
     number: 4,
-    schedule: null,
+    schedule: "Thursday, October 22, 2026, 4:40 pm - 5:40 pm",
     speakers: [
       {
         name: "To Be Announced",
@@ -137,7 +137,7 @@ const SESSIONS = [
   },
   {
     number: 5,
-    schedule: null,
+    schedule: "Friday, October 23, 2026, 9:00 am - 10:30 am",
     speakers: [
       {
         name: "Dr. Junrui Di",
@@ -174,12 +174,24 @@ const SESSIONS = [
   },
   {
     number: 6,
-    schedule: null,
+    schedule: "Friday, October 23, 2026, 10:45 am - 12:15 pm",
     speakers: [
       {
-        name: "To Be Announced",
+        name: "Rong Ma",
         affiliation: "",
-        photo: null,
+        photo: "rong-ma.jpg",
+        role: "Speaker",
+      },
+      {
+        name: "Ying Jin",
+        affiliation: "",
+        photo: "ying-jin.jpg",
+        role: "Speaker",
+      },
+      {
+        name: "Haiyan Huang",
+        affiliation: "",
+        photo: "haiyan-huang.jpg",
         role: "Speaker",
       },
       {
@@ -195,7 +207,7 @@ const SESSIONS = [
   },
   {
     number: 7,
-    schedule: null,
+    schedule: "Friday, October 23, 2026, 1:15 pm - 2:45 pm",
     speakers: [
       {
         name: "Dr. Fahimeh Mamashli",
@@ -230,7 +242,7 @@ const SESSIONS = [
   {
     number: 8,
     title: "Recent Advancement on Bayesian Methodology in Clinical Trials for Drugs and Biologics",
-    schedule: null,
+    schedule: "Friday, October 23, 2026, 3:00 pm - 4:30 pm",
     speakers: [
       {
         name: "Yuhua Zhang",

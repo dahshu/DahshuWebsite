@@ -36,7 +36,7 @@ const DAYS = [
       },
       {
         heading: "Evening (6:40 PM – 9:00 PM)",
-        items: ["Banquet & Networking"],
+        items: ["Mixer"],
       },
     ],
   },
@@ -78,7 +78,7 @@ const AGENDA_LINKS = [
   { test: /^Keynote/, href: () => "keynote-sessions.html", category: "keynote" },
   { test: /^Opening Remarks/, href: () => "opening-remarks.html", category: "remarks" },
   { test: /^Closing Remarks/, href: () => "closing-remarks.html", category: "remarks" },
-  { test: /^Banquet/, href: () => "banquet.html", category: "banquet" },
+  { test: /^Mixer/, href: () => "mixer.html", category: "banquet" },
 ];
 
 function AgendaItem({ text }) {

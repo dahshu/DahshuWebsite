@@ -35,13 +35,18 @@ export function Venue() {
         </Card>
 
         <Card>
-          <h3>Banquet Venue</h3>
+          <h3>Mixer Venue</h3>
           <p>TBD</p>
         </Card>
 
         <Card>
           <h3>Hotels</h3>
-          <p>TBD</p>
+          <p>Hilton Garden Inn Brookline</p>
+          <img
+            className="content-image"
+            src={assets + "hilton-garden-inn-brookline.webp"}
+            alt="Hilton Garden Inn Brookline"
+          />
         </Card>
 
         <Card>

@@ -33,7 +33,7 @@ const DAYS = [
       ["2:50 pm - 4:30 pm", "Session 3", "scientific-sessions.html#session3"],
       ["4:30 pm - 4:40 pm", "Break"],
       ["4:40 pm - 5:40 pm", "Session 4", "scientific-sessions.html#session4"],
-      ["6:40 pm - 9:00 pm", "Banquet", "banquet.html"],
+      ["6:40 pm - 9:00 pm", "Mixer", "mixer.html"],
     ],
   },
   {

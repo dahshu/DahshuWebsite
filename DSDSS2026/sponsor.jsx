@@ -10,6 +10,14 @@ export const meta = {
   title: "DSDSS2026 Sponsors",
 };
 
+const PLATINUM_SPONSORS = [
+  { image: "caredxlogo.png", name: "CareDx" },
+];
+
+const GOLD_SPONSORS = [
+  { image: "amgen.com.png", name: "Amgen" },
+];
+
 const SILVER_SPONSORS = [
   { image: "astellas-cropped.jpg", name: "Astellas" },
   { image: "pfizer-cropped.png", name: "Pfizer" },
@@ -22,6 +30,20 @@ export function Sponsor() {
     <Page page={meta.page} title={meta.title}>
       <article className="content-prose">
         <h1>Sponsors</h1>
+
+        <h2 className="sponsor-tier-banner">Platinum Level</h2>
+        <div className="speaker-grid-4">
+          {PLATINUM_SPONSORS.map((s, i) => (
+            <SponsorCard key={i} {...s} />
+          ))}
+        </div>
+
+        <h2 className="sponsor-tier-banner">Gold Level</h2>
+        <div className="speaker-grid-4">
+          {GOLD_SPONSORS.map((s, i) => (
+            <SponsorCard key={i} {...s} />
+          ))}
+        </div>
 
         <h2 className="sponsor-tier-banner">Silver Level</h2>
         <div className="speaker-grid-4">
