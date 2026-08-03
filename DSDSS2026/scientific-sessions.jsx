@@ -177,20 +177,20 @@ const SESSIONS = [
     schedule: "Friday, October 23, 2026, 10:45 am - 12:15 pm",
     speakers: [
       {
-        name: "Rong Ma",
-        affiliation: "",
+        name: "Dr. Rong Ma",
+        affiliation: "Assistant Professor of Biostatistics, Harvard T.H. Chan School of Public Health",
         photo: "rong-ma.jpg",
         role: "Speaker",
       },
       {
-        name: "Ying Jin",
-        affiliation: "",
+        name: "Dr. Ying Jin",
+        affiliation: "Assistant Professor, Statistics and Data Science, The Wharton School, University of Pennsylvania",
         photo: "ying-jin.jpg",
         role: "Speaker",
       },
       {
-        name: "Haiyan Huang",
-        affiliation: "",
+        name: "Dr. Haiyan Huang",
+        affiliation: "Professor of Statistics, University of California, Berkeley",
         photo: "haiyan-huang.jpg",
         role: "Speaker",
       },
