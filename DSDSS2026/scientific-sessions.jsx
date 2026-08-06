@@ -61,6 +61,7 @@ const SESSIONS = [
   },
   {
     number: 2,
+    title: "High-Dimensional Statistical Learning for Biomedical Data",
     schedule: "Thursday, October 22, 2026, 1:00 pm - 2:40 pm",
     speakers: [
       {
@@ -90,6 +91,7 @@ const SESSIONS = [
   },
   {
     number: 3,
+    title: "AI, Machine Learning, and Digital Health in Clinical Trials",
     schedule: "Thursday, October 22, 2026, 2:50 pm - 4:30 pm",
     speakers: [
       {
@@ -113,6 +115,7 @@ const SESSIONS = [
   },
   {
     number: 4,
+    title: "Real-World Impact of Artificial Intelligence in Medicine",
     schedule: "Thursday, October 22, 2026, 4:40 pm - 5:40 pm",
     speakers: [
       {
@@ -137,6 +140,7 @@ const SESSIONS = [
   },
   {
     number: 5,
+    title: "Digital Health Technologies and Wearable Sensors in Clinical Research",
     schedule: "Friday, October 23, 2026, 9:00 am - 10:30 am",
     speakers: [
       {
@@ -174,6 +178,7 @@ const SESSIONS = [
   },
   {
     number: 6,
+    title: "Statistical Inference and Machine Learning for High-Dimensional Genomics",
     schedule: "Friday, October 23, 2026, 10:45 am - 12:15 pm",
     speakers: [
       {
@@ -207,6 +212,7 @@ const SESSIONS = [
   },
   {
     number: 7,
+    title: "Explainable Artificial Intelligence (XAI) for Interpretable Models",
     schedule: "Friday, October 23, 2026, 1:15 pm - 2:45 pm",
     speakers: [
       {
