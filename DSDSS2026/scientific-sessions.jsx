@@ -91,7 +91,7 @@ const SESSIONS = [
   },
   {
     number: 3,
-    title: "AI, Machine Learning, and Digital Health in Clinical Trials",
+    title: "From Genome to Patient: An End-to-End View of Immunology in Drug Development",
     schedule: "Thursday, October 22, 2026, 2:50 pm - 4:30 pm",
     speakers: [
       {
@@ -108,9 +108,9 @@ const SESSIONS = [
       },
     ],
     abstract: [
-      "This session examines how advanced technologies are reshaping clinical trials as artificial intelligence (AI), machine learning (ML), and digital health tools become embedded across the drug development life cycle - from trial design and patient selection to endpoint assessment and regulatory decision-making.",
-      "The session will share case examples leveraging predictive models, wearable-derived endpoints, and real-world data.",
-      "The session will provide a concise roadmap for deploying AI and digital tools responsibly, recognizing common pitfalls, and navigating the evolving regulatory landscape that is redefining the future of quantitative science in drug development.",
+      "This session traces the end-to-end arc of immunology-driven drug development—from population-scale genetics that nominate causal targets, through translational biomarker discovery and patient stratification, to late-phase clinical trials that convert hypotheses into actionable evidence.",
+      "The program highlights how statistical genetics, computational biology, and clinical biostatistics intersect to advance therapies for immune-mediated diseases.",
+      "The audience will leave with a cohesive, practical view of the genome-to-patient pipeline and concrete insights for cross-functional collaboration.",
     ],
   },
   {

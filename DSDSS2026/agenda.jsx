@@ -36,7 +36,7 @@ const DAYS = [
       ["2:40 pm - 2:50 pm", "Break"],
       [
         "2:50 pm - 4:30 pm",
-        "Session 3: AI, Machine Learning, and Digital Health in Clinical Trials",
+        "Session 3: From Genome to Patient: An End-to-End View of Immunology in Drug Development",
         "scientific-sessions.html#session3",
       ],
       ["4:30 pm - 4:40 pm", "Break"],
