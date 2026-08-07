@@ -41,12 +41,51 @@ export function Venue() {
 
         <Card>
           <h3>Hotels</h3>
-          <p>Hilton Garden Inn Brookline</p>
+          <p>
+            The following hotels are offering group rates for DahShu Symposium attendees.
+            Please book by the cutoff date to receive the group rate.
+          </p>
+
+          <h4>Inn at Longwood Medical</h4>
+          <p>
+            <a
+              href="https://be.synxis.com/?Hotel=58219&Chain=65&arrive=2026-10-21&depart=2026-10-24&adult=1&child=0&group=HDAH1026"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book your group rate at the Inn at Longwood Medical
+            </a>
+          </p>
+
+          <h4>Hilton Garden Inn</h4>
           <img
             className="content-image"
             src={assets + "hilton-garden-inn-brookline.webp"}
             alt="Hilton Garden Inn Brookline"
           />
+          <p>
+            <a
+              href="https://www.hilton.com/en/attend-my-event/2026hsphdahshusymposium/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book your group rate at the Hilton Garden Inn
+            </a>
+          </p>
+          <ul>
+            <li>Guests will have until Monday, 9/21/26 to make their reservations within the room block.</li>
+            <li>Individual reservations may be canceled without penalty up to 2 days prior to arrival.</li>
+          </ul>
+
+          <h4>Courtyard by Marriott Boston Brookline</h4>
+          <p>Group rate: $329.00 USD per night.</p>
+          <ul>
+            <li>Individual reservations must be made prior to the cutoff date of 9/21/2026.</li>
+            <li>
+              For assistance, contact{" "}
+              <a href="mailto:tejas.bhatia@brooklinecourtyard.com">tejas.bhatia@brooklinecourtyard.com</a>.
+            </li>
+          </ul>
         </Card>
 
         <Card>
