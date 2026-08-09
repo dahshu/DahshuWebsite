@@ -6,6 +6,7 @@
 
 import React from "react";
 import { Page } from "./page.jsx";
+import { AgendaHighlights } from "./agenda-highlights.jsx";
 
 export const meta = {
   page: "index",
@@ -148,6 +149,8 @@ export function Index() {
           Click here to learn more about this year's keynote speakers
         </a>
       </p>
+
+      <AgendaHighlights />
 
       </div>
     </Page>

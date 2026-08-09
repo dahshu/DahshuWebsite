@@ -23,7 +23,7 @@ const SESSIONS = [
   {
     number: 1,
     title: "The Architecture of Causal Evidence: Translating Targeted Learning into Real-World Data Reality",
-    schedule: null,
+    schedule: "Thursday, October 22, 2026, 9:50 am - 11:30 am",
     speakers: [
       {
         name: "Dr. Susan Gruber",
@@ -61,7 +61,8 @@ const SESSIONS = [
   },
   {
     number: 2,
-    schedule: null,
+    title: "High-Dimensional Statistical Learning for Biomedical Data",
+    schedule: "Thursday, October 22, 2026, 1:00 pm - 2:40 pm",
     speakers: [
       {
         name: "Dr. Ye Tian",
@@ -90,7 +91,8 @@ const SESSIONS = [
   },
   {
     number: 3,
-    schedule: null,
+    title: "From Genome to Patient: An End-to-End View of Immunology in Drug Development",
+    schedule: "Thursday, October 22, 2026, 2:50 pm - 4:30 pm",
     speakers: [
       {
         name: "To Be Announced",
@@ -106,14 +108,15 @@ const SESSIONS = [
       },
     ],
     abstract: [
-      "This session examines how advanced technologies are reshaping clinical trials as artificial intelligence (AI), machine learning (ML), and digital health tools become embedded across the drug development life cycle - from trial design and patient selection to endpoint assessment and regulatory decision-making.",
-      "The session will share case examples leveraging predictive models, wearable-derived endpoints, and real-world data.",
-      "The session will provide a concise roadmap for deploying AI and digital tools responsibly, recognizing common pitfalls, and navigating the evolving regulatory landscape that is redefining the future of quantitative science in drug development.",
+      "This session traces the end-to-end arc of immunology-driven drug development—from population-scale genetics that nominate causal targets, through translational biomarker discovery and patient stratification, to late-phase clinical trials that convert hypotheses into actionable evidence.",
+      "The program highlights how statistical genetics, computational biology, and clinical biostatistics intersect to advance therapies for immune-mediated diseases.",
+      "The audience will leave with a cohesive, practical view of the genome-to-patient pipeline and concrete insights for cross-functional collaboration.",
     ],
   },
   {
     number: 4,
-    schedule: null,
+    title: "Real-World Impact of Artificial Intelligence in Medicine",
+    schedule: "Thursday, October 22, 2026, 4:40 pm - 5:40 pm",
     speakers: [
       {
         name: "To Be Announced",
@@ -137,7 +140,8 @@ const SESSIONS = [
   },
   {
     number: 5,
-    schedule: null,
+    title: "Digital Health Technologies and Wearable Sensors in Clinical Research",
+    schedule: "Friday, October 23, 2026, 9:00 am - 10:30 am",
     speakers: [
       {
         name: "Dr. Junrui Di",
@@ -174,12 +178,25 @@ const SESSIONS = [
   },
   {
     number: 6,
-    schedule: null,
+    title: "Statistical Inference and Machine Learning for High-Dimensional Genomics",
+    schedule: "Friday, October 23, 2026, 10:45 am - 12:15 pm",
     speakers: [
       {
-        name: "To Be Announced",
-        affiliation: "",
-        photo: null,
+        name: "Dr. Rong Ma",
+        affiliation: "Assistant Professor of Biostatistics, Harvard T.H. Chan School of Public Health",
+        photo: "rong-ma.jpg",
+        role: "Speaker",
+      },
+      {
+        name: "Dr. Ying Jin",
+        affiliation: "Assistant Professor, Statistics and Data Science, The Wharton School, University of Pennsylvania",
+        photo: "ying-jin.jpg",
+        role: "Speaker",
+      },
+      {
+        name: "Dr. Haiyan Huang",
+        affiliation: "Professor of Statistics, University of California, Berkeley",
+        photo: "haiyan-huang.jpg",
         role: "Speaker",
       },
       {
@@ -195,7 +212,8 @@ const SESSIONS = [
   },
   {
     number: 7,
-    schedule: null,
+    title: "Explainable Artificial Intelligence (XAI) for Interpretable Models",
+    schedule: "Friday, October 23, 2026, 1:15 pm - 2:45 pm",
     speakers: [
       {
         name: "Dr. Fahimeh Mamashli",
@@ -230,7 +248,7 @@ const SESSIONS = [
   {
     number: 8,
     title: "Recent Advancement on Bayesian Methodology in Clinical Trials for Drugs and Biologics",
-    schedule: null,
+    schedule: "Friday, October 23, 2026, 3:00 pm - 4:30 pm",
     speakers: [
       {
         name: "Yuhua Zhang",

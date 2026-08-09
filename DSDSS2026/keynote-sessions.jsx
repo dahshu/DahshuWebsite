@@ -19,6 +19,7 @@ const SPEAKERS = [
     id: "key1",
     name: "Gonçalo Abecasis",
     affiliation: "Regeneron",
+    schedule: "Thursday, October 22, 2026, 8:30 am - 9:30 am",
     sessionDetails: "To be provided.",
     photo: "goncalo-rocha-abecasis-user-current.jpg",
   },
@@ -26,6 +27,7 @@ const SPEAKERS = [
     id: "key2",
     name: "Susan Murphy",
     affiliation: "Harvard University",
+    schedule: "Friday, October 23, 2026, 8:00 am - 9:00 am",
     sessionDetails: "To be provided.",
     photo: "7d07c87a0885fc27a8bb61d04b5c10bb.JPG",
   },
@@ -51,6 +53,9 @@ export function KeynoteSessions() {
               <h3>{s.name}</h3>
               <p>
                 <strong>Affiliation:</strong> {s.affiliation}
+              </p>
+              <p>
+                <strong>Schedule:</strong> {s.schedule}
               </p>
               <p>
                 <strong>Session Details:</strong> {s.sessionDetails}

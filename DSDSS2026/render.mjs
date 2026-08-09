@@ -27,7 +27,7 @@ const SRC = path.dirname(fileURLToPath(import.meta.url)); // DSDSS2026/
 const ROOT = path.resolve(SRC, ".."); // repo root
 const DIST = path.join(ROOT, "dist");
 
-// "agenda.jsx" -> "Agenda", "banquet-speakers.jsx" -> "BanquetSpeakers".
+// "agenda.jsx" -> "Agenda", "keynote-speakers.jsx" -> "KeynoteSpeakers".
 // The exported component name for a page file is its name in PascalCase.
 const componentName = (file) =>
   path
@@ -56,14 +56,13 @@ const PAGES = [
   "index.jsx",
   "abstract-submission.jsx",
   "agenda.jsx",
-  "banquet.jsx",
-  "banquet-speakers.jsx",
+  "mixer.jsx",
   "committee.jsx",
   "invited-speakers.jsx",
   "keynote-sessions.jsx",
   "keynote-speakers.jsx",
   "opening-remarks.jsx",
-  "panelists.jsx",
+  "closing-remarks.jsx",
   "poster-submission.jsx",
   "registration.jsx",
   "scientific-sessions.jsx",

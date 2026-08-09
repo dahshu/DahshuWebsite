@@ -67,16 +67,15 @@ export function Nav({ page }) {
           <Item target="opening-remarks" label="Opening Remarks" />
           <Item target="keynote-sessions" label="Keynotes" />
           <Item target="scientific-sessions" label="Scientific Sessions" />
-          <Item target="banquet" label="Banquet" />
+          <Item target="mixer" label="Mixer" />
+          <Item target="closing-remarks" label="Closing Remarks" />
         </Item>,
 
         <Item target="sponsor" label="Sponsor" />,
 
         <Item target="speakers" label="Speakers">
-          <Item target="banquet-speakers" label="Banquet Speakers" />
           <Item target="invited-speakers" label="Invited Speakers" />
           <Item target="keynote-speakers" label="Keynote Speakers" />
-          <Item target="panelists" label="Panelists" />
         </Item>,
 
         <Item target="venue" label="Venue" />,
