@@ -125,10 +125,9 @@ const SESSIONS = [
         role: "Speaker",
       },
       {
-        name: "Dr. Jimeng Sun",
-        affiliation:
-          "Health Innovation Professor, Siebel School of Computing and Data Science and Carle Illinois College of Medicine, University of Illinois Urbana-Champaign; Cofounder, Keiji AI",
-        photo: "jimeng-sun.png",
+        name: "Dr. Erick Scott",
+        affiliation: "VP, Clinical Data Science, Keiji AI",
+        photo: "erick-scott.jpg",
         role: "Speaker",
       },
       {
