@@ -253,8 +253,9 @@ const SESSIONS = [
       },
     ],
     abstract: [
-      "Explainable Artificial Intelligence (XAI) refers to a set of methods and techniques in artificial intelligence (AI) that aim to make the decision-making processes of AI systems understandable to human users.",
+      "This session covers Explainable Artificial Intelligence (XAI), which refers to a set of methods and techniques in artificial intelligence (AI) that aim to make the decision-making processes of AI systems understandable to human users.",
       'The primary goal of XAI is to provide transparency, accountability, and interpretability in AI models, particularly those that are complex and often considered "black boxes," such as deep learning models.',
+      'This session will be followed by a panel.',
     ],
   },
   {
