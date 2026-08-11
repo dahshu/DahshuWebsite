@@ -119,9 +119,22 @@ const SESSIONS = [
     schedule: "Thursday, October 22, 2026, 4:40 pm - 5:40 pm",
     speakers: [
       {
-        name: "To Be Announced",
-        affiliation: "",
-        photo: null,
+        name: "Dr. Rolando J. Acosta",
+        affiliation: "Manager, Biostatistics, Regeneron",
+        photo: "rolando-acosta.jpg",
+        role: "Speaker",
+      },
+      {
+        name: "Dr. Jimeng Sun",
+        affiliation:
+          "Health Innovation Professor, Siebel School of Computing and Data Science and Carle Illinois College of Medicine, University of Illinois Urbana-Champaign; Cofounder, Keiji AI",
+        photo: "jimeng-sun.png",
+        role: "Speaker",
+      },
+      {
+        name: "Dr. Yi-Lin Chiu",
+        affiliation: "Director and Department Head, Discovery and Exploratory Statistics (DIVES), Biometrics, AbbVie",
+        photo: "yi-lin-chiu.jpg",
         role: "Speaker",
       },
       {
@@ -228,9 +241,9 @@ const SESSIONS = [
         role: "Speaker",
       },
       {
-        name: "Claude Viman",
-        affiliation: "Senior Partner, EnQubes",
-        photo: "claude-viman.jpg",
+        name: "Dr. Gurpreet Nanda",
+        affiliation: "Senior Director, Head of Applied Machine Learning, Bayer",
+        photo: "gurpreet-nanda.jpg",
         role: "Speaker",
       },
       {
