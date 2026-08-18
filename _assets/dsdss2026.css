@@ -207,6 +207,71 @@ body:has(> .page-shell) {
   border-radius: 4px;
 }
 
+/* Hotel booking cards: a responsive grid of identically-formatted cards, each
+   with a uniform-height photo on top and booking details below. */
+.hotel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.card.hotel-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+}
+
+.hotel-card-photo {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.hotel-card-photo-blank {
+  background: #ececec;
+}
+
+.hotel-card-body {
+  padding: 1rem 1.15rem 1.25rem;
+}
+
+.hotel-card-name {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  color: var(--d26-crimson-deep);
+}
+
+.hotel-card-rate {
+  margin: 0 0 0.5rem;
+}
+
+.hotel-card-book {
+  margin: 0 0 0.6rem;
+}
+
+.hotel-card-notes {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.92rem;
+  color: #555;
+}
+
+@media (max-width: 860px) {
+  .hotel-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .hotel-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Speaker layout inside a card: a fixed-width photo beside a text column.
    Reused by any page that shows a person with a portrait. */
 .card.speaker {

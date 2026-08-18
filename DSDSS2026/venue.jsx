@@ -6,11 +6,46 @@
 import React from "react";
 import { Page } from "./page.jsx";
 import { Card } from "./card.jsx";
+import { HotelCard } from "./hotel-card.jsx";
 
 export const meta = {
   page: "venue",
   title: "DSDSS2026 Venue and Travel Information",
 };
+
+// Hotels offering group rates. Each renders as an identically-formatted
+// <HotelCard>. Guests must book by the cutoff date to receive the discount.
+const HOTELS = [
+  {
+    name: "Inn at Longwood Medical",
+    image: "inn-at-longwood-medical.jpg",
+    rate: "$275",
+    bookingUrl:
+      "https://be.synxis.com/?Hotel=58219&Chain=65&arrive=2026-10-21&depart=2026-10-24&adult=1&child=0&group=HDAH1026",
+    bookingLabel: "Book your group rate at the Inn at Longwood Medical",
+  },
+  {
+    name: "Hilton Garden Inn",
+    image: "hilton-garden-inn-brookline.webp",
+    rate: "$259",
+    bookingUrl: "https://www.hilton.com/en/attend-my-event/2026hsphdahshusymposium/",
+    bookingLabel: "Book your group rate at the Hilton Garden Inn",
+    notes: ["Individual reservations may be canceled without penalty up to 2 days prior to arrival."],
+  },
+  {
+    name: "Courtyard by Marriott Boston Brookline",
+    image: "courtyard-marriott-brookline.jpg",
+    rate: "$329",
+    bookingUrl: "https://app.marriott.com/resview2?id=1785936689035&key=GRP&app=resvlink",
+    bookingLabel: "Book your group rate for Harvard Chan School",
+    notes: [
+      <>
+        For assistance, contact{" "}
+        <a href="mailto:tejas.bhatia@brooklinecourtyard.com">tejas.bhatia@brooklinecourtyard.com</a>.
+      </>,
+    ],
+  },
+];
 
 export function Venue() {
   const assets = "_assets/";
@@ -30,87 +65,16 @@ export function Venue() {
         </Card>
 
         <Card>
-          <h3>Short Course Venue</h3>
-          <p>TBD</p>
-        </Card>
-
-        <Card>
-          <h3>Mixer Venue</h3>
-          <p>TBD</p>
-        </Card>
-
-        <Card>
-          <h3>Hotels</h3>
+          <h3>Booking Hotels</h3>
           <p>
-            The following hotels are offering group rates for DahShu Symposium attendees.
-            Please book by the cutoff date to receive the group rate.
+            We offer discounted rates at the following hotels. Guests <strong>must</strong> make their
+            reservations by <strong>September 21, 2026</strong> to receive these discounts.
           </p>
-
-          <h4>Inn at Longwood Medical</h4>
-          <p>
-            <a
-              href="https://be.synxis.com/?Hotel=58219&Chain=65&arrive=2026-10-21&depart=2026-10-24&adult=1&child=0&group=HDAH1026"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Book your group rate at the Inn at Longwood Medical
-            </a>
-          </p>
-
-          <h4>Hilton Garden Inn</h4>
-          <img
-            className="content-image"
-            src={assets + "hilton-garden-inn-brookline.webp"}
-            alt="Hilton Garden Inn Brookline"
-          />
-          <p>
-            <a
-              href="https://www.hilton.com/en/attend-my-event/2026hsphdahshusymposium/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Book your group rate at the Hilton Garden Inn
-            </a>
-          </p>
-          <ul>
-            <li>Guests will have until Monday, 9/21/26 to make their reservations within the room block.</li>
-            <li>Individual reservations may be canceled without penalty up to 2 days prior to arrival.</li>
-          </ul>
-
-          <h4>Courtyard by Marriott Boston Brookline</h4>
-          <p>Group rate: $329.00 USD per night.</p>
-          <ul>
-            <li>Individual reservations must be made prior to the cutoff date of 9/21/2026.</li>
-            <li>
-              For assistance, contact{" "}
-              <a href="mailto:tejas.bhatia@brooklinecourtyard.com">tejas.bhatia@brooklinecourtyard.com</a>.
-            </li>
-          </ul>
-        </Card>
-
-        <Card>
-          <h3>Registration Guide</h3>
-          <p>TBD</p>
-        </Card>
-
-        <Card>
-          <h3>Wi-Fi and Alert System</h3>
-          <p>TBD</p>
-        </Card>
-
-        <Card>
-          <h3>Parking and Directions</h3>
-          <p>TBD</p>
-        </Card>
-
-        <Card>
-          <h3>Helpful Tips When Visiting Campus</h3>
-          <p>TBD</p>
-        </Card>
-
-        <Card>
-          <h3>Things To Do While Visiting</h3>
-          <p>TBD</p>
+          <div className="hotel-grid">
+            {HOTELS.map((hotel) => (
+              <HotelCard key={hotel.name} {...hotel} />
+            ))}
+          </div>
         </Card>
       </article>
     </Page>
