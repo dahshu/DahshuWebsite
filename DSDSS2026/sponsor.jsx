@@ -11,7 +11,15 @@ export const meta = {
 };
 
 const PLATINUM_SPONSORS = [
-  { image: "caredxlogo.png", name: "CareDx" },
+  {
+    image: "caredxlogo.png",
+    name: "CareDx",
+    bio: "CareDx creates life-changing solutions that enable patients to thrive. Its integrated approach to precision medicine combines advanced diagnostics, streamlined workflows, and patient support to inform clinical decisions and improve patient outcomes.",
+  },
+  // Logos not received yet — these render with the blank placeholder frame.
+  { name: "BSSC" },
+  { name: "BeOne Medicines" },
+  { name: "DIP" },
 ];
 
 const GOLD_SPONSORS = [
@@ -53,21 +61,21 @@ export function Sponsor() {
         <h1>Sponsors</h1>
 
         <h2 className="sponsor-tier-banner">Platinum Level</h2>
-        <div className="speaker-grid-4">
+        <div className="sponsor-grid sponsor-grid-platinum">
           {PLATINUM_SPONSORS.map((s, i) => (
             <SponsorCard key={i} {...s} />
           ))}
         </div>
 
         <h2 className="sponsor-tier-banner">Gold Level</h2>
-        <div className="speaker-grid-4">
+        <div className="sponsor-grid sponsor-grid-gold">
           {GOLD_SPONSORS.map((s, i) => (
             <SponsorCard key={i} {...s} />
           ))}
         </div>
 
         <h2 className="sponsor-tier-banner">Silver Level</h2>
-        <div className="speaker-grid-4">
+        <div className="sponsor-grid sponsor-grid-silver">
           {SILVER_SPONSORS.map((s, i) => (
             <SponsorCard key={i} {...s} />
           ))}

@@ -463,6 +463,38 @@ body:has(> .page-shell) {
   border-radius: 6px;
 }
 
+/* Each tier is a centered wrapping row rather than a fixed 4-up grid, so a tier
+   with one or two sponsors sits in the middle of the page instead of hugging
+   the left edge. Card width is set per tier (--sponsor-card-width), which sizes
+   the logo with it: platinum largest, then gold, then silver. Cards shrink
+   (flex-shrink: 1) on narrow viewports but never exceed the tier width. */
+.sponsor-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.sponsor-grid > .card {
+  flex: 0 1 var(--sponsor-card-width);
+  max-width: var(--sponsor-card-width);
+  /* The row's gap handles spacing; drop the default card bottom margin. */
+  margin: 0;
+}
+
+.sponsor-grid-platinum {
+  --sponsor-card-width: 340px;
+}
+
+.sponsor-grid-gold {
+  --sponsor-card-width: 265px;
+}
+
+.sponsor-grid-silver {
+  --sponsor-card-width: 170px;
+}
+
 /* Sponsor logos are wide brand marks, so fit the whole logo inside the square
    frame (contain, not cover) on a white ground with a little padding.
    box-sizing keeps the padding + border inside the 100% width so the image
