@@ -23,6 +23,16 @@ const HOTELS = [
     bookingUrl:
       "https://be.synxis.com/?Hotel=58219&Chain=65&arrive=2026-10-21&depart=2026-10-24&adult=1&child=0&group=HDAH1026",
     bookingLabel: "Book your group rate at the Inn at Longwood Medical",
+    notes: [
+      "You can also book by calling the Sales Office at (617) 532-6217 and providing Group Code: HDAH1026.",
+      <>
+        Or book by visiting{" "}
+        <a href="https://www.innatlongwood.com/" target="_blank" rel="noopener noreferrer">
+          innatlongwood.com
+        </a>
+        , toggling to Group Code from Company Code, and entering Group Code: HDAH1026.
+      </>,
+    ],
   },
   {
     name: "Hilton Garden Inn",
