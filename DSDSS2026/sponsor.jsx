@@ -15,14 +15,35 @@ const PLATINUM_SPONSORS = [
 ];
 
 const GOLD_SPONSORS = [
-  { image: "amgen.com.png", name: "Amgen" },
+  {
+    image: "amgen.com.png",
+    name: "Amgen",
+    bio: "Amgen harnesses the best of biology and technology to fight the world's toughest diseases and make people's lives easier, fuller and longer. A pioneer of the biotechnology industry, Amgen remains on the cutting edge of innovation, using technology and human genetic data to push beyond what's known today.",
+  },
 ];
 
 const SILVER_SPONSORS = [
-  { image: "astellas-cropped.jpg", name: "Astellas" },
-  { image: "pfizer-cropped.png", name: "Pfizer" },
+  {
+    image: "astellas-cropped.jpg",
+    name: "Astellas",
+    bio: "Astellas is a global life sciences company committed to turning innovative science into VALUE for patients.",
+  },
+  {
+    image: "pfizer-cropped.png",
+    name: "Pfizer",
+    bio: "Pfizer's purpose is breakthroughs that change patients' lives. We pursue that goal relentlessly and innovate every day to make the world a healthier place.",
+  },
   { image: "regeneron-logo-png_seeklogo-507092.png", name: "Regeneron" },
-  { image: "sentieon-cropped.png", name: "Sentieon" },
+  {
+    image: "sentieon-cropped.png",
+    name: "Sentieon",
+    bio: "Sentieon develops highly-optimized algorithms for bioinformatics, applying deep expertise in modeling, machine learning, and high-performance computing to enable precision data for precision medicine.",
+  },
+  {
+    image: "KeijiAI-cropped.png",
+    name: "Keiji AI",
+    bio: "Keiji AI develops purpose-built AI for clinical research and development. Its TrialMind platform helps teams work faster and more consistently across literature review, trial design, and real-world evidence workflows.",
+  },
 ];
 
 export function Sponsor() {

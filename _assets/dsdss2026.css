@@ -474,6 +474,15 @@ body:has(> .page-shell) {
   box-sizing: border-box;
 }
 
+/* Optional short sponsor description shown below the name in the card. */
+.sponsor-bio {
+  margin: 0.4rem 0 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #555;
+  text-align: left;
+}
+
 /* Scientific Sessions card: the session info (title, schedule, abstract) sits
    on top, with the speaker list stacked beneath it — one speaker per row. Each
    row is a small photo on the left with the name/affiliation to its right.
