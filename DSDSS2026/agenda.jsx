@@ -62,7 +62,7 @@ const DAYS = [
       ["10:30 am - 10:45 am", "Break"],
       [
         "10:45 am - 12:15 pm",
-        "Session 6: Statistical Inference and Machine Learning for High-Dimensional Genomics",
+        "Session 6: Bridging AI and Statistical Inference: Methods and Applications",
         "scientific-sessions.html#session6",
       ],
       ["12:15 pm - 1:15 pm", "Lunch"],

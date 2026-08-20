@@ -43,7 +43,6 @@ const LOCAL = [
   ["Anwen Huang", "University of California, Los Angeles"],
   ["Rui (Sammi) Tang", "Astellas Pharmaceuticals"],
   ["Zhaoyang Teng", "Astellas Pharmaceuticals"],
-  ["Jiawen Wang", "Massachusetts General Hospital"],
   ["Peng Yang", "Clindata Insight"],
   ["Jiarui Zhang", "Johnson & Johnson"],
 ];

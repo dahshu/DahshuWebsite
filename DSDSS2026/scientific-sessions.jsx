@@ -119,9 +119,21 @@ const SESSIONS = [
     schedule: "Thursday, October 22, 2026, 4:40 pm - 5:40 pm",
     speakers: [
       {
-        name: "To Be Announced",
-        affiliation: "",
-        photo: null,
+        name: "Dr. Rolando J. Acosta",
+        affiliation: "Manager, Biostatistics, Regeneron",
+        photo: "rolando-acosta.jpg",
+        role: "Speaker",
+      },
+      {
+        name: "Dr. Erick Scott",
+        affiliation: "VP, Clinical Data Science, Keiji AI",
+        photo: "erick-scott.jpg",
+        role: "Speaker",
+      },
+      {
+        name: "Dr. Yi-Lin Chiu",
+        affiliation: "Director and Department Head, Discovery and Exploratory Statistics (DIVES), Biometrics, AbbVie",
+        photo: "yi-lin-chiu.jpg",
         role: "Speaker",
       },
       {
@@ -178,9 +190,16 @@ const SESSIONS = [
   },
   {
     number: 6,
-    title: "Statistical Inference and Machine Learning for High-Dimensional Genomics",
+    title: "Bridging AI and Statistical Inference: Methods and Applications",
     schedule: "Friday, October 23, 2026, 10:45 am - 12:15 pm",
     speakers: [
+      {
+        name: "Dr. Jacob Bien",
+        affiliation:
+          "Professor of Data Sciences and Operations, USC Marshall School of Business",
+        photo: "jacob-bien.jpg",
+        role: "Speaker",
+      },
       {
         name: "Dr. Rong Ma",
         affiliation: "Assistant Professor of Biostatistics, Harvard T.H. Chan School of Public Health",
@@ -228,9 +247,9 @@ const SESSIONS = [
         role: "Speaker",
       },
       {
-        name: "Claude Viman",
-        affiliation: "Senior Partner, EnQubes",
-        photo: "claude-viman.jpg",
+        name: "Dr. Gurpreet Nanda",
+        affiliation: "Senior Director, Head of Applied Machine Learning, Bayer",
+        photo: "gurpreet-nanda.jpg",
         role: "Speaker",
       },
       {
@@ -241,8 +260,9 @@ const SESSIONS = [
       },
     ],
     abstract: [
-      "Explainable Artificial Intelligence (XAI) refers to a set of methods and techniques in artificial intelligence (AI) that aim to make the decision-making processes of AI systems understandable to human users.",
+      "This session covers Explainable Artificial Intelligence (XAI), which refers to a set of methods and techniques in artificial intelligence (AI) that aim to make the decision-making processes of AI systems understandable to human users.",
       'The primary goal of XAI is to provide transparency, accountability, and interpretability in AI models, particularly those that are complex and often considered "black boxes," such as deep learning models.',
+      'This session will be followed by a panel.',
     ],
   },
   {

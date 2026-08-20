@@ -98,7 +98,7 @@ export function Registration() {
 
         <h2>Important Dates</h2>
         <ul>
-          <li>Early Bird Registration Deadline: August 19, 2026</li>
+          <li>Early Bird Registration Deadline: September 15, 2026</li>
           <li>Registration End: October 19, 2026</li>
         </ul>
 
