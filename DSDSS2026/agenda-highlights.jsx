@@ -50,7 +50,7 @@ const DAYS = [
           "Registration & Refreshments",
           "Keynote 2",
           "Session 5: Digital Health & Wearable Sensors",
-          "Session 6: High-Dimensional Genomics",
+          "Session 6: Bridging AI and Statistical Inference",
         ],
       },
       {

@@ -190,9 +190,16 @@ const SESSIONS = [
   },
   {
     number: 6,
-    title: "Statistical Inference and Machine Learning for High-Dimensional Genomics",
+    title: "Bridging AI and Statistical Inference: Methods and Applications",
     schedule: "Friday, October 23, 2026, 10:45 am - 12:15 pm",
     speakers: [
+      {
+        name: "Dr. Jacob Bien",
+        affiliation:
+          "Professor of Data Sciences and Operations, USC Marshall School of Business",
+        photo: "jacob-bien.jpg",
+        role: "Speaker",
+      },
       {
         name: "Dr. Rong Ma",
         affiliation: "Assistant Professor of Biostatistics, Harvard T.H. Chan School of Public Health",
