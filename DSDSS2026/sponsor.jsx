@@ -46,6 +46,10 @@ const SILVER_SPONSORS = [
   },
 ];
 
+// Sort a tier's sponsors alphabetically by name (case-insensitive) so each
+// tier always renders A→Z regardless of array order.
+const byName = (list) => [...list].sort((a, b) => a.name.localeCompare(b.name));
+
 export function Sponsor() {
   return (
     <Page page={meta.page} title={meta.title}>
@@ -54,21 +58,21 @@ export function Sponsor() {
 
         <h2 className="sponsor-tier-banner">Platinum Level</h2>
         <div className="speaker-grid-4">
-          {PLATINUM_SPONSORS.map((s, i) => (
+          {byName(PLATINUM_SPONSORS).map((s, i) => (
             <SponsorCard key={i} {...s} />
           ))}
         </div>
 
         <h2 className="sponsor-tier-banner">Gold Level</h2>
         <div className="speaker-grid-4">
-          {GOLD_SPONSORS.map((s, i) => (
+          {byName(GOLD_SPONSORS).map((s, i) => (
             <SponsorCard key={i} {...s} />
           ))}
         </div>
 
         <h2 className="sponsor-tier-banner">Silver Level</h2>
         <div className="speaker-grid-4">
-          {SILVER_SPONSORS.map((s, i) => (
+          {byName(SILVER_SPONSORS).map((s, i) => (
             <SponsorCard key={i} {...s} />
           ))}
         </div>
