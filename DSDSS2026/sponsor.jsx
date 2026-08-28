@@ -11,7 +11,15 @@ export const meta = {
 };
 
 const PLATINUM_SPONSORS = [
-  { image: "caredxlogo.png", name: "CareDx" },
+  {
+    image: "caredxlogo.png",
+    name: "CareDx",
+    bio: "CareDx creates life-changing solutions that enable patients to thrive. Its integrated approach to precision medicine combines advanced diagnostics, streamlined workflows, and patient support to inform clinical decisions and improve patient outcomes.",
+  },
+  // Logos not received yet — these render with the blank placeholder frame.
+  { name: "BSSC" },
+  { name: "BeOne Medicines" },
+  { name: "DIP" },
 ];
 
 const GOLD_SPONSORS = [
