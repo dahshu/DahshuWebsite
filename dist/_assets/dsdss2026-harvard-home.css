@@ -1,0 +1,384 @@
+/* Home-page-specific styles: the hero, about, and keynote sections. The shared
+   page shell, header, and footer come from dsdss2026.css. */
+
+:root {
+  --harvard-crimson: #a51c30;
+  --harvard-crimson-deep: #8f182a;
+  --ink: #2b2424;
+  --muted: #6d5b5f;
+  --paper: #ffffff;
+  --line: #e6d7d9;
+  --mist: #f6f2f3;
+}
+
+/* The home content sits in the same centered column as the header and footer,
+   on a white panel so the sections read as a single page. */
+.home-main {
+  width: 100%;
+  max-width: var(--d26-shell-width);
+  margin: 0 auto;
+  background: var(--paper);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) minmax(320px, 1.15fr);
+  gap: 26px;
+  padding: 18px 18px 10px;
+  background: var(--harvard-crimson);
+}
+
+.hero-copy,
+.hero-copy h1,
+.hero-copy p,
+.hero-copy span,
+.hero-copy strong,
+.hero-copy em,
+.hero-copy a {
+  color: #fff;
+}
+
+.hero-copy h1 {
+  margin: 0 0 18px;
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  line-height: 1.03;
+  letter-spacing: -0.03em;
+}
+
+.hero-date,
+.hero-school,
+.hero-location {
+  margin: 0;
+  font-weight: 700;
+}
+
+.hero-date {
+  font-size: 1.2rem;
+  margin-bottom: 14px;
+}
+
+.hero-school,
+.hero-location {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.registration-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 8px 14px 8px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 2px solid rgba(255, 214, 221, 0.88);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.96rem;
+}
+
+.registration-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #c4495c;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.hero-media {
+  align-self: center;
+  /* Grid cells default to min-width:auto, which lets a wide child push the
+     column past 1fr. Pin it to 0 so the carousel can't overflow the hero. */
+  min-width: 0;
+}
+
+/* The Swiper carousel sits in the hero. Swiper measures the root's height to
+   lay out slides, so the carousel gets an explicit fixed height (not
+   aspect-ratio — pairing aspect-ratio with Swiper's height:100% slides feeds
+   the height back into the width and the box runs away on narrow screens).
+   The fixed height works the same whether the hero is two columns or stacked. */
+.hero-carousel {
+  width: 100%;
+  height: 360px;
+  border: 6px solid rgba(255, 255, 255, 0.15);
+}
+
+.hero-carousel .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.82) contrast(0.94);
+}
+
+.hero-carousel .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.45);
+  opacity: 1;
+}
+
+.hero-carousel .swiper-pagination-bullet-active {
+  background: #ffffff;
+}
+
+.section-heading {
+  margin: 0;
+  padding: 12px 14px;
+  background: linear-gradient(180deg, #fafafa 0%, #efefef 100%);
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  text-align: center;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: var(--harvard-crimson);
+  font-size: 1.7rem;
+  letter-spacing: 0.03em;
+}
+
+.about-copy {
+  padding: 18px 18px 28px;
+}
+
+.about-copy p {
+  margin: 0 0 18px;
+  font-size: 1.02rem;
+  line-height: 1.78;
+}
+
+.keynote-heading {
+  margin-top: 6px;
+}
+
+.speaker-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 38px;
+  padding: 26px 20px 16px;
+}
+
+.speaker-card {
+  display: grid;
+  grid-template-columns: 132px 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.speaker-card img {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 34%;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.speaker-info h3 {
+  margin: 8px 0 10px;
+  font-size: 1.18rem;
+  color: #3b3133;
+}
+
+.speaker-info p {
+  margin: 0;
+  font-size: 0.99rem;
+  line-height: 1.4;
+}
+
+.keynote-link {
+  margin: 0;
+  padding: 6px 18px 28px;
+  text-align: center;
+}
+
+.keynote-link a {
+  color: var(--harvard-crimson);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.photo-credit {
+  margin: 0;
+  padding: 10px 18px 18px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.photo-credit a {
+  color: var(--harvard-crimson);
+}
+
+/* Draft agenda highlights: a two-column Day 1 / Day 2 card. Each day is a
+   panel with a crimson header band and a list of timed blocks. */
+.agenda-heading {
+  margin-top: 6px;
+}
+
+.agenda-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  padding: 26px 20px 8px;
+}
+
+.agenda-day {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--paper);
+}
+
+.agenda-day-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 12px 16px;
+  background: var(--harvard-crimson);
+  color: #fff;
+}
+
+.agenda-day-label {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.agenda-day-date {
+  font-size: 0.9rem;
+  opacity: 0.92;
+}
+
+.agenda-day-body {
+  padding: 14px 16px 18px;
+}
+
+.agenda-block {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.agenda-block:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.agenda-block h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  color: var(--harvard-crimson-deep);
+}
+
+.agenda-block ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.agenda-block li {
+  margin: 0 0 4px;
+  font-size: 0.94rem;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.agenda-note {
+  margin: 0;
+  padding: 4px 18px 10px;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* Agenda items link to their relevant page, color-coded by category with
+   distinct shades of red so the event types are easy to tell apart. */
+.agenda-link {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.agenda-link:hover {
+  text-decoration: underline;
+}
+
+.agenda-link-session {
+  color: #a51c30; /* crimson — scientific sessions */
+}
+
+.agenda-link-keynote {
+  color: #6d0f1c; /* dark maroon — keynotes */
+}
+
+.agenda-link-remarks {
+  color: #c4495c; /* soft rose-red — opening/closing remarks */
+}
+
+.agenda-link-banquet {
+  color: #d64545; /* warm red — banquet & networking */
+}
+
+/* "Click here for full agenda" call-to-action button. */
+.agenda-cta {
+  margin: 0;
+  padding: 4px 18px 30px;
+  text-align: center;
+}
+
+.agenda-cta-button {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  font-weight: 700;
+  font-size: 0.98rem;
+  color: #fff;
+  background: var(--harvard-crimson);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.agenda-cta-button:hover {
+  background: var(--harvard-crimson-deep);
+}
+
+@media (max-width: 860px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  /* Stacked, the copy cell is full-width. The headline's forced line breaks
+     (sized for the narrow desktop column) would leave a lopsided empty band
+     on the right, so drop them and let the headline wrap naturally instead. */
+  .hero-br {
+    display: none;
+  }
+
+  .speaker-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .agenda-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero-copy h1 {
+    font-size: 2.3rem;
+  }
+
+  .speaker-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .speaker-card img {
+    margin: 0 auto;
+  }
+}

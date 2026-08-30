@@ -16,9 +16,9 @@ const PLATINUM_SPONSORS = [
     name: "CareDx",
     bio: "CareDx creates life-changing solutions that enable patients to thrive. Its integrated approach to precision medicine combines advanced diagnostics, streamlined workflows, and patient support to inform clinical decisions and improve patient outcomes.",
   },
-  // Logos not received yet — these render with the blank placeholder frame.
-  { name: "BSSC" },
-  { name: "BeOne Medicines" },
+  { image: "bssc-cropped.png", name: "BSSC" },
+  { image: "beone-cropped.png", name: "BeOne Medicines" },
+  // Logo not received yet — renders with the blank placeholder frame.
   { name: "DIP" },
 ];
 

@@ -1,0 +1,887 @@
+.dsdss2026Page,
+.dsdss2026Section {
+  --d26-shell-width: 1000px;
+  --d26-shell-gutter: 24px;
+  --d26-crimson: #a51c30;
+  --d26-crimson-deep: #861627;
+  --d26-crimson-soft: #c4495c;
+  --d26-rose: #f7ecef;
+  --d26-rose-line: #e4c9cf;
+  --d26-ink: #2f1f22;
+  --d26-font-serif: "Times New Roman", Times, serif;
+  --d26-nav-breakpoint: 820px;
+}
+
+.dsdss2026Page,
+.dsdss2026Section,
+.dsdss2026Page body,
+.dsdss2026Section body {
+  font-family: var(--d26-font-serif);
+}
+
+/* Generic page layout, shared by every page rendered from the JSX shell.
+   The shell is a full-height flex column so the footer rests at the bottom of
+   the viewport when content is short, and below the content when it is tall. */
+body:has(> .page-shell) {
+  margin: 0;
+}
+
+.page-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--d26-rose);
+  color: var(--d26-ink);
+}
+
+.page-main {
+  flex: 1 0 auto;
+  width: min(var(--d26-shell-width), calc(100% - var(--d26-shell-gutter)));
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* A simple framed content block for short, centered page content. */
+.content-card {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  background: #fff;
+  border-top: 6px solid var(--d26-crimson);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.content-card h1 {
+  margin: 0 0 1rem;
+  color: var(--d26-crimson);
+  font-size: 2rem;
+}
+
+.content-card p {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.content-card a {
+  color: var(--d26-crimson);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.content-card a:hover {
+  text-decoration: underline;
+}
+
+/* Call-to-action button (e.g. abstract / poster upload links). */
+.btn-upload {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff !important;
+  background: var(--d26-crimson);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.btn-upload:hover {
+  background: var(--d26-crimson-deep);
+  text-decoration: none;
+}
+
+/* Article body for text-heavy pages: a left-aligned column with styled
+   headings, lists, links, and tables. Shared by any prose page. */
+.content-prose {
+  line-height: 1.6;
+}
+
+.content-prose h1 {
+  margin: 0 0 1.5rem;
+  color: var(--d26-crimson);
+  text-align: center;
+  font-size: 2rem;
+}
+
+.content-prose h2 {
+  margin: 2rem 0 0.8rem;
+  padding-bottom: 0.3rem;
+  color: var(--d26-crimson);
+  font-size: 1.3rem;
+  border-bottom: 2px solid var(--d26-rose-line);
+}
+
+.content-prose ul {
+  padding-left: 1.4rem;
+}
+
+.content-prose a {
+  color: var(--d26-crimson);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.content-prose a:hover {
+  text-decoration: underline;
+}
+
+/* Centered wrapper for a call-to-action button within prose. */
+.content-cta {
+  text-align: center;
+  margin: 1rem 0 1.5rem;
+}
+
+/* A simple bordered data table (e.g. registration rates, committee rosters).
+   table-layout: fixed gives every column an equal share of the width so the
+   columns align across separate tables on the same page. */
+.content-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin: 0.8rem 0 1rem;
+}
+
+.content-table th,
+.content-table td {
+  padding: 8px 12px;
+  border: 1px solid #e3e3e3;
+  text-align: left;
+  overflow-wrap: break-word;
+  background: #fff;
+}
+
+.content-table th {
+  background: var(--d26-rose);
+  font-weight: bold;
+}
+
+/* Agenda schedule tables: crimson header band with white text. */
+.content-table.agenda-table th {
+  background: var(--d26-crimson);
+  color: #fff;
+}
+
+/* A generic content card: a framed container with rounded corners and a soft
+   shadow. Content-agnostic — used for speakers, sessions, and the like. */
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  margin: 0 0 2rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  /* When jumped to via a #hash anchor, leave room so the card isn't tucked
+     under the fixed header. */
+  scroll-margin-top: 90px;
+}
+
+.card > :first-child {
+  margin-top: 0;
+}
+
+.card > :last-child {
+  margin-bottom: 0;
+}
+
+.card h3 {
+  margin: 0 0 0.6rem;
+  color: var(--d26-crimson-deep);
+  font-size: 1.3rem;
+}
+
+.card p {
+  margin: 0 0 0.6rem;
+  line-height: 1.6;
+}
+
+/* A responsive inline content image: scales to its container up to a sensible
+   cap, with a light frame. */
+.content-image {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Hotel booking cards: a responsive grid of identically-formatted cards, each
+   with a uniform-height photo on top and booking details below. */
+.hotel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.card.hotel-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+}
+
+.hotel-card-photo {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.hotel-card-photo-blank {
+  background: #ececec;
+}
+
+.hotel-card-body {
+  padding: 1rem 1.15rem 1.25rem;
+}
+
+.hotel-card-name {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  color: var(--d26-crimson-deep);
+}
+
+.hotel-card-rate {
+  margin: 0 0 0.5rem;
+}
+
+.hotel-card-book {
+  margin: 0 0 0.6rem;
+}
+
+.hotel-card-notes {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.92rem;
+  color: #555;
+}
+
+@media (max-width: 860px) {
+  .hotel-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .hotel-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Speaker layout inside a card: a fixed-width photo beside a text column.
+   Reused by any page that shows a person with a portrait. */
+.card.speaker {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.speaker-figure {
+  flex: 0 0 auto;
+}
+
+.speaker-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.speaker-photo-blank {
+  background: linear-gradient(135deg, var(--d26-rose) 0%, #fff 100%);
+}
+
+.speaker-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.speaker-body h3 {
+  margin: 0 0 0.5rem;
+  color: var(--d26-crimson-deep);
+  font-size: 1.3rem;
+}
+
+.speaker-body p {
+  margin: 0 0 0.6rem;
+  line-height: 1.6;
+}
+
+/* Multi-speaker session: stack several speakers vertically inside the figure
+   column. Each item is a photo with a small name + affiliation label beneath.
+   The card itself keeps the standard horizontal layout. */
+.speaker-figure-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.speaker-stack-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  width: 200px;
+}
+
+/* Constrain the text labels to the column width so long titles wrap instead
+   of overflowing. The 100% is relative to the 200px flex item. */
+.speaker-stack-role,
+.speaker-stack-name,
+.speaker-stack-affiliation {
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+.speaker-stack-role {
+  margin: 0;
+  font-size: 0.75rem;
+  font-style: italic;
+  color: var(--d26-crimson-deep);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.speaker-stack-name {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--d26-crimson-deep);
+  text-align: center;
+  line-height: 1.3;
+}
+
+.speaker-stack-affiliation {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #555;
+  text-align: center;
+  line-height: 1.35;
+}
+
+@media (max-width: 600px) {
+  .speaker-figure-stack {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .speaker-stack-item {
+    width: auto;
+    max-width: 240px;
+  }
+}
+
+/* A grid of vertical speaker cards: image on top, text beneath, 4 per row.
+   Used by the Invited Speakers page. Degrades to fewer columns as the
+   viewport narrows. */
+.speaker-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+/* Vertical card modifier: stack the figure above the body and center both,
+   overriding the default horizontal .card.speaker layout. */
+.card.speaker.speaker-vertical {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.speaker-vertical .speaker-figure {
+  width: 100%;
+}
+
+.speaker-vertical .speaker-photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+}
+
+@media (max-width: 980px) {
+  .speaker-grid-4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .speaker-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .speaker-grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .card.speaker {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .speaker-photo {
+    width: 100%;
+    max-width: 240px;
+  }
+
+  /* The blank placeholder is an empty div with no intrinsic size, so under the
+     column flex it can collapse instead of holding a box like the real photo.
+     Match the real photo's mobile sizing (width:100%, max 240px) and give it a
+     min-width floor + square aspect-ratio so it holds a box without growing
+     larger than the actual photos. */
+  .speaker-photo-blank {
+    min-width: 200px;
+    aspect-ratio: 1;
+    height: auto;
+  }
+}
+
+/* Sponsor cards reuse the invited-speaker vertical card (.speaker-vertical in
+   a .speaker-grid-4). The sponsorship level is a banner above each group of
+   cards rather than a per-card label. */
+.content-prose .sponsor-tier-banner {
+  margin: 2rem 0 1.25rem;
+  padding: 0.6rem 1rem;
+  background: var(--d26-crimson);
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: 0.05em;
+  border: 0;
+  border-radius: 6px;
+}
+
+/* Each tier is a centered wrapping row rather than a fixed 4-up grid, so a tier
+   with one or two sponsors sits in the middle of the page instead of hugging
+   the left edge. Card width is set per tier (--sponsor-card-width), which sizes
+   the logo with it: platinum largest, then gold, then silver. Cards shrink
+   (flex-shrink: 1) on narrow viewports but never exceed the tier width. */
+.sponsor-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.sponsor-grid > .card {
+  flex: 0 1 var(--sponsor-card-width);
+  max-width: var(--sponsor-card-width);
+  /* The row's gap handles spacing; drop the default card bottom margin. */
+  margin: 0;
+}
+
+.sponsor-grid-platinum {
+  --sponsor-card-width: 340px;
+}
+
+.sponsor-grid-gold {
+  --sponsor-card-width: 265px;
+}
+
+.sponsor-grid-silver {
+  --sponsor-card-width: 170px;
+}
+
+/* Sponsor logos are wide brand marks, so fit the whole logo inside the square
+   frame (contain, not cover) on a white ground with a little padding.
+   box-sizing keeps the padding + border inside the 100% width so the image
+   doesn't overflow its figure and end up off-center from the rest of the card. */
+.sponsor-logo {
+  object-fit: contain;
+  background: #fff;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+/* Optional short sponsor description shown below the name in the card. */
+.sponsor-bio {
+  margin: 0.4rem 0 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #555;
+  text-align: left;
+}
+
+/* Scientific Sessions card: the session info (title, schedule, abstract) sits
+   on top, with the speaker list stacked beneath it — one speaker per row. Each
+   row is a small photo on the left with the name/affiliation to its right.
+   The .card.session keeps the default block (non-flex) card layout so the body
+   and the speaker list stack vertically. */
+.session-body {
+  margin-bottom: 1.5rem;
+}
+
+.session-speakers {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.session-speaker-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.session-speaker-photo {
+  flex: 0 0 auto;
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.session-speaker-info {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.session-speaker-role {
+  margin: 0 0 0.2rem;
+  font-size: 0.75rem;
+  font-style: italic;
+  color: var(--d26-crimson-deep);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.session-speaker-name {
+  margin: 0 0 0.2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--d26-crimson-deep);
+  line-height: 1.3;
+}
+
+.session-speaker-affiliation {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.35;
+}
+
+.session-speaker-talk {
+  margin: 0.3rem 0 0;
+  font-size: 0.88rem;
+  font-style: italic;
+  color: #333;
+  line-height: 1.35;
+}
+
+/* ===========================================================================
+   Site header + navigation
+
+   A standard responsive navbar. Above --d26-nav-breakpoint the menu is a
+   horizontal row with hover fly-out submenus. Below it, the .nav-button
+   hamburger toggles the menu via the .nav-toggle checkbox — pure CSS, no JS.
+   =========================================================================== */
+.site-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  max-width: var(--d26-shell-width);
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 10px 18px;
+  background: var(--d26-crimson);
+}
+
+.site-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  flex: 0 0 auto;
+}
+
+.site-logo {
+  display: block;
+  height: 48px;
+  width: auto;
+}
+
+/* --- The nav itself ------------------------------------------------------- */
+.site-nav {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-menu,
+.nav-submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu a,
+.nav-menu .nav-parent {
+  display: flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 16px;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Parent items don't navigate, so the cursor stays the default arrow. */
+.nav-menu .nav-parent {
+  cursor: default;
+}
+
+.nav-menu .is-current > a,
+.nav-menu .is-current > .nav-parent,
+.nav-menu li:hover > a,
+.nav-menu li:hover > .nav-parent {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+/* Submenus: hidden, revealed on hover of their parent item. The second level
+   drops below; deeper levels fly out to the side. */
+.nav-submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: var(--d26-crimson);
+  box-shadow: 0 10px 22px rgba(70, 10, 19, 0.18);
+  z-index: 50;
+}
+
+.nav-submenu .nav-submenu {
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu li:hover > .nav-submenu {
+  display: block;
+}
+
+.nav-submenu a {
+  min-height: 0;
+  padding: 9px 16px;
+}
+
+/* The hamburger button and its checkbox: present in the markup but hidden
+   until the narrow-screen media query below switches them on. */
+.nav-toggle,
+.nav-button {
+  display: none;
+}
+
+.nav-button-bars,
+.nav-button-bars::before,
+.nav-button-bars::after {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.nav-button-bars {
+  position: relative;
+}
+
+.nav-button-bars::before {
+  position: absolute;
+  top: -8px;
+}
+
+.nav-button-bars::after {
+  position: absolute;
+  top: 8px;
+}
+
+/* ===========================================================================
+   Site footer
+   =========================================================================== */
+.footer-panel {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 24px;
+  padding: 20px 18px;
+  background: var(--d26-crimson);
+  color: #fff;
+  font-family: var(--d26-font-serif);
+}
+
+.shared-footer-shell {
+  width: 100%;
+  max-width: var(--d26-shell-width);
+  margin: 0 auto;
+}
+
+.footer-panel,
+.footer-panel * {
+  color: #fff;
+}
+
+.footer-panel .footer-column h3 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+}
+
+.footer-panel .footer-column p {
+  margin: 0 0 14px;
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.footer-panel .email-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.footer-panel .email-row a {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+.footer-panel .social-row {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-panel .social-link {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.footer-panel .linkedin-link {
+  background: #0a66c2;
+}
+
+.footer-panel .social-glyph {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+}
+
+.footer-panel .social-glyph-linkedin {
+  font-size: 0.88rem;
+  text-transform: lowercase;
+}
+
+/* ===========================================================================
+   Narrow screens: collapse the nav to a hamburger and the footer to one column
+   =========================================================================== */
+@media (max-width: 820px) {
+  .site-header {
+    flex-wrap: wrap;
+    padding: 8px 16px;
+    gap: 12px;
+  }
+
+  .site-logo {
+    height: 40px;
+  }
+
+  /* The menu now lives in a dropdown anchored to the header. */
+  .site-nav {
+    position: static;
+  }
+
+  .nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 48px;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--d26-crimson);
+    box-shadow: 0 10px 22px rgba(70, 10, 19, 0.22);
+    z-index: 50;
+  }
+
+  /* Checkbox toggles the menu open; keyboard focus rings the button. */
+  .nav-toggle:checked ~ .nav-menu {
+    display: flex;
+  }
+
+  .nav-toggle:focus-visible ~ .nav-button {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+  }
+
+  .nav-menu li {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+  }
+
+  /* Submenus stack inline (indented) instead of flying out. */
+  .nav-submenu,
+  .nav-submenu .nav-submenu {
+    position: static;
+    display: block;
+    min-width: 0;
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.12);
+  }
+
+  .nav-submenu a {
+    padding-left: 32px;
+  }
+
+  .nav-submenu .nav-submenu a {
+    padding-left: 48px;
+  }
+
+  .footer-panel {
+    grid-template-columns: 1fr;
+  }
+}
