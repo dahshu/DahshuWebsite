@@ -18,8 +18,7 @@ const PLATINUM_SPONSORS = [
   },
   { image: "bssc-cropped.png", name: "BSSC" },
   { image: "beone-cropped.png", name: "BeOne Medicines" },
-  // Logo not received yet — renders with the blank placeholder frame.
-  { name: "DIP" },
+  { image: "dip-cropped.png", name: "DIP" },
 ];
 
 const GOLD_SPONSORS = [
@@ -65,21 +64,21 @@ export function Sponsor() {
         <h1>Sponsors</h1>
 
         <h2 className="sponsor-tier-banner">Platinum Level</h2>
-        <div className="speaker-grid-4">
+        <div className="sponsor-grid sponsor-grid-platinum">
           {byName(PLATINUM_SPONSORS).map((s, i) => (
             <SponsorCard key={i} {...s} />
           ))}
         </div>
 
         <h2 className="sponsor-tier-banner">Gold Level</h2>
-        <div className="speaker-grid-4">
+        <div className="sponsor-grid sponsor-grid-gold">
           {byName(GOLD_SPONSORS).map((s, i) => (
             <SponsorCard key={i} {...s} />
           ))}
         </div>
 
         <h2 className="sponsor-tier-banner">Silver Level</h2>
-        <div className="speaker-grid-4">
+        <div className="sponsor-grid sponsor-grid-silver">
           {byName(SILVER_SPONSORS).map((s, i) => (
             <SponsorCard key={i} {...s} />
           ))}

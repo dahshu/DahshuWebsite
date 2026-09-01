@@ -436,6 +436,12 @@ body:has(> .page-shell) {
     max-width: 240px;
   }
 
+  /* Sponsor logos are sized by their tier's card width, not the 240px speaker
+     cap, so a platinum logo keeps filling its (larger) card on mobile. */
+  .sponsor-logo {
+    max-width: none;
+  }
+
   /* The blank placeholder is an empty div with no intrinsic size, so under the
      column flex it can collapse instead of holding a box like the real photo.
      Match the real photo's mobile sizing (width:100%, max 240px) and give it a
@@ -483,16 +489,31 @@ body:has(> .page-shell) {
   margin: 0;
 }
 
+/* Platinum breaks out past the shell on both sides so the top tier reads as
+   bigger than the page's own measure — the cards visibly cross the line the
+   other tiers align to. The bleed is clamped by the viewport: it is the smaller
+   of 60px and whatever room actually exists outside the shell, so it collapses
+   to 0 once the viewport is narrower than the shell and never adds horizontal
+   scroll. Cards are widened to match, so the extra room becomes bigger cards
+   rather than a wider gap; two still fit per row (2 x 460 + 24 = 944px, inside
+   the 1120px broken-out row) while a third would need 1428px. */
 .sponsor-grid-platinum {
-  --sponsor-card-width: 340px;
+  --platinum-bleed: min(
+    60px,
+    max(0px, (100vw - var(--d26-shell-width) - var(--d26-shell-gutter)) / 2)
+  );
+  --sponsor-card-width: 460px;
+
+  margin-left: calc(-1 * var(--platinum-bleed));
+  margin-right: calc(-1 * var(--platinum-bleed));
 }
 
 .sponsor-grid-gold {
-  --sponsor-card-width: 265px;
+  --sponsor-card-width: 240px;
 }
 
 .sponsor-grid-silver {
-  --sponsor-card-width: 170px;
+  --sponsor-card-width: 155px;
 }
 
 /* Sponsor logos are wide brand marks, so fit the whole logo inside the square
