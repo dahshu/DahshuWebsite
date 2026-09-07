@@ -34,7 +34,7 @@ export function Registration() {
           The registration fee is the same for both virtual and in-person
           attendance.{" "}
           <br />
-            Sponsors will receive a 25% off discount. Please contact an organizer or <strong>dahshuinfo@gmail.com</strong> to receive these discount codes.
+            Sponsors will receive a 25% off discount. Please contact an organizer or <strong>info@dahshu.org</strong> to receive these discount codes.
         </p>
         <table className="content-table">
           <thead>
@@ -84,7 +84,7 @@ export function Registration() {
         <p>
           If you are unable to attend, your registration may be transferred to
           another individual. To initiate a transfer, please email{" "}
-          <strong>dahshuinfo@gmail.com</strong>.
+          <strong>info@dahshu.org</strong>.
         </p>
 
         <h2>How to Register</h2>
@@ -104,7 +104,7 @@ export function Registration() {
 
         <h2>Contact</h2>
         <p>
-          For all registration questions: <strong>dahshuinfo@gmail.com</strong>
+          For all registration questions: <strong>info@dahshu.org</strong>
         </p>
       </article>
     </Page>

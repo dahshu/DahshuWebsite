@@ -7,6 +7,24 @@
 
 import React from "react";
 
+// Organization details shown in the footer on every page. DahShu's registered
+// details must appear on the official site, so they live in the shared footer
+// rather than on a single page.
+//
+// TODO: STREET_ADDRESS and CHARITY_ID are placeholders — replace with the exact
+// values submitted during registration. Leaving them as-is will not satisfy the
+// transparency requirement.
+const ORG = {
+  name: "DahShu",
+  email: "info@dahshu.org",
+  charityId: "47-4526572",
+  street: "21151 Canyon Oak Way",
+  city: "Cupertino",
+  state: "CA",
+  zip: "95014",
+  country: "USA",
+};
+
 export function Footer() {
   return (
     <div className="shared-footer-shell">
@@ -19,9 +37,33 @@ export function Footer() {
           </p>
           <div className="email-row">
             <span>Email</span>
-            <a href="mailto:dahshuinfo@gmail.com">DAHSHUINFO@GMAIL.COM</a>
+            <a href={"mailto:" + ORG.email}>{ORG.email.toUpperCase()}</a>
           </div>
         </div>
+
+        <div className="footer-column">
+          <h3>About DahShu</h3>
+          <p className="footer-mission">
+            DahShu is a 501(c)(3) non-profit organization founded to promote
+            research and education in data science. We serve a global community
+            of over 6,000 members through scientific symposia, a monthly virtual
+            journal club, and educational programs that advance knowledge
+            exchange across academia, industry, and healthcare.
+          </p>
+          <address className="footer-address">
+            <strong>{ORG.name}</strong>
+            <br />
+            {ORG.street}
+            <br />
+            {ORG.city}, {ORG.state} {ORG.zip}
+            <br />
+            {ORG.country}
+          </address>
+          <p className="footer-charity-id">
+            Charity ID (EIN): <strong>{ORG.charityId}</strong>
+          </p>
+        </div>
+
         <div className="footer-column">
           <h3>Our Social Networks</h3>
           <div className="social-row">
@@ -30,7 +72,7 @@ export function Footer() {
               href="https://www.linkedin.com/company/dahshu/"
               target="_blank"
               rel="noreferrer noopener"
-              aria-label="LinkedIn"
+              aria-label="DahShu on LinkedIn"
             >
               <span className="social-glyph social-glyph-linkedin" aria-hidden="true">
                 in
