@@ -95,14 +95,20 @@ const SESSIONS = [
     schedule: "Thursday, October 22, 2026, 2:50 pm - 4:30 pm",
     speakers: [
       {
-        name: "To Be Announced",
-        affiliation: "",
+        name: "Yihua Gu",
+        affiliation: "Vice President of Biostatistics, AbbVie",
+        photo: null,
+        role: "Speaker",
+      },
+      {
+        name: "Michael Kessler",
+        affiliation: "Director of Statistical Genetics, Regeneron",
         photo: null,
         role: "Speaker",
       },
       {
         name: "Dr. Sara Hamon",
-        affiliation: "Senior Director, Precision Medicine-Quantitative Translational Sciences, Regeneron",
+        affiliation: "Executive Director, Precision Medicine, Regeneron",
         photo: "sara-hamon.jpg",
         role: "Session Organizer",
       },
@@ -242,7 +248,7 @@ const SESSIONS = [
       },
       {
         name: "Dr. Alex Sverdlov",
-        affiliation: "Senior Director, Statistical Scientist, Novartis",
+        affiliation: "Executive Director, Biostatistics, Alnylam Pharmaceuticals",
         photo: "alex-sverdlov.jpg",
         role: "Speaker",
       },

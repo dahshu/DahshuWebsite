@@ -125,7 +125,7 @@ const SPEAKERS = [
   {
     id: "alex-sverdlov",
     name: "Dr. Alex Sverdlov",
-    affiliation: "Senior Director, Statistical Scientist, Novartis",
+    affiliation: "Executive Director, Biostatistics, Alnylam Pharmaceuticals",
     session: "Session 7",
     photo: "alex-sverdlov.jpg",
   },
