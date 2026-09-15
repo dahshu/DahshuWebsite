@@ -77,6 +77,18 @@ const SESSIONS = [
         role: "Speaker",
       },
       {
+        name: "Dr. Yuan Huang",
+        affiliation: "Assistant Professor of Biostatistics, Yale School of Public Health",
+        photo: null,
+        role: "Speaker",
+      },
+      {
+        name: "Dr. Yong Chen",
+        affiliation: "Professor of Biostatistics and Informatics, University of Pennsylvania",
+        photo: "yong-chen.jpg",
+        role: "Speaker",
+      },
+      {
         name: "Dr. Runze Li",
         affiliation: "Eberly Family Chair in Statistics, Pennsylvania State University",
         photo: "runze-li.jpg",

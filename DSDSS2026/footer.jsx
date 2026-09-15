@@ -9,14 +9,11 @@ import React from "react";
 
 // Organization details shown in the footer on every page. DahShu's registered
 // details must appear on the official site, so they live in the shared footer
-// rather than on a single page.
-//
-// TODO: STREET_ADDRESS and CHARITY_ID are placeholders — replace with the exact
-// values submitted during registration. Leaving them as-is will not satisfy the
-// transparency requirement.
+// rather than on a single page. These values must match the ones submitted
+// during registration.
 const ORG = {
   name: "DahShu",
-  email: "info@dahshu.org",
+  email: "dahshuinfo@gmail.com",
   charityId: "47-4526572",
   street: "21151 Canyon Oak Way",
   city: "Cupertino",
