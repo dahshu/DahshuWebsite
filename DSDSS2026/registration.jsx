@@ -57,7 +57,7 @@ export function Registration() {
             </tr>
             <tr>
               <td>Trainees (Students or Postdocs)</td>
-              <td>$100</td>
+              <td>$79</td>
               <td>$100</td>
             </tr>
           </tbody>
