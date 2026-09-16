@@ -79,7 +79,7 @@ const SESSIONS = [
       {
         name: "Dr. Yuan Huang",
         affiliation: "Assistant Professor of Biostatistics, Yale School of Public Health",
-        photo: null,
+        photo: "yuan-huang.jpg",
         role: "Speaker",
       },
       {
