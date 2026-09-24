@@ -47,6 +47,13 @@ const SESSIONS = [
         talk: "Real World Application",
       },
       {
+        name: "Dr. Ying Li",
+        affiliation: "Director, Real World Evidence, Regeneron",
+        photo: "ying-li.jpg",
+        role: "Speaker",
+        talk: "Unlocking the Power of Machine Learning and Real-World Data for Clinical Development",
+      },
+      {
         name: "Dr. Jane Zhang",
         affiliation: "Head of Immunology Statistics, AbbVie",
         photo: "jane-zhang.jpg",
@@ -57,6 +64,7 @@ const SESSIONS = [
       "As the volume of Real-World Data (RWD) expands, the pharmaceutical industry faces a critical bottleneck: transforming unstructured data into rigorous, actionable clinical evidence.",
       "This session explores the end-to-end architecture required to achieve this, bridging cutting-edge causal inference methodology with modern data infrastructure and pharmaceutical execution.",
       "Attendees will gain a comprehensive understanding of how advanced statistical frameworks - specifically Targeted Learning and Target Trial Emulation - are moving beyond academic theory to directly impact clinical differentiation and improve the Probability of Success (PoS) in drug development.",
+      "The session also shows how machine learning turns real-world data into actionable evidence through patient-level risk prediction, subgroup discovery of disease subphenotypes, and causal inference into which patients benefit most from a given therapy, with case studies drawn from oncology and rare diseases.",
     ],
   },
   {
@@ -109,13 +117,13 @@ const SESSIONS = [
       {
         name: "Yihua Gu",
         affiliation: "Vice President of Biostatistics, AbbVie",
-        photo: null,
+        photo: "yihua-gu.jpg",
         role: "Speaker",
       },
       {
         name: "Michael Kessler",
         affiliation: "Director of Statistical Genetics, Regeneron",
-        photo: null,
+        photo: "michael-kessler.jpg",
         role: "Speaker",
       },
       {
