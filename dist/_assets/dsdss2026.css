@@ -516,6 +516,30 @@ body:has(> .page-shell) {
   --sponsor-card-width: 155px;
 }
 
+/* Partner non-profits sit below the paid tiers. Sized between gold and silver
+   so the row reads as its own group rather than a continuation of silver. */
+.sponsor-grid-nonprofit {
+  --sponsor-card-width: 200px;
+}
+
+/* Alliance cards link out to the partner's site; keep the card's own look
+   rather than the page's default link colour/underline. */
+.sponsor-link {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.sponsor-link:hover .sponsor-logo,
+.sponsor-link:focus-visible .sponsor-logo {
+  opacity: 0.85;
+}
+
+.sponsor-link:hover,
+.sponsor-link:focus-visible {
+  text-decoration: underline;
+}
+
 /* Sponsor logos are wide brand marks, so fit the whole logo inside the square
    frame (contain, not cover) on a white ground with a little padding.
    box-sizing keeps the padding + border inside the 100% width so the image

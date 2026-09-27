@@ -7,24 +7,35 @@
 //   <SponsorCard image="acme.png" name="Acme" bio="Short description." />
 //
 // image is a filename under _assets/sponsors/, or null/omitted for a blank
-// placeholder frame. bio is optional.
+// placeholder frame. bio is optional. url is optional — when given, the logo
+// and name link out to the organization's site.
 
 import React from "react";
 import { Card } from "./card.jsx";
 
-export function SponsorCard({ image, name, bio }) {
+export function SponsorCard({ image, name, bio, url }) {
   const imageDir = "_assets/sponsors/";
+  const figure = image ? (
+    <img className="speaker-photo sponsor-logo" src={imageDir + image} alt={name} />
+  ) : (
+    <div className="speaker-photo speaker-photo-blank" aria-hidden="true" />
+  );
+  // Wrap the logo + name in a link only when a url is supplied, so untouched
+  // sponsor entries render exactly as before.
+  const link = (children) =>
+    url ? (
+      <a className="sponsor-link" href={url} target="_blank" rel="noopener noreferrer">
+        {children}
+      </a>
+    ) : (
+      children
+    );
+
   return (
     <Card className="speaker speaker-vertical">
-      <div className="speaker-figure">
-        {image ? (
-          <img className="speaker-photo sponsor-logo" src={imageDir + image} alt={name} />
-        ) : (
-          <div className="speaker-photo speaker-photo-blank" aria-hidden="true" />
-        )}
-      </div>
+      <div className="speaker-figure">{link(figure)}</div>
       <div className="speaker-body">
-        <h3>{name}</h3>
+        <h3>{link(name)}</h3>
         {bio && <p className="sponsor-bio">{bio}</p>}
       </div>
     </Card>

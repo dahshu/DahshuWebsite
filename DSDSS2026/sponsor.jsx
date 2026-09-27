@@ -53,6 +53,31 @@ const SILVER_SPONSORS = [
   },
 ];
 
+// Partner non-profit organizations, shown below the paid tiers. Each links out
+// to the organization's own site.
+const NONPROFIT_ALLIANCE = [
+  {
+    image: "bbsw-cropped.png",
+    name: "BBSW",
+    url: "https://www.bbsw.org/",
+  },
+  {
+    image: "asa-boston-cropped.png",
+    name: "ASA Boston Chapter",
+    url: "https://community.amstat.org/bostonchapter/home",
+  },
+  {
+    image: "ness-cropped.png",
+    name: "NESS",
+    url: "https://nestat.org/",
+  },
+  {
+    image: "sfasa-cropped.png",
+    name: "SFASA",
+    url: "https://sites.google.com/view/sfasa-org/home",
+  },
+];
+
 // Sort a tier's sponsors alphabetically by name (case-insensitive) so each
 // tier always renders A→Z regardless of array order.
 const byName = (list) => [...list].sort((a, b) => a.name.localeCompare(b.name));
@@ -80,6 +105,13 @@ export function Sponsor() {
         <h2 className="sponsor-tier-banner">Silver Level</h2>
         <div className="sponsor-grid sponsor-grid-silver">
           {byName(SILVER_SPONSORS).map((s, i) => (
+            <SponsorCard key={i} {...s} />
+          ))}
+        </div>
+
+        <h2 className="sponsor-tier-banner">Non-Profit Alliance</h2>
+        <div className="sponsor-grid sponsor-grid-nonprofit">
+          {byName(NONPROFIT_ALLIANCE).map((s, i) => (
             <SponsorCard key={i} {...s} />
           ))}
         </div>
