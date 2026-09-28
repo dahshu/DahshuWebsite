@@ -524,19 +524,19 @@ body:has(> .page-shell) {
 
 /* Alliance cards link out to the partner's site; keep the card's own look
    rather than the page's default link colour/underline. */
-.sponsor-link {
+.partner-link {
   color: inherit;
   text-decoration: none;
   display: block;
 }
 
-.sponsor-link:hover .sponsor-logo,
-.sponsor-link:focus-visible .sponsor-logo {
+.partner-link:hover .sponsor-logo,
+.partner-link:focus-visible .sponsor-logo {
   opacity: 0.85;
 }
 
-.sponsor-link:hover,
-.sponsor-link:focus-visible {
+.partner-link:hover,
+.partner-link:focus-visible {
   text-decoration: underline;
 }
 

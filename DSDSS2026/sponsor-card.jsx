@@ -24,7 +24,7 @@ export function SponsorCard({ image, name, bio, url }) {
   // sponsor entries render exactly as before.
   const link = (children) =>
     url ? (
-      <a className="sponsor-link" href={url} target="_blank" rel="noopener noreferrer">
+      <a className="partner-link" href={url} target="_blank" rel="noopener noreferrer">
         {children}
       </a>
     ) : (
