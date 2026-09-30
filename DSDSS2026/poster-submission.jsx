@@ -30,6 +30,12 @@ export function PosterSubmission() {
           can be at most 36 inches tall and 48 inches wide.
         </p>
         <p>
+          Posters will be on display throughout the day, giving attendees ample
+          opportunity to browse the work and speak with presenters between
+          sessions. Voting for the poster awards will take place during the
+          reception, and the winners will be announced once voting has closed.
+        </p>
+        <p>
           <strong>
             The presenting author must register the conference and present
             in-person.
