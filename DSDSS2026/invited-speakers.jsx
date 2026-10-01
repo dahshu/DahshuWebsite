@@ -39,6 +39,13 @@ const SPEAKERS = [
     photo: "xiang-zhang.jpg",
   },
   {
+    id: "ying-li",
+    name: "Dr. Ying Li",
+    affiliation: "Director, Real World Evidence, Regeneron",
+    session: "Session 1",
+    photo: "ying-li.jpg",
+  },
+  {
     id: "ye-tian",
     name: "Dr. Ye Tian",
     affiliation: "Pennsylvania State University",
@@ -53,11 +60,46 @@ const SPEAKERS = [
     photo: "mengyan-li.jpg",
   },
   {
+    id: "yuan-huang",
+    name: "Dr. Yuan Huang",
+    affiliation: "Assistant Professor of Biostatistics, Yale School of Public Health",
+    session: "Session 2",
+    photo: "yuan-huang.jpg",
+  },
+  {
+    id: "yong-chen",
+    name: "Dr. Yong Chen",
+    affiliation: "Professor of Biostatistics and Informatics, University of Pennsylvania",
+    session: "Session 2",
+    photo: "yong-chen.jpg",
+  },
+  {
+    id: "yihua-gu",
+    name: "Yihua Gu",
+    affiliation: "Vice President of Biostatistics, AbbVie",
+    session: "Session 3",
+    photo: "yihua-gu.jpg",
+  },
+  {
+    id: "michael-kessler",
+    name: "Michael Kessler",
+    affiliation: "Director of Statistical Genetics, Regeneron",
+    session: "Session 3",
+    photo: "michael-kessler.jpg",
+  },
+  {
     id: "rolando-acosta",
     name: "Dr. Rolando J. Acosta",
     affiliation: "Manager, Biostatistics, Regeneron",
     session: "Session 4",
     photo: "rolando-acosta.jpg",
+  },
+  {
+    id: "erick-scott",
+    name: "Dr. Erick Scott",
+    affiliation: "VP, Clinical Data Science, Keiji AI",
+    session: "Session 4",
+    photo: "erick-scott.jpg",
   },
   {
     id: "yi-lin-chiu",
@@ -89,11 +131,41 @@ const SPEAKERS = [
     photo: "marta-karas.jpg",
   },
   {
+    id: "jaroslaw-harezlak",
+    name: "Dr. Jaroslaw Harezlak",
+    affiliation:
+      "Chair, Department of Epidemiology and Biostatistics, Indiana University School of Public Health-Bloomington",
+    session: "Session 5",
+    role: "Session 5 Moderator",
+    photo: "jaroslaw-harezlak.jpg",
+  },
+  {
     id: "jacob-bien",
     name: "Dr. Jacob Bien",
     affiliation: "Professor of Data Sciences and Operations, USC Marshall School of Business",
     session: "Session 6",
     photo: "jacob-bien.jpg",
+  },
+  {
+    id: "rong-ma",
+    name: "Dr. Rong Ma",
+    affiliation: "Assistant Professor of Biostatistics, Harvard T.H. Chan School of Public Health",
+    session: "Session 6",
+    photo: "rong-ma.jpg",
+  },
+  {
+    id: "ying-jin",
+    name: "Dr. Ying Jin",
+    affiliation: "Assistant Professor, Statistics and Data Science, The Wharton School, University of Pennsylvania",
+    session: "Session 6",
+    photo: "ying-jin.jpg",
+  },
+  {
+    id: "haiyan-huang",
+    name: "Dr. Haiyan Huang",
+    affiliation: "Professor of Statistics, University of California, Berkeley",
+    session: "Session 6",
+    photo: "haiyan-huang.jpg",
   },
   {
     id: "fahimeh-mamashli",
@@ -138,13 +210,13 @@ const SPEAKERS = [
     photo: "ming-hui-chen.jpg",
   },
   {
-    id: "wanxue-zou",
-    name: "Dr. Wanxue Zou",
-    affiliation: "Regeneron",
+    id: "lei-nie",
+    name: "Dr. Lei Nie",
+    affiliation: "Division of Biometrics IV, Office of Biostatistics, OTS, CDER, FDA",
     session: "Session 8",
-    photo: "wanxue-zou.png",
+    role: "Session 8 Discussant",
+    photo: "lei-nie.jpg",
   },
-
 ];
 
 export function InvitedSpeakers() {
