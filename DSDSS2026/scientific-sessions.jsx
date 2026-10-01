@@ -191,7 +191,7 @@ const SESSIONS = [
         name: "Dr. Jacek K. Urbanek",
         affiliation: "Director, Biostatistics, Regeneron",
         photo: "jacek-urbanek.jpg",
-        role: "Speaker",
+        role: "Speaker and Session Organizer",
       },
       {
         name: "Dr. Marta Karas",

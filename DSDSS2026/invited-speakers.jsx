@@ -3,7 +3,8 @@
 //
 // Edit the SPEAKERS array below. Each speaker: id (anchor), name, affiliation,
 // session, and photo (filename under _assets/scientific-session-speakers/, or
-// null for a blank placeholder). Invited speakers get no bio — the card shows
+// null for a blank placeholder), plus an optional role (e.g., "Session 5
+// Organizer") shown under the session link. Invited speakers get no bio — the card shows
 // the affiliation and a link to the session.
 
 import React from "react";
@@ -52,26 +53,11 @@ const SPEAKERS = [
     photo: "mengyan-li.jpg",
   },
   {
-    id: "session-3-tba",
-    name: "To Be Announced",
-    affiliation: "",
-    session: "Session 3",
-    photo: null,
-  },
-  {
     id: "rolando-acosta",
     name: "Dr. Rolando J. Acosta",
     affiliation: "Manager, Biostatistics, Regeneron",
     session: "Session 4",
     photo: "rolando-acosta.jpg",
-  },
-  {
-    id: "jimeng-sun",
-    name: "Dr. Jimeng Sun",
-    affiliation:
-      "Health Innovation Professor, Siebel School of Computing and Data Science and Carle Illinois College of Medicine, University of Illinois Urbana-Champaign; Cofounder, Keiji AI",
-    session: "Session 4",
-    photo: "jimeng-sun.png",
   },
   {
     id: "yi-lin-chiu",
@@ -92,6 +78,7 @@ const SPEAKERS = [
     name: "Dr. Jacek K. Urbanek",
     affiliation: "Director, Biostatistics, Regeneron",
     session: "Session 5",
+    role: "Session 5 Organizer",
     photo: "jacek-urbanek.jpg",
   },
   {
@@ -107,13 +94,6 @@ const SPEAKERS = [
     affiliation: "Professor of Data Sciences and Operations, USC Marshall School of Business",
     session: "Session 6",
     photo: "jacob-bien.jpg",
-  },
-  {
-    id: "session-6-tba",
-    name: "To Be Announced",
-    affiliation: "",
-    session: "Session 6",
-    photo: null,
   },
   {
     id: "fahimeh-mamashli",
@@ -197,6 +177,7 @@ export function InvitedSpeakers() {
                     {s.session}
                   </a>
                 </p>
+                {s.role && <p>{s.role}</p>}
               </div>
             </Card>
           ))}
