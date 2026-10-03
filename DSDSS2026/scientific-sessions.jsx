@@ -293,7 +293,7 @@ const SESSIONS = [
   },
   {
     number: 8,
-    title: "Recent Advancement on Bayesian Methodology in Clinical Trials for Drugs and Biologics",
+    title: "Bayesian Methods and Strategies for Borrowing Information in Pediatric Randomized Clinical Trials",
     schedule: "Friday, October 23, 2026, 3:00 pm - 4:30 pm",
     speakers: [
       {
