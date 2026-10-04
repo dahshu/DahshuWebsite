@@ -74,7 +74,7 @@ const DAYS = [
       ["2:45 pm - 3:00 pm", "Break"],
       [
         "3:00 pm - 4:30 pm",
-        "Session 8: Bayesian Methods and Strategies for Borrowing Information in Pediatric Randomized Clinical Trials",
+        "Session 8: Recent Advancement on Bayesian Methodology in Clinical Trials for Drugs and Biologics",
         "scientific-sessions.html#session8",
       ],
       ["4:30 pm - 5:00 pm", "Closing Remarks"],

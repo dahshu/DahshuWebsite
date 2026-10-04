@@ -293,7 +293,7 @@ const SESSIONS = [
   },
   {
     number: 8,
-    title: "Bayesian Methods and Strategies for Borrowing Information in Pediatric Randomized Clinical Trials",
+    title: "Recent Advancement on Bayesian Methodology in Clinical Trials for Drugs and Biologics",
     schedule: "Friday, October 23, 2026, 3:00 pm - 4:30 pm",
     speakers: [
       {
@@ -315,7 +315,7 @@ const SESSIONS = [
         affiliation: "Board of Trustees Distinguished Professor of Statistics, University of Connecticut",
         photo: "ming-hui-chen.jpg",
         role: "Speaker",
-        talk: "Statistical Methods for Borrowing Information in Pediatric Clinical Trials: A Comparative Review",
+        talk: "Bayesian Methods and Strategies for Borrowing Information in Pediatric Randomized Clinical Trials",
       },
       {
         name: "Dr. Lei Nie",
