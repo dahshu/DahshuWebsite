@@ -191,7 +191,7 @@ const SESSIONS = [
         name: "Dr. Jacek K. Urbanek",
         affiliation: "Director, Biostatistics, Regeneron",
         photo: "jacek-urbanek.jpg",
-        role: "Speaker",
+        role: "Speaker and Session Organizer",
       },
       {
         name: "Dr. Marta Karas",
@@ -315,7 +315,7 @@ const SESSIONS = [
         affiliation: "Board of Trustees Distinguished Professor of Statistics, University of Connecticut",
         photo: "ming-hui-chen.jpg",
         role: "Speaker",
-        talk: "Statistical Methods for Borrowing Information in Pediatric Clinical Trials: A Comparative Review",
+        talk: "Bayesian Methods and Strategies for Borrowing Information in Pediatric Randomized Clinical Trials",
       },
       {
         name: "Dr. Lei Nie",
