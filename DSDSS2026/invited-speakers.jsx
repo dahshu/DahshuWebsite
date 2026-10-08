@@ -20,14 +20,14 @@ const SPEAKERS = [
   {
     id: "susan-gruber",
     name: "Dr. Susan Gruber",
-    affiliation: "TL Revolution LLC",
+    affiliation: "Targeted ML Solutions",
     session: "Session 1",
     photo: "susan-gruber.jpg",
   },
   {
     id: "miguel-hernan",
     name: "Dr. Miguel Hernán",
-    affiliation: "Harvard University",
+    affiliation: "Kolokotrones Professor of Biostatistics and Epidemiology, Harvard T.H. Chan School of Public Health",
     session: "Session 1",
     photo: "miguel-hernan.png",
   },
@@ -48,14 +48,14 @@ const SPEAKERS = [
   {
     id: "ye-tian",
     name: "Dr. Ye Tian",
-    affiliation: "Pennsylvania State University",
+    affiliation: "Assistant Professor of Statistics, Pennsylvania State University",
     session: "Session 2",
     photo: "ye-tian.jpg",
   },
   {
     id: "mengyan-li",
     name: "Dr. Mengyan Li",
-    affiliation: "Bentley University",
+    affiliation: "Assistant Professor of Mathematical Sciences, Bentley University",
     session: "Session 2",
     photo: "mengyan-li.jpg",
   },
@@ -86,6 +86,13 @@ const SPEAKERS = [
     affiliation: "Director of Statistical Genetics, Regeneron",
     session: "Session 3",
     photo: "michael-kessler.jpg",
+  },
+  {
+    id: "wei-keat-lim",
+    name: "Dr. Wei Keat Lim",
+    affiliation: "Genomic Data Scientist, Regeneron",
+    session: "Session 3",
+    photo: "wei-keat-lim.jpg",
   },
   {
     id: "rolando-acosta",
@@ -198,7 +205,7 @@ const SPEAKERS = [
   {
     id: "chenguang-wang",
     name: "Dr. Chenguang Wang",
-    affiliation: "Regeneron",
+    affiliation: "Executive Director, Head of Quantitative Innovation and Statistical Strategy, Regeneron",
     session: "Session 8",
     photo: "chenguang-wang.jpg",
   },

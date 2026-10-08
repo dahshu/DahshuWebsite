@@ -1,8 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm run *)",
-      "WebFetch(domain:community.amstat.org)"
+      "Bash(python3 *)"
     ]
   }
 }

@@ -27,14 +27,14 @@ const SESSIONS = [
     speakers: [
       {
         name: "Dr. Susan Gruber",
-        affiliation: "TL Revolution LLC",
+        affiliation: "Targeted ML Solutions",
         photo: "susan-gruber.jpg",
         role: "Speaker",
         talk: "Targeted Maximum Likelihood Estimation (TMLE)",
       },
       {
         name: "Dr. Miguel Hernán",
-        affiliation: "Harvard University",
+        affiliation: "Kolokotrones Professor of Biostatistics and Epidemiology, Harvard T.H. Chan School of Public Health",
         photo: "miguel-hernan.png",
         role: "Speaker",
         talk: "Target Trial Emulation",
@@ -74,13 +74,13 @@ const SESSIONS = [
     speakers: [
       {
         name: "Dr. Ye Tian",
-        affiliation: "Pennsylvania State University",
+        affiliation: "Assistant Professor of Statistics, Pennsylvania State University",
         photo: "ye-tian.jpg",
         role: "Speaker",
       },
       {
         name: "Dr. Mengyan Li",
-        affiliation: "Bentley University",
+        affiliation: "Assistant Professor of Mathematical Sciences, Bentley University",
         photo: "mengyan-li.jpg",
         role: "Speaker",
       },
@@ -124,6 +124,12 @@ const SESSIONS = [
         name: "Michael Kessler",
         affiliation: "Director of Statistical Genetics, Regeneron",
         photo: "michael-kessler.jpg",
+        role: "Speaker",
+      },
+      {
+        name: "Dr. Wei Keat Lim",
+        affiliation: "Genomic Data Scientist, Regeneron",
+        photo: "wei-keat-lim.jpg",
         role: "Speaker",
       },
       {
@@ -305,7 +311,7 @@ const SESSIONS = [
       },
       {
         name: "Dr. Chenguang Wang",
-        affiliation: "Regeneron",
+        affiliation: "Executive Director, Head of Quantitative Innovation and Statistical Strategy, Regeneron",
         photo: "chenguang-wang.jpg",
         role: "Speaker",
         talk: "Bridging Bayesian Trial Design from FDA Guidance to Practice",
@@ -325,7 +331,7 @@ const SESSIONS = [
       },
       {
         name: "Dr. Wanxue Zou",
-        affiliation: "Regeneron",
+        affiliation: "Senior Manager, Biostatistics, Regeneron",
         photo: "wanxue-zou.png",
         role: "Session Chair",
       },
