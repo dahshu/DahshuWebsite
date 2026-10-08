@@ -35,7 +35,7 @@ const DAYS = [
         ],
       },
       {
-        heading: "Evening (6:40 PM – 9:00 PM)",
+        heading: "Evening (5:40 PM – 7:00 PM)",
         items: ["Mixer"],
       },
     ],

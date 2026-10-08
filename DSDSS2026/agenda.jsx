@@ -45,7 +45,7 @@ const DAYS = [
         "Session 4: Real-World Impact of Artificial Intelligence in Medicine",
         "scientific-sessions.html#session4",
       ],
-      ["6:40 pm - 9:00 pm", "Mixer", "mixer.html"],
+      ["5:40 pm - 7:00 pm", "Mixer", "mixer.html"],
     ],
   },
   {

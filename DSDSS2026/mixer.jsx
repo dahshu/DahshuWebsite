@@ -15,7 +15,7 @@ export function Mixer() {
       <article className="content-card">
         <h1>Mixer</h1>
         <p>
-          <strong>Schedule:</strong> Thursday, October 22, 2026, 6:40 pm - 9:00 pm
+          <strong>Schedule:</strong> Thursday, October 22, 2026, 5:40 pm - 7:00 pm
         </p>
       </article>
     </Page>
