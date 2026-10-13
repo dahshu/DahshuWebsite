@@ -16,6 +16,11 @@ const PLATINUM_SPONSORS = [
     name: "CareDx",
     bio: "CareDx creates life-changing solutions that enable patients to thrive. Its integrated approach to precision medicine combines advanced diagnostics, streamlined workflows, and patient support to inform clinical decisions and improve patient outcomes.",
   },
+  {
+    image: "biomarin-cropped.png",
+    name: "BioMarin",
+    bio: "BioMarin is a leading global rare disease biotechnology company focused on delivering medicines for people living with genetically defined conditions. Founded in 1997, it has a proven track record of innovation, with nine commercial therapies and a strong clinical and preclinical pipeline.",
+  },
   { image: "bssc-cropped.png", name: "BSSC" },
   { image: "beone-cropped.png", name: "BeOne Medicines" },
   { image: "dip-cropped.png", name: "DIP" },
@@ -30,6 +35,11 @@ const GOLD_SPONSORS = [
 ];
 
 const SILVER_SPONSORS = [
+  {
+    image: "cytel-cropped.png",
+    name: "Cytel",
+    bio: "Cytel brings together statistics, data science, programming, and innovative trial design software to accelerate drug development, reduce risk, and maximize the value of evidence. Its pioneering data science and analytical methods help life science leaders shorten the development cycle and raise the probability of success for better patient outcomes.",
+  },
   {
     image: "astellas-cropped.jpg",
     name: "Astellas",
