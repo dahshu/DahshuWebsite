@@ -67,6 +67,11 @@ const NONPROFIT_ALLIANCE = [
     url: "https://community.amstat.org/bostonchapter/home",
   },
   {
+    image: "cba-ne-cropped.png",
+    name: "CBA New England",
+    url: "https://www.cba-ne.org/",
+  },
+  {
     image: "ness-cropped.png",
     name: "NESS",
     url: "https://nestat.org/",
