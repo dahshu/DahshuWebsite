@@ -627,6 +627,86 @@ body:has(> .page-shell) {
   line-height: 1.35;
 }
 
+/* "View abstract" opens the speaker's abstract in a modal, keeping the long
+   text out of the session card. Styled as a quiet inline link rather than a
+   button so it doesn't compete with the page's real call-to-action buttons. */
+.abstract-toggle {
+  margin: 0.35rem 0 0;
+  padding: 0;
+  background: none;
+  border: 0;
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: bold;
+  color: var(--d26-crimson);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.abstract-toggle:hover,
+.abstract-toggle:focus-visible {
+  text-decoration: underline;
+}
+
+/* The modal itself. The native <dialog> gives us Esc-to-close and a backdrop;
+   these rules only handle sizing, scrolling, and type. */
+.abstract-dialog {
+  width: min(680px, calc(100vw - 2rem));
+  max-height: min(80vh, 760px);
+  padding: 0;
+  border: 0;
+  border-top: 6px solid var(--d26-crimson);
+  border-radius: 8px;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+  color: var(--d26-ink);
+  font-family: var(--d26-font-serif);
+  overflow: auto;
+}
+
+.abstract-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.abstract-dialog-inner {
+  padding: 1.6rem 1.75rem 1.5rem;
+}
+
+.abstract-dialog-speaker {
+  margin: 0 0 0.2rem;
+  color: var(--d26-crimson-deep);
+  font-size: 1.15rem;
+}
+
+.abstract-dialog-talk {
+  margin: 0 0 1rem;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.abstract-dialog-inner p {
+  margin: 0 0 0.9rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.abstract-close {
+  margin-top: 0.4rem;
+  padding: 0.5rem 1.1rem;
+  background: var(--d26-crimson);
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.abstract-close:hover {
+  background: var(--d26-crimson-deep);
+}
+
 /* ===========================================================================
    Site header + navigation
 

@@ -30,14 +30,16 @@ const SESSIONS = [
         affiliation: "Targeted ML Solutions",
         photo: "susan-gruber.jpg",
         role: "Speaker",
-        talk: "Targeted Maximum Likelihood Estimation (TMLE)",
+        talk: "Targeted Learning for generating real-world evidence",
+        abstract: "Practical challenges make it difficult to generate reliable evidence from real-world data (RWD). Enrollment difficulties, smaller than expected effect sizes, lack of baseline randomization, treatment non-compliance, and informative loss to follow-up can bias causal effect estimates. Targeted Learning provides a rigorous framework for addressing these challenges. The key methodology for data analysis is targeted maximum likelihood estimation (TMLE) combined with super learning (SL), a powerful machine learning approach. The Targeted Learning Causal Estimation Roadmap guides the journey from scientific question to study finding and interpretation.\n\nTMLE is a maximally efficient double robust estimator that relies on fewer assumptions than propensity score-based methods that are often used to analyze health care data. Unlike most machine learning approaches used in isolation, TMLE+SL provides accurate control of the Type-I error rate, and good confidence interval coverage. A case study illustrates performance when analyzing data from a pragmatic trial with an unexpected 25% loss to follow-up.",
       },
       {
         name: "Dr. Miguel Hernán",
         affiliation: "Kolokotrones Professor of Biostatistics and Epidemiology, Harvard T.H. Chan School of Public Health",
         photo: "miguel-hernan.png",
         role: "Speaker",
-        talk: "Target Trial Emulation",
+        talk: "Target trial emulation: making causal inference less casual",
+        abstract: "When randomized trials are not available, causal effects are often estimated using observational healthcare databases. Therefore, causal inference from observational data can be viewed as an attempt to emulate a hypothetical randomized trial—the target trial—that would quantify the causal effect of interest. Contrary to what is generally believed, many well-known failures of observational studies were not the result of lack of randomization but of not adequately emulating the design of a target trial. This talk discusses how the target trial framework helps articulate precise causal questions, increases transparency in the procedures used to generate the answers, and prevents design biases when using observational data.",
       },
       {
         name: "Dr. Xiang Zhang",
@@ -77,18 +79,24 @@ const SESSIONS = [
         affiliation: "Assistant Professor of Statistics, Pennsylvania State University",
         photo: "ye-tian.jpg",
         role: "Speaker",
+        talk: "Understanding Cross-Population PRS Prediction: Transfer Learning with Sparse and Correlated Structures",
+        abstract: "Cross-population polygenic risk score (PRS) prediction has recently received substantial attention for their potential to improve prediction across diverse populations, particularly when leveraging a large population dataset to improve prediction in a smaller population. Many new cross-population PRS methods are proposed each year, yet the theoretical understanding of this problem and these methods remains very limited. In this paper, we study this problem through a high-dimensional sparse linear regression framework, in which each population has both population-specific independent signals and shared signals that are correlated through genetic correlation. Our theory characterizes how optimal estimation and prediction performance is governed by genetic correlation, sample sizes, signal variances, and noise variances. We show that the Bayes posterior mean with plugged-in prior estimates and hierarchical Bayes estimators achieve the optimal performance up to logarithmic factors under certain conditions, whereas some transfer learning methods based on global penalization generally do not.",
       },
       {
         name: "Dr. Mengyan Li",
         affiliation: "Assistant Professor of Mathematical Sciences, Bentley University",
         photo: "mengyan-li.jpg",
         role: "Speaker",
+        talk: "Semi-supervised Clustering Through Representation Learning of High-dimensional Count Data",
+        abstract: "High-dimensional count data arise in many modern applications, such as electronic health records (EHR) and RNA sequencing, with sparse, heterogeneous observations driven by complex latent structure. These characteristics make modeling and prediction challenging, especially when labels are limited. We propose SCORE, a semi-supervised representation learning framework for clustering and embedding construction from high-dimensional count features. SCORE is built on a Poisson-adapted latent factor mixture model that supports incorporating external pre-trained feature embeddings when available, enabling efficient extraction of latent cluster membership and low-dimensional representations. To scale inference and learning to large datasets, SCORE uses a hybrid algorithm that combines expectation-maximization with a Gaussian variational approximation, leveraging a small labeled subset to refine estimation on a large pool of unlabeled samples. We establish convergence guarantees for this hybrid procedure, quantify approximation errors introduced by the Gaussian variational approximation, and derive error rates under increasing embedding dimensions. Our theory and experiments show that incorporating unlabeled data improves accuracy and reduces sensitivity to label scarcity, yielding strong finite-sample performance relative to existing approaches. We demonstrate SCORE for predicting disability status in multiple sclerosis using EHR data, where it learns informative patient embeddings with strong predictive performance, highlighting its practical value.",
       },
       {
         name: "Dr. Yuan Huang",
         affiliation: "Assistant Professor of Biostatistics, Yale School of Public Health",
         photo: "yuan-huang.jpg",
         role: "Speaker",
+        talk: "Mediation Analysis for Sparse and Irregularly Spaced Longitudinal Outcomes with Application to the MrOS Sleep Study",
+        abstract: "Mediation analysis is widely used to identify the pathways through which an exposure influences an outcome via intermediate mediators. However, limited research has addressed settings involving high-dimensional mediators and outcomes observed as sparse, irregularly spaced longitudinal measurements. To address these challenges, we propose a mediation analysis framework for scalar exposures, high-dimensional mediators, and sparse longitudinal outcomes. The proposed method identifies significant mediators by addressing two key challenges: (i) modeling time-varying mediation effects using time-varying coefficient models for sparse and irregular longitudinal outcomes, and (ii) performing valid inference with a high-dimensional set of candidate mediators through proposed multiple testing procedures. We apply the proposed method to the MrOS Sleep Study to investigate lipid pathways that may mediate the association between rest-activity rhythms and longitudinal cognitive decline in older men, providing insight into potential biological mechanisms linking rest-activity rhythms to cognitive decline.",
       },
       {
         name: "Dr. Yong Chen",
@@ -192,12 +200,16 @@ const SESSIONS = [
         affiliation: "Director, Data Science & Digital Health, Neuroscience, Johnson & Johnson",
         photo: "junrui-di.jpg",
         role: "Speaker",
+        talk: "From Wearables to Evidence: The Critical Role of Statistical Science in Digital Health",
+        abstract: "Digital health technologies can continuously capture patient behavior, function, and physiology in everyday life, creating new opportunities to understand disease progression and treatment effects. Yet the greatest challenge is often not collecting the data, but determining what the data truly mean. Without rigorous statistical methods, digital measures risk reflecting device artifacts, behavioral variability, or operational biases rather than meaningful clinical change.\n\nThis presentation will highlight how statistical expertise enables the responsible development and deployment of digital health technologies in clinical research. We will discuss practical challenges including missing data, endpoint derivation and validation, and longitudinal modeling. Through real-world examples, attendees will see how statistical methods help make digital measures clinically interpretable, scientifically credible, and useful for decision-making.",
       },
       {
         name: "Dr. Jacek K. Urbanek",
         affiliation: "Director, Biostatistics, Regeneron",
         photo: "jacek-urbanek.jpg",
         role: "Speaker and Session Organizer",
+        talk: "Modelling Prodromal Progression of Parkinson's Disease Using Multiday, Free-Living Wearable Accelerometry Data in UK Biobank",
+        abstract: "Large observational studies such as UK Biobank have collected extensive free-living accelerometry data that, when linked to electronic health records, enable retrospective identification of patients years before clinical diagnosis. This creates opportunities to characterize prodromal disease signatures using passively collected digital measures.\n\nWrist-worn accelerometry data from 439 UK Biobank participants with Parkinson's disease were analyzed. Linkage to longitudinal diagnosis codes identified 369 prodromal patients (accelerometry collected up to 9 years prior to diagnosis) and 70 post-diagnosis patients (up to 5 years after). Digital measures characterizing the distribution of activity intensities and total physical activity were derived and compared against demographically matched controls. Prodromal patients exhibited detectable differences in activity patterns, with effect sizes increasing closer to diagnosis. Trends in these measures as a function of time to and since diagnosis will be presented, along with assessment of face validity and discriminative ability between clinical groups. These findings advance our understanding of preclinical functional decline in Parkinson's disease and highlight the potential of wearable accelerometry to support earlier detection, ultimately informing the development of scalable, non-invasive tools for identifying at-risk individuals before irreversible neurodegeneration occurs.",
       },
       {
         name: "Dr. Marta Karas",
@@ -231,24 +243,32 @@ const SESSIONS = [
           "Professor of Data Sciences and Operations, USC Marshall School of Business",
         photo: "jacob-bien.jpg",
         role: "Speaker",
+        talk: "Hierarchical Clustering With Confidence",
+        abstract: "Hierarchical clustering is one of the most widely used approaches for exploring data. However, its greedy nature makes it highly sensitive to small perturbations, blurring the lines between genuine structure and spurious patterns. In this work, we show how randomizing hierarchical clustering can be useful not just for assessing clustering stability but also for designing valid hypothesis testing procedures based on clustering results. In particular, we propose a method for constructing a valid p-value at each node of the hierarchical clustering dendrogram that quantifies evidence against performing the greedy merge. Furthermore, we show how our p-values can be used to estimate the number of clusters, with a probabilistic guarantee on overestimation of the number of clusters. This is joint work with Di Wu and Snigdha Panigrahi.",
       },
       {
         name: "Dr. Rong Ma",
         affiliation: "Assistant Professor of Biostatistics, Harvard T.H. Chan School of Public Health",
         photo: "rong-ma.jpg",
         role: "Speaker",
+        talk: "Geometric Inference for Single-Cell and Spatial Omics",
+        abstract: "Modern single-cell and spatial omics technologies measure biological systems at increasingly high resolution, producing high-dimensional datasets that are rich in structure but challenging to interpret. A recurring theme is that these data often concentrate around low-dimensional geometric structures—manifolds, trajectories, and spatially organized tissue coordinates—that encode biological processes including cell differentiation, tissue organization, and regulatory dynamics. At the same time, many biological questions are themselves geometric: When can a low-dimensional map be trusted to represent cellular relationships? What coordinate system best captures tissue morphology? How do cells move through developmental state space? And how can these geometric structures reveal biological mechanisms? In this talk, I will discuss our recent work in statistical machine learning for single-cell and spatial omics, centered on the interaction between geometry and biology. I will first describe how a map-continuity perspective can diagnose and improve the reliability of nonlinear embeddings such as t-SNE and UMAP. I will then discuss how morphologically informed geometric coordinates can improve the detection of spatially variable genes in tissue. Finally, I will present a geometry-preserving framework for embedding RNA velocity and analyzing cellular dynamics as vector fields on low-dimensional cell-state manifolds. Together, these examples illustrate how manifold learning and geometric inference can provide both rigorous statistical tools and new biological insights.",
       },
       {
         name: "Dr. Ying Jin",
         affiliation: "Assistant Professor, Statistics and Data Science, The Wharton School, University of Pennsylvania",
         photo: "ying-jin.jpg",
         role: "Speaker",
+        talk: "AI agents for automated validation and generation of scientific hypotheses",
+        abstract: "AI agents powered by Large Language Models (LLMs) can now automate data analysis and propose scientific hypotheses from data. However, a key challenge is to determine whether the generated hypotheses are worth costly follow-up validation, since the sheer volume of hypotheses LLMs can generate makes manual validation impractical.\n\nWe argue the role of statistical evidence for AI-in-the-loop scientific discovery. In this talk, we present recent efforts on developing agentic frameworks that enable automated validation and generation of hypotheses with valid statistical evidence. We design high-level statistical principles for the exploration of AI agent to guarantee error control while allowing flexibility and diversity. First, we present POPPER, an agentic framework for rigorous automated validation of free-form, abstract, and high-level hypotheses. Guided by Karl Popper's principle of falsification, Popper validates a hypothesis using LLM agents that design and execute falsification experiments targeting its measurable implications. A sequential testing framework ensures strict Type-I error control while actively gathering evidence from diverse observations. We demonstrate that Popper delivers robust error control, high power, and scalability in a curated functional genomics dataset. Compared to human scientists, Popper achieved comparable performance in validating complex biological hypotheses while reducing time by 10 folds. Second, we present ongoing work on agentic frameworks to orchestrate hypotheses generation and validation to produce candidate scientific hypotheses with Type-I error control.",
       },
       {
         name: "Dr. Haiyan Huang",
         affiliation: "Professor of Statistics, University of California, Berkeley",
         photo: "haiyan-huang.jpg",
         role: "Speaker",
+        talk: "Ranking hierarchical multi-label classification results with mLPRs",
+        abstract: "Hierarchical multi-label classification (HMC) arises when each object may belong to multiple related classes organized in a tree or directed acyclic graph. Such structures are common in biomedical applications, including disease ontologies, functional gene annotation, and phenotype classification, where predictions must respect known relationships among categories.\n\nA common HMC strategy first trains separate classifiers for individual classes and then combines their scores to produce a unified set of hierarchy-consistent predictions. We focus on this second-stage problem. A key challenge is that classifier scores may have different statistical properties across classes and therefore are not directly comparable, while naive ranking can violate the known hierarchy. We introduce a new objective function, CATCH, and a multidimensional Local Precision Rate (mLPR), which measures the probability that an object belongs to a class based jointly on its classifier scores and the class hierarchy. Under suitable conditions, ranking object–class pairs using mLPRs produces hierarchy-consistent decisions that optimize CATCH. In practice, we propose an algorithm, HierRank, that ranks estimated mLPRs under the hierarchical constraint, yielding a ranking that maximizes an empirical version of CATCH. Simulations and two real-data applications demonstrate improved classification accuracy compared with existing approaches.\n\nThe framework is particularly relevant to modern genomic and biomedical applications in which machine-learning or deep-learning models generate predictions for large numbers of related biological labels. In this setting, mLPR and HierRank provide a principled second-stage approach for integrating classifier outputs while respecting known biological hierarchies, with potential applications to gene and protein functional annotation, disease and phenotype classification, and hierarchical cell-type annotation.",
       },
       {
         name: "Dr. Nancy Zhang",
@@ -271,12 +291,16 @@ const SESSIONS = [
         affiliation: "Associate Director, Data Science, Data and Statistical Science AI/ML, Daiichi Sankyo",
         photo: "fahimeh-mamashli.jpg",
         role: "Speaker",
+        talk: "Understanding Explainable AI Through Real-World Healthcare Examples",
+        abstract: "Explainable Artificial Intelligence (XAI) encompasses a set of methods and processes that enable humans to better understand, interpret, and trust the decisions made by artificial intelligence (AI) and machine learning (ML) models. As AI systems become increasingly complex, many function are “black boxes,” making it difficult to determine how specific outputs are generated. XAI addresses this challenge by improving transparency, interpretability, fairness, and accountability while helping identify potential biases and supporting regulatory compliance. It plays a critical role in high-stakes domains such as healthcare, where understanding AI-driven decisions is essential for building trust and enabling informed decision-making.\n\nThis presentation will introduce the fundamental concepts of XAI and highlight its importance in the development and deployment of trustworthy AI systems. Two real-world healthcare use cases will be presented: (A) the application of explainable AI for anomaly detection in centralized statistical monitoring, and (B) a machine learning approach that leverages explainability to explore population heterogeneity in real-world oncology data. These examples demonstrate how XAI can provide meaningful insights into model behavior, help users assess model behavior and reliability, and support the responsible adoption of AI in clinical research and healthcare.",
       },
       {
         name: "Dr. Alex Sverdlov",
         affiliation: "Executive Director, Biostatistics, Alnylam Pharmaceuticals",
         photo: "alex-sverdlov.jpg",
         role: "Speaker",
+        talk: "Interpretable Degradation Models for Causal Reasoning and Validation in Neurodegenerative Disease",
+        abstract: "Explainable AI is often treated as a set of post-hoc tools layered onto predictive models. In this talk, we present an alternative approach: statistical models that are interpretable by construction, using Wiener process degradation models for longitudinal decline in amyotrophic lateral sclerosis (ALS) as a case study. These models decompose disease progression into a drift term (average rate of decline) and a diffusion term (within-subject volatility), yielding directly interpretable parameters in place of an aggregate feature-importance score. We discuss how first-difference and mixed-effects estimation strategies embody a causal inference tradeoff familiar from the XAI literature: the former removes confounding but discards between-subject information, while the latter recovers covariate and individual-trajectory effects at the cost of stronger assumptions. We present Monte Carlo simulation evidence to validate estimator stability and parameter recovery under realistic clinical follow-up patterns and apply the approach to ALSFRS-R trajectories from the PRO-ACT database, where degradation model estimates track expected patterns of ALS decline. We also outline an extension of this framework to a joint multistate model linking the latent degradation process to clinically meaningful disease-state transitions. Together, this work argues that interpretability, causal structure, and validation can be built into a model rather than retrofitted onto it.",
       },
       {
         name: "Dr. Gurpreet Nanda",
@@ -307,7 +331,8 @@ const SESSIONS = [
         affiliation: "University of Florida",
         photo: "yuhua-zhang.jpg",
         role: "Speaker",
-        talk: "Flexible Evaluation of Trial-Level Surrogates Using a Combination of Randomized and Observational Subgroups",
+        talk: "Flexible evaluation of trial-level surrogates using a combination of randomized and observational subgroups",
+        abstract: "Multiple works have now proposed the use of nonparametric Bayesian methods for the evaluation of trial-level surrogates with increasing complexity of the methods allowing for increasing modeling flexibility. All these methods are restricted to randomized clinical trial settings and thus require either a large number of trials with the same outcome and surrogate within similar contexts or a large trial with multiple natural subgroups. This reduces the usefulness of the methods, as such datasets are rare and difficult to access due to the expense of the trials involved. There are now numerous papers on augmenting clinical trial data with observational data to improve estimation. With this in mind, we propose the Enriched Dirichlet Process Common Atoms Model (EDP-CAM) for surrogate evaluation to allow for the use of a mixture of randomized trials and observational individual-level data, flexibly capturing the complex joint distribution of clinical outcomes, surrogate endpoints, and measured confounders. To rigorously validate surrogate predictions, we employ Leave-One-Out Cross-Validation (LOOCV), which is efficiently approximated via importance sampling from a single Markov chain Monte Carlo (MCMC) run to circumvent the computational burden of repeated model fitting. We demonstrate the validity and scalability of our methodology through a simulation-enhanced real data application.",
       },
       {
         name: "Dr. Chenguang Wang",
@@ -322,6 +347,7 @@ const SESSIONS = [
         photo: "ming-hui-chen.jpg",
         role: "Speaker",
         talk: "Bayesian Methods and Strategies for Borrowing Information in Pediatric Randomized Clinical Trials",
+        abstract: "Pediatric clinical trials often have small sample sizes and face ethical and logistical constraints, which motivates the use of statistical methods that borrow information from external sources to support inference for the pediatric population. This comparative review summarizes the information borrowing methods that can be used in the design and analysis of pediatric trials, with an emphasis on the rationale for the different borrowing strategies and the practical considerations for implementation. Using an illustrative case study, we evaluate the performance of selected approaches, focusing on the trade-offs between power gain and potential Type I error inflation, as well as their robustness in the presence of prior-data conflicts. We also discuss the usefulness of these approaches, their acceptance by regulatory agencies, and relevant software implementations. This article aims to assist statisticians and trial designers in selecting appropriate borrowing methods that balance methodological rigor with the practical need to accelerate pediatric drug development. This is a joint work with Yanyan Zhu, Yuanye (Vickie) Zhang, Foteini Strimenopoulou, Satyajit Ghosh, and Jingjing Ye.",
       },
       {
         name: "Dr. Lei Nie",
@@ -344,10 +370,42 @@ const SESSIONS = [
   },
 ];
 
+// A stable id per speaker slot, used to pair each "View abstract" button with
+// its <dialog>. Session number + index keeps it unique across the page.
+const abstractId = (sessionNumber, speakerIndex) =>
+  `abstract-s${sessionNumber}-${speakerIndex}`;
+
+// Opens/closes the abstract dialogs. Inlined as a plain <script> because the
+// built pages are static HTML with no runtime React. Uses the native <dialog>
+// element, so Esc-to-close and the backdrop come for free; clicking outside the
+// dialog body closes it too.
+const ABSTRACT_SCRIPT = `
+document.addEventListener("click", function (e) {
+  var open = e.target.closest("[data-abstract-for]");
+  if (open) {
+    var dlg = document.getElementById(open.getAttribute("data-abstract-for"));
+    if (dlg && typeof dlg.showModal === "function") dlg.showModal();
+    else if (dlg) dlg.setAttribute("open", "");
+    return;
+  }
+  if (e.target.closest(".abstract-close")) {
+    var d = e.target.closest("dialog");
+    if (d) d.close();
+    return;
+  }
+  // Click on the backdrop (the dialog element itself, outside its inner box).
+  if (e.target.matches("dialog.abstract-dialog")) e.target.close();
+});
+`;
+
 export function ScientificSessions() {
   const photoDir = "_assets/scientific-session-speakers/";
   return (
-    <Page page={meta.page} title={meta.title}>
+    <Page
+      page={meta.page}
+      title={meta.title}
+      scripts={<script dangerouslySetInnerHTML={{ __html: ABSTRACT_SCRIPT }} />}
+    >
       <article className="content-prose">
         <h1>Scientific Sessions</h1>
 
@@ -375,6 +433,29 @@ export function ScientificSessions() {
                     <p className="session-speaker-name">{sp.name}</p>
                     {sp.affiliation && <p className="session-speaker-affiliation">{sp.affiliation}</p>}
                     {sp.talk && <p className="session-speaker-talk">{sp.talk}</p>}
+                    {sp.abstract && (
+                      <>
+                        <button
+                          type="button"
+                          className="abstract-toggle"
+                          data-abstract-for={abstractId(s.number, i)}
+                        >
+                          View abstract
+                        </button>
+                        <dialog className="abstract-dialog" id={abstractId(s.number, i)}>
+                          <div className="abstract-dialog-inner">
+                            <h4 className="abstract-dialog-speaker">{sp.name}</h4>
+                            <p className="abstract-dialog-talk">{sp.talk}</p>
+                            {sp.abstract.split("\n\n").map((para, j) => (
+                              <p key={j}>{para}</p>
+                            ))}
+                            <button type="button" className="abstract-close">
+                              Close
+                            </button>
+                          </div>
+                        </dialog>
+                      </>
+                    )}
                   </div>
                 </div>
               ))}
