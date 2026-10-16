@@ -131,11 +131,11 @@ const SPEAKERS = [
     photo: "jacek-urbanek.jpg",
   },
   {
-    id: "marta-karas",
-    name: "Dr. Marta Karas",
-    affiliation: "Senior Manager, Statistics, Takeda",
+    id: "yishu-gong",
+    name: "Dr. Yishu Gong",
+    affiliation: "Takeda",
     session: "Session 5",
-    photo: "marta-karas.jpg",
+    photo: "yishu-gong.jpg",
   },
   {
     id: "jaroslaw-harezlak",

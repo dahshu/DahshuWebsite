@@ -212,9 +212,9 @@ const SESSIONS = [
         abstract: "Large observational studies such as UK Biobank have collected extensive free-living accelerometry data that, when linked to electronic health records, enable retrospective identification of patients years before clinical diagnosis. This creates opportunities to characterize prodromal disease signatures using passively collected digital measures.\n\nWrist-worn accelerometry data from 439 UK Biobank participants with Parkinson's disease were analyzed. Linkage to longitudinal diagnosis codes identified 369 prodromal patients (accelerometry collected up to 9 years prior to diagnosis) and 70 post-diagnosis patients (up to 5 years after). Digital measures characterizing the distribution of activity intensities and total physical activity were derived and compared against demographically matched controls. Prodromal patients exhibited detectable differences in activity patterns, with effect sizes increasing closer to diagnosis. Trends in these measures as a function of time to and since diagnosis will be presented, along with assessment of face validity and discriminative ability between clinical groups. These findings advance our understanding of preclinical functional decline in Parkinson's disease and highlight the potential of wearable accelerometry to support earlier detection, ultimately informing the development of scalable, non-invasive tools for identifying at-risk individuals before irreversible neurodegeneration occurs.",
       },
       {
-        name: "Dr. Marta Karas",
-        affiliation: "Senior Manager, Statistics, Takeda",
-        photo: "marta-karas.jpg",
+        name: "Dr. Yishu Gong",
+        affiliation: "Takeda",
+        photo: "yishu-gong.jpg",
         role: "Speaker",
       },
       {
