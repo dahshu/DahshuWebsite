@@ -216,6 +216,8 @@ const SESSIONS = [
         affiliation: "Takeda",
         photo: "yishu-gong.jpg",
         role: "Speaker",
+        talk: "Longitudinal Assessment of Digital Health Measures in WatchPD study",
+        abstract: "Digital health technologies provide objective measures of Parkinson's disease (PD). This 12-month multicenter study assessed 82 individuals with early, untreated PD and 50 controls using a smartwatch, smartphone, and sensors. Participants completed clinic-based assessments and at-home tasks, including wearing a smartwatch for seven days and bi-weekly motor, speech, and cognitive tasks. Baseline measures, including arm swing, tremor, speech, and finger tapping, differed significantly between groups. Longitudinal analyses showed declines in gait, increased tremor, and modest speech changes. Arm swing decreased from 25.9° to 19.9° (P = 0.004), and tremor time increased from 19.3% to 25.6% (P < 0.001). Changes in individual digital measures often exceeded changes in clinical scale items but not the overall scale. Findings from 44 participants in the WatchPD extension at month 36 is also presented, demonstrating the potential of digital measures to track progression and assess therapeutics, despite challenges in data capture and study design.",
       },
       {
         name: "Dr. Jaroslaw Harezlak",
