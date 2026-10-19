@@ -189,11 +189,11 @@ const SPEAKERS = [
     photo: "alex-sverdlov.jpg",
   },
   {
-    id: "gurpreet-nanda",
-    name: "Dr. Gurpreet Nanda",
-    affiliation: "Senior Director, Head of Applied Machine Learning, Bayer",
+    id: "dilip-raghunathan",
+    name: "Dilip Raghunathan",
+    affiliation: "Business Solutions Partner, Regeneron",
     session: "Session 7",
-    photo: "gurpreet-nanda.jpg",
+    photo: "dilip-raghunathan.jpg",
   },
   {
     id: "yuhua-zhang",
