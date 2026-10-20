@@ -34,8 +34,9 @@ const DAYS = [
         "scientific-sessions.html#session2",
       ],
       ["2:40 pm - 2:50 pm", "Break"],
+      ["2:50 pm - 2:55 pm", "Vendor Spotlight (DIP)"],
       [
-        "2:50 pm - 4:30 pm",
+        "2:55 pm - 4:30 pm",
         "Session 3: From Genome to Patient: An End-to-End View of Immunology in Drug Development",
         "scientific-sessions.html#session3",
       ],

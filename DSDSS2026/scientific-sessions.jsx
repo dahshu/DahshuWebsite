@@ -122,7 +122,7 @@ const SESSIONS = [
   {
     number: 3,
     title: "From Genome to Patient: An End-to-End View of Immunology in Drug Development",
-    schedule: "Thursday, October 22, 2026, 2:50 pm - 4:30 pm",
+    schedule: "Thursday, October 22, 2026, 2:55 pm - 4:30 pm",
     speakers: [
       {
         name: "Yihua Gu",
