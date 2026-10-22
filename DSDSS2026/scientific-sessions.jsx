@@ -26,6 +26,12 @@ const SESSIONS = [
     schedule: "Thursday, October 22, 2026, 9:50 am - 11:30 am",
     speakers: [
       {
+        name: "Dr. Jane Zhang",
+        affiliation: "Head of Immunology Statistics, AbbVie",
+        photo: "jane-zhang.jpg",
+        role: "Session Organizer",
+      },
+      {
         name: "Dr. Susan Gruber",
         affiliation: "Targeted ML Solutions",
         photo: "susan-gruber.jpg",
@@ -55,12 +61,6 @@ const SESSIONS = [
         role: "Speaker",
         talk: "Unlocking the Power of Machine Learning and Real-World Data for Clinical Development",
       },
-      {
-        name: "Dr. Jane Zhang",
-        affiliation: "Head of Immunology Statistics, AbbVie",
-        photo: "jane-zhang.jpg",
-        role: "Session Organizer",
-      },
     ],
     abstract: [
       "As the volume of Real-World Data (RWD) expands, the pharmaceutical industry faces a critical bottleneck: transforming unstructured data into rigorous, actionable clinical evidence.",
@@ -74,6 +74,12 @@ const SESSIONS = [
     title: "High-Dimensional Statistical Learning for Biomedical Data",
     schedule: "Thursday, October 22, 2026, 1:00 pm - 2:40 pm",
     speakers: [
+      {
+        name: "Dr. Tianxi Cai",
+        affiliation: "John Rock Professor of Translational Data Science, Harvard University",
+        photo: "tianxi-cai.jpg",
+        role: "Session Organizer",
+      },
       {
         name: "Dr. Ye Tian",
         affiliation: "Assistant Professor of Statistics, Pennsylvania State University",
@@ -106,12 +112,6 @@ const SESSIONS = [
         talk: "MOSAiC: a unified framework for lossless, one-shot, federated learning algorithms",
         abstract: "Multi-site studies are now central to biomedical research, but inference across sites remains challenging due to regulatory limits on sharing individual-level data, heterogeneous data distributions, sparse events in small centers, and the logistical burden of multi-round communication. In this talk, I introduce MOSAiC (Multi-site One-Shot Aggregation of Compressed Risk Functions), a unified framework for modern distributed research networks. Notably, MOSAiC reframes distributed learning as a mathematical problem of compressing and aggregating risk functions, leveraging recent advances in tensor networks—state-of-the-art tools for high-dimensional function approximation in scientific computing. Our MOSAiC enjoys four desirable properties that have never been achieved by any of the existing federated algorithms (except linear regressions): one-shot communication, lossless recovery of pooled-data estimates, inclusiveness of all sites irrespective of size or event rarity, and analytic submodel exploitability without re-querying partners. I will illustrate MOSAiC’s validity and efficiency through applications in drug relabeling, drug repurposing, and post-market safety surveillance. The talk will highlight our forthcoming discussion paper in the Journal of the American Statistical Association (Applications and Case Studies) (https://www.tandfonline.com/doi/full/10.1080/01621459.2026.2698025), along with several ongoing extensions and applications.",
       },
-      {
-        name: "Dr. Runze Li",
-        affiliation: "Eberly Family Chair in Statistics, Pennsylvania State University",
-        photo: "runze-li.jpg",
-        role: "Session Organizer",
-      },
     ],
     abstract: [
       "This session presents new theory and methodology for high-dimensional statistical learning in modern biomedical applications, from cross-population genetic prediction to representation learning from electronic health records.",
@@ -124,6 +124,12 @@ const SESSIONS = [
     title: "From Genome to Patient: An End-to-End View of Immunology in Drug Development",
     schedule: "Thursday, October 22, 2026, 2:55 pm - 4:30 pm",
     speakers: [
+      {
+        name: "Dr. Sara Hamon",
+        affiliation: "Executive Director, Precision Medicine, Regeneron",
+        photo: "sara-hamon.jpg",
+        role: "Session Organizer",
+      },
       {
         name: "Yihua Gu",
         affiliation: "Vice President of Biostatistics, AbbVie",
@@ -142,12 +148,6 @@ const SESSIONS = [
         photo: "wei-keat-lim.jpg",
         role: "Speaker",
       },
-      {
-        name: "Dr. Sara Hamon",
-        affiliation: "Executive Director, Precision Medicine, Regeneron",
-        photo: "sara-hamon.jpg",
-        role: "Session Organizer",
-      },
     ],
     abstract: [
       "This session traces the end-to-end arc of immunology-driven drug development—from population-scale genetics that nominate causal targets, through translational biomarker discovery and patient stratification, to late-phase clinical trials that convert hypotheses into actionable evidence.",
@@ -160,6 +160,12 @@ const SESSIONS = [
     title: "Real-World Impact of Artificial Intelligence in Medicine",
     schedule: "Thursday, October 22, 2026, 4:40 pm - 5:40 pm",
     speakers: [
+      {
+        name: "Dr. Mengyan Li",
+        affiliation: "Assistant Professor of Mathematical Sciences, Bentley University",
+        photo: "mengyan-li.jpg",
+        role: "Session Organizer",
+      },
       {
         name: "Dr. Rolando J. Acosta",
         affiliation: "Manager, Biostatistics, Regeneron",
@@ -178,12 +184,6 @@ const SESSIONS = [
         photo: "yi-lin-chiu.jpg",
         role: "Speaker",
       },
-      {
-        name: "Dr. Haoda Fu",
-        affiliation: "Head of Exploratory Biostatistics, Amgen",
-        photo: "haoda-fu.webp",
-        role: "Session Organizer",
-      },
     ],
     abstract: [
       "This showcase bridges the gap between academic research and pharmaceutical industry application by bringing together leading experts to highlight the real-world impact of artificial intelligence.",
@@ -198,6 +198,13 @@ const SESSIONS = [
     schedule: "Friday, October 23, 2026, 9:00 am - 10:30 am",
     speakers: [
       {
+        name: "Dr. Jaroslaw Harezlak",
+        affiliation:
+          "Chair, Department of Epidemiology and Biostatistics, Indiana University School of Public Health-Bloomington",
+        photo: "jaroslaw-harezlak.jpg",
+        role: "Session Organizer",
+      },
+      {
         name: "Dr. Junrui Di",
         affiliation: "Director, Data Science & Digital Health, Neuroscience, Johnson & Johnson",
         photo: "junrui-di.jpg",
@@ -209,7 +216,7 @@ const SESSIONS = [
         name: "Dr. Jacek K. Urbanek",
         affiliation: "Director, Biostatistics, Regeneron",
         photo: "jacek-urbanek.jpg",
-        role: "Speaker and Session Organizer",
+        role: "Speaker",
         talk: "Modelling Prodromal Progression of Parkinson's Disease Using Multiday, Free-Living Wearable Accelerometry Data in UK Biobank",
         abstract: "Large observational studies such as UK Biobank have collected extensive free-living accelerometry data that, when linked to electronic health records, enable retrospective identification of patients years before clinical diagnosis. This creates opportunities to characterize prodromal disease signatures using passively collected digital measures.\n\nWrist-worn accelerometry data from 439 UK Biobank participants with Parkinson's disease were analyzed. Linkage to longitudinal diagnosis codes identified 369 prodromal patients (accelerometry collected up to 9 years prior to diagnosis) and 70 post-diagnosis patients (up to 5 years after). Digital measures characterizing the distribution of activity intensities and total physical activity were derived and compared against demographically matched controls. Prodromal patients exhibited detectable differences in activity patterns, with effect sizes increasing closer to diagnosis. Trends in these measures as a function of time to and since diagnosis will be presented, along with assessment of face validity and discriminative ability between clinical groups. These findings advance our understanding of preclinical functional decline in Parkinson's disease and highlight the potential of wearable accelerometry to support earlier detection, ultimately informing the development of scalable, non-invasive tools for identifying at-risk individuals before irreversible neurodegeneration occurs.",
       },
@@ -220,13 +227,6 @@ const SESSIONS = [
         role: "Speaker",
         talk: "Longitudinal Assessment of Digital Health Measures in WatchPD study",
         abstract: "Digital health technologies provide objective measures of Parkinson's disease (PD). This 12-month multicenter study assessed 82 individuals with early, untreated PD and 50 controls using a smartwatch, smartphone, and sensors. Participants completed clinic-based assessments and at-home tasks, including wearing a smartwatch for seven days and bi-weekly motor, speech, and cognitive tasks. Baseline measures, including arm swing, tremor, speech, and finger tapping, differed significantly between groups. Longitudinal analyses showed declines in gait, increased tremor, and modest speech changes. Arm swing decreased from 25.9° to 19.9° (P = 0.004), and tremor time increased from 19.3% to 25.6% (P < 0.001). Changes in individual digital measures often exceeded changes in clinical scale items but not the overall scale. Findings from 44 participants in the WatchPD extension at month 36 is also presented, demonstrating the potential of digital measures to track progression and assess therapeutics, despite challenges in data capture and study design.",
-      },
-      {
-        name: "Dr. Jaroslaw Harezlak",
-        affiliation:
-          "Chair, Department of Epidemiology and Biostatistics, Indiana University School of Public Health-Bloomington",
-        photo: "jaroslaw-harezlak.jpg",
-        role: "Moderator",
       },
     ],
     abstract: [
@@ -241,6 +241,12 @@ const SESSIONS = [
     title: "Bridging AI and Statistical Inference: Methods and Applications",
     schedule: "Friday, October 23, 2026, 10:45 am - 12:15 pm",
     speakers: [
+      {
+        name: "Dr. Nancy Zhang",
+        affiliation: "Ge Li and Ning Zhao Professor of Statistics, The Wharton School, University of Pennsylvania",
+        photo: "nancy-zhang.jpg",
+        role: "Session Organizer",
+      },
       {
         name: "Dr. Jacob Bien",
         affiliation:
@@ -274,12 +280,6 @@ const SESSIONS = [
         talk: "Ranking hierarchical multi-label classification results with mLPRs",
         abstract: "Hierarchical multi-label classification (HMC) arises when each object may belong to multiple related classes organized in a tree or directed acyclic graph. Such structures are common in biomedical applications, including disease ontologies, functional gene annotation, and phenotype classification, where predictions must respect known relationships among categories.\n\nA common HMC strategy first trains separate classifiers for individual classes and then combines their scores to produce a unified set of hierarchy-consistent predictions. We focus on this second-stage problem. A key challenge is that classifier scores may have different statistical properties across classes and therefore are not directly comparable, while naive ranking can violate the known hierarchy. We introduce a new objective function, CATCH, and a multidimensional Local Precision Rate (mLPR), which measures the probability that an object belongs to a class based jointly on its classifier scores and the class hierarchy. Under suitable conditions, ranking object–class pairs using mLPRs produces hierarchy-consistent decisions that optimize CATCH. In practice, we propose an algorithm, HierRank, that ranks estimated mLPRs under the hierarchical constraint, yielding a ranking that maximizes an empirical version of CATCH. Simulations and two real-data applications demonstrate improved classification accuracy compared with existing approaches.\n\nThe framework is particularly relevant to modern genomic and biomedical applications in which machine-learning or deep-learning models generate predictions for large numbers of related biological labels. In this setting, mLPR and HierRank provide a principled second-stage approach for integrating classifier outputs while respecting known biological hierarchies, with potential applications to gene and protein functional annotation, disease and phenotype classification, and hierarchical cell-type annotation.",
       },
-      {
-        name: "Dr. Nancy Zhang",
-        affiliation: "Ge Li and Ning Zhao Professor of Statistics, The Wharton School, University of Pennsylvania",
-        photo: "nancy-zhang.jpg",
-        role: "Session Organizer",
-      },
     ],
     abstract: [
       "This session will highlight emerging methods at the intersection of rigorous statistical inference and modern machine learning for analyzing high-dimensional genomic data.",
@@ -290,6 +290,12 @@ const SESSIONS = [
     title: "Explainable Artificial Intelligence (XAI) for Interpretable Models",
     schedule: "Friday, October 23, 2026, 1:15 pm - 2:45 pm",
     speakers: [
+      {
+        name: "Mercedeh Ghadessi",
+        affiliation: "Director, Principal Statistician, Bayer",
+        photo: "mercedeh-ghadessi.jpg",
+        role: "Session Organizer",
+      },
       {
         name: "Dr. Fahimeh Mamashli",
         affiliation: "Associate Director, Data Science, Data and Statistical Science AI/ML, Daiichi Sankyo",
@@ -314,12 +320,6 @@ const SESSIONS = [
         talk: "Explainability Begins Before the Model: Connecting Scientific Intent to Analytical Evidence",
         abstract: "As artificial intelligence becomes increasingly embedded in clinical research, explainability is often focused on understanding how models arrive at their predictions. But an equally important question deserves attention: Can we trace an analytical result all the way back to the scientific question it was intended to answer?\n\nToday, clinical trial objectives, endpoints, data collection specifications, transformations, and statistical analyses are often documented across disconnected systems and artifacts. While established processes provide traceability, much of this information remains document-centric, requiring manual interpretation and reconciliation to establish the complete lineage of an analytical result.\n\nDigital Data Flow (DDF) offers an opportunity to rethink this approach. By leveraging structured, machine-readable study definitions through frameworks such as the Unified Study Definitions Model (USDM), we can establish a foundation for connecting protocol objectives to downstream data and analytical workflows.\n\nThis presentation explores two fundamental dimensions of analytical explainability: traceability of an analysis to its original scientific intent, and transparency of the data elements and transformations that underpin its execution. We will contrast traditional document-driven approaches with an emerging USDM-enabled model, examining how standardized study definitions, complemented by data lineage and analytical metadata, can support greater transparency, reproducibility, and interpretability.\n\nAs AI increasingly participates in generating code, transforming data, and supporting clinical decisions, understanding not only how a model works, but also why an analysis exists and how its inputs were derived, becomes essential.\n\nExplainability should not begin at the model. It should begin with the scientific question.",
       },
-      {
-        name: "Mercedeh Ghadessi",
-        affiliation: "Director, Principal Statistician, Bayer",
-        photo: "mercedeh-ghadessi.jpg",
-        role: "Session Organizer",
-      },
     ],
     abstract: [
       "This session covers Explainable Artificial Intelligence (XAI), which refers to a set of methods and techniques in artificial intelligence (AI) that aim to make the decision-making processes of AI systems understandable to human users.",
@@ -332,6 +332,12 @@ const SESSIONS = [
     title: "Recent Advancement on Bayesian Methodology in Clinical Trials for Drugs and Biologics",
     schedule: "Friday, October 23, 2026, 3:00 pm - 4:30 pm",
     speakers: [
+      {
+        name: "Dr. Wanxue Zou",
+        affiliation: "Senior Manager, Biostatistics, Regeneron",
+        photo: "wanxue-zou.png",
+        role: "Session Organizer",
+      },
       {
         name: "Yuhua Zhang",
         affiliation: "University of Florida",
@@ -361,15 +367,8 @@ const SESSIONS = [
         photo: "lei-nie.jpg",
         role: "Discussant",
       },
-      {
-        name: "Dr. Wanxue Zou",
-        affiliation: "Senior Manager, Biostatistics, Regeneron",
-        photo: "wanxue-zou.png",
-        role: "Session Chair",
-      },
     ],
     abstract: [
-      "Session Organizers: Dr. Ming-Hui Chen and Dr. Chenguang Wang.",
       "This is going to be a Bayesian session.",
       'This session mainly focuses on recent advancement or reactions in responding to a recent FDA landmark draft guidance, "Use of Bayesian Methodology in Clinical Trials of Drug and Biological Products," jointly released by the Center for Drug Evaluation and Research (CDER) and the Center for Biologics Evaluation and Research (CBER).',
     ],
