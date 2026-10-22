@@ -12,7 +12,7 @@ export const meta = {
 };
 
 const STEERING = [
-  ["Tianxi Chi", "Harvard University"],
+  ["Tianxi Cai", "Harvard University"],
   ["Jing Huang", "CareDx"],
   ["Yali Li", "Biomerieux"],
   ["Jeen Liu", "Regeneron"],
@@ -37,7 +37,7 @@ const PROGRAM = [
 ];
 
 const LOCAL = [
-  ["Tianxi Chi (Co-chair)", "Harvard University"],
+  ["Tianxi Cai (Co-chair)", "Harvard University"],
   ["Yali Li (Co-chair)", "Biomerieux"],
   ["Ran Duan", "Vertex Pharmaceuticals"],
   ["Anwen Huang", "University of California, Los Angeles"],
