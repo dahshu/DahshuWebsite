@@ -5,7 +5,7 @@
 // speakers (one or more {name, affiliation, photo, role?}), and abstract
 // (one or more paragraphs). photo is a filename under
 // _assets/scientific-session-speakers/ or null for a blank placeholder.
-// role is optional (e.g., "Speaker", "Session Organizer", "Moderator") and
+// role is optional (e.g., "Speaker", "Session Chair", "Session Organizer") and
 // shown as a small label above the speaker's name. affiliation may be empty
 // (e.g., for a "To Be Announced" placeholder), in which case the line is
 // omitted.
@@ -29,7 +29,7 @@ const SESSIONS = [
         name: "Dr. Jane Zhang",
         affiliation: "Head of Immunology Statistics, AbbVie",
         photo: "jane-zhang.jpg",
-        role: "Session Organizer",
+        role: "Session Chair / Organizer",
       },
       {
         name: "Dr. Susan Gruber",
@@ -78,6 +78,12 @@ const SESSIONS = [
         name: "Dr. Tianxi Cai",
         affiliation: "John Rock Professor of Translational Data Science, Harvard University",
         photo: "tianxi-cai.jpg",
+        role: "Session Chair",
+      },
+      {
+        name: "Dr. Runze Li",
+        affiliation: "Eberly Family Chair in Statistics, Pennsylvania State University",
+        photo: "runze-li.jpg",
         role: "Session Organizer",
       },
       {
@@ -128,7 +134,7 @@ const SESSIONS = [
         name: "Dr. Sara Hamon",
         affiliation: "Executive Director, Precision Medicine, Regeneron",
         photo: "sara-hamon.jpg",
-        role: "Session Organizer",
+        role: "Session Chair / Organizer",
       },
       {
         name: "Yihua Gu",
@@ -164,6 +170,12 @@ const SESSIONS = [
         name: "Dr. Mengyan Li",
         affiliation: "Assistant Professor of Mathematical Sciences, Bentley University",
         photo: "mengyan-li.jpg",
+        role: "Session Chair",
+      },
+      {
+        name: "Dr. Haoda Fu",
+        affiliation: "Head of Exploratory Biostatistics, Amgen",
+        photo: "haoda-fu.webp",
         role: "Session Organizer",
       },
       {
@@ -202,7 +214,15 @@ const SESSIONS = [
         affiliation:
           "Chair, Department of Epidemiology and Biostatistics, Indiana University School of Public Health-Bloomington",
         photo: "jaroslaw-harezlak.jpg",
-        role: "Session Organizer",
+        role: "Session Chair",
+      },
+      {
+        name: "Dr. Jacek K. Urbanek",
+        affiliation: "Director, Biostatistics, Regeneron",
+        photo: "jacek-urbanek.jpg",
+        role: "Session Organizer / Speaker",
+        talk: "Modelling Prodromal Progression of Parkinson's Disease Using Multiday, Free-Living Wearable Accelerometry Data in UK Biobank",
+        abstract: "Large observational studies such as UK Biobank have collected extensive free-living accelerometry data that, when linked to electronic health records, enable retrospective identification of patients years before clinical diagnosis. This creates opportunities to characterize prodromal disease signatures using passively collected digital measures.\n\nWrist-worn accelerometry data from 439 UK Biobank participants with Parkinson's disease were analyzed. Linkage to longitudinal diagnosis codes identified 369 prodromal patients (accelerometry collected up to 9 years prior to diagnosis) and 70 post-diagnosis patients (up to 5 years after). Digital measures characterizing the distribution of activity intensities and total physical activity were derived and compared against demographically matched controls. Prodromal patients exhibited detectable differences in activity patterns, with effect sizes increasing closer to diagnosis. Trends in these measures as a function of time to and since diagnosis will be presented, along with assessment of face validity and discriminative ability between clinical groups. These findings advance our understanding of preclinical functional decline in Parkinson's disease and highlight the potential of wearable accelerometry to support earlier detection, ultimately informing the development of scalable, non-invasive tools for identifying at-risk individuals before irreversible neurodegeneration occurs.",
       },
       {
         name: "Dr. Junrui Di",
@@ -211,14 +231,6 @@ const SESSIONS = [
         role: "Speaker",
         talk: "From Wearables to Evidence: The Critical Role of Statistical Science in Digital Health",
         abstract: "Digital health technologies can continuously capture patient behavior, function, and physiology in everyday life, creating new opportunities to understand disease progression and treatment effects. Yet the greatest challenge is often not collecting the data, but determining what the data truly mean. Without rigorous statistical methods, digital measures risk reflecting device artifacts, behavioral variability, or operational biases rather than meaningful clinical change.\n\nThis presentation will highlight how statistical expertise enables the responsible development and deployment of digital health technologies in clinical research. We will discuss practical challenges including missing data, endpoint derivation and validation, and longitudinal modeling. Through real-world examples, attendees will see how statistical methods help make digital measures clinically interpretable, scientifically credible, and useful for decision-making.",
-      },
-      {
-        name: "Dr. Jacek K. Urbanek",
-        affiliation: "Director, Biostatistics, Regeneron",
-        photo: "jacek-urbanek.jpg",
-        role: "Speaker",
-        talk: "Modelling Prodromal Progression of Parkinson's Disease Using Multiday, Free-Living Wearable Accelerometry Data in UK Biobank",
-        abstract: "Large observational studies such as UK Biobank have collected extensive free-living accelerometry data that, when linked to electronic health records, enable retrospective identification of patients years before clinical diagnosis. This creates opportunities to characterize prodromal disease signatures using passively collected digital measures.\n\nWrist-worn accelerometry data from 439 UK Biobank participants with Parkinson's disease were analyzed. Linkage to longitudinal diagnosis codes identified 369 prodromal patients (accelerometry collected up to 9 years prior to diagnosis) and 70 post-diagnosis patients (up to 5 years after). Digital measures characterizing the distribution of activity intensities and total physical activity were derived and compared against demographically matched controls. Prodromal patients exhibited detectable differences in activity patterns, with effect sizes increasing closer to diagnosis. Trends in these measures as a function of time to and since diagnosis will be presented, along with assessment of face validity and discriminative ability between clinical groups. These findings advance our understanding of preclinical functional decline in Parkinson's disease and highlight the potential of wearable accelerometry to support earlier detection, ultimately informing the development of scalable, non-invasive tools for identifying at-risk individuals before irreversible neurodegeneration occurs.",
       },
       {
         name: "Dr. Yishu Gong",
@@ -245,7 +257,7 @@ const SESSIONS = [
         name: "Dr. Nancy Zhang",
         affiliation: "Ge Li and Ning Zhao Professor of Statistics, The Wharton School, University of Pennsylvania",
         photo: "nancy-zhang.jpg",
-        role: "Session Organizer",
+        role: "Session Chair / Organizer",
       },
       {
         name: "Dr. Jacob Bien",
@@ -294,7 +306,7 @@ const SESSIONS = [
         name: "Mercedeh Ghadessi",
         affiliation: "Director, Principal Statistician, Bayer",
         photo: "mercedeh-ghadessi.jpg",
-        role: "Session Organizer",
+        role: "Session Chair / Organizer",
       },
       {
         name: "Dr. Fahimeh Mamashli",
@@ -336,7 +348,7 @@ const SESSIONS = [
         name: "Dr. Wanxue Zou",
         affiliation: "Senior Manager, Biostatistics, Regeneron",
         photo: "wanxue-zou.png",
-        role: "Session Organizer",
+        role: "Session Chair / Organizer",
       },
       {
         name: "Yuhua Zhang",
